@@ -1,0 +1,7 @@
+export enum UI_EVENT {
+  TLDRAW_UPDATED = 'TLDRAW_UPDATED',
+}
+
+export enum EXTENSION_EVENT {
+  FILE_UPDATED = 'FILE_UPDATED',
+}

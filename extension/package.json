@@ -1,0 +1,84 @@
+{
+	"name": "tldraw-vscode",
+	"displayName": "TLDraw",
+	"description": "The TLDraw Extension for VS Code.",
+	"version": "0.1.15",
+	"license": "MIT",
+	"publisher": "tldraw-org",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tldraw/tldraw"
+	},
+	"engines": {
+		"vscode": "^1.59.0"
+	},
+	"keywords": [
+		"diagram",
+		"draw",
+		"drawing",
+		"sketch",
+		"design",
+		"documentation",
+		"tldraw"
+	],
+	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#1d1d1d",
+		"theme": "dark"
+	},
+	"categories": [
+		"Visualization"
+	],
+	"activationEvents": [
+		"onCustomEditor:tldraw.tldr",
+		"onCommand:tldraw.tldr.new"
+	],
+	"browser": "./dist/web/extension.js",
+	"main": "./dist/web/extension.js",
+	"extensionKind": [
+		"ui",
+		"workspace"
+	],
+	"contributes": {
+		"customEditors": [
+			{
+				"viewType": "tldraw.tldr",
+				"displayName": "TLDraw",
+				"selector": [
+					{
+						"filenamePattern": "*.tldr"
+					}
+				]
+			}
+		],
+		"commands": [
+			{
+				"command": "tldraw.tldr.new",
+				"title": "New TLDraw File",
+				"category": "TLDraw"
+			}
+		]
+	},
+	"scripts": {
+		"start:vscode": "node scripts/dev & yarn types:dev",
+		"types:dev": "tsc -w",
+		"web": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=.",
+		"package": "cd ../editor && yarn build && cd ../extension && node scripts/build && node scripts/package",
+		"vscode:publish": "yarn version && yarn package && vsce publish",
+		"lint": "eslint src --ext ts"
+	},
+	"dependencies": {},
+	"peerDependencies": {},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.31.1",
+		"@typescript-eslint/parser": "^4.31.1",
+		"@vscode/test-web": "^0.0.12",
+		"assert": "^2.0.0",
+		"eslint": "^7.32.0",
+		"mocha": "^9.1.1",
+		"process": "^0.11.10",
+		"ts-loader": "^9.2.5",
+		"typescript": "^4.4.3",
+		"vsce": "^2.2.0"
+	}
+}
