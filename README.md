@@ -1,4 +1,7 @@
 # Create custom VS Code Editors
+A module/template to make it super easy to make custom VS Code extensions. 
+
+Checkout the [Tldraw VS Code editor](https://marketplace.visualstudio.com/items?itemName=tldraw-org.tldraw-vscode), that this code spun out from.
 
 **Todos**
  - Make it follow the `yarn create` / create-react-app approach for easily quickly creating a new project
