@@ -1,8 +1,8 @@
 {
-  "name": "create-vscode-extension",
+  "name": "create-vscode-editor",
   "version": "0.0.1",
   "private": true,
-  "description": "A VS Code extension for a custom editor",
+  "description": "A custom editor for VS Code",
   "author": "@seflless",
   "license": "MIT",
   "keywords": [

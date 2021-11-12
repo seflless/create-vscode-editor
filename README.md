@@ -4,6 +4,8 @@ A module/template to make it super easy to make custom VS Code editors, using Re
 Checkout the [Tldraw VS Code editor](https://marketplace.visualstudio.com/items?itemName=tldraw-org.tldraw-vscode), that this module was spun out from.
 
 **Todos**
+ - Register create-vscode-editor. Running it would be
+  - `yarn create vscode-editor custom-editor`
  - Make it follow the `yarn create` / create-react-app approach for easily quickly creating a new project
   - https://classic.yarnpkg.com/en/docs/cli/create
   - https://classic.yarnpkg.com/blog/2017/05/12/introducing-yarn/
@@ -12,6 +14,7 @@ Checkout the [Tldraw VS Code editor](https://marketplace.visualstudio.com/items?
    - auto open VS Code to project root
  - Remove need to have a VS Code window to debug/run the extension
  - Make sure setup instructions are accurate
+ - Add npm publish script
 
 **Future Work**
  - Add hot reloading to both the extension and editor app. Switch from esbuild to Vite (uses esbuild anyway)
@@ -25,6 +28,8 @@ Checkout the [Tldraw VS Code editor](https://marketplace.visualstudio.com/items?
   - An undo/redo manager
   - An app data model
   - Utilities for maintaining file formats with best practices for being easily evolvable/serializable.
+ - Add CLI support for flags for language `ts`/`js` and UI frameworks other than `react` like `vue`
+ - Use a proper CLI framework for the generator
 
 This folder contains the source for the tldraw VS Code extension.
 
