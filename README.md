@@ -18,6 +18,9 @@ Checkout the [Tldraw VS Code editor](https://marketplace.visualstudio.com/items?
  - Add npm publish script
 
 **Future Work**
+ - Add tests
+   - For the generator
+   - To the template to provide ready to go VS Code extension testing for editors
  - Add instructions and scripts for publishing automatically to the Marketplace
  - Add hot reloading to both the extension and editor app. Switch from esbuild to Vite (uses esbuild anyway)
  - Optimize editor instance launch times. Feels like >1sec right now on github.dev, vscode.dev, Codespaces

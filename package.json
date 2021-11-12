@@ -1,7 +1,6 @@
 {
   "name": "create-vscode-editor",
   "version": "0.0.1",
-  "private": true,
   "description": "A custom editor for VS Code",
   "author": "@seflless",
   "license": "MIT",
