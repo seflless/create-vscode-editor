@@ -27,7 +27,7 @@ async function main() {
       },
       {
         port: 5420,
-        root: './../editor/dist',
+        root: './editor/dist',
         live: true,
       }
     )
