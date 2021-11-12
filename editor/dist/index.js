@@ -73,7 +73,7 @@
     });
   };
 
-  // ../../node_modules/object-assign/index.js
+  // node_modules/object-assign/index.js
   var require_object_assign = __commonJS((exports, module) => {
     /*
     object-assign
@@ -146,7 +146,7 @@
     };
   });
 
-  // ../../node_modules/react/cjs/react.production.min.js
+  // node_modules/react/cjs/react.production.min.js
   var require_react_production_min = __commonJS((exports) => {
     /** @license React v17.0.2
      * react.production.min.js
@@ -170,20 +170,20 @@
     var u5 = 60115;
     var v7 = 60116;
     if (typeof Symbol === "function" && Symbol.for) {
-      w6 = Symbol.for;
-      n6 = w6("react.element");
-      p8 = w6("react.portal");
-      exports.Fragment = w6("react.fragment");
-      exports.StrictMode = w6("react.strict_mode");
-      exports.Profiler = w6("react.profiler");
-      q3 = w6("react.provider");
-      r13 = w6("react.context");
-      t14 = w6("react.forward_ref");
-      exports.Suspense = w6("react.suspense");
-      u5 = w6("react.memo");
-      v7 = w6("react.lazy");
+      w7 = Symbol.for;
+      n6 = w7("react.element");
+      p8 = w7("react.portal");
+      exports.Fragment = w7("react.fragment");
+      exports.StrictMode = w7("react.strict_mode");
+      exports.Profiler = w7("react.profiler");
+      q3 = w7("react.provider");
+      r13 = w7("react.context");
+      t14 = w7("react.forward_ref");
+      exports.Suspense = w7("react.suspense");
+      u5 = w7("react.memo");
+      v7 = w7("react.lazy");
     }
-    var w6;
+    var w7;
     var x6 = typeof Symbol === "function" && Symbol.iterator;
     function y4(a10) {
       if (a10 === null || typeof a10 !== "object")
@@ -339,7 +339,7 @@
         throw Error(z3(321));
       return a10;
     }
-    var T6 = {ReactCurrentDispatcher: R6, ReactCurrentBatchConfig: {transition: 0}, ReactCurrentOwner: G5, IsSomeRendererActing: {current: false}, assign: l10};
+    var T5 = {ReactCurrentDispatcher: R6, ReactCurrentBatchConfig: {transition: 0}, ReactCurrentOwner: G5, IsSomeRendererActing: {current: false}, assign: l10};
     exports.Children = {map: P3, forEach: function(a10, b8, c7) {
       P3(a10, function() {
         b8.apply(this, arguments);
@@ -361,7 +361,7 @@
     }};
     exports.Component = C6;
     exports.PureComponent = E7;
-    exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = T6;
+    exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = T5;
     exports.cloneElement = function(a10, b8, c7) {
       if (a10 === null || a10 === void 0)
         throw Error(z3(267, a10));
@@ -449,7 +449,7 @@
     exports.version = "17.0.2";
   });
 
-  // ../../node_modules/react/index.js
+  // node_modules/react/index.js
   var require_react = __commonJS((exports, module) => {
     "use strict";
     if (true) {
@@ -459,7 +459,7 @@
     }
   });
 
-  // ../../node_modules/scheduler/cjs/scheduler.production.min.js
+  // node_modules/scheduler/cjs/scheduler.production.min.js
   var require_scheduler_production_min = __commonJS((exports) => {
     /** @license React v0.20.2
      * scheduler.production.min.js
@@ -489,18 +489,18 @@
     var p8;
     var q3;
     if (typeof window === "undefined" || typeof MessageChannel !== "function") {
-      t14 = null, u5 = null, w6 = function() {
+      t14 = null, u5 = null, w7 = function() {
         if (t14 !== null)
           try {
             var a10 = exports.unstable_now();
             t14(true, a10);
             t14 = null;
           } catch (b8) {
-            throw setTimeout(w6, 0), b8;
+            throw setTimeout(w7, 0), b8;
           }
       };
       f13 = function(a10) {
-        t14 !== null ? setTimeout(f13, 0, a10) : (t14 = a10, setTimeout(w6, 0));
+        t14 !== null ? setTimeout(f13, 0, a10) : (t14 = a10, setTimeout(w7, 0));
       };
       g5 = function(a10, b8) {
         u5 = setTimeout(a10, b8);
@@ -558,7 +558,7 @@
     }
     var t14;
     var u5;
-    var w6;
+    var w7;
     var x6;
     var y4;
     var z3;
@@ -618,7 +618,7 @@
     var Q2 = false;
     var R6 = false;
     var S3 = false;
-    function T6(a10) {
+    function T5(a10) {
       for (var b8 = J4(M5); b8 !== null; ) {
         if (b8.callback === null)
           K3(M5);
@@ -631,7 +631,7 @@
     }
     function U3(a10) {
       S3 = false;
-      T6(a10);
+      T5(a10);
       if (!R6)
         if (J4(L5) !== null)
           R6 = true, f13(V5);
@@ -646,7 +646,7 @@
       Q2 = true;
       var c7 = P3;
       try {
-        T6(b8);
+        T5(b8);
         for (O5 = J4(L5); O5 !== null && (!(O5.expirationTime > b8) || a10 && !exports.unstable_shouldYield()); ) {
           var d9 = O5.callback;
           if (typeof d9 === "function") {
@@ -655,7 +655,7 @@
             var e12 = d9(O5.expirationTime <= b8);
             b8 = exports.unstable_now();
             typeof e12 === "function" ? O5.callback = e12 : O5 === J4(L5) && K3(L5);
-            T6(b8);
+            T5(b8);
           } else
             K3(L5);
           O5 = J4(L5);
@@ -769,7 +769,7 @@
     };
   });
 
-  // ../../node_modules/scheduler/index.js
+  // node_modules/scheduler/index.js
   var require_scheduler = __commonJS((exports, module) => {
     "use strict";
     if (true) {
@@ -779,7 +779,7 @@
     }
   });
 
-  // ../../node_modules/react-dom/cjs/react-dom.production.min.js
+  // node_modules/react-dom/cjs/react-dom.production.min.js
   var require_react_dom_production_min = __commonJS((exports) => {
     /** @license React v17.0.2
      * react-dom.production.min.js
@@ -943,7 +943,7 @@
     var Da2 = 60115;
     var Ea2 = 60116;
     var Fa2 = 60121;
-    var Ga = 60128;
+    var Ga2 = 60128;
     var Ha2 = 60129;
     var Ia2 = 60130;
     var Ja2 = 60131;
@@ -963,7 +963,7 @@
       Ea2 = E7("react.lazy");
       Fa2 = E7("react.block");
       E7("react.scope");
-      Ga = E7("react.opaque.id");
+      Ga2 = E7("react.opaque.id");
       Ha2 = E7("react.debug_trace_mode");
       Ia2 = E7("react.offscreen");
       Ja2 = E7("react.legacy_hidden");
@@ -2404,8 +2404,8 @@
     }
     var pe2 = null;
     var qe2 = null;
-    function re3(a10) {
-      se2(a10, 0);
+    function re2(a10) {
+      se3(a10, 0);
     }
     function te2(a10) {
       var b8 = ue2(a10);
@@ -2440,7 +2440,7 @@
       if (a10.propertyName === "value" && te2(qe2)) {
         var b8 = [];
         ne3(b8, qe2, a10, xb(a10));
-        a10 = re3;
+        a10 = re2;
         if (Kb)
           a10(b8);
         else {
@@ -2568,7 +2568,7 @@
       Yb(d9, b8, void 0, a10);
       a10.currentTarget = null;
     }
-    function se2(a10, b8) {
+    function se3(a10, b8) {
       b8 = (b8 & 4) !== 0;
       for (var c7 = 0; c7 < a10.length; c7++) {
         var d9 = a10[c7], e12 = d9.event;
@@ -2759,17 +2759,17 @@
               case "pointerup":
                 k5 = Td;
             }
-            var w6 = (b8 & 4) !== 0, z3 = !w6 && a10 === "scroll", u5 = w6 ? h5 !== null ? h5 + "Capture" : null : h5;
-            w6 = [];
+            var w7 = (b8 & 4) !== 0, z3 = !w7 && a10 === "scroll", u5 = w7 ? h5 !== null ? h5 + "Capture" : null : h5;
+            w7 = [];
             for (var t14 = d10, q3; t14 !== null; ) {
               q3 = t14;
               var v7 = q3.stateNode;
-              q3.tag === 5 && v7 !== null && (q3 = v7, u5 !== null && (v7 = Ob(t14, u5), v7 != null && w6.push(ef(t14, v7, q3))));
+              q3.tag === 5 && v7 !== null && (q3 = v7, u5 !== null && (v7 = Ob(t14, u5), v7 != null && w7.push(ef(t14, v7, q3))));
               if (z3)
                 break;
               t14 = t14.return;
             }
-            0 < w6.length && (h5 = new k5(h5, x6, null, c7, e13), g6.push({event: h5, listeners: w6}));
+            0 < w7.length && (h5 = new k5(h5, x6, null, c7, e13), g6.push({event: h5, listeners: w7}));
           }
         }
         if ((b8 & 7) === 0) {
@@ -2786,46 +2786,46 @@
               } else
                 k5 = null, x6 = d10;
               if (k5 !== x6) {
-                w6 = Bd;
+                w7 = Bd;
                 v7 = "onMouseLeave";
                 u5 = "onMouseEnter";
                 t14 = "mouse";
                 if (a10 === "pointerout" || a10 === "pointerover")
-                  w6 = Td, v7 = "onPointerLeave", u5 = "onPointerEnter", t14 = "pointer";
+                  w7 = Td, v7 = "onPointerLeave", u5 = "onPointerEnter", t14 = "pointer";
                 z3 = k5 == null ? h5 : ue2(k5);
                 q3 = x6 == null ? h5 : ue2(x6);
-                h5 = new w6(v7, t14 + "leave", k5, c7, e13);
+                h5 = new w7(v7, t14 + "leave", k5, c7, e13);
                 h5.target = z3;
                 h5.relatedTarget = q3;
                 v7 = null;
-                wc2(e13) === d10 && (w6 = new w6(u5, t14 + "enter", x6, c7, e13), w6.target = q3, w6.relatedTarget = z3, v7 = w6);
+                wc2(e13) === d10 && (w7 = new w7(u5, t14 + "enter", x6, c7, e13), w7.target = q3, w7.relatedTarget = z3, v7 = w7);
                 z3 = v7;
                 if (k5 && x6)
                   b: {
-                    w6 = k5;
+                    w7 = k5;
                     u5 = x6;
                     t14 = 0;
-                    for (q3 = w6; q3; q3 = gf(q3))
+                    for (q3 = w7; q3; q3 = gf(q3))
                       t14++;
                     q3 = 0;
                     for (v7 = u5; v7; v7 = gf(v7))
                       q3++;
                     for (; 0 < t14 - q3; )
-                      w6 = gf(w6), t14--;
+                      w7 = gf(w7), t14--;
                     for (; 0 < q3 - t14; )
                       u5 = gf(u5), q3--;
                     for (; t14--; ) {
-                      if (w6 === u5 || u5 !== null && w6 === u5.alternate)
+                      if (w7 === u5 || u5 !== null && w7 === u5.alternate)
                         break b;
-                      w6 = gf(w6);
+                      w7 = gf(w7);
                       u5 = gf(u5);
                     }
-                    w6 = null;
+                    w7 = null;
                   }
                 else
-                  w6 = null;
-                k5 !== null && hf(g6, h5, k5, w6, false);
-                x6 !== null && z3 !== null && hf(g6, z3, x6, w6, true);
+                  w7 = null;
+                k5 !== null && hf(g6, h5, k5, w7, false);
+                x6 !== null && z3 !== null && hf(g6, z3, x6, w7, true);
               }
             }
           }
@@ -2897,7 +2897,7 @@
           if (Q2 = ce3 ? je2(a10, c7) : ke(a10, c7))
             d10 = oe3(d10, "onBeforeInput"), 0 < d10.length && (e13 = new Ld("onBeforeInput", "beforeinput", null, c7, e13), g6.push({event: e13, listeners: d10}), e13.data = Q2);
         }
-        se2(g6, b8);
+        se3(g6, b8);
       });
     }
     function ef(a10, b8, c7) {
@@ -2977,7 +2977,7 @@
     }
     var tf = 0;
     function uf(a10) {
-      return {$$typeof: Ga, toString: a10, valueOf: a10};
+      return {$$typeof: Ga2, toString: a10, valueOf: a10};
     }
     var vf = Math.random().toString(36).slice(2);
     var wf = "__reactFiber$" + vf;
@@ -3628,7 +3628,7 @@
         });
         return l11;
       }
-      function w6(e13, g6, h5, k5) {
+      function w7(e13, g6, h5, k5) {
         var l11 = La2(h5);
         if (typeof l11 !== "function")
           throw Error(y4(150));
@@ -3637,15 +3637,15 @@
           throw Error(y4(151));
         for (var t14 = l11 = null, u5 = g6, z3 = g6 = 0, q3 = null, n7 = h5.next(); u5 !== null && !n7.done; z3++, n7 = h5.next()) {
           u5.index > z3 ? (q3 = u5, u5 = null) : q3 = u5.sibling;
-          var w7 = p8(e13, u5, n7.value, k5);
-          if (w7 === null) {
+          var w8 = p8(e13, u5, n7.value, k5);
+          if (w8 === null) {
             u5 === null && (u5 = q3);
             break;
           }
-          a10 && u5 && w7.alternate === null && b8(e13, u5);
-          g6 = f13(w7, g6, z3);
-          t14 === null ? l11 = w7 : t14.sibling = w7;
-          t14 = w7;
+          a10 && u5 && w8.alternate === null && b8(e13, u5);
+          g6 = f13(w8, g6, z3);
+          t14 === null ? l11 = w8 : t14.sibling = w8;
+          t14 = w8;
           u5 = q3;
         }
         if (n7.done)
@@ -3731,7 +3731,7 @@
         if (Pg(f14))
           return x6(a11, d10, f14, h5);
         if (La2(f14))
-          return w6(a11, d10, f14, h5);
+          return w7(a11, d10, f14, h5);
         l11 && Rg(a11, f14);
         if (typeof f14 === "undefined" && !k5)
           switch (a11.tag) {
@@ -3917,7 +3917,7 @@
     var xh2 = 0;
     var R6 = null;
     var S3 = null;
-    var T6 = null;
+    var T5 = null;
     var yh = false;
     var zh = false;
     function Ah2() {
@@ -3946,7 +3946,7 @@
           if (!(25 > f13))
             throw Error(y4(301));
           f13 += 1;
-          T6 = S3 = null;
+          T5 = S3 = null;
           b8.updateQueue = null;
           vh2.current = Fh;
           a10 = c7(d9, e12);
@@ -3955,7 +3955,7 @@
       vh2.current = Gh;
       b8 = S3 !== null && S3.next !== null;
       xh2 = 0;
-      T6 = S3 = R6 = null;
+      T5 = S3 = R6 = null;
       yh = false;
       if (b8)
         throw Error(y4(300));
@@ -3963,8 +3963,8 @@
     }
     function Hh2() {
       var a10 = {memoizedState: null, baseState: null, baseQueue: null, queue: null, next: null};
-      T6 === null ? R6.memoizedState = T6 = a10 : T6 = T6.next = a10;
-      return T6;
+      T5 === null ? R6.memoizedState = T5 = a10 : T5 = T5.next = a10;
+      return T5;
     }
     function Ih2() {
       if (S3 === null) {
@@ -3972,17 +3972,17 @@
         a10 = a10 !== null ? a10.memoizedState : null;
       } else
         a10 = S3.next;
-      var b8 = T6 === null ? R6.memoizedState : T6.next;
+      var b8 = T5 === null ? R6.memoizedState : T5.next;
       if (b8 !== null)
-        T6 = b8, S3 = a10;
+        T5 = b8, S3 = a10;
       else {
         if (a10 === null)
           throw Error(y4(310));
         S3 = a10;
         a10 = {memoizedState: S3.memoizedState, baseState: S3.baseState, baseQueue: S3.baseQueue, queue: S3.queue, next: null};
-        T6 === null ? R6.memoizedState = T6 = a10 : T6 = T6.next = a10;
+        T5 === null ? R6.memoizedState = T5 = a10 : T5 = T5.next = a10;
       }
-      return T6;
+      return T5;
     }
     function Jh(a10, b8) {
       return typeof b8 === "function" ? b8(a10) : b8;
@@ -4072,10 +4072,10 @@
       var f13 = b8._getVersion, g5 = f13(b8._source), h4 = vh2.current, k4 = h4.useState(function() {
         return Mh2(e12, b8, c7);
       }), l10 = k4[1], n6 = k4[0];
-      k4 = T6;
+      k4 = T5;
       var A4 = a10.memoizedState, p8 = A4.refs, C6 = p8.getSnapshot, x6 = A4.source;
       A4 = A4.subscribe;
-      var w6 = R6;
+      var w7 = R6;
       a10.memoizedState = {refs: p8, source: b8, subscribe: d9};
       h4.useEffect(function() {
         p8.getSnapshot = c7;
@@ -4083,7 +4083,7 @@
         var a11 = f13(b8._source);
         if (!He(g5, a11)) {
           a11 = c7(b8._source);
-          He(n6, a11) || (l10(a11), a11 = Ig(w6), e12.mutableReadLanes |= a11 & e12.pendingLanes);
+          He(n6, a11) || (l10(a11), a11 = Ig(w7), e12.mutableReadLanes |= a11 & e12.pendingLanes);
           a11 = e12.mutableReadLanes;
           e12.entangledLanes |= a11;
           for (var d10 = e12.entanglements, h5 = a11; 0 < h5; ) {
@@ -4098,7 +4098,7 @@
           var a11 = p8.getSnapshot, c8 = p8.setSnapshot;
           try {
             c8(a11(b8._source));
-            var d10 = Ig(w6);
+            var d10 = Ig(w7);
             e12.mutableReadLanes |= d10 & e12.pendingLanes;
           } catch (q3) {
             c8(function() {
@@ -4136,7 +4136,7 @@
     function Th() {
       return Ih2().memoizedState;
     }
-    function Uh(a10, b8, c7, d9) {
+    function Uh2(a10, b8, c7, d9) {
       var e12 = Hh2();
       R6.flags |= a10;
       e12.memoizedState = Rh2(1 | b8, c7, void 0, d9 === void 0 ? null : d9);
@@ -4157,7 +4157,7 @@
       e12.memoizedState = Rh2(1 | b8, c7, f13, d9);
     }
     function Wh(a10, b8) {
-      return Uh(516, 4, a10, b8);
+      return Uh2(516, 4, a10, b8);
     }
     function Xh(a10, b8) {
       return Vh(516, 4, a10, b8);
@@ -4242,9 +4242,9 @@
       return a10;
     }, useContext: vg, useEffect: Wh, useImperativeHandle: function(a10, b8, c7) {
       c7 = c7 !== null && c7 !== void 0 ? c7.concat([a10]) : null;
-      return Uh(4, 2, Zh.bind(null, b8, a10), c7);
+      return Uh2(4, 2, Zh.bind(null, b8, a10), c7);
     }, useLayoutEffect: function(a10, b8) {
-      return Uh(4, 2, a10, b8);
+      return Uh2(4, 2, a10, b8);
     }, useMemo: function(a10, b8) {
       var c7 = Hh2();
       b8 = b8 === void 0 ? null : b8;
@@ -4715,7 +4715,7 @@
               } else
                 c7 || (f13 || (f13 = []), f13.push(l10, c7)), c7 = k4;
             else
-              l10 === "dangerouslySetInnerHTML" ? (k4 = k4 ? k4.__html : void 0, h4 = h4 ? h4.__html : void 0, k4 != null && h4 !== k4 && (f13 = f13 || []).push(l10, k4)) : l10 === "children" ? typeof k4 !== "string" && typeof k4 !== "number" || (f13 = f13 || []).push(l10, "" + k4) : l10 !== "suppressContentEditableWarning" && l10 !== "suppressHydrationWarning" && (ca2.hasOwnProperty(l10) ? (k4 != null && l10 === "onScroll" && G5("scroll", a10), f13 || h4 === k4 || (f13 = [])) : typeof k4 === "object" && k4 !== null && k4.$$typeof === Ga ? k4.toString() : (f13 = f13 || []).push(l10, k4));
+              l10 === "dangerouslySetInnerHTML" ? (k4 = k4 ? k4.__html : void 0, h4 = h4 ? h4.__html : void 0, k4 != null && h4 !== k4 && (f13 = f13 || []).push(l10, k4)) : l10 === "children" ? typeof k4 !== "string" && typeof k4 !== "number" || (f13 = f13 || []).push(l10, "" + k4) : l10 !== "suppressContentEditableWarning" && l10 !== "suppressHydrationWarning" && (ca2.hasOwnProperty(l10) ? (k4 != null && l10 === "onScroll" && G5("scroll", a10), f13 || h4 === k4 || (f13 = [])) : typeof k4 === "object" && k4 !== null && k4.$$typeof === Ga2 ? k4.toString() : (f13 = f13 || []).push(l10, k4));
         }
         c7 && (f13 = f13 || []).push("style", c7);
         var l10 = f13;
@@ -5879,7 +5879,7 @@
             yh = false;
           }
           xh2 = 0;
-          T6 = S3 = R6 = null;
+          T5 = S3 = R6 = null;
           zh = false;
           pj.current = null;
           if (c7 === null || c7.return === null) {
@@ -5907,8 +5907,8 @@
                   if (x6 !== null)
                     C6 = x6.dehydrated !== null ? true : false;
                   else {
-                    var w6 = p8.memoizedProps;
-                    C6 = w6.fallback === void 0 ? false : w6.unstable_avoidThisFallback !== true ? true : A4 ? false : true;
+                    var w7 = p8.memoizedProps;
+                    C6 = w7.fallback === void 0 ? false : w7.unstable_avoidThisFallback !== true ? true : A4 ? false : true;
                   }
                 }
                 if (C6) {
@@ -6124,29 +6124,29 @@
                   h4 = null;
                   break a;
                 }
-                var n6 = 0, A4 = -1, p8 = -1, C6 = 0, x6 = 0, w6 = g5, z3 = null;
+                var n6 = 0, A4 = -1, p8 = -1, C6 = 0, x6 = 0, w7 = g5, z3 = null;
                 b:
                   for (; ; ) {
                     for (var u5; ; ) {
-                      w6 !== h4 || f13 !== 0 && w6.nodeType !== 3 || (A4 = n6 + f13);
-                      w6 !== k4 || l10 !== 0 && w6.nodeType !== 3 || (p8 = n6 + l10);
-                      w6.nodeType === 3 && (n6 += w6.nodeValue.length);
-                      if ((u5 = w6.firstChild) === null)
+                      w7 !== h4 || f13 !== 0 && w7.nodeType !== 3 || (A4 = n6 + f13);
+                      w7 !== k4 || l10 !== 0 && w7.nodeType !== 3 || (p8 = n6 + l10);
+                      w7.nodeType === 3 && (n6 += w7.nodeValue.length);
+                      if ((u5 = w7.firstChild) === null)
                         break;
-                      z3 = w6;
-                      w6 = u5;
+                      z3 = w7;
+                      w7 = u5;
                     }
                     for (; ; ) {
-                      if (w6 === g5)
+                      if (w7 === g5)
                         break b;
                       z3 === h4 && ++C6 === f13 && (A4 = n6);
                       z3 === k4 && ++x6 === l10 && (p8 = n6);
-                      if ((u5 = w6.nextSibling) !== null)
+                      if ((u5 = w7.nextSibling) !== null)
                         break;
-                      w6 = z3;
-                      z3 = w6.parentNode;
+                      w7 = z3;
+                      z3 = w7.parentNode;
                     }
-                    w6 = u5;
+                    w7 = u5;
                   }
                 h4 = A4 === -1 || p8 === -1 ? null : {start: A4, end: p8};
               } else
@@ -7109,7 +7109,7 @@
     exports.version = "17.0.2";
   });
 
-  // ../../node_modules/react-dom/index.js
+  // node_modules/react-dom/index.js
   var require_react_dom = __commonJS((exports, module) => {
     "use strict";
     function checkDCE() {
@@ -7133,7 +7133,7 @@
     }
   });
 
-  // ../../node_modules/react-remove-scroll/node_modules/tslib/tslib.js
+  // node_modules/tslib/tslib.js
   var require_tslib = __commonJS((exports, module) => {
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation.
@@ -7149,29 +7149,29 @@
     OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
     PERFORMANCE OF THIS SOFTWARE.
     ***************************************************************************** */
-    var __extends3;
-    var __assign4;
-    var __rest4;
-    var __decorate3;
-    var __param3;
-    var __metadata3;
-    var __awaiter3;
-    var __generator3;
-    var __exportStar4;
-    var __values3;
-    var __read3;
-    var __spread3;
-    var __spreadArrays3;
-    var __await3;
-    var __asyncGenerator3;
-    var __asyncDelegator3;
-    var __asyncValues3;
-    var __makeTemplateObject3;
-    var __importStar3;
-    var __importDefault3;
-    var __classPrivateFieldGet3;
-    var __classPrivateFieldSet3;
-    var __createBinding3;
+    var __extends2;
+    var __assign3;
+    var __rest3;
+    var __decorate2;
+    var __param2;
+    var __metadata2;
+    var __awaiter2;
+    var __generator2;
+    var __exportStar3;
+    var __values2;
+    var __read2;
+    var __spread2;
+    var __spreadArrays2;
+    var __await2;
+    var __asyncGenerator2;
+    var __asyncDelegator2;
+    var __asyncValues2;
+    var __makeTemplateObject2;
+    var __importStar2;
+    var __importDefault2;
+    var __classPrivateFieldGet2;
+    var __classPrivateFieldSet2;
+    var __createBinding2;
     (function(factory) {
       var root = typeof global === "object" ? global : typeof self === "object" ? self : typeof this === "object" ? this : {};
       if (typeof define === "function" && define.amd) {
@@ -7203,14 +7203,14 @@
           if (b8.hasOwnProperty(p8))
             d9[p8] = b8[p8];
       };
-      __extends3 = function(d9, b8) {
+      __extends2 = function(d9, b8) {
         extendStatics(d9, b8);
         function __() {
           this.constructor = d9;
         }
         d9.prototype = b8 === null ? Object.create(b8) : (__.prototype = b8.prototype, new __());
       };
-      __assign4 = Object.assign || function(t14) {
+      __assign3 = Object.assign || function(t14) {
         for (var s8, i9 = 1, n6 = arguments.length; i9 < n6; i9++) {
           s8 = arguments[i9];
           for (var p8 in s8)
@@ -7219,7 +7219,7 @@
         }
         return t14;
       };
-      __rest4 = function(s8, e12) {
+      __rest3 = function(s8, e12) {
         var t14 = {};
         for (var p8 in s8)
           if (Object.prototype.hasOwnProperty.call(s8, p8) && e12.indexOf(p8) < 0)
@@ -7231,7 +7231,7 @@
           }
         return t14;
       };
-      __decorate3 = function(decorators, target, key, desc) {
+      __decorate2 = function(decorators, target, key, desc) {
         var c7 = arguments.length, r13 = c7 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d9;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
           r13 = Reflect.decorate(decorators, target, key, desc);
@@ -7241,16 +7241,16 @@
               r13 = (c7 < 3 ? d9(r13) : c7 > 3 ? d9(target, key, r13) : d9(target, key)) || r13;
         return c7 > 3 && r13 && Object.defineProperty(target, key, r13), r13;
       };
-      __param3 = function(paramIndex, decorator) {
+      __param2 = function(paramIndex, decorator) {
         return function(target, key) {
           decorator(target, key, paramIndex);
         };
       };
-      __metadata3 = function(metadataKey, metadataValue) {
+      __metadata2 = function(metadataKey, metadataValue) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
           return Reflect.metadata(metadataKey, metadataValue);
       };
-      __awaiter3 = function(thisArg, _arguments, P3, generator) {
+      __awaiter2 = function(thisArg, _arguments, P3, generator) {
         function adopt(value) {
           return value instanceof P3 ? value : new P3(function(resolve) {
             resolve(value);
@@ -7277,7 +7277,7 @@
           step((generator = generator.apply(thisArg, _arguments || [])).next());
         });
       };
-      __generator3 = function(thisArg, body) {
+      __generator2 = function(thisArg, body) {
         var _6 = {label: 0, sent: function() {
           if (t14[0] & 1)
             throw t14[1];
@@ -7353,17 +7353,17 @@
           return {value: op2[0] ? op2[1] : void 0, done: true};
         }
       };
-      __createBinding3 = function(o13, m9, k4, k22) {
+      __createBinding2 = function(o13, m9, k4, k22) {
         if (k22 === void 0)
           k22 = k4;
         o13[k22] = m9[k4];
       };
-      __exportStar4 = function(m9, exports2) {
+      __exportStar3 = function(m9, exports2) {
         for (var p8 in m9)
           if (p8 !== "default" && !exports2.hasOwnProperty(p8))
             exports2[p8] = m9[p8];
       };
-      __values3 = function(o13) {
+      __values2 = function(o13) {
         var s8 = typeof Symbol === "function" && Symbol.iterator, m9 = s8 && o13[s8], i9 = 0;
         if (m9)
           return m9.call(o13);
@@ -7377,7 +7377,7 @@
           };
         throw new TypeError(s8 ? "Object is not iterable." : "Symbol.iterator is not defined.");
       };
-      __read3 = function(o13, n6) {
+      __read2 = function(o13, n6) {
         var m9 = typeof Symbol === "function" && o13[Symbol.iterator];
         if (!m9)
           return o13;
@@ -7398,12 +7398,12 @@
         }
         return ar2;
       };
-      __spread3 = function() {
+      __spread2 = function() {
         for (var ar2 = [], i9 = 0; i9 < arguments.length; i9++)
-          ar2 = ar2.concat(__read3(arguments[i9]));
+          ar2 = ar2.concat(__read2(arguments[i9]));
         return ar2;
       };
-      __spreadArrays3 = function() {
+      __spreadArrays2 = function() {
         for (var s8 = 0, i9 = 0, il = arguments.length; i9 < il; i9++)
           s8 += arguments[i9].length;
         for (var r13 = Array(s8), k4 = 0, i9 = 0; i9 < il; i9++)
@@ -7411,10 +7411,10 @@
             r13[k4] = a10[j5];
         return r13;
       };
-      __await3 = function(v7) {
-        return this instanceof __await3 ? (this.v = v7, this) : new __await3(v7);
+      __await2 = function(v7) {
+        return this instanceof __await2 ? (this.v = v7, this) : new __await2(v7);
       };
-      __asyncGenerator3 = function(thisArg, _arguments, generator) {
+      __asyncGenerator2 = function(thisArg, _arguments, generator) {
         if (!Symbol.asyncIterator)
           throw new TypeError("Symbol.asyncIterator is not defined.");
         var g5 = generator.apply(thisArg, _arguments || []), i9, q3 = [];
@@ -7437,7 +7437,7 @@
           }
         }
         function step(r13) {
-          r13.value instanceof __await3 ? Promise.resolve(r13.value.v).then(fulfill, reject) : settle(q3[0][2], r13);
+          r13.value instanceof __await2 ? Promise.resolve(r13.value.v).then(fulfill, reject) : settle(q3[0][2], r13);
         }
         function fulfill(value) {
           resume("next", value);
@@ -7450,7 +7450,7 @@
             resume(q3[0][0], q3[0][1]);
         }
       };
-      __asyncDelegator3 = function(o13) {
+      __asyncDelegator2 = function(o13) {
         var i9, p8;
         return i9 = {}, verb("next"), verb("throw", function(e12) {
           throw e12;
@@ -7459,15 +7459,15 @@
         }, i9;
         function verb(n6, f13) {
           i9[n6] = o13[n6] ? function(v7) {
-            return (p8 = !p8) ? {value: __await3(o13[n6](v7)), done: n6 === "return"} : f13 ? f13(v7) : v7;
+            return (p8 = !p8) ? {value: __await2(o13[n6](v7)), done: n6 === "return"} : f13 ? f13(v7) : v7;
           } : f13;
         }
       };
-      __asyncValues3 = function(o13) {
+      __asyncValues2 = function(o13) {
         if (!Symbol.asyncIterator)
           throw new TypeError("Symbol.asyncIterator is not defined.");
         var m9 = o13[Symbol.asyncIterator], i9;
-        return m9 ? m9.call(o13) : (o13 = typeof __values3 === "function" ? __values3(o13) : o13[Symbol.iterator](), i9 = {}, verb("next"), verb("throw"), verb("return"), i9[Symbol.asyncIterator] = function() {
+        return m9 ? m9.call(o13) : (o13 = typeof __values2 === "function" ? __values2(o13) : o13[Symbol.iterator](), i9 = {}, verb("next"), verb("throw"), verb("return"), i9[Symbol.asyncIterator] = function() {
           return this;
         }, i9);
         function verb(n6) {
@@ -7483,7 +7483,7 @@
           }, reject);
         }
       };
-      __makeTemplateObject3 = function(cooked, raw) {
+      __makeTemplateObject2 = function(cooked, raw) {
         if (Object.defineProperty) {
           Object.defineProperty(cooked, "raw", {value: raw});
         } else {
@@ -7491,7 +7491,7 @@
         }
         return cooked;
       };
-      __importStar3 = function(mod) {
+      __importStar2 = function(mod) {
         if (mod && mod.__esModule)
           return mod;
         var result = {};
@@ -7503,471 +7503,59 @@
         result["default"] = mod;
         return result;
       };
-      __importDefault3 = function(mod) {
+      __importDefault2 = function(mod) {
         return mod && mod.__esModule ? mod : {default: mod};
       };
-      __classPrivateFieldGet3 = function(receiver, privateMap) {
+      __classPrivateFieldGet2 = function(receiver, privateMap) {
         if (!privateMap.has(receiver)) {
           throw new TypeError("attempted to get private field on non-instance");
         }
         return privateMap.get(receiver);
       };
-      __classPrivateFieldSet3 = function(receiver, privateMap, value) {
+      __classPrivateFieldSet2 = function(receiver, privateMap, value) {
         if (!privateMap.has(receiver)) {
           throw new TypeError("attempted to set private field on non-instance");
         }
         privateMap.set(receiver, value);
         return value;
       };
-      exporter("__extends", __extends3);
-      exporter("__assign", __assign4);
-      exporter("__rest", __rest4);
-      exporter("__decorate", __decorate3);
-      exporter("__param", __param3);
-      exporter("__metadata", __metadata3);
-      exporter("__awaiter", __awaiter3);
-      exporter("__generator", __generator3);
-      exporter("__exportStar", __exportStar4);
-      exporter("__createBinding", __createBinding3);
-      exporter("__values", __values3);
-      exporter("__read", __read3);
-      exporter("__spread", __spread3);
-      exporter("__spreadArrays", __spreadArrays3);
-      exporter("__await", __await3);
-      exporter("__asyncGenerator", __asyncGenerator3);
-      exporter("__asyncDelegator", __asyncDelegator3);
-      exporter("__asyncValues", __asyncValues3);
-      exporter("__makeTemplateObject", __makeTemplateObject3);
-      exporter("__importStar", __importStar3);
-      exporter("__importDefault", __importDefault3);
-      exporter("__classPrivateFieldGet", __classPrivateFieldGet3);
-      exporter("__classPrivateFieldSet", __classPrivateFieldSet3);
+      exporter("__extends", __extends2);
+      exporter("__assign", __assign3);
+      exporter("__rest", __rest3);
+      exporter("__decorate", __decorate2);
+      exporter("__param", __param2);
+      exporter("__metadata", __metadata2);
+      exporter("__awaiter", __awaiter2);
+      exporter("__generator", __generator2);
+      exporter("__exportStar", __exportStar3);
+      exporter("__createBinding", __createBinding2);
+      exporter("__values", __values2);
+      exporter("__read", __read2);
+      exporter("__spread", __spread2);
+      exporter("__spreadArrays", __spreadArrays2);
+      exporter("__await", __await2);
+      exporter("__asyncGenerator", __asyncGenerator2);
+      exporter("__asyncDelegator", __asyncDelegator2);
+      exporter("__asyncValues", __asyncValues2);
+      exporter("__makeTemplateObject", __makeTemplateObject2);
+      exporter("__importStar", __importStar2);
+      exporter("__importDefault", __importDefault2);
+      exporter("__classPrivateFieldGet", __classPrivateFieldGet2);
+      exporter("__classPrivateFieldSet", __classPrivateFieldSet2);
     });
   });
 
-  // ../../node_modules/use-sidecar/node_modules/tslib/tslib.js
-  var require_tslib2 = __commonJS((exports, module) => {
-    /*! *****************************************************************************
-    Copyright (c) Microsoft Corporation.
-    
-    Permission to use, copy, modify, and/or distribute this software for any
-    purpose with or without fee is hereby granted.
-    
-    THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-    REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-    AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-    INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-    LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-    OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-    PERFORMANCE OF THIS SOFTWARE.
-    ***************************************************************************** */
-    var __extends3;
-    var __assign4;
-    var __rest4;
-    var __decorate3;
-    var __param3;
-    var __metadata3;
-    var __awaiter3;
-    var __generator3;
-    var __exportStar4;
-    var __values3;
-    var __read3;
-    var __spread3;
-    var __spreadArrays3;
-    var __await3;
-    var __asyncGenerator3;
-    var __asyncDelegator3;
-    var __asyncValues3;
-    var __makeTemplateObject3;
-    var __importStar3;
-    var __importDefault3;
-    var __classPrivateFieldGet3;
-    var __classPrivateFieldSet3;
-    var __createBinding3;
-    (function(factory) {
-      var root = typeof global === "object" ? global : typeof self === "object" ? self : typeof this === "object" ? this : {};
-      if (typeof define === "function" && define.amd) {
-        define("tslib", ["exports"], function(exports2) {
-          factory(createExporter(root, createExporter(exports2)));
-        });
-      } else if (typeof module === "object" && typeof module.exports === "object") {
-        factory(createExporter(root, createExporter(module.exports)));
-      } else {
-        factory(createExporter(root));
-      }
-      function createExporter(exports2, previous) {
-        if (exports2 !== root) {
-          if (typeof Object.create === "function") {
-            Object.defineProperty(exports2, "__esModule", {value: true});
-          } else {
-            exports2.__esModule = true;
-          }
-        }
-        return function(id, v7) {
-          return exports2[id] = previous ? previous(id, v7) : v7;
-        };
-      }
-    })(function(exporter) {
-      var extendStatics = Object.setPrototypeOf || {__proto__: []} instanceof Array && function(d9, b8) {
-        d9.__proto__ = b8;
-      } || function(d9, b8) {
-        for (var p8 in b8)
-          if (b8.hasOwnProperty(p8))
-            d9[p8] = b8[p8];
-      };
-      __extends3 = function(d9, b8) {
-        extendStatics(d9, b8);
-        function __() {
-          this.constructor = d9;
-        }
-        d9.prototype = b8 === null ? Object.create(b8) : (__.prototype = b8.prototype, new __());
-      };
-      __assign4 = Object.assign || function(t14) {
-        for (var s8, i9 = 1, n6 = arguments.length; i9 < n6; i9++) {
-          s8 = arguments[i9];
-          for (var p8 in s8)
-            if (Object.prototype.hasOwnProperty.call(s8, p8))
-              t14[p8] = s8[p8];
-        }
-        return t14;
-      };
-      __rest4 = function(s8, e12) {
-        var t14 = {};
-        for (var p8 in s8)
-          if (Object.prototype.hasOwnProperty.call(s8, p8) && e12.indexOf(p8) < 0)
-            t14[p8] = s8[p8];
-        if (s8 != null && typeof Object.getOwnPropertySymbols === "function")
-          for (var i9 = 0, p8 = Object.getOwnPropertySymbols(s8); i9 < p8.length; i9++) {
-            if (e12.indexOf(p8[i9]) < 0 && Object.prototype.propertyIsEnumerable.call(s8, p8[i9]))
-              t14[p8[i9]] = s8[p8[i9]];
-          }
-        return t14;
-      };
-      __decorate3 = function(decorators, target, key, desc) {
-        var c7 = arguments.length, r13 = c7 < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d9;
-        if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
-          r13 = Reflect.decorate(decorators, target, key, desc);
-        else
-          for (var i9 = decorators.length - 1; i9 >= 0; i9--)
-            if (d9 = decorators[i9])
-              r13 = (c7 < 3 ? d9(r13) : c7 > 3 ? d9(target, key, r13) : d9(target, key)) || r13;
-        return c7 > 3 && r13 && Object.defineProperty(target, key, r13), r13;
-      };
-      __param3 = function(paramIndex, decorator) {
-        return function(target, key) {
-          decorator(target, key, paramIndex);
-        };
-      };
-      __metadata3 = function(metadataKey, metadataValue) {
-        if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
-          return Reflect.metadata(metadataKey, metadataValue);
-      };
-      __awaiter3 = function(thisArg, _arguments, P3, generator) {
-        function adopt(value) {
-          return value instanceof P3 ? value : new P3(function(resolve) {
-            resolve(value);
-          });
-        }
-        return new (P3 || (P3 = Promise))(function(resolve, reject) {
-          function fulfilled(value) {
-            try {
-              step(generator.next(value));
-            } catch (e12) {
-              reject(e12);
-            }
-          }
-          function rejected(value) {
-            try {
-              step(generator["throw"](value));
-            } catch (e12) {
-              reject(e12);
-            }
-          }
-          function step(result) {
-            result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
-          }
-          step((generator = generator.apply(thisArg, _arguments || [])).next());
-        });
-      };
-      __generator3 = function(thisArg, body) {
-        var _6 = {label: 0, sent: function() {
-          if (t14[0] & 1)
-            throw t14[1];
-          return t14[1];
-        }, trys: [], ops: []}, f13, y4, t14, g5;
-        return g5 = {next: verb(0), throw: verb(1), return: verb(2)}, typeof Symbol === "function" && (g5[Symbol.iterator] = function() {
-          return this;
-        }), g5;
-        function verb(n6) {
-          return function(v7) {
-            return step([n6, v7]);
-          };
-        }
-        function step(op2) {
-          if (f13)
-            throw new TypeError("Generator is already executing.");
-          while (_6)
-            try {
-              if (f13 = 1, y4 && (t14 = op2[0] & 2 ? y4["return"] : op2[0] ? y4["throw"] || ((t14 = y4["return"]) && t14.call(y4), 0) : y4.next) && !(t14 = t14.call(y4, op2[1])).done)
-                return t14;
-              if (y4 = 0, t14)
-                op2 = [op2[0] & 2, t14.value];
-              switch (op2[0]) {
-                case 0:
-                case 1:
-                  t14 = op2;
-                  break;
-                case 4:
-                  _6.label++;
-                  return {value: op2[1], done: false};
-                case 5:
-                  _6.label++;
-                  y4 = op2[1];
-                  op2 = [0];
-                  continue;
-                case 7:
-                  op2 = _6.ops.pop();
-                  _6.trys.pop();
-                  continue;
-                default:
-                  if (!(t14 = _6.trys, t14 = t14.length > 0 && t14[t14.length - 1]) && (op2[0] === 6 || op2[0] === 2)) {
-                    _6 = 0;
-                    continue;
-                  }
-                  if (op2[0] === 3 && (!t14 || op2[1] > t14[0] && op2[1] < t14[3])) {
-                    _6.label = op2[1];
-                    break;
-                  }
-                  if (op2[0] === 6 && _6.label < t14[1]) {
-                    _6.label = t14[1];
-                    t14 = op2;
-                    break;
-                  }
-                  if (t14 && _6.label < t14[2]) {
-                    _6.label = t14[2];
-                    _6.ops.push(op2);
-                    break;
-                  }
-                  if (t14[2])
-                    _6.ops.pop();
-                  _6.trys.pop();
-                  continue;
-              }
-              op2 = body.call(thisArg, _6);
-            } catch (e12) {
-              op2 = [6, e12];
-              y4 = 0;
-            } finally {
-              f13 = t14 = 0;
-            }
-          if (op2[0] & 5)
-            throw op2[1];
-          return {value: op2[0] ? op2[1] : void 0, done: true};
-        }
-      };
-      __createBinding3 = function(o13, m9, k4, k22) {
-        if (k22 === void 0)
-          k22 = k4;
-        o13[k22] = m9[k4];
-      };
-      __exportStar4 = function(m9, exports2) {
-        for (var p8 in m9)
-          if (p8 !== "default" && !exports2.hasOwnProperty(p8))
-            exports2[p8] = m9[p8];
-      };
-      __values3 = function(o13) {
-        var s8 = typeof Symbol === "function" && Symbol.iterator, m9 = s8 && o13[s8], i9 = 0;
-        if (m9)
-          return m9.call(o13);
-        if (o13 && typeof o13.length === "number")
-          return {
-            next: function() {
-              if (o13 && i9 >= o13.length)
-                o13 = void 0;
-              return {value: o13 && o13[i9++], done: !o13};
-            }
-          };
-        throw new TypeError(s8 ? "Object is not iterable." : "Symbol.iterator is not defined.");
-      };
-      __read3 = function(o13, n6) {
-        var m9 = typeof Symbol === "function" && o13[Symbol.iterator];
-        if (!m9)
-          return o13;
-        var i9 = m9.call(o13), r13, ar2 = [], e12;
-        try {
-          while ((n6 === void 0 || n6-- > 0) && !(r13 = i9.next()).done)
-            ar2.push(r13.value);
-        } catch (error) {
-          e12 = {error};
-        } finally {
-          try {
-            if (r13 && !r13.done && (m9 = i9["return"]))
-              m9.call(i9);
-          } finally {
-            if (e12)
-              throw e12.error;
-          }
-        }
-        return ar2;
-      };
-      __spread3 = function() {
-        for (var ar2 = [], i9 = 0; i9 < arguments.length; i9++)
-          ar2 = ar2.concat(__read3(arguments[i9]));
-        return ar2;
-      };
-      __spreadArrays3 = function() {
-        for (var s8 = 0, i9 = 0, il = arguments.length; i9 < il; i9++)
-          s8 += arguments[i9].length;
-        for (var r13 = Array(s8), k4 = 0, i9 = 0; i9 < il; i9++)
-          for (var a10 = arguments[i9], j5 = 0, jl = a10.length; j5 < jl; j5++, k4++)
-            r13[k4] = a10[j5];
-        return r13;
-      };
-      __await3 = function(v7) {
-        return this instanceof __await3 ? (this.v = v7, this) : new __await3(v7);
-      };
-      __asyncGenerator3 = function(thisArg, _arguments, generator) {
-        if (!Symbol.asyncIterator)
-          throw new TypeError("Symbol.asyncIterator is not defined.");
-        var g5 = generator.apply(thisArg, _arguments || []), i9, q3 = [];
-        return i9 = {}, verb("next"), verb("throw"), verb("return"), i9[Symbol.asyncIterator] = function() {
-          return this;
-        }, i9;
-        function verb(n6) {
-          if (g5[n6])
-            i9[n6] = function(v7) {
-              return new Promise(function(a10, b8) {
-                q3.push([n6, v7, a10, b8]) > 1 || resume(n6, v7);
-              });
-            };
-        }
-        function resume(n6, v7) {
-          try {
-            step(g5[n6](v7));
-          } catch (e12) {
-            settle(q3[0][3], e12);
-          }
-        }
-        function step(r13) {
-          r13.value instanceof __await3 ? Promise.resolve(r13.value.v).then(fulfill, reject) : settle(q3[0][2], r13);
-        }
-        function fulfill(value) {
-          resume("next", value);
-        }
-        function reject(value) {
-          resume("throw", value);
-        }
-        function settle(f13, v7) {
-          if (f13(v7), q3.shift(), q3.length)
-            resume(q3[0][0], q3[0][1]);
-        }
-      };
-      __asyncDelegator3 = function(o13) {
-        var i9, p8;
-        return i9 = {}, verb("next"), verb("throw", function(e12) {
-          throw e12;
-        }), verb("return"), i9[Symbol.iterator] = function() {
-          return this;
-        }, i9;
-        function verb(n6, f13) {
-          i9[n6] = o13[n6] ? function(v7) {
-            return (p8 = !p8) ? {value: __await3(o13[n6](v7)), done: n6 === "return"} : f13 ? f13(v7) : v7;
-          } : f13;
-        }
-      };
-      __asyncValues3 = function(o13) {
-        if (!Symbol.asyncIterator)
-          throw new TypeError("Symbol.asyncIterator is not defined.");
-        var m9 = o13[Symbol.asyncIterator], i9;
-        return m9 ? m9.call(o13) : (o13 = typeof __values3 === "function" ? __values3(o13) : o13[Symbol.iterator](), i9 = {}, verb("next"), verb("throw"), verb("return"), i9[Symbol.asyncIterator] = function() {
-          return this;
-        }, i9);
-        function verb(n6) {
-          i9[n6] = o13[n6] && function(v7) {
-            return new Promise(function(resolve, reject) {
-              v7 = o13[n6](v7), settle(resolve, reject, v7.done, v7.value);
-            });
-          };
-        }
-        function settle(resolve, reject, d9, v7) {
-          Promise.resolve(v7).then(function(v8) {
-            resolve({value: v8, done: d9});
-          }, reject);
-        }
-      };
-      __makeTemplateObject3 = function(cooked, raw) {
-        if (Object.defineProperty) {
-          Object.defineProperty(cooked, "raw", {value: raw});
-        } else {
-          cooked.raw = raw;
-        }
-        return cooked;
-      };
-      __importStar3 = function(mod) {
-        if (mod && mod.__esModule)
-          return mod;
-        var result = {};
-        if (mod != null) {
-          for (var k4 in mod)
-            if (Object.hasOwnProperty.call(mod, k4))
-              result[k4] = mod[k4];
-        }
-        result["default"] = mod;
-        return result;
-      };
-      __importDefault3 = function(mod) {
-        return mod && mod.__esModule ? mod : {default: mod};
-      };
-      __classPrivateFieldGet3 = function(receiver, privateMap) {
-        if (!privateMap.has(receiver)) {
-          throw new TypeError("attempted to get private field on non-instance");
-        }
-        return privateMap.get(receiver);
-      };
-      __classPrivateFieldSet3 = function(receiver, privateMap, value) {
-        if (!privateMap.has(receiver)) {
-          throw new TypeError("attempted to set private field on non-instance");
-        }
-        privateMap.set(receiver, value);
-        return value;
-      };
-      exporter("__extends", __extends3);
-      exporter("__assign", __assign4);
-      exporter("__rest", __rest4);
-      exporter("__decorate", __decorate3);
-      exporter("__param", __param3);
-      exporter("__metadata", __metadata3);
-      exporter("__awaiter", __awaiter3);
-      exporter("__generator", __generator3);
-      exporter("__exportStar", __exportStar4);
-      exporter("__createBinding", __createBinding3);
-      exporter("__values", __values3);
-      exporter("__read", __read3);
-      exporter("__spread", __spread3);
-      exporter("__spreadArrays", __spreadArrays3);
-      exporter("__await", __await3);
-      exporter("__asyncGenerator", __asyncGenerator3);
-      exporter("__asyncDelegator", __asyncDelegator3);
-      exporter("__asyncValues", __asyncValues3);
-      exporter("__makeTemplateObject", __makeTemplateObject3);
-      exporter("__importStar", __importStar3);
-      exporter("__importDefault", __importDefault3);
-      exporter("__classPrivateFieldGet", __classPrivateFieldGet3);
-      exporter("__classPrivateFieldSet", __classPrivateFieldSet3);
-    });
-  });
-
-  // src/index.tsx
+  // editor/src/index.tsx
   var import_react115 = __toModule(require_react());
   var import_react_dom2 = __toModule(require_react_dom());
 
-  // src/app.tsx
+  // editor/src/app.tsx
   var React8 = __toModule(require_react());
 
-  // ../../packages/tldraw/dist/esm/index.js
+  // node_modules/@tldraw/tldraw/dist/esm/index.js
   var import_react56 = __toModule(require_react());
 
-  // ../../node_modules/@radix-ui/react-context/dist/index.module.js
+  // node_modules/@radix-ui/react-context/dist/index.module.js
   var e = __toModule(require_react());
   function createContext2(t14, n6) {
     const o13 = /* @__PURE__ */ e.createContext(n6);
@@ -8023,10 +7611,10 @@
     return o13.scopeName = n6.scopeName, o13;
   }
 
-  // ../../node_modules/@radix-ui/react-id/dist/index.module.js
+  // node_modules/@radix-ui/react-id/dist/index.module.js
   var r = __toModule(require_react());
 
-  // ../../node_modules/@babel/runtime/helpers/esm/extends.js
+  // node_modules/@babel/runtime/helpers/esm/extends.js
   function _extends() {
     _extends = Object.assign || function(target) {
       for (var i9 = 1; i9 < arguments.length; i9++) {
@@ -8042,7 +7630,7 @@
     return _extends.apply(this, arguments);
   }
 
-  // ../../node_modules/@radix-ui/react-id/dist/index.module.js
+  // node_modules/@radix-ui/react-id/dist/index.module.js
   var n = {prefix: Math.round(1e10 * Math.random()), current: 0};
   var [t2, i] = createContext2("IdProvider", n);
   var IdProvider = (e12) => {
@@ -8054,13 +7642,13 @@
     return Boolean(globalThis === null || globalThis === void 0 ? void 0 : globalThis.document) || o13 !== n || console.warn("When server rendering, you must wrap your application in an <IdProvider> to ensure consistent ids are generated between the client and server."), r.useMemo(() => e12 || `radix-id-${o13.prefix}-${++o13.current}`, [e12]);
   }
 
-  // ../../node_modules/@tldraw/core/dist/esm/index.js
+  // node_modules/@tldraw/core/dist/esm/index.js
   var import_react2 = __toModule(require_react());
   var import_react3 = __toModule(require_react());
   var import_react4 = __toModule(require_react());
   var import_react5 = __toModule(require_react());
 
-  // ../../node_modules/@use-gesture/core/dist/maths-b2a210f4.esm.js
+  // node_modules/@use-gesture/core/dist/maths-b2a210f4.esm.js
   function clamp(v7, min, max) {
     return Math.max(min, Math.min(v7, max));
   }
@@ -8104,7 +7692,7 @@
     return [rubberbandIfOutOfBounds(Vx, X0, X1, Rx), rubberbandIfOutOfBounds(Vy, Y0, Y1, Ry)];
   }
 
-  // ../../node_modules/@use-gesture/core/dist/actions-49482b72.esm.js
+  // node_modules/@use-gesture/core/dist/actions-ef87abaa.esm.js
   function _defineProperty(obj, key, value) {
     if (key in obj) {
       Object.defineProperty(obj, key, {
@@ -8292,8 +7880,8 @@
       return fns[0];
     return function() {
       let result;
-      for (const fn of fns) {
-        result = fn.apply(this, arguments) || result;
+      for (const fn2 of fns) {
+        result = fn2.apply(this, arguments) || result;
       }
       return result;
     };
@@ -8670,7 +8258,7 @@
     pointerDown(event) {
       const config = this.config;
       const state = this.state;
-      if (event.buttons != null && event.buttons !== config.pointerButtons)
+      if (event.buttons != null && Array.isArray(config.pointerButtons) ? !config.pointerButtons.includes(event.buttons) : config.pointerButtons !== -1 && config.pointerButtons !== event.buttons)
         return;
       this.ctrl.setEventIds(event);
       if (config.pointerCapture) {
@@ -9506,10 +9094,10 @@ This message will only appear in development mode.`);
     resolver: wheelConfigResolver
   };
 
-  // ../../node_modules/@use-gesture/react/dist/use-gesture-react.esm.js
+  // node_modules/@use-gesture/react/dist/use-gesture-react.esm.js
   var import_react = __toModule(require_react());
 
-  // ../../node_modules/@use-gesture/core/dist/use-gesture-core.esm.js
+  // node_modules/@use-gesture/core/dist/use-gesture-core.esm.js
   function _objectWithoutPropertiesLoose(source, excluded) {
     if (source == null)
       return {};
@@ -9811,7 +9399,7 @@ Please add \`${key}Action\` when creating your handler.`);
     }
     const startKey = handlerKey + "Start";
     const endKey = handlerKey + "End";
-    const fn = (state) => {
+    const fn2 = (state) => {
       let memo19 = void 0;
       if (state.first && startKey in handlers)
         handlers[startKey](state);
@@ -9821,7 +9409,7 @@ Please add \`${key}Action\` when creating your handler.`);
         handlers[endKey](state);
       return memo19;
     };
-    internalHandlers[key] = fn;
+    internalHandlers[key] = fn2;
     config[key] = config[key] || {};
   }
   function parseMergedHandlers(mergedHandlers, mergedConfig) {
@@ -9840,7 +9428,7 @@ Please add \`${key}Action\` when creating your handler.`);
     };
   }
 
-  // ../../node_modules/@use-gesture/react/dist/use-gesture-react.esm.js
+  // node_modules/@use-gesture/react/dist/use-gesture-react.esm.js
   function useRecognizers(handlers, config = {}, gestureKey, nativeHandlers) {
     const ctrl = import_react.default.useMemo(() => new Controller(handlers), []);
     ctrl.applyHandlers(handlers, nativeHandlers);
@@ -9870,7 +9458,7 @@ Please add \`${key}Action\` when creating your handler.`);
     return hook(handlers, config);
   }
 
-  // ../../node_modules/@tldraw/vec/dist/module.js
+  // node_modules/@tldraw/vec/dist/module.js
   var $a8e101027d325e52$export$e947a0f742cf021e = class {
     static clamp(n6, min, max) {
       return Math.max(min, typeof max !== "undefined" ? Math.min(n6, max) : n6);
@@ -10111,7 +9699,7 @@ Please add \`${key}Action\` when creating your handler.`);
   };
   var $a8e101027d325e52$export$2e2bcd8739ae039 = $a8e101027d325e52$export$e947a0f742cf021e;
 
-  // ../../node_modules/@tldraw/core/dist/esm/index.js
+  // node_modules/@tldraw/core/dist/esm/index.js
   var import_react7 = __toModule(require_react());
   var import_react8 = __toModule(require_react());
   var import_react9 = __toModule(require_react());
@@ -10156,7 +9744,7 @@ Please add \`${key}Action\` when creating your handler.`);
   var import_react48 = __toModule(require_react());
   var import_react49 = __toModule(require_react());
 
-  // ../../node_modules/@tldraw/intersect/dist/module.js
+  // node_modules/@tldraw/intersect/dist/module.js
   function $a8e101027d325e52$var$createIntersection(message, ...points) {
     const didIntersect = points.length > 0;
     return {
@@ -10175,7 +9763,7 @@ Please add \`${key}Action\` when creating your handler.`);
       size[0],
       0
     ]), center, rotation);
-    const br2 = $a8e101027d325e52$export$e947a0f742cf021e.rotWith($a8e101027d325e52$export$e947a0f742cf021e.add(point, size), center, rotation);
+    const br = $a8e101027d325e52$export$e947a0f742cf021e.rotWith($a8e101027d325e52$export$e947a0f742cf021e.add(point, size), center, rotation);
     const bl2 = $a8e101027d325e52$export$e947a0f742cf021e.rotWith($a8e101027d325e52$export$e947a0f742cf021e.add(point, [
       0,
       size[1]
@@ -10192,13 +9780,13 @@ Please add \`${key}Action\` when creating your handler.`);
         "right",
         [
           tr2,
-          br2
+          br
         ]
       ],
       [
         "bottom",
         [
-          br2,
+          br,
           bl2
         ]
       ],
@@ -10509,7 +10097,7 @@ Please add \`${key}Action\` when creating your handler.`);
     ], points);
   }
 
-  // ../../node_modules/@tldraw/core/dist/esm/index.js
+  // node_modules/@tldraw/core/dist/esm/index.js
   var __defProp2 = Object.defineProperty;
   var __defProps = Object.defineProperties;
   var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
@@ -10662,8 +10250,8 @@ Please add \`${key}Action\` when creating your handler.`);
   }
   var TAU = Math.PI * 2;
   var _Utils = class {
-    static filterObject(obj, fn) {
-      return Object.fromEntries(Object.entries(obj).filter(fn));
+    static filterObject(obj, fn2) {
+      return Object.fromEntries(Object.entries(obj).filter(fn2));
     }
     static lerp(y1, y22, mu) {
       mu = _Utils.clamp(mu, 0, 1);
@@ -10717,14 +10305,14 @@ Please add \`${key}Action\` when creating your handler.`);
       let x6 = 0;
       let y4 = 0;
       let z3 = 0;
-      let w6 = 0;
+      let w7 = 0;
       function next() {
         const t14 = x6 ^ x6 << 11;
         x6 = y4;
         y4 = z3;
-        z3 = w6;
-        w6 ^= (w6 >>> 19 ^ t14 ^ t14 >>> 8) >>> 0;
-        return w6 / 4294967296;
+        z3 = w7;
+        w7 ^= (w7 >>> 19 ^ t14 ^ t14 >>> 8) >>> 0;
+        return w7 / 4294967296;
       }
       for (let k4 = 0; k4 < seed.length + 64; k4++) {
         x6 ^= seed.charCodeAt(k4) | 0;
@@ -10736,12 +10324,12 @@ Please add \`${key}Action\` when creating your handler.`);
       const center = [point[0] + size[0] / 2, point[1] + size[1] / 2];
       const tl = $a8e101027d325e52$export$e947a0f742cf021e.rotWith(point, center, rotation);
       const tr2 = $a8e101027d325e52$export$e947a0f742cf021e.rotWith($a8e101027d325e52$export$e947a0f742cf021e.add(point, [size[0], 0]), center, rotation);
-      const br2 = $a8e101027d325e52$export$e947a0f742cf021e.rotWith($a8e101027d325e52$export$e947a0f742cf021e.add(point, size), center, rotation);
+      const br = $a8e101027d325e52$export$e947a0f742cf021e.rotWith($a8e101027d325e52$export$e947a0f742cf021e.add(point, size), center, rotation);
       const bl2 = $a8e101027d325e52$export$e947a0f742cf021e.rotWith($a8e101027d325e52$export$e947a0f742cf021e.add(point, [0, size[1]]), center, rotation);
       return [
         ["top", [tl, tr2]],
-        ["right", [tr2, br2]],
-        ["bottom", [br2, bl2]],
+        ["right", [tr2, br]],
+        ["bottom", [br, bl2]],
         ["left", [bl2, tl]]
       ];
     }
@@ -11199,14 +10787,14 @@ Please add \`${key}Action\` when creating your handler.`);
     static getRotatedEllipseBounds(x6, y4, rx, ry, rotation = 0) {
       const c7 = Math.cos(rotation);
       const s8 = Math.sin(rotation);
-      const w6 = Math.hypot(rx * c7, ry * s8);
+      const w7 = Math.hypot(rx * c7, ry * s8);
       const h4 = Math.hypot(rx * s8, ry * c7);
       return {
-        minX: x6 + rx - w6,
+        minX: x6 + rx - w7,
         minY: y4 + ry - h4,
-        maxX: x6 + rx + w6,
+        maxX: x6 + rx + w7,
         maxY: y4 + ry + h4,
-        width: w6 * 2,
+        width: w7 * 2,
         height: h4 * 2
       };
     }
@@ -11328,9 +10916,9 @@ Please add \`${key}Action\` when creating your handler.`);
           case TLBoundsEdge.Bottom:
           case TLBoundsEdge.Top: {
             const m9 = (bx0 + bx1) / 2;
-            const w6 = bh * ar2;
-            bx0 = m9 - w6 / 2;
-            bx1 = m9 + w6 / 2;
+            const w7 = bh * ar2;
+            bx0 = m9 - w7 / 2;
+            bx1 = m9 + w7 / 2;
             break;
           }
           case TLBoundsEdge.Left:
@@ -11533,8 +11121,8 @@ Please add \`${key}Action\` when creating your handler.`);
     static deepCompare(a10, b8) {
       return a10 === b8 || JSON.stringify(a10) === JSON.stringify(b8);
     }
-    static arrsIntersect(a10, b8, fn) {
-      return a10.some((item) => b8.includes(fn ? fn(item) : item));
+    static arrsIntersect(a10, b8, fn2) {
+      return a10.some((item) => b8.includes(fn2 ? fn2(item) : item));
     }
     static uniqueArray(...items) {
       return Array.from(new Set(items).values());
@@ -11542,11 +11130,11 @@ Please add \`${key}Action\` when creating your handler.`);
     static setToArray(set2) {
       return Array.from(set2.values());
     }
-    static debounce(fn, ms = 0) {
+    static debounce(fn2, ms = 0) {
       let timeoutId;
       return function(...args) {
         clearTimeout(timeoutId);
-        timeoutId = setTimeout(() => fn.apply(args), ms);
+        timeoutId = setTimeout(() => fn2.apply(args), ms);
       };
     }
     static getSvgPathFromStroke(points, closed = true) {
@@ -12686,7 +12274,10 @@ Please add \`${key}Action\` when creating your handler.`);
       };
     }, [inputs2, callbacks]);
   }
-  var ErrorFallback = (0, import_react20.memo)(({error, resetErrorBoundary}) => {
+  var ErrorFallback = (0, import_react20.memo)(function ErrorFallback2({
+    error,
+    resetErrorBoundary
+  }) {
     const {callbacks} = useTLContext();
     (0, import_react20.useEffect)(() => {
       var _a2;
@@ -12758,7 +12349,13 @@ Please add \`${key}Action\` when creating your handler.`);
       return this.props.children;
     }
   };
-  var Container = (0, import_react22.memo)(({id, bounds, rotation = 0, className, children}) => {
+  var Container = (0, import_react22.memo)(function Container2({
+    id,
+    bounds,
+    rotation = 0,
+    className,
+    children
+  }) {
     const rPositioned = usePosition(bounds, rotation);
     return /* @__PURE__ */ (0, import_react22.createElement)("div", {
       id,
@@ -12766,7 +12363,7 @@ Please add \`${key}Action\` when creating your handler.`);
       className: ["tl-positioned", className || ""].join(" ")
     }, children);
   });
-  var Brush = (0, import_react23.memo)(({brush}) => {
+  var Brush = (0, import_react23.memo)(function Brush2({brush}) {
     return /* @__PURE__ */ (0, import_react23.createElement)(Container, {
       bounds: brush,
       rotation: 0
@@ -12779,7 +12376,11 @@ Please add \`${key}Action\` when creating your handler.`);
       height: brush.height
     })));
   });
-  var CenterHandle = (0, import_react26.memo)(({bounds, isLocked, isHidden}) => {
+  var CenterHandle = (0, import_react26.memo)(function CenterHandle2({
+    bounds,
+    isLocked,
+    isHidden
+  }) {
     return /* @__PURE__ */ (0, import_react26.createElement)("rect", {
       className: isLocked ? "tl-bounds-center tl-dashed" : "tl-bounds-center",
       x: -1,
@@ -12791,19 +12392,26 @@ Please add \`${key}Action\` when creating your handler.`);
       "aria-label": "center handle"
     });
   });
-  var RotateHandle = (0, import_react27.memo)(({bounds, targetSize, size, isHidden}) => {
+  var RotateHandle = (0, import_react27.memo)(function RotateHandle2({
+    bounds,
+    targetSize,
+    size,
+    isHidden
+  }) {
     const events = useBoundsHandleEvents("rotate");
     return /* @__PURE__ */ (0, import_react27.createElement)("g", {
       cursor: "grab",
       opacity: isHidden ? 0 : 1
     }, /* @__PURE__ */ (0, import_react27.createElement)("circle", __spreadValues({
       className: "tl-transparent",
+      "aria-label": "rotate handle transparent",
       cx: bounds.width / 2,
       cy: size * -2,
       r: targetSize,
       pointerEvents: isHidden ? "none" : "all"
     }, events)), /* @__PURE__ */ (0, import_react27.createElement)("circle", {
       className: "tl-rotate-handle",
+      "aria-label": "rotate handle",
       cx: bounds.width / 2,
       cy: size * -2,
       r: size / 2,
@@ -12816,7 +12424,13 @@ Please add \`${key}Action\` when creating your handler.`);
     [TLBoundsCorner.BottomRight]: "tl-cursor-nwse",
     [TLBoundsCorner.BottomLeft]: "tl-cursor-nesw"
   };
-  var CornerHandle = (0, import_react28.memo)(({size, targetSize, isHidden, corner, bounds}) => {
+  var CornerHandle = (0, import_react28.memo)(function CornerHandle2({
+    size,
+    targetSize,
+    isHidden,
+    corner,
+    bounds
+  }) {
     const events = useBoundsHandleEvents(corner);
     const isTop = corner === TLBoundsCorner.TopLeft || corner === TLBoundsCorner.TopRight;
     const isLeft = corner === TLBoundsCorner.TopLeft || corner === TLBoundsCorner.BottomLeft;
@@ -12824,6 +12438,7 @@ Please add \`${key}Action\` when creating your handler.`);
       opacity: isHidden ? 0 : 1
     }, /* @__PURE__ */ (0, import_react28.createElement)("rect", __spreadValues({
       className: "tl-transparent " + (isHidden ? "" : cornerBgClassnames[corner]),
+      "aria-label": "corner transparent",
       x: (isLeft ? -1 : bounds.width + 1) - targetSize,
       y: (isTop ? -1 : bounds.height + 1) - targetSize,
       width: targetSize * 2,
@@ -12831,6 +12446,7 @@ Please add \`${key}Action\` when creating your handler.`);
       pointerEvents: isHidden ? "none" : "all"
     }, events)), /* @__PURE__ */ (0, import_react28.createElement)("rect", {
       className: "tl-corner-handle",
+      "aria-label": "corner handle",
       x: (isLeft ? -1 : bounds.width + 1) - size / 2,
       y: (isTop ? -1 : bounds.height + 1) - size / 2,
       width: size,
@@ -12844,7 +12460,12 @@ Please add \`${key}Action\` when creating your handler.`);
     [TLBoundsEdge.Bottom]: "tl-cursor-ns",
     [TLBoundsEdge.Left]: "tl-cursor-ew"
   };
-  var EdgeHandle = (0, import_react29.memo)(({size, isHidden, bounds, edge}) => {
+  var EdgeHandle = (0, import_react29.memo)(function EdgeHandle2({
+    size,
+    isHidden,
+    bounds,
+    edge
+  }) {
     const events = useBoundsHandleEvents(edge);
     const isHorizontal = edge === TLBoundsEdge.Top || edge === TLBoundsEdge.Bottom;
     const isFarEdge = edge === TLBoundsEdge.Right || edge === TLBoundsEdge.Bottom;
@@ -12852,6 +12473,7 @@ Please add \`${key}Action\` when creating your handler.`);
     return /* @__PURE__ */ (0, import_react29.createElement)("rect", __spreadValues({
       pointerEvents: isHidden ? "none" : "all",
       className: "tl-transparent tl-edge-handle " + (isHidden ? "" : edgeClassnames[edge]),
+      "aria-label": `${edge} handle`,
       opacity: isHidden ? 0 : 1,
       x: isHorizontal ? size / 2 : (isFarEdge ? width + 1 : -1) - size / 2,
       y: isHorizontal ? (isFarEdge ? height + 1 : -1) - size / 2 : size / 2,
@@ -12899,7 +12521,8 @@ Please add \`${key}Action\` when creating your handler.`);
     }, [callbacks.onShapeClone]);
     return /* @__PURE__ */ (0, import_react31.createElement)("g", {
       className: "tl-clone-target",
-      transform: `translate(${x6}, ${y4})`
+      transform: `translate(${x6}, ${y4})`,
+      "aria-label": "clone button"
     }, /* @__PURE__ */ (0, import_react31.createElement)("rect", {
       className: "tl-transparent",
       width: targetSize * 4,
@@ -12962,7 +12585,7 @@ Please add \`${key}Action\` when creating your handler.`);
       side: "bottomRight"
     }));
   }
-  var SVGContainer = (0, import_react32.memo)((0, import_react32.forwardRef)((_a2, ref) => {
+  var SVGContainer = (0, import_react32.memo)((0, import_react32.forwardRef)(function SVGContainer2(_a2, ref) {
     var _b = _a2, {id, children} = _b, rest = __objRest(_b, ["id", "children"]);
     return /* @__PURE__ */ (0, import_react32.createElement)("svg", __spreadValues({
       ref,
@@ -12978,7 +12601,8 @@ Please add \`${key}Action\` when creating your handler.`);
     const rightEvents = useBoundsHandleEvents("right");
     return /* @__PURE__ */ (0, import_react33.createElement)("g", {
       cursor: "grab",
-      transform: `translate(${bounds.width / 2 - size * 4}, ${bounds.height + size * 2})`
+      transform: `translate(${bounds.width / 2 - size * 4}, ${bounds.height + size * 2})`,
+      "aria-label": "link handle"
     }, /* @__PURE__ */ (0, import_react33.createElement)("g", {
       className: "tl-transparent",
       pointerEvents: isHidden ? "none" : "all"
@@ -12999,7 +12623,8 @@ Please add \`${key}Action\` when creating your handler.`);
       height: size * 2
     }, rightEvents))), /* @__PURE__ */ (0, import_react33.createElement)("g", {
       className: "tl-rotate-handle",
-      transform: `translate(${size / 2}, ${size / 2})`
+      transform: `translate(${size / 2}, ${size / 2})`,
+      "aria-label": "link rotate handle"
     }, /* @__PURE__ */ (0, import_react33.createElement)("path", {
       d: `M 0,${size / 2} L ${size},${size} ${size},0 Z`,
       pointerEvents: "none",
@@ -13016,7 +12641,7 @@ Please add \`${key}Action\` when creating your handler.`);
       opacity: isHidden ? 0 : 1
     })));
   }
-  var Bounds = (0, import_react25.memo)(({
+  var Bounds = (0, import_react25.memo)(function Bounds2({
     zoom,
     bounds,
     viewportWidth,
@@ -13026,7 +12651,7 @@ Please add \`${key}Action\` when creating your handler.`);
     hideCloneHandles,
     hideRotateHandle,
     hideBindingHandles
-  }) => {
+  }) {
     const targetSize = (viewportWidth < 768 ? 16 : 8) / zoom;
     const size = 8 / zoom;
     const smallDimension = Math.min(bounds.width, bounds.height) * zoom;
@@ -13105,19 +12730,24 @@ Please add \`${key}Action\` when creating your handler.`);
       isHidden: !showEdgeHandles
     })));
   });
-  var BoundsBg = (0, import_react34.memo)(({bounds, rotation, isHidden}) => {
+  var BoundsBg = (0, import_react34.memo)(function BoundsBg2({
+    bounds,
+    rotation,
+    isHidden
+  }) {
     const events = useBoundsEvents();
     return /* @__PURE__ */ (0, import_react34.createElement)(Container, {
       bounds,
       rotation
     }, /* @__PURE__ */ (0, import_react34.createElement)(SVGContainer, null, /* @__PURE__ */ (0, import_react34.createElement)("rect", __spreadValues({
       className: "tl-bounds-bg",
+      "aria-label": "bounds bg",
       width: bounds.width,
       height: bounds.height,
       opacity: isHidden ? 0 : 1
     }, events))));
   });
-  var Handle = (0, import_react36.memo)(({id, point}) => {
+  var Handle = (0, import_react36.memo)(function Handle2({id, point}) {
     const events = useHandleEvents(id);
     return /* @__PURE__ */ (0, import_react36.createElement)(Container, {
       bounds: utils_default.translateBounds({
@@ -13139,7 +12769,10 @@ Please add \`${key}Action\` when creating your handler.`);
       r: 4
     }))));
   });
-  var Handles = (0, import_react35.memo)(({shape, zoom}) => {
+  var Handles = (0, import_react35.memo)(function Handles2({
+    shape,
+    zoom
+  }) {
     if (shape.handles === void 0) {
       return null;
     }
@@ -13160,7 +12793,7 @@ Please add \`${key}Action\` when creating your handler.`);
       point: $a8e101027d325e52$export$e947a0f742cf021e.add(handle.point, shape.point)
     })));
   });
-  var RenderedShape = (0, import_react39.memo)(({
+  var RenderedShape = (0, import_react39.memo)(function RenderedShape2({
     shape,
     utils,
     isEditing,
@@ -13171,7 +12804,7 @@ Please add \`${key}Action\` when creating your handler.`);
     onShapeBlur,
     events,
     meta
-  }) => {
+  }) {
     const ref = utils.getRef(shape);
     return /* @__PURE__ */ (0, import_react39.createElement)(utils.Component, {
       ref,
@@ -13198,7 +12831,7 @@ Please add \`${key}Action\` when creating your handler.`);
     const forceUpdate = (0, import_react40.useReducer)((s8) => s8 + 1, 0);
     (0, import_react40.useLayoutEffect)(() => forceUpdate[1](), []);
   }
-  var Shape = (0, import_react38.memo)(({
+  var Shape = (0, import_react38.memo)(function Shape2({
     shape,
     utils,
     isEditing,
@@ -13206,7 +12839,7 @@ Please add \`${key}Action\` when creating your handler.`);
     isHovered,
     isSelected,
     meta
-  }) => {
+  }) {
     const {callbacks} = useTLContext();
     const bounds = utils.getBounds(shape);
     const events = useShapeEvents(shape.id);
@@ -13228,7 +12861,7 @@ Please add \`${key}Action\` when creating your handler.`);
       onShapeBlur: callbacks.onShapeBlur
     }));
   });
-  var ShapeNode = (0, import_react37.memo)(({
+  var ShapeNode = (0, import_react37.memo)(function ShapeNode2({
     shape,
     utils,
     children,
@@ -13237,7 +12870,7 @@ Please add \`${key}Action\` when creating your handler.`);
     isHovered,
     isSelected,
     meta
-  }) => {
+  }) {
     return /* @__PURE__ */ (0, import_react37.createElement)(import_react37.Fragment, null, /* @__PURE__ */ (0, import_react37.createElement)(Shape, {
       shape,
       isEditing,
@@ -13246,18 +12879,18 @@ Please add \`${key}Action\` when creating your handler.`);
       isSelected,
       utils: utils[shape.type],
       meta
-    }), children && children.map((childNode) => /* @__PURE__ */ (0, import_react37.createElement)(ShapeNode, __spreadValues({
+    }), children && children.map((childNode) => /* @__PURE__ */ (0, import_react37.createElement)(ShapeNode2, __spreadValues({
       key: childNode.shape.id,
       utils
     }, childNode))));
   });
-  var ShapeIndicator = (0, import_react41.memo)(({
+  var ShapeIndicator = (0, import_react41.memo)(function ShapeIndicator2({
     isHovered = false,
     isSelected = false,
     shape,
     user,
     meta
-  }) => {
+  }) {
     const {shapeUtils} = useTLContext();
     const utils = shapeUtils[shape.type];
     const bounds = utils.getBounds(shape);
@@ -13928,7 +13561,7 @@ Please add \`${key}Action\` when creating your handler.`);
       meta
     }));
   }
-  var HTMLContainer = (0, import_react48.memo)((0, import_react48.forwardRef)((_a2, ref) => {
+  var HTMLContainer = (0, import_react48.memo)((0, import_react48.forwardRef)(function HTMLContainer2(_a2, ref) {
     var _b = _a2, {children} = _b, rest = __objRest(_b, ["children"]);
     return /* @__PURE__ */ (0, import_react48.createElement)("div", __spreadValues({
       ref,
@@ -13973,7 +13606,7 @@ Please add \`${key}Action\` when creating your handler.`);
    * @license MIT
    */
 
-  // ../../node_modules/@stitches/react/dist/index.mjs
+  // node_modules/@stitches/react/dist/index.mjs
   var import_react50 = __toModule(require_react());
   var e2 = "colors";
   var t3 = "sizes";
@@ -14385,7 +14018,7 @@ Please add \`${key}Action\` when creating your handler.`);
     }))(t14), t14;
   };
 
-  // ../../node_modules/zustand/esm/vanilla.mjs
+  // node_modules/zustand/esm/vanilla.mjs
   function create(createState) {
     let state;
     const listeners = new Set();
@@ -14424,7 +14057,7 @@ Please add \`${key}Action\` when creating your handler.`);
     return api;
   }
 
-  // ../../node_modules/zustand/esm/index.mjs
+  // node_modules/zustand/esm/index.mjs
   var import_react51 = __toModule(require_react());
   function create$1(createState) {
     let state;
@@ -14533,7 +14166,7 @@ Please add \`${key}Action\` when creating your handler.`);
     return useStore;
   }
 
-  // ../../node_modules/safari-14-idb-fix/dist/index.js
+  // node_modules/safari-14-idb-fix/dist/index.js
   function idbReady() {
     var isSafari = !navigator.userAgentData && /Safari\//.test(navigator.userAgent) && !/Chrom(e|ium)\//.test(navigator.userAgent);
     if (!isSafari || !indexedDB.databases)
@@ -14551,7 +14184,7 @@ Please add \`${key}Action\` when creating your handler.`);
   }
   var dist_default = idbReady;
 
-  // ../../node_modules/idb-keyval/dist/index.js
+  // node_modules/idb-keyval/dist/index.js
   function promisifyRequest(request) {
     return new Promise((resolve, reject) => {
       request.oncomplete = request.onsuccess = () => resolve(request.result);
@@ -14583,7 +14216,7 @@ Please add \`${key}Action\` when creating your handler.`);
     });
   }
 
-  // ../../node_modules/rko/dist/module.js
+  // node_modules/rko/dist/module.js
   function $parcel$export(e12, n6, v7, s8) {
     Object.defineProperty(e12, n6, {get: v7, set: s8, enumerable: true, configurable: true});
   }
@@ -14781,10 +14414,10 @@ Please add \`${key}Action\` when creating your handler.`);
     }
   };
 
-  // ../../packages/tldraw/dist/esm/index.js
+  // node_modules/@tldraw/tldraw/dist/esm/index.js
   var import_react58 = __toModule(require_react());
 
-  // ../../node_modules/perfect-freehand/dist/esm/index.js
+  // node_modules/perfect-freehand/dist/esm/index.js
   function W2(e12, t14, s8, h4 = (b8) => b8) {
     return e12 * h4(0.5 - t14 * (0.5 - s8));
   }
@@ -14874,8 +14507,8 @@ Please add \`${key}Action\` when creating your handler.`);
       let A4 = e12[r13 + 1].vector, ee2 = ne(u5, A4);
       if (ee2 < 0) {
         let P3 = f2(L2(B3), p8);
-        for (let Q2 = 1 / 13, w6 = 0; w6 <= 1; w6 += Q2)
-          y4 = T2(a2(o13, P3), o13, j2 * w6), D7.push(y4), O5 = T2(l2(o13, P3), o13, j2 * -w6), R6.push(O5);
+        for (let Q2 = 1 / 13, w7 = 0; w7 <= 1; w7 += Q2)
+          y4 = T2(a2(o13, P3), o13, j2 * w7), D7.push(y4), O5 = T2(l2(o13, P3), o13, j2 * -w7), R6.push(O5);
         I3 = y4, C6 = O5;
         continue;
       }
@@ -14946,7 +14579,7 @@ Please add \`${key}Action\` when creating your handler.`);
   }
   var Te = me;
 
-  // ../../packages/tldraw/dist/esm/index.js
+  // node_modules/@tldraw/tldraw/dist/esm/index.js
   var import_react59 = __toModule(require_react());
   var import_react60 = __toModule(require_react());
   var import_react61 = __toModule(require_react());
@@ -14956,7 +14589,7 @@ Please add \`${key}Action\` when creating your handler.`);
   var import_react65 = __toModule(require_react());
   var import_react66 = __toModule(require_react());
 
-  // ../../node_modules/hotkeys-js/dist/hotkeys.esm.js
+  // node_modules/hotkeys-js/dist/hotkeys.esm.js
   /*!
    * hotkeys-js v3.8.7
    * A simple micro-library for defining and dispatching keyboard shortcuts. It has no dependencies.
@@ -15398,7 +15031,7 @@ Please add \`${key}Action\` when creating your handler.`);
   var _hotkeys;
   var hotkeys_esm_default = hotkeys;
 
-  // ../../node_modules/react-hotkeys-hook/dist/react-hotkeys-hook.esm.js
+  // node_modules/react-hotkeys-hook/dist/react-hotkeys-hook.esm.js
   var import_react52 = __toModule(require_react());
   hotkeys_esm_default.filter = function() {
     return true;
@@ -15449,7 +15082,7 @@ Please add \`${key}Action\` when creating your handler.`);
   }
   var isHotkeyPressed = hotkeys_esm_default.isPressed;
 
-  // ../../packages/tldraw/dist/esm/index.js
+  // node_modules/@tldraw/tldraw/dist/esm/index.js
   var import_react67 = __toModule(require_react());
   var import_react68 = __toModule(require_react());
   var import_react69 = __toModule(require_react());
@@ -15458,7 +15091,7 @@ Please add \`${key}Action\` when creating your handler.`);
   var import_react72 = __toModule(require_react());
   var import_react73 = __toModule(require_react());
 
-  // ../../node_modules/@radix-ui/react-focus-guards/dist/index.module.js
+  // node_modules/@radix-ui/react-focus-guards/dist/index.module.js
   var e3 = __toModule(require_react());
   var t4 = 0;
   function useFocusGuards() {
@@ -15475,7 +15108,7 @@ Please add \`${key}Action\` when creating your handler.`);
     return e12.setAttribute("data-radix-focus-guard", ""), e12.tabIndex = 0, e12.style.cssText = "outline: none; opacity: 0; position: fixed; pointer-events: none", e12;
   }
 
-  // ../../node_modules/@radix-ui/react-use-callback-ref/dist/index.module.js
+  // node_modules/@radix-ui/react-use-callback-ref/dist/index.module.js
   var e4 = __toModule(require_react());
   function useCallbackRef(r13) {
     const t14 = e4.useRef(r13);
@@ -15487,7 +15120,7 @@ Please add \`${key}Action\` when creating your handler.`);
     }, []);
   }
 
-  // ../../node_modules/@radix-ui/react-use-direction/dist/index.module.js
+  // node_modules/@radix-ui/react-use-direction/dist/index.module.js
   var e5 = __toModule(require_react());
   function useDirection(t14, n6) {
     const [r13, o13] = e5.useState("ltr"), [i9, u5] = e5.useState(), c7 = e5.useRef(0);
@@ -15504,7 +15137,7 @@ Please add \`${key}Action\` when creating your handler.`);
     }(), () => cancelAnimationFrame(c7.current)), [i9, n6, o13]), n6 || r13;
   }
 
-  // ../../node_modules/@radix-ui/react-use-controllable-state/dist/index.module.js
+  // node_modules/@radix-ui/react-use-controllable-state/dist/index.module.js
   var t5 = __toModule(require_react());
   function useControllableState({prop: o13, defaultProp: r13, onChange: n6 = () => {
   }}) {
@@ -15523,7 +15156,7 @@ Please add \`${key}Action\` when creating your handler.`);
     }, [c7, o13, u5, l10])];
   }
 
-  // ../../node_modules/@radix-ui/react-compose-refs/dist/index.module.js
+  // node_modules/@radix-ui/react-compose-refs/dist/index.module.js
   var o3 = __toModule(require_react());
   function composeRefs(...o13) {
     return (e12) => o13.forEach((o14) => function(o15, e13) {
@@ -15534,7 +15167,7 @@ Please add \`${key}Action\` when creating your handler.`);
     return o3.useCallback(composeRefs(...e12), e12);
   }
 
-  // ../../node_modules/@radix-ui/react-slot/dist/index.module.js
+  // node_modules/@radix-ui/react-slot/dist/index.module.js
   var t6 = __toModule(require_react());
   var Slot = /* @__PURE__ */ t6.forwardRef((e12, o13) => {
     const {children: a10} = e12, s8 = __rest(e12, ["children"]), c7 = t6.Children.toArray(a10);
@@ -15561,7 +15194,7 @@ Please add \`${key}Action\` when creating your handler.`);
     return __assign(__assign({}, e12), r13);
   }
 
-  // ../../node_modules/@radix-ui/react-primitive/dist/index.module.js
+  // node_modules/@radix-ui/react-primitive/dist/index.module.js
   var r3 = __toModule(require_react());
   var Primitive = ["a", "button", "div", "h2", "h3", "img", "li", "nav", "p", "span", "svg", "ul"].reduce((t14, s8) => __assign(__assign({}, t14), {[s8]: /* @__PURE__ */ r3.forwardRef((t15, n6) => {
     const {asChild: a10} = t15, m9 = __rest(t15, ["asChild"]), d9 = a10 ? Slot : s8;
@@ -15571,7 +15204,7 @@ Please add \`${key}Action\` when creating your handler.`);
   })}), {});
   var o5 = "Warning: The `as` prop has been removed in favour of `asChild`. For details, see https://radix-ui.com/docs/primitives/overview/styling#changing-the-rendered-element";
 
-  // ../../node_modules/@radix-ui/react-collection/dist/index.module.js
+  // node_modules/@radix-ui/react-collection/dist/index.module.js
   var import_react53 = __toModule(require_react());
   function createCollection(c7) {
     const n6 = c7 + "CollectionProvider", [l10, i9] = createContextScope(n6), [f13, a10] = l10(n6, {collectionRef: {current: null}, itemMap: new Map()}), u5 = (e12) => {
@@ -15598,7 +15231,7 @@ Please add \`${key}Action\` when creating your handler.`);
     }, i9];
   }
 
-  // ../../node_modules/@radix-ui/primitive/dist/index.module.js
+  // node_modules/@radix-ui/primitive/dist/index.module.js
   function composeEventHandlers(e12, n6, {checkForDefaultPrevented: t14 = true} = {}) {
     return function(r13) {
       if (e12 == null || e12(r13), t14 === false || !r13.defaultPrevented)
@@ -15606,7 +15239,7 @@ Please add \`${key}Action\` when creating your handler.`);
     };
   }
 
-  // ../../node_modules/@radix-ui/react-roving-focus/dist/index.module.js
+  // node_modules/@radix-ui/react-roving-focus/dist/index.module.js
   var a3 = __toModule(require_react());
   var f3 = {bubbles: false, cancelable: true};
   var [p2, l4, m2] = createCollection("RovingFocusGroup");
@@ -15614,16 +15247,16 @@ Please add \`${key}Action\` when creating your handler.`);
   var [g2, F2] = d2("RovingFocusGroup");
   var RovingFocusGroup = /* @__PURE__ */ a3.forwardRef((e12, o13) => /* @__PURE__ */ a3.createElement(p2.Provider, {scope: e12.__scopeRovingFocusGroup}, /* @__PURE__ */ a3.createElement(p2.Slot, {scope: e12.__scopeRovingFocusGroup}, /* @__PURE__ */ a3.createElement(w2, _extends({}, e12, {ref: o13})))));
   var w2 = /* @__PURE__ */ a3.forwardRef((t14, n6) => {
-    const {__scopeRovingFocusGroup: c7, orientation: p8, dir: m9 = "ltr", loop: d9 = false, currentTabStopId: v7, defaultCurrentTabStopId: F6, onCurrentTabStopIdChange: w6, onEntryFocus: b8} = t14, x6 = __rest(t14, ["__scopeRovingFocusGroup", "orientation", "dir", "loop", "currentTabStopId", "defaultCurrentTabStopId", "onCurrentTabStopIdChange", "onEntryFocus"]), E7 = a3.useRef(null), I3 = useComposedRefs(n6, E7), [G5 = null, h4] = useControllableState({prop: v7, defaultProp: F6, onChange: w6}), [T6, A4] = a3.useState(false), y4 = useCallbackRef(b8), D7 = l4(c7), S3 = a3.useRef(false);
+    const {__scopeRovingFocusGroup: c7, orientation: p8, dir: m9 = "ltr", loop: d9 = false, currentTabStopId: v7, defaultCurrentTabStopId: F6, onCurrentTabStopIdChange: w7, onEntryFocus: b8} = t14, x6 = __rest(t14, ["__scopeRovingFocusGroup", "orientation", "dir", "loop", "currentTabStopId", "defaultCurrentTabStopId", "onCurrentTabStopIdChange", "onEntryFocus"]), E7 = a3.useRef(null), I3 = useComposedRefs(n6, E7), [G5 = null, h4] = useControllableState({prop: v7, defaultProp: F6, onChange: w7}), [T5, A4] = a3.useState(false), y4 = useCallbackRef(b8), D7 = l4(c7), S3 = a3.useRef(false);
     return a3.useEffect(() => {
       const e12 = E7.current;
       if (e12)
         return e12.addEventListener("rovingFocusGroup.onEntryFocus", y4), () => e12.removeEventListener("rovingFocusGroup.onEntryFocus", y4);
-    }, [y4]), /* @__PURE__ */ a3.createElement(g2, {scope: c7, orientation: p8, dir: m9, loop: d9, currentTabStopId: G5, onItemFocus: a3.useCallback((e12) => h4(e12), [h4]), onItemShiftTab: a3.useCallback(() => A4(true), [])}, /* @__PURE__ */ a3.createElement(Primitive.div, _extends({tabIndex: T6 ? -1 : 0, "aria-orientation": p8, "data-orientation": p8}, x6, {ref: I3, style: __assign({outline: "none"}, t14.style), onMouseDown: composeEventHandlers(t14.onMouseDown, () => {
+    }, [y4]), /* @__PURE__ */ a3.createElement(g2, {scope: c7, orientation: p8, dir: m9, loop: d9, currentTabStopId: G5, onItemFocus: a3.useCallback((e12) => h4(e12), [h4]), onItemShiftTab: a3.useCallback(() => A4(true), [])}, /* @__PURE__ */ a3.createElement(Primitive.div, _extends({tabIndex: T5 ? -1 : 0, "aria-orientation": p8, "data-orientation": p8}, x6, {ref: I3, style: __assign({outline: "none"}, t14.style), onMouseDown: composeEventHandlers(t14.onMouseDown, () => {
       S3.current = true;
     }), onFocus: composeEventHandlers(t14.onFocus, (e12) => {
       const o13 = !S3.current;
-      if (e12.target === e12.currentTarget && o13 && !T6) {
+      if (e12.target === e12.currentTarget && o13 && !T5) {
         const o14 = new Event("rovingFocusGroup.onEntryFocus", f3);
         if (e12.currentTarget.dispatchEvent(o14), !o14.defaultPrevented) {
           const e13 = D7().filter((e14) => e14.focusable);
@@ -15676,12 +15309,12 @@ Please add \`${key}Action\` when creating your handler.`);
   var Root = RovingFocusGroup;
   var Item = RovingFocusGroupItem;
 
-  // ../../node_modules/@radix-ui/react-use-layout-effect/dist/index.module.js
+  // node_modules/@radix-ui/react-use-layout-effect/dist/index.module.js
   var o7 = __toModule(require_react());
   var useLayoutEffect7 = Boolean(globalThis === null || globalThis === void 0 ? void 0 : globalThis.document) ? o7.useLayoutEffect : () => {
   };
 
-  // ../../node_modules/@radix-ui/react-portal/dist/index.module.js
+  // node_modules/@radix-ui/react-portal/dist/index.module.js
   var import_react_dom = __toModule(require_react_dom());
   var r4 = __toModule(require_react());
   var Portal = /* @__PURE__ */ r4.forwardRef((i9, a10) => {
@@ -15692,7 +15325,7 @@ Please add \`${key}Action\` when creating your handler.`);
     }, []), c7 ? /* @__PURE__ */ import_react_dom.default.createPortal(/* @__PURE__ */ r4.createElement(Primitive.div, _extends({"data-radix-portal": ""}, u5, {ref: a10, style: c7 === document.body ? __assign({position: "absolute", top: 0, left: 0, zIndex: 2147483647}, s8) : void 0})), c7) : null;
   });
 
-  // ../../node_modules/@radix-ui/react-arrow/dist/index.module.js
+  // node_modules/@radix-ui/react-arrow/dist/index.module.js
   var r5 = __toModule(require_react());
   var Arrow = /* @__PURE__ */ r5.forwardRef((o13, i9) => {
     const {children: n6, width: s8 = 10, height: m9 = 5} = o13, p8 = __rest(o13, ["children", "width", "height"]);
@@ -15700,7 +15333,7 @@ Please add \`${key}Action\` when creating your handler.`);
   });
   var Root2 = Arrow;
 
-  // ../../node_modules/@radix-ui/react-use-size/dist/index.module.js
+  // node_modules/@radix-ui/react-use-size/dist/index.module.js
   var e7 = __toModule(require_react());
   function useSize(r13) {
     const [i9, t14] = e7.useState(void 0);
@@ -15729,7 +15362,7 @@ Please add \`${key}Action\` when creating your handler.`);
     }, [r13]), i9;
   }
 
-  // ../../node_modules/@radix-ui/rect/dist/index.module.js
+  // node_modules/@radix-ui/rect/dist/index.module.js
   function observeElementRect(n6, o13) {
     const i9 = e8.get(n6);
     return i9 === void 0 ? (e8.set(n6, {rect: {}, callbacks: [o13]}), e8.size === 1 && (t7 = requestAnimationFrame(c2))) : (i9.callbacks.push(o13), o13(n6.getBoundingClientRect())), () => {
@@ -15753,7 +15386,7 @@ Please add \`${key}Action\` when creating your handler.`);
     }), t7 = requestAnimationFrame(c2);
   }
 
-  // ../../node_modules/@radix-ui/react-use-rect/dist/index.module.js
+  // node_modules/@radix-ui/react-use-rect/dist/index.module.js
   var r6 = __toModule(require_react());
   function useRect(e12) {
     const [o13, c7] = r6.useState();
@@ -15767,9 +15400,9 @@ Please add \`${key}Action\` when creating your handler.`);
     }, [e12]), o13;
   }
 
-  // ../../node_modules/@radix-ui/popper/dist/index.module.js
-  function getPlacementData({anchorRect: p8, popperSize: c7, arrowSize: f13, arrowOffset: l10 = 0, side: d9, sideOffset: h4 = 0, align: x6, alignOffset: g5 = 0, shouldAvoidCollisions: u5 = true, collisionBoundariesRect: w6, collisionTolerance: m9 = 0}) {
-    if (!p8 || !c7 || !w6)
+  // node_modules/@radix-ui/popper/dist/index.module.js
+  function getPlacementData({anchorRect: p8, popperSize: c7, arrowSize: f13, arrowOffset: l10 = 0, side: d9, sideOffset: h4 = 0, align: x6, alignOffset: g5 = 0, shouldAvoidCollisions: u5 = true, collisionBoundariesRect: w7, collisionTolerance: m9 = 0}) {
+    if (!p8 || !c7 || !w7)
       return {popperStyles: o8, arrowStyles: n4};
     const y4 = function(e12, r13, o13 = 0, n6 = 0, i9) {
       const p9 = i9 ? i9.height : 0, a10 = t8(r13, e12, "x"), s8 = t8(r13, e12, "y"), c8 = s8.before - o13 - p9, f14 = s8.after + o13 + p9, l11 = a10.before - o13 - p9, d10 = a10.after + o13 + p9;
@@ -15781,7 +15414,7 @@ Please add \`${key}Action\` when creating your handler.`);
       f13 && (o13 = i3({popperSize: c7, arrowSize: f13, arrowOffset: l10, side: d9, align: x6}));
       return {popperStyles: __assign(__assign({}, t14), {"--radix-popper-transform-origin": r7(c7, d9, x6, l10, f13)}), arrowStyles: o13, placedSide: d9, placedAlign: x6};
     }
-    const S3 = DOMRect.fromRect(__assign(__assign({}, c7), b8)), $2 = (O5 = w6, z3 = m9, DOMRect.fromRect({width: O5.width - 2 * z3, height: O5.height - 2 * z3, x: O5.left + z3, y: O5.top + z3}));
+    const S3 = DOMRect.fromRect(__assign(__assign({}, c7), b8)), $2 = (O5 = w7, z3 = m9, DOMRect.fromRect({width: O5.width - 2 * z3, height: O5.height - 2 * z3, x: O5.left + z3, y: O5.top + z3}));
     var O5, z3;
     const R6 = s2(S3, $2), M5 = y4[a4(d9)][x6], D7 = function(t14, e12, r13) {
       const o13 = a4(t14);
@@ -15826,7 +15459,7 @@ Please add \`${key}Action\` when creating your handler.`);
     return {top: t14.top < e12.top, right: t14.right > e12.right, bottom: t14.bottom > e12.bottom, left: t14.left < e12.left};
   }
 
-  // ../../node_modules/@radix-ui/react-popper/dist/index.module.js
+  // node_modules/@radix-ui/react-popper/dist/index.module.js
   var s3 = __toModule(require_react());
   var [c3, l5] = createContextScope("Popper");
   var [f4, d3] = c3("Popper");
@@ -15842,7 +15475,7 @@ Please add \`${key}Action\` when creating your handler.`);
   });
   var [u2, m3] = c3("PopperContent");
   var PopperContent = /* @__PURE__ */ s3.forwardRef((e12, n6) => {
-    const {__scopePopper: c7, side: l10 = "bottom", sideOffset: f13, align: m9 = "center", alignOffset: w6, collisionTolerance: h4, avoidCollisions: x6 = true} = e12, v7 = __rest(e12, ["__scopePopper", "side", "sideOffset", "align", "alignOffset", "collisionTolerance", "avoidCollisions"]), P3 = d3("PopperContent", c7), [A4, g5] = s3.useState(), E7 = useRect(P3.anchor), [y4, C6] = s3.useState(null), S3 = useSize(y4), [R6, O5] = s3.useState(null), _6 = useSize(R6), b8 = useComposedRefs(n6, (e13) => C6(e13)), z3 = function() {
+    const {__scopePopper: c7, side: l10 = "bottom", sideOffset: f13, align: m9 = "center", alignOffset: w7, collisionTolerance: h4, avoidCollisions: x6 = true} = e12, v7 = __rest(e12, ["__scopePopper", "side", "sideOffset", "align", "alignOffset", "collisionTolerance", "avoidCollisions"]), P3 = d3("PopperContent", c7), [A4, g5] = s3.useState(), E7 = useRect(P3.anchor), [y4, C6] = s3.useState(null), S3 = useSize(y4), [R6, O5] = s3.useState(null), _6 = useSize(R6), b8 = useComposedRefs(n6, (e13) => C6(e13)), z3 = function() {
       const [e13, o13] = s3.useState(void 0);
       return s3.useEffect(() => {
         let e14;
@@ -15854,7 +15487,7 @@ Please add \`${key}Action\` when creating your handler.`);
         }
         return r13(), window.addEventListener("resize", t14), () => window.removeEventListener("resize", t14);
       }, []), e13;
-    }(), T6 = z3 ? DOMRect.fromRect(__assign(__assign({}, z3), {x: 0, y: 0})) : void 0, {popperStyles: k4, arrowStyles: L5, placedSide: B3, placedAlign: D7} = getPlacementData({anchorRect: E7, popperSize: S3, arrowSize: _6, arrowOffset: A4, side: l10, sideOffset: f13, align: m9, alignOffset: w6, shouldAvoidCollisions: x6, collisionBoundariesRect: T6, collisionTolerance: h4}), H4 = B3 !== void 0;
+    }(), T5 = z3 ? DOMRect.fromRect(__assign(__assign({}, z3), {x: 0, y: 0})) : void 0, {popperStyles: k4, arrowStyles: L5, placedSide: B3, placedAlign: D7} = getPlacementData({anchorRect: E7, popperSize: S3, arrowSize: _6, arrowOffset: A4, side: l10, sideOffset: f13, align: m9, alignOffset: w7, shouldAvoidCollisions: x6, collisionBoundariesRect: T5, collisionTolerance: h4}), H4 = B3 !== void 0;
     return s3.createElement("div", {style: k4, "data-radix-popper-content-wrapper": ""}, /* @__PURE__ */ s3.createElement(u2, {scope: c7, arrowStyles: L5, onArrowChange: O5, onArrowOffsetChange: g5}, /* @__PURE__ */ s3.createElement(Primitive.div, _extends({"data-side": B3, "data-align": D7}, v7, {style: __assign(__assign({}, v7.style), {animation: H4 ? void 0 : "none"}), ref: b8}))));
   });
   var PopperArrow = /* @__PURE__ */ s3.forwardRef(function(o13, r13) {
@@ -15866,7 +15499,7 @@ Please add \`${key}Action\` when creating your handler.`);
   var Content = PopperContent;
   var Arrow2 = PopperArrow;
 
-  // ../../node_modules/@radix-ui/react-presence/dist/index.module.js
+  // node_modules/@radix-ui/react-presence/dist/index.module.js
   var t9 = __toModule(require_react());
   var Presence = (u5) => {
     const {present: o13, children: i9} = u5, s8 = function(n6) {
@@ -15916,11 +15549,11 @@ Please add \`${key}Action\` when creating your handler.`);
   }
   Presence.displayName = "Presence";
 
-  // ../../node_modules/@radix-ui/react-focus-scope/dist/index.module.js
+  // node_modules/@radix-ui/react-focus-scope/dist/index.module.js
   var o9 = __toModule(require_react());
   var c4 = {bubbles: false, cancelable: true};
   var FocusScope = /* @__PURE__ */ o9.forwardRef((i9, f13) => {
-    const {loop: l10 = false, trapped: m9 = false, onMountAutoFocus: p8, onUnmountAutoFocus: v7} = i9, E7 = __rest(i9, ["loop", "trapped", "onMountAutoFocus", "onUnmountAutoFocus"]), [F6, S3] = o9.useState(null), b8 = useCallbackRef(p8), T6 = useCallbackRef(v7), y4 = o9.useRef(null), L5 = useComposedRefs(f13, (e12) => S3(e12)), h4 = o9.useRef({paused: false, pause() {
+    const {loop: l10 = false, trapped: m9 = false, onMountAutoFocus: p8, onUnmountAutoFocus: v7} = i9, E7 = __rest(i9, ["loop", "trapped", "onMountAutoFocus", "onUnmountAutoFocus"]), [F6, S3] = o9.useState(null), b8 = useCallbackRef(p8), T5 = useCallbackRef(v7), y4 = o9.useRef(null), L5 = useComposedRefs(f13, (e12) => S3(e12)), h4 = o9.useRef({paused: false, pause() {
       this.paused = true;
     }, resume() {
       this.paused = false;
@@ -15955,11 +15588,11 @@ Please add \`${key}Action\` when creating your handler.`);
         return () => {
           F6.removeEventListener("focusScope.autoFocusOnMount", b8), setTimeout(() => {
             const t14 = new Event("focusScope.autoFocusOnUnmount", c4);
-            F6.addEventListener("focusScope.autoFocusOnUnmount", T6), F6.dispatchEvent(t14), t14.defaultPrevented || a5(e12 != null ? e12 : document.body, {select: true}), F6.removeEventListener("focusScope.autoFocusOnUnmount", T6), d4.remove(h4);
+            F6.addEventListener("focusScope.autoFocusOnUnmount", T5), F6.dispatchEvent(t14), t14.defaultPrevented || a5(e12 != null ? e12 : document.body, {select: true}), F6.removeEventListener("focusScope.autoFocusOnUnmount", T5), d4.remove(h4);
           }, 0);
         };
       }
-    }, [F6, b8, T6, h4]);
+    }, [F6, b8, T5, h4]);
     const x6 = o9.useCallback((e12) => {
       if (!l10 && !m9)
         return;
@@ -16025,7 +15658,7 @@ Please add \`${key}Action\` when creating your handler.`);
     return o13 !== -1 && n6.splice(o13, 1), n6;
   }
 
-  // ../../node_modules/@radix-ui/react-use-escape-keydown/dist/index.module.js
+  // node_modules/@radix-ui/react-use-escape-keydown/dist/index.module.js
   var t10 = __toModule(require_react());
   function useEscapeKeydown(n6) {
     const o13 = useCallbackRef(n6);
@@ -16037,7 +15670,7 @@ Please add \`${key}Action\` when creating your handler.`);
     }, [o13]);
   }
 
-  // ../../node_modules/@radix-ui/react-use-body-pointer-events/dist/index.module.js
+  // node_modules/@radix-ui/react-use-body-pointer-events/dist/index.module.js
   var t11 = __toModule(require_react());
   var n5;
   var o10 = 0;
@@ -16065,7 +15698,7 @@ Please add \`${key}Action\` when creating your handler.`);
     }, [r13]);
   }
 
-  // ../../node_modules/@radix-ui/react-dismissable-layer/dist/index.module.js
+  // node_modules/@radix-ui/react-dismissable-layer/dist/index.module.js
   var i5 = __toModule(require_react());
   var [a6, c5] = C2();
   var [l6, d5] = b3();
@@ -16076,9 +15709,9 @@ Please add \`${key}Action\` when creating your handler.`);
     return n6 ? /* @__PURE__ */ i5.createElement(a6, null, /* @__PURE__ */ i5.createElement(m4, null, r13)) : r13;
   });
   var E2 = /* @__PURE__ */ i5.forwardRef((r13, a10) => {
-    const {disableOutsidePointerEvents: m9 = false, onEscapeKeyDown: E7, onPointerDownOutside: C6, onFocusOutside: b8, onInteractOutside: w6, onDismiss: L5} = r13, y4 = __rest(r13, ["disableOutsidePointerEvents", "onEscapeKeyDown", "onPointerDownOutside", "onFocusOutside", "onInteractOutside", "onDismiss"]), D7 = c5(), P3 = d5() + 1, T6 = P3 === D7, g5 = f6(m9), x6 = v3() + (m9 ? 1 : 0), O5 = x6 < g5;
+    const {disableOutsidePointerEvents: m9 = false, onEscapeKeyDown: E7, onPointerDownOutside: C6, onFocusOutside: b8, onInteractOutside: w7, onDismiss: L5} = r13, y4 = __rest(r13, ["disableOutsidePointerEvents", "onEscapeKeyDown", "onPointerDownOutside", "onFocusOutside", "onInteractOutside", "onDismiss"]), D7 = c5(), P3 = d5() + 1, T5 = P3 === D7, g5 = f6(m9), x6 = v3() + (m9 ? 1 : 0), O5 = x6 < g5;
     useBodyPointerEvents({disabled: m9}), useEscapeKeydown((e12) => {
-      T6 && (E7 == null || E7(e12), e12.defaultPrevented || L5 == null || L5());
+      T5 && (E7 == null || E7(e12), e12.defaultPrevented || L5 == null || L5());
     });
     const {onPointerDownCapture: R6} = function(e12) {
       const n6 = useCallbackRef(e12), r14 = i5.useRef(false);
@@ -16098,7 +15731,7 @@ Please add \`${key}Action\` when creating your handler.`);
         };
       }, [n6]), {onPointerDownCapture: () => r14.current = true};
     }((e12) => {
-      O5 || (C6 == null || C6(e12), w6 == null || w6(e12), e12.defaultPrevented || L5 == null || L5());
+      O5 || (C6 == null || C6(e12), w7 == null || w7(e12), e12.defaultPrevented || L5 == null || L5());
     }), {onBlurCapture: h4, onFocusCapture: F6} = function(e12) {
       const n6 = useCallbackRef(e12), r14 = i5.useRef(false);
       return i5.useEffect(() => {
@@ -16112,7 +15745,7 @@ Please add \`${key}Action\` when creating your handler.`);
         return document.addEventListener("focusin", e13), () => document.removeEventListener("focusin", e13);
       }, [n6]), {onFocusCapture: () => r14.current = true, onBlurCapture: () => r14.current = false};
     }((e12) => {
-      b8 == null || b8(e12), w6 == null || w6(e12), e12.defaultPrevented || L5 == null || L5();
+      b8 == null || b8(e12), w7 == null || w7(e12), e12.defaultPrevented || L5 == null || L5();
     }), k4 = g5 > 0 && !O5;
     return i5.createElement(l6, {runningCount: P3}, /* @__PURE__ */ i5.createElement(p4, {runningCount: x6}, /* @__PURE__ */ i5.createElement(Primitive.div, _extends({}, y4, {ref: a10, style: __assign({pointerEvents: k4 ? "auto" : void 0}, y4.style), onPointerDownCapture: composeEventHandlers(r13.onPointerDownCapture, R6), onBlurCapture: composeEventHandlers(r13.onBlurCapture, h4), onFocusCapture: composeEventHandlers(r13.onFocusCapture, F6)}))));
   });
@@ -16141,7 +15774,7 @@ Please add \`${key}Action\` when creating your handler.`);
     }];
   }
 
-  // ../../node_modules/aria-hidden/dist/es2015/index.js
+  // node_modules/aria-hidden/dist/es2015/index.js
   var getDefaultParent = function(originalTarget) {
     if (typeof document === "undefined") {
       return null;
@@ -16231,7 +15864,7 @@ Please add \`${key}Action\` when creating your handler.`);
     };
   };
 
-  // ../../node_modules/react-remove-scroll/node_modules/tslib/modules/index.js
+  // node_modules/tslib/modules/index.js
   var import_tslib = __toModule(require_tslib());
   var {
     __extends,
@@ -16259,47 +15892,19 @@ Please add \`${key}Action\` when creating your handler.`);
     __classPrivateFieldSet
   } = import_tslib.default;
 
-  // ../../node_modules/react-remove-scroll/dist/es2015/Combination.js
+  // node_modules/react-remove-scroll/dist/es2015/Combination.js
   var React7 = __toModule(require_react());
 
-  // ../../node_modules/react-remove-scroll/dist/es2015/UI.js
+  // node_modules/react-remove-scroll/dist/es2015/UI.js
   var React3 = __toModule(require_react());
 
-  // ../../node_modules/react-remove-scroll-bar/dist/es2015/constants.js
+  // node_modules/react-remove-scroll-bar/dist/es2015/constants.js
   var zeroRightClassName = "right-scroll-bar-position";
   var fullWidthClassName = "width-before-scroll-bar";
   var noScrollbarsClassName = "with-scroll-bars-hidden";
   var removedBarSizeVariable = "--removed-body-scroll-bar-size";
 
-  // ../../node_modules/use-sidecar/node_modules/tslib/modules/index.js
-  var import_tslib2 = __toModule(require_tslib2());
-  var {
-    __extends: __extends2,
-    __assign: __assign3,
-    __rest: __rest3,
-    __decorate: __decorate2,
-    __param: __param2,
-    __metadata: __metadata2,
-    __awaiter: __awaiter2,
-    __generator: __generator2,
-    __exportStar: __exportStar3,
-    __createBinding: __createBinding2,
-    __values: __values2,
-    __read: __read2,
-    __spread: __spread2,
-    __spreadArrays: __spreadArrays2,
-    __await: __await2,
-    __asyncGenerator: __asyncGenerator2,
-    __asyncDelegator: __asyncDelegator2,
-    __asyncValues: __asyncValues2,
-    __makeTemplateObject: __makeTemplateObject2,
-    __importStar: __importStar2,
-    __importDefault: __importDefault2,
-    __classPrivateFieldGet: __classPrivateFieldGet2,
-    __classPrivateFieldSet: __classPrivateFieldSet2
-  } = import_tslib2.default;
-
-  // ../../node_modules/use-sidecar/dist/es2015/medium.js
+  // node_modules/use-sidecar/dist/es2015/medium.js
   function ItoI(a10) {
     return a10;
   }
@@ -16381,14 +15986,14 @@ Please add \`${key}Action\` when creating your handler.`);
       options = {};
     }
     var medium = innerCreateMedium(null);
-    medium.options = __assign3({async: true, ssr: false}, options);
+    medium.options = __assign2({async: true, ssr: false}, options);
     return medium;
   }
 
-  // ../../node_modules/use-sidecar/dist/es2015/exports.js
+  // node_modules/use-sidecar/dist/es2015/exports.js
   var React2 = __toModule(require_react());
   var SideCar = function(_a2) {
-    var sideCar = _a2.sideCar, rest = __rest3(_a2, ["sideCar"]);
+    var sideCar = _a2.sideCar, rest = __rest2(_a2, ["sideCar"]);
     if (!sideCar) {
       throw new Error("Sidecar: please provide `sideCar` property to import the right car");
     }
@@ -16396,7 +16001,7 @@ Please add \`${key}Action\` when creating your handler.`);
     if (!Target) {
       throw new Error("Sidecar medium not found");
     }
-    return React2.createElement(Target, __assign3({}, rest));
+    return React2.createElement(Target, __assign2({}, rest));
   };
   SideCar.isSideCarExport = true;
   function exportSidecar(medium, exported) {
@@ -16404,10 +16009,10 @@ Please add \`${key}Action\` when creating your handler.`);
     return SideCar;
   }
 
-  // ../../node_modules/react-remove-scroll/dist/es2015/medium.js
+  // node_modules/react-remove-scroll/dist/es2015/medium.js
   var effectCar = createSidecarMedium();
 
-  // ../../node_modules/use-callback-ref/dist/es2015/assignRef.js
+  // node_modules/use-callback-ref/dist/es2015/assignRef.js
   function assignRef(ref, value) {
     if (typeof ref === "function") {
       ref(value);
@@ -16417,7 +16022,7 @@ Please add \`${key}Action\` when creating your handler.`);
     return ref;
   }
 
-  // ../../node_modules/use-callback-ref/dist/es2015/useRef.js
+  // node_modules/use-callback-ref/dist/es2015/useRef.js
   var import_react54 = __toModule(require_react());
   function useCallbackRef2(initialValue, callback) {
     var ref = (0, import_react54.useState)(function() {
@@ -16442,7 +16047,7 @@ Please add \`${key}Action\` when creating your handler.`);
     return ref.facade;
   }
 
-  // ../../node_modules/use-callback-ref/dist/es2015/useMergeRef.js
+  // node_modules/use-callback-ref/dist/es2015/useMergeRef.js
   function useMergeRefs(refs, defaultValue) {
     return useCallbackRef2(defaultValue, function(newValue) {
       return refs.forEach(function(ref) {
@@ -16451,7 +16056,7 @@ Please add \`${key}Action\` when creating your handler.`);
     });
   }
 
-  // ../../node_modules/react-remove-scroll/dist/es2015/UI.js
+  // node_modules/react-remove-scroll/dist/es2015/UI.js
   var nothing = function() {
     return;
   };
@@ -16462,14 +16067,14 @@ Please add \`${key}Action\` when creating your handler.`);
       onWheelCapture: nothing,
       onTouchMoveCapture: nothing
     }), callbacks = _a2[0], setCallbacks = _a2[1];
-    var forwardProps = props.forwardProps, children = props.children, className = props.className, removeScrollBar = props.removeScrollBar, enabled = props.enabled, shards = props.shards, sideCar = props.sideCar, noIsolation = props.noIsolation, inert = props.inert, allowPinchZoom = props.allowPinchZoom, _b = props.as, Container2 = _b === void 0 ? "div" : _b, rest = __rest2(props, ["forwardProps", "children", "className", "removeScrollBar", "enabled", "shards", "sideCar", "noIsolation", "inert", "allowPinchZoom", "as"]);
+    var forwardProps = props.forwardProps, children = props.children, className = props.className, removeScrollBar = props.removeScrollBar, enabled = props.enabled, shards = props.shards, sideCar = props.sideCar, noIsolation = props.noIsolation, inert = props.inert, allowPinchZoom = props.allowPinchZoom, _b = props.as, Container3 = _b === void 0 ? "div" : _b, rest = __rest2(props, ["forwardProps", "children", "className", "removeScrollBar", "enabled", "shards", "sideCar", "noIsolation", "inert", "allowPinchZoom", "as"]);
     var SideCar2 = sideCar;
     var containerRef = useMergeRefs([
       ref,
       parentRef
     ]);
     var containerProps = __assign2({}, rest, callbacks);
-    return React3.createElement(React3.Fragment, null, enabled && React3.createElement(SideCar2, {sideCar: effectCar, removeScrollBar, shards, noIsolation, inert, setCallbacks, allowPinchZoom: !!allowPinchZoom, lockRef: ref}), forwardProps ? React3.cloneElement(React3.Children.only(children), __assign2({}, containerProps, {ref: containerRef})) : React3.createElement(Container2, __assign2({}, containerProps, {className, ref: containerRef}), children));
+    return React3.createElement(React3.Fragment, null, enabled && React3.createElement(SideCar2, {sideCar: effectCar, removeScrollBar, shards, noIsolation, inert, setCallbacks, allowPinchZoom: !!allowPinchZoom, lockRef: ref}), forwardProps ? React3.cloneElement(React3.Children.only(children), __assign2({}, containerProps, {ref: containerRef})) : React3.createElement(Container3, __assign2({}, containerProps, {className, ref: containerRef}), children));
   });
   RemoveScroll.defaultProps = {
     enabled: true,
@@ -16481,16 +16086,16 @@ Please add \`${key}Action\` when creating your handler.`);
     zeroRight: zeroRightClassName
   };
 
-  // ../../node_modules/react-remove-scroll/dist/es2015/SideEffect.js
+  // node_modules/react-remove-scroll/dist/es2015/SideEffect.js
   var React6 = __toModule(require_react());
 
-  // ../../node_modules/react-remove-scroll-bar/dist/es2015/component.js
+  // node_modules/react-remove-scroll-bar/dist/es2015/component.js
   var React5 = __toModule(require_react());
 
-  // ../../node_modules/react-style-singleton/dist/es2015/hook.js
+  // node_modules/react-style-singleton/dist/es2015/hook.js
   var React4 = __toModule(require_react());
 
-  // ../../node_modules/get-nonce/dist/es2015/index.js
+  // node_modules/get-nonce/dist/es2015/index.js
   var currentNonce;
   var getNonce = function() {
     if (currentNonce) {
@@ -16502,7 +16107,7 @@ Please add \`${key}Action\` when creating your handler.`);
     return void 0;
   };
 
-  // ../../node_modules/react-style-singleton/dist/es2015/singleton.js
+  // node_modules/react-style-singleton/dist/es2015/singleton.js
   function makeStyleTag() {
     if (!document)
       return null;
@@ -16548,7 +16153,7 @@ Please add \`${key}Action\` when creating your handler.`);
     };
   };
 
-  // ../../node_modules/react-style-singleton/dist/es2015/hook.js
+  // node_modules/react-style-singleton/dist/es2015/hook.js
   var styleHookSingleton = function() {
     var sheet = stylesheetSingleton();
     return function(styles2) {
@@ -16561,7 +16166,7 @@ Please add \`${key}Action\` when creating your handler.`);
     };
   };
 
-  // ../../node_modules/react-style-singleton/dist/es2015/component.js
+  // node_modules/react-style-singleton/dist/es2015/component.js
   var styleSingleton = function() {
     var useStyle2 = styleHookSingleton();
     var Sheet = function(_a2) {
@@ -16572,7 +16177,7 @@ Please add \`${key}Action\` when creating your handler.`);
     return Sheet;
   };
 
-  // ../../node_modules/react-remove-scroll-bar/dist/es2015/utils.js
+  // node_modules/react-remove-scroll-bar/dist/es2015/utils.js
   var zeroGap = {
     left: 0,
     top: 0,
@@ -16611,7 +16216,7 @@ Please add \`${key}Action\` when creating your handler.`);
     };
   };
 
-  // ../../node_modules/react-remove-scroll-bar/dist/es2015/component.js
+  // node_modules/react-remove-scroll-bar/dist/es2015/component.js
   var Style = styleSingleton();
   var getStyles = function(_a2, allowRelative, gapMode, important) {
     var left = _a2.left, top2 = _a2.top, right = _a2.right, gap = _a2.gap;
@@ -16633,7 +16238,7 @@ Please add \`${key}Action\` when creating your handler.`);
     return React5.createElement(Style, {styles: getStyles(gap, !noRelative, gapMode, !noImportant ? "!important" : "")});
   };
 
-  // ../../node_modules/react-remove-scroll/dist/es2015/handleScroll.js
+  // node_modules/react-remove-scroll/dist/es2015/handleScroll.js
   var elementCouldBeVScrolled = function(node) {
     var styles2 = window.getComputedStyle(node);
     return styles2.overflowY !== "hidden" && !(styles2.overflowY === styles2.overflowX && styles2.overflowY === "visible");
@@ -16703,7 +16308,7 @@ Please add \`${key}Action\` when creating your handler.`);
     return shouldCancelScroll;
   };
 
-  // ../../node_modules/react-remove-scroll/dist/es2015/aggresiveCapture.js
+  // node_modules/react-remove-scroll/dist/es2015/aggresiveCapture.js
   var passiveSupported = false;
   if (typeof window !== "undefined") {
     try {
@@ -16722,7 +16327,7 @@ Please add \`${key}Action\` when creating your handler.`);
   var options;
   var nonPassive = passiveSupported ? {passive: false} : false;
 
-  // ../../node_modules/react-remove-scroll/dist/es2015/SideEffect.js
+  // node_modules/react-remove-scroll/dist/es2015/SideEffect.js
   var getTouchXY = function(event) {
     return "changedTouches" in event ? [event.changedTouches[0].clientX, event.changedTouches[0].clientY] : [0, 0];
   };
@@ -16868,17 +16473,17 @@ Please add \`${key}Action\` when creating your handler.`);
     return React6.createElement(React6.Fragment, null, inert ? React6.createElement(Style2, {styles: generateStyle(id)}) : null, removeScrollBar ? React6.createElement(RemoveScrollBar, {gapMode: "margin"}) : null);
   }
 
-  // ../../node_modules/react-remove-scroll/dist/es2015/sidecar.js
+  // node_modules/react-remove-scroll/dist/es2015/sidecar.js
   var sidecar_default = exportSidecar(effectCar, RemoveScrollSideCar);
 
-  // ../../node_modules/react-remove-scroll/dist/es2015/Combination.js
+  // node_modules/react-remove-scroll/dist/es2015/Combination.js
   var ReactRemoveScroll = React7.forwardRef(function(props, ref) {
     return React7.createElement(RemoveScroll, __assign2({}, props, {ref, sideCar: sidecar_default}));
   });
   ReactRemoveScroll.classNames = RemoveScroll.classNames;
   var Combination_default = ReactRemoveScroll;
 
-  // ../../node_modules/@radix-ui/react-menu/dist/index.module.js
+  // node_modules/@radix-ui/react-menu/dist/index.module.js
   var E3 = __toModule(require_react());
   var x2 = ["Enter", " "];
   var b4 = ["ArrowUp", "PageDown", "End"];
@@ -17137,18 +16742,18 @@ Please add \`${key}Action\` when creating your handler.`);
   var Separator = MenuSeparator;
   var Arrow3 = MenuArrow;
 
-  // ../../node_modules/@radix-ui/react-dropdown-menu/dist/index.module.js
+  // node_modules/@radix-ui/react-dropdown-menu/dist/index.module.js
   var d6 = __toModule(require_react());
   var [s5, i6] = createContextScope("DropdownMenu", [S2]);
   var l7 = S2();
   var [m5, w3] = s5("DropdownMenu");
   var DropdownMenu = (e12) => {
-    const {__scopeDropdownMenu: n6, children: r13, open: p8, defaultOpen: a10, onOpenChange: c7} = e12, s8 = M2("DropdownMenu", n6), i9 = l7(n6), [w6 = false, D7] = useControllableState({prop: p8, defaultProp: a10, onChange: c7}), g5 = d6.useCallback(() => D7((e13) => !e13), [D7]);
-    return s8.isInsideContent ? /* @__PURE__ */ d6.createElement(m5, {scope: n6, isRootMenu: false, open: w6, onOpenChange: D7, onOpenToggle: g5}, /* @__PURE__ */ d6.createElement(Sub, _extends({}, i9, {open: w6, onOpenChange: D7}), r13)) : /* @__PURE__ */ d6.createElement(f7, _extends({}, e12, {open: w6, onOpenChange: D7, onOpenToggle: g5}), r13);
+    const {__scopeDropdownMenu: n6, children: r13, open: p8, defaultOpen: a10, onOpenChange: c7} = e12, s8 = M2("DropdownMenu", n6), i9 = l7(n6), [w7 = false, D7] = useControllableState({prop: p8, defaultProp: a10, onChange: c7}), g5 = d6.useCallback(() => D7((e13) => !e13), [D7]);
+    return s8.isInsideContent ? /* @__PURE__ */ d6.createElement(m5, {scope: n6, isRootMenu: false, open: w7, onOpenChange: D7, onOpenToggle: g5}, /* @__PURE__ */ d6.createElement(Sub, _extends({}, i9, {open: w7, onOpenChange: D7}), r13)) : /* @__PURE__ */ d6.createElement(f7, _extends({}, e12, {open: w7, onOpenChange: D7, onOpenToggle: g5}), r13);
   };
   var f7 = (n6) => {
-    const {__scopeDropdownMenu: r13, children: t14, dir: p8, open: a10, onOpenChange: c7, onOpenToggle: s8, modal: i9 = true} = n6, w6 = l7(r13), f13 = d6.useRef(null);
-    return d6.createElement(m5, {scope: r13, isRootMenu: true, triggerId: useId(), triggerRef: f13, contentId: useId(), open: a10, onOpenChange: c7, onOpenToggle: s8, modal: i9}, /* @__PURE__ */ d6.createElement(Root4, _extends({}, w6, {open: a10, onOpenChange: c7, dir: p8, modal: i9}), t14));
+    const {__scopeDropdownMenu: r13, children: t14, dir: p8, open: a10, onOpenChange: c7, onOpenToggle: s8, modal: i9 = true} = n6, w7 = l7(r13), f13 = d6.useRef(null);
+    return d6.createElement(m5, {scope: r13, isRootMenu: true, triggerId: useId(), triggerRef: f13, contentId: useId(), open: a10, onOpenChange: c7, onOpenToggle: s8, modal: i9}, /* @__PURE__ */ d6.createElement(Root4, _extends({}, w7, {open: a10, onOpenChange: c7, dir: p8, modal: i9}), t14));
   };
   var DropdownMenuTrigger = /* @__PURE__ */ d6.forwardRef((e12, n6) => {
     const {__scopeDropdownMenu: t14} = e12, p8 = __rest(e12, ["__scopeDropdownMenu"]), s8 = w3("DropdownMenuTrigger", t14), i9 = l7(t14);
@@ -17223,7 +16828,7 @@ Please add \`${key}Action\` when creating your handler.`);
   var Separator2 = DropdownMenuSeparator;
   var Arrow4 = DropdownMenuArrow;
 
-  // ../../node_modules/@radix-ui/react-icons/dist/react-icons.esm.js
+  // node_modules/@radix-ui/react-icons/dist/react-icons.esm.js
   var import_react55 = __toModule(require_react());
   function _objectWithoutPropertiesLoose2(source, excluded) {
     if (source == null)
@@ -17833,18 +17438,18 @@ Please add \`${key}Action\` when creating your handler.`);
     }));
   });
 
-  // ../../packages/tldraw/dist/esm/index.js
+  // node_modules/@tldraw/tldraw/dist/esm/index.js
   var import_react74 = __toModule(require_react());
   var import_react75 = __toModule(require_react());
   var import_react76 = __toModule(require_react());
   var import_react77 = __toModule(require_react());
 
-  // ../../node_modules/@radix-ui/react-visually-hidden/dist/index.module.js
+  // node_modules/@radix-ui/react-visually-hidden/dist/index.module.js
   var r10 = __toModule(require_react());
   var VisuallyHidden = /* @__PURE__ */ r10.forwardRef((i9, o13) => /* @__PURE__ */ r10.createElement(Primitive.span, _extends({}, i9, {ref: o13, style: __assign(__assign({}, i9.style), {position: "absolute", border: 0, width: 1, height: 1, padding: 0, margin: -1, overflow: "hidden", clip: "rect(0, 0, 0, 0)", whiteSpace: "nowrap", wordWrap: "normal"})})));
   var Root6 = VisuallyHidden;
 
-  // ../../node_modules/@radix-ui/react-use-previous/dist/index.module.js
+  // node_modules/@radix-ui/react-use-previous/dist/index.module.js
   var e11 = __toModule(require_react());
   function usePrevious(r13) {
     const t14 = e11.useRef(r13);
@@ -17853,7 +17458,7 @@ Please add \`${key}Action\` when creating your handler.`);
     }, [r13]), t14.current;
   }
 
-  // ../../node_modules/@radix-ui/react-tooltip/dist/index.module.js
+  // node_modules/@radix-ui/react-tooltip/dist/index.module.js
   var E4 = __toModule(require_react());
   function y3(e12) {
     return {type: "machine.actions.assign", assign: e12};
@@ -17903,7 +17508,7 @@ Please add \`${key}Action\` when creating your handler.`);
   var w4 = l5();
   var [h2, O3] = b5("Tooltip");
   var Tooltip = (t14) => {
-    const {__scopeTooltip: o13, children: n6, open: i9, defaultOpen: a10 = false, onOpenChange: s8, delayDuration: l10 = 700, skipDelayDuration: c7 = 300} = t14, u5 = w4(o13), [m9, f13] = E4.useState(null), g5 = useId(), [x6 = false, y4] = useControllableState({prop: i9, defaultProp: a10, onChange: s8}), [T6, C6] = E4.useState(i9 ? "instant-open" : "closed");
+    const {__scopeTooltip: o13, children: n6, open: i9, defaultOpen: a10 = false, onOpenChange: s8, delayDuration: l10 = 700, skipDelayDuration: c7 = 300} = t14, u5 = w4(o13), [m9, f13] = E4.useState(null), g5 = useId(), [x6 = false, y4] = useControllableState({prop: i9, defaultProp: a10, onChange: s8}), [T5, C6] = E4.useState(i9 ? "instant-open" : "closed");
     E4.useEffect(() => _3.subscribe(({state: e12, context: t15}) => {
       e12 === "open" && t15.id === g5 ? y4(true) : y4(false);
     }), [g5, y4]), E4.useEffect(() => _3.subscribe(({state: e12, context: t15}) => {
@@ -17912,7 +17517,7 @@ Please add \`${key}Action\` when creating your handler.`);
     const v7 = E4.useCallback(() => _3.send({type: "FOCUS", id: g5}), [g5]), b8 = E4.useCallback(() => _3.send({type: "OPEN", id: g5, delayDuration: l10}), [g5, l10]), D7 = E4.useCallback(() => _3.send({type: "CLOSE", id: g5, skipDelayDuration: c7}), [c7, g5]);
     return E4.useEffect(() => () => D7(), [D7]), useLayoutEffect7(() => {
       i9 === true && _3.send({type: "OPEN", id: g5});
-    }, [g5, i9]), /* @__PURE__ */ E4.createElement(Root3, u5, /* @__PURE__ */ E4.createElement(h2, {scope: o13, contentId: g5, open: x6, stateAttribute: T6, trigger: m9, onTriggerChange: f13, onFocus: v7, onOpen: b8, onClose: D7}, n6));
+    }, [g5, i9]), /* @__PURE__ */ E4.createElement(Root3, u5, /* @__PURE__ */ E4.createElement(h2, {scope: o13, contentId: g5, open: x6, stateAttribute: T5, trigger: m9, onTriggerChange: f13, onFocus: v7, onOpen: b8, onClose: D7}, n6));
   };
   var TooltipTrigger = /* @__PURE__ */ E4.forwardRef((e12, t14) => {
     const {__scopeTooltip: o13} = e12, n6 = __rest(e12, ["__scopeTooltip"]), i9 = O3("TooltipTrigger", o13), s8 = w4(o13), l10 = useComposedRefs(t14, i9.onTriggerChange);
@@ -17943,7 +17548,7 @@ Please add \`${key}Action\` when creating your handler.`);
   var Content4 = TooltipContent;
   var Arrow5 = TooltipArrow;
 
-  // ../../packages/tldraw/dist/esm/index.js
+  // node_modules/@tldraw/tldraw/dist/esm/index.js
   var import_react78 = __toModule(require_react());
   var import_react79 = __toModule(require_react());
   var import_react80 = __toModule(require_react());
@@ -17972,7 +17577,7 @@ Please add \`${key}Action\` when creating your handler.`);
   var import_react103 = __toModule(require_react());
   var import_react104 = __toModule(require_react());
 
-  // ../../node_modules/@radix-ui/react-dialog/dist/index.module.js
+  // node_modules/@radix-ui/react-dialog/dist/index.module.js
   var f8 = __toModule(require_react());
   var [D5, v5] = createContextScope("Dialog");
   var [x3, C4] = D5("Dialog");
@@ -18041,7 +17646,7 @@ Please add \`${key}Action\` when creating your handler.`);
   var Content5 = DialogContent;
   var Close = DialogClose;
 
-  // ../../node_modules/@radix-ui/react-alert-dialog/dist/index.module.js
+  // node_modules/@radix-ui/react-alert-dialog/dist/index.module.js
   var a8 = __toModule(require_react());
   var [c6, s6] = createContextScope("AlertDialog", [v5]);
   var p5 = v5();
@@ -18081,13 +17686,13 @@ Please add \`${key}Action\` when creating your handler.`);
   var Action = AlertDialogAction;
   var Cancel = AlertDialogCancel;
 
-  // ../../packages/tldraw/dist/esm/index.js
+  // node_modules/@tldraw/tldraw/dist/esm/index.js
   var import_react105 = __toModule(require_react());
   var import_react106 = __toModule(require_react());
   var import_react107 = __toModule(require_react());
   var import_react108 = __toModule(require_react());
 
-  // ../../node_modules/@radix-ui/react-label/dist/index.module.js
+  // node_modules/@radix-ui/react-label/dist/index.module.js
   var l8 = __toModule(require_react());
   var [i7, a9] = createContext2("Label", {id: void 0, controlRef: {current: null}});
   var useLabelContext = (e12) => {
@@ -18097,12 +17702,12 @@ Please add \`${key}Action\` when creating your handler.`);
     }, [e12, r13]), t14.id;
   };
 
-  // ../../node_modules/@radix-ui/react-checkbox/dist/index.module.js
+  // node_modules/@radix-ui/react-checkbox/dist/index.module.js
   var d7 = __toModule(require_react());
   var [u3, p6] = createContextScope("Checkbox");
   var [m6, b7] = u3("Checkbox");
   var Checkbox = /* @__PURE__ */ d7.forwardRef((t14, o13) => {
-    const {__scopeCheckbox: a10, "aria-labelledby": i9, name: u5, checked: p8, defaultChecked: b8, required: k4, disabled: C6, value: v7 = "on", onCheckedChange: y4} = t14, E7 = __rest(t14, ["__scopeCheckbox", "aria-labelledby", "name", "checked", "defaultChecked", "required", "disabled", "value", "onCheckedChange"]), [g5, w6] = d7.useState(null), I3 = useComposedRefs(o13, (e12) => w6(e12)), R6 = useLabelContext(g5), P3 = i9 || R6, _6 = d7.useRef(false), q3 = !g5 || Boolean(g5.closest("form")), [M5 = false, O5] = useControllableState({prop: p8, defaultProp: b8, onChange: y4});
+    const {__scopeCheckbox: a10, "aria-labelledby": i9, name: u5, checked: p8, defaultChecked: b8, required: k4, disabled: C6, value: v7 = "on", onCheckedChange: y4} = t14, E7 = __rest(t14, ["__scopeCheckbox", "aria-labelledby", "name", "checked", "defaultChecked", "required", "disabled", "value", "onCheckedChange"]), [g5, w7] = d7.useState(null), I3 = useComposedRefs(o13, (e12) => w7(e12)), R6 = useLabelContext(g5), P3 = i9 || R6, _6 = d7.useRef(false), q3 = !g5 || Boolean(g5.closest("form")), [M5 = false, O5] = useControllableState({prop: p8, defaultProp: b8, onChange: y4});
     return d7.createElement(m6, {scope: a10, state: M5, disabled: C6}, /* @__PURE__ */ d7.createElement(Primitive.button, _extends({type: "button", role: "checkbox", "aria-checked": x4(M5) ? "mixed" : M5, "aria-labelledby": P3, "aria-required": k4, "data-state": h3(M5), "data-disabled": C6 ? "" : void 0, disabled: C6, value: v7}, E7, {ref: I3, onClick: composeEventHandlers(t14.onClick, (e12) => {
       O5((e13) => !!x4(e13) || !e13), q3 && (_6.current = e12.isPropagationStopped(), _6.current || e12.stopPropagation());
     })})), q3 && /* @__PURE__ */ d7.createElement(f10, {control: g5, bubbles: !_6.current, name: u5, value: v7, checked: M5, required: k4, disabled: C6, style: {transform: "translateX(-100%)"}}));
@@ -18130,11 +17735,11 @@ Please add \`${key}Action\` when creating your handler.`);
   var Root10 = Checkbox;
   var Indicator = CheckboxIndicator;
 
-  // ../../packages/tldraw/dist/esm/index.js
+  // node_modules/@tldraw/tldraw/dist/esm/index.js
   var import_react109 = __toModule(require_react());
   var import_react110 = __toModule(require_react());
 
-  // ../../node_modules/@radix-ui/react-context-menu/dist/index.module.js
+  // node_modules/@radix-ui/react-context-menu/dist/index.module.js
   var u4 = __toModule(require_react());
   var [s7, i8] = createContextScope("ContextMenu", [S2]);
   var x5 = S2();
@@ -18189,54 +17794,54 @@ Please add \`${key}Action\` when creating your handler.`);
   var Trigger5 = ContextMenuTrigger;
   var Content7 = ContextMenuContent;
 
-  // ../../packages/tldraw/dist/esm/index.js
+  // node_modules/@tldraw/tldraw/dist/esm/index.js
   var import_react111 = __toModule(require_react());
   var import_react112 = __toModule(require_react());
   var import_react113 = __toModule(require_react());
   var import_react114 = __toModule(require_react());
   var Xa = Object.create;
-  var jt = Object.defineProperty;
+  var Wt = Object.defineProperty;
   var Ya = Object.defineProperties;
   var Ja = Object.getOwnPropertyDescriptor;
   var Za = Object.getOwnPropertyDescriptors;
   var _a = Object.getOwnPropertyNames;
-  var on = Object.getOwnPropertySymbols;
+  var sn = Object.getOwnPropertySymbols;
   var qa = Object.getPrototypeOf;
-  var Kn = Object.prototype.hasOwnProperty;
-  var Xo = Object.prototype.propertyIsEnumerable;
-  var Yo = (o13, e12, t14) => e12 in o13 ? jt(o13, e12, {enumerable: true, configurable: true, writable: true, value: t14}) : o13[e12] = t14;
+  var Gn = Object.prototype.hasOwnProperty;
+  var Yo = Object.prototype.propertyIsEnumerable;
+  var Jo = (o13, e12, t14) => e12 in o13 ? Wt(o13, e12, {enumerable: true, configurable: true, writable: true, value: t14}) : o13[e12] = t14;
   var m8 = (o13, e12) => {
     for (var t14 in e12 || (e12 = {}))
-      Kn.call(e12, t14) && Yo(o13, t14, e12[t14]);
-    if (on)
-      for (var t14 of on(e12))
-        Xo.call(e12, t14) && Yo(o13, t14, e12[t14]);
+      Gn.call(e12, t14) && Jo(o13, t14, e12[t14]);
+    if (sn)
+      for (var t14 of sn(e12))
+        Yo.call(e12, t14) && Jo(o13, t14, e12[t14]);
     return o13;
   };
-  var T5 = (o13, e12) => Ya(o13, Za(e12));
-  var Jo = (o13) => jt(o13, "__esModule", {value: true});
+  var w6 = (o13, e12) => Ya(o13, Za(e12));
+  var Zo = (o13) => Wt(o13, "__esModule", {value: true});
   var ce2 = (o13, e12) => {
     var t14 = {};
     for (var n6 in o13)
-      Kn.call(o13, n6) && e12.indexOf(n6) < 0 && (t14[n6] = o13[n6]);
-    if (o13 != null && on)
-      for (var n6 of on(o13))
-        e12.indexOf(n6) < 0 && Xo.call(o13, n6) && (t14[n6] = o13[n6]);
+      Gn.call(o13, n6) && e12.indexOf(n6) < 0 && (t14[n6] = o13[n6]);
+    if (o13 != null && sn)
+      for (var n6 of sn(o13))
+        e12.indexOf(n6) < 0 && Yo.call(o13, n6) && (t14[n6] = o13[n6]);
     return t14;
   };
   var Qa = (o13, e12) => () => (e12 || o13((e12 = {exports: {}}).exports, e12), e12.exports);
   var ei = (o13, e12) => {
-    Jo(o13);
+    Zo(o13);
     for (var t14 in e12)
-      jt(o13, t14, {get: e12[t14], enumerable: true});
+      Wt(o13, t14, {get: e12[t14], enumerable: true});
   };
-  var $t = (o13, e12, t14) => {
+  var Vt = (o13, e12, t14) => {
     if (e12 && typeof e12 == "object" || typeof e12 == "function")
       for (let n6 of _a(e12))
-        !Kn.call(o13, n6) && n6 !== "default" && jt(o13, n6, {get: () => e12[n6], enumerable: !(t14 = Ja(e12, n6)) || t14.enumerable});
+        !Gn.call(o13, n6) && n6 !== "default" && Wt(o13, n6, {get: () => e12[n6], enumerable: !(t14 = Ja(e12, n6)) || t14.enumerable});
     return o13;
   };
-  var Zo = (o13) => $t(Jo(jt(o13 != null ? Xa(qa(o13)) : {}, "default", o13 && o13.__esModule && "default" in o13 ? {get: () => o13.default, enumerable: true} : {value: o13, enumerable: true})), o13);
+  var _o = (o13) => Vt(Zo(Wt(o13 != null ? Xa(qa(o13)) : {}, "default", o13 && o13.__esModule && "default" in o13 ? {get: () => o13.default, enumerable: true} : {value: o13, enumerable: true})), o13);
   var q2 = (o13, e12, t14) => new Promise((n6, s8) => {
     var r13 = (d9) => {
       try {
@@ -18253,11 +17858,11 @@ Please add \`${key}Action\` when creating your handler.`);
     }, i9 = (d9) => d9.done ? n6(d9.value) : Promise.resolve(d9.value).then(r13, a10);
     i9((t14 = t14.apply(o13, e12)).next());
   });
-  var Yn = Qa((Is) => {
-    var es = Object.defineProperty, si = (o13) => es(o13, "__esModule", {value: true}), Je = (o13, e12) => () => o13 && (e12 = o13(o13 = 0)), $e = (o13, e12) => {
+  var Jn = Qa((bs) => {
+    var ts = Object.defineProperty, si = (o13) => ts(o13, "__esModule", {value: true}), Je = (o13, e12) => () => o13 && (e12 = o13(o13 = 0)), $e = (o13, e12) => {
       si(o13);
       for (var t14 in e12)
-        es(o13, t14, {get: e12[t14], enumerable: true});
+        ts(o13, t14, {get: e12[t14], enumerable: true});
     }, me2 = (o13, e12, t14) => new Promise((n6, s8) => {
       var r13 = (d9) => {
         try {
@@ -18273,10 +17878,10 @@ Please add \`${key}Action\` when creating your handler.`);
         }
       }, i9 = (d9) => d9.done ? n6(d9.value) : Promise.resolve(d9.value).then(r13, a10);
       i9((t14 = t14.apply(o13, e12)).next());
-    }), ts = {};
-    $e(ts, {default: () => ns});
-    var ns, ri = Je(() => {
-      ns = (...o13) => me2(void 0, [...o13], function* (e12 = {}) {
+    }), ns = {};
+    $e(ns, {default: () => os});
+    var os, ri = Je(() => {
+      os = (...o13) => me2(void 0, [...o13], function* (e12 = {}) {
         return new Promise((t14, n6) => {
           let s8 = document.createElement("input");
           s8.type = "file";
@@ -18290,34 +17895,34 @@ Please add \`${key}Action\` when creating your handler.`);
           }), s8.click();
         });
       });
-    }), os = {};
-    $e(os, {default: () => ss});
-    var Gn, ss, ai = Je(() => {
-      Gn = (o13) => me2(void 0, null, function* () {
+    }), ss = {};
+    $e(ss, {default: () => rs});
+    var Nn, rs, ai = Je(() => {
+      Nn = (o13) => me2(void 0, null, function* () {
         let e12 = yield o13.getFile();
         return e12.handle = o13, e12;
-      }), ss = (...o13) => me2(void 0, [...o13], function* (e12 = {}) {
+      }), rs = (...o13) => me2(void 0, [...o13], function* (e12 = {}) {
         let t14 = yield window.chooseFileSystemEntries({accepts: [{description: e12.description || "", mimeTypes: e12.mimeTypes || ["*/*"], extensions: e12.extensions || [""]}], multiple: e12.multiple || false});
-        return e12.multiple ? Promise.all(t14.map(Gn)) : Gn(t14);
+        return e12.multiple ? Promise.all(t14.map(Nn)) : Nn(t14);
       });
-    }), rs = {};
-    $e(rs, {default: () => is});
-    var as, is, ii = Je(() => {
-      as = (o13) => me2(void 0, null, function* () {
+    }), as = {};
+    $e(as, {default: () => ds});
+    var is, ds, ii = Je(() => {
+      is = (o13) => me2(void 0, null, function* () {
         let e12 = yield o13.getFile();
         return e12.handle = o13, e12;
-      }), is = (...o13) => me2(void 0, [...o13], function* (e12 = {}) {
+      }), ds = (...o13) => me2(void 0, [...o13], function* (e12 = {}) {
         let t14 = {};
         e12.mimeTypes ? e12.mimeTypes.map((r13) => {
           t14[r13] = e12.extensions || [];
         }) : t14["*/*"] = e12.extensions || [];
-        let n6 = yield window.showOpenFilePicker({types: [{description: e12.description || "", accept: t14}], multiple: e12.multiple || false}), s8 = yield Promise.all(n6.map(as));
+        let n6 = yield window.showOpenFilePicker({types: [{description: e12.description || "", accept: t14}], multiple: e12.multiple || false}), s8 = yield Promise.all(n6.map(is));
         return e12.multiple ? s8 : s8[0];
       });
-    }), ds = {};
-    $e(ds, {default: () => cs});
-    var cs, di = Je(() => {
-      cs = (...o13) => me2(void 0, [...o13], function* (e12 = {}) {
+    }), cs = {};
+    $e(cs, {default: () => ls});
+    var ls, di = Je(() => {
+      ls = (...o13) => me2(void 0, [...o13], function* (e12 = {}) {
         return e12.recursive = e12.recursive || false, new Promise((t14, n6) => {
           let s8 = document.createElement("input");
           s8.type = "file", s8.webkitdirectory = true;
@@ -18331,57 +17936,57 @@ Please add \`${key}Action\` when creating your handler.`);
           }), s8.click();
         });
       });
-    }), ls = {};
-    $e(ls, {default: () => ps});
-    var Nn, ps, ci = Je(() => {
-      Nn = (o13, e12, ...t14) => me2(void 0, [o13, e12, ...t14], function* (n6, s8, r13 = n6.name) {
+    }), ps = {};
+    $e(ps, {default: () => hs});
+    var Xn, hs, ci = Je(() => {
+      Xn = (o13, e12, ...t14) => me2(void 0, [o13, e12, ...t14], function* (n6, s8, r13 = n6.name) {
         let a10 = [], i9 = [];
         for (let d9 of n6.getEntries()) {
           let l10 = `${r13}/${d9.name}`;
-          d9.isFile ? i9.push(yield d9.getFile().then((p8) => (p8.directoryHandle = n6, Object.defineProperty(p8, "webkitRelativePath", {configurable: true, enumerable: true, get: () => l10})))) : d9.isDirectory && s8 && a10.push(yield Nn(d9, s8, l10));
+          d9.isFile ? i9.push(yield d9.getFile().then((p8) => (p8.directoryHandle = n6, Object.defineProperty(p8, "webkitRelativePath", {configurable: true, enumerable: true, get: () => l10})))) : d9.isDirectory && s8 && a10.push(yield Xn(d9, s8, l10));
         }
         return [...(yield Promise.all(a10)).flat(), ...yield Promise.all(i9)];
-      }), ps = (...o13) => me2(void 0, [...o13], function* (e12 = {}) {
+      }), hs = (...o13) => me2(void 0, [...o13], function* (e12 = {}) {
         e12.recursive = e12.recursive || false;
         let t14 = yield window.chooseFileSystemEntries({type: "open-directory"});
-        return Nn(t14, e12.recursive);
+        return Xn(t14, e12.recursive);
       });
-    }), hs = {};
-    $e(hs, {default: () => us});
-    var Xn, us, li = Je(() => {
-      Xn = (o13, e12, ...t14) => me2(void 0, [o13, e12, ...t14], function* (n6, s8, r13 = n6.name) {
+    }), us = {};
+    $e(us, {default: () => ms});
+    var Yn, ms, li = Je(() => {
+      Yn = (o13, e12, ...t14) => me2(void 0, [o13, e12, ...t14], function* (n6, s8, r13 = n6.name) {
         let a10 = [], i9 = [];
         for (let d9 of n6.values()) {
           let l10 = `${r13}/${d9.name}`;
-          d9.kind === "file" ? i9.push(yield d9.getFile().then((p8) => (p8.directoryHandle = n6, Object.defineProperty(p8, "webkitRelativePath", {configurable: true, enumerable: true, get: () => l10})))) : d9.kind === "directory" && s8 && a10.push(yield Xn(d9, s8, l10));
+          d9.kind === "file" ? i9.push(yield d9.getFile().then((p8) => (p8.directoryHandle = n6, Object.defineProperty(p8, "webkitRelativePath", {configurable: true, enumerable: true, get: () => l10})))) : d9.kind === "directory" && s8 && a10.push(yield Yn(d9, s8, l10));
         }
         return [...(yield Promise.all(a10)).flat(), ...yield Promise.all(i9)];
-      }), us = (...o13) => me2(void 0, [...o13], function* (e12 = {}) {
+      }), ms = (...o13) => me2(void 0, [...o13], function* (e12 = {}) {
         e12.recursive = e12.recursive || false;
         let t14 = yield window.showDirectoryPicker();
-        return Xn(t14, e12.recursive);
+        return Yn(t14, e12.recursive);
       });
-    }), ms = {};
-    $e(ms, {default: () => gs});
-    var gs, pi = Je(() => {
-      gs = (o13, ...e12) => me2(void 0, [o13, ...e12], function* (t14, n6 = {}) {
+    }), gs = {};
+    $e(gs, {default: () => fs});
+    var fs, pi = Je(() => {
+      fs = (o13, ...e12) => me2(void 0, [o13, ...e12], function* (t14, n6 = {}) {
         let s8 = document.createElement("a");
         s8.download = n6.fileName || "Untitled", s8.href = URL.createObjectURL(t14), s8.addEventListener("click", () => {
           setTimeout(() => URL.revokeObjectURL(s8.href), 30 * 1e3);
         }), s8.click();
       });
-    }), fs = {};
-    $e(fs, {default: () => Ss});
-    var Ss, hi = Je(() => {
-      Ss = (o13, ...e12) => me2(void 0, [o13, ...e12], function* (t14, n6 = {}, s8 = null) {
+    }), Ss = {};
+    $e(Ss, {default: () => Ts});
+    var Ts, hi = Je(() => {
+      Ts = (o13, ...e12) => me2(void 0, [o13, ...e12], function* (t14, n6 = {}, s8 = null) {
         n6.fileName = n6.fileName || "Untitled", s8 = s8 || (yield window.chooseFileSystemEntries({type: "save-file", accepts: [{description: n6.description || "", mimeTypes: [t14.type], extensions: n6.extensions || [""]}]}));
         let r13 = yield s8.createWritable();
         return yield r13.write(t14), yield r13.close(), s8;
       });
-    }), Ts = {};
-    $e(Ts, {default: () => ws});
-    var ws, ui = Je(() => {
-      ws = (o13, ...e12) => me2(void 0, [o13, ...e12], function* (t14, n6 = {}, s8 = null, r13 = false) {
+    }), ws = {};
+    $e(ws, {default: () => Is});
+    var Is, ui = Je(() => {
+      Is = (o13, ...e12) => me2(void 0, [o13, ...e12], function* (t14, n6 = {}, s8 = null, r13 = false) {
         n6.fileName = n6.fileName || "Untitled";
         let a10 = {};
         if (n6.mimeTypes ? (n6.mimeTypes.push(t14.type), n6.mimeTypes.map((l10) => {
@@ -18397,7 +18002,7 @@ Please add \`${key}Action\` when creating your handler.`);
         return yield d9.write(t14), yield d9.close(), i9;
       });
     });
-    $e(Is, {directoryOpen: () => Ti, fileOpen: () => fi, fileSave: () => Ii, supported: () => wt});
+    $e(bs, {directoryOpen: () => Ti, fileOpen: () => fi, fileSave: () => Ii, supported: () => bt});
     var mi = (() => {
       if ("top" in self && self !== top)
         try {
@@ -18412,19 +18017,19 @@ Please add \`${key}Action\` when creating your handler.`);
           return "showOpenFilePicker";
       }
       return false;
-    })(), wt = mi, gi = wt ? wt === "chooseFileSystemEntries" ? Promise.resolve().then(() => (ai(), os)) : Promise.resolve().then(() => (ii(), rs)) : Promise.resolve().then(() => (ri(), ts));
+    })(), bt = mi, gi = bt ? bt === "chooseFileSystemEntries" ? Promise.resolve().then(() => (ai(), ss)) : Promise.resolve().then(() => (ii(), as)) : Promise.resolve().then(() => (ri(), ns));
     function fi(...o13) {
       return me2(this, null, function* () {
         return (yield gi).default(...o13);
       });
     }
-    var Si = wt ? wt === "chooseFileSystemEntries" ? Promise.resolve().then(() => (ci(), ls)) : Promise.resolve().then(() => (li(), hs)) : Promise.resolve().then(() => (di(), ds));
+    var Si = bt ? bt === "chooseFileSystemEntries" ? Promise.resolve().then(() => (ci(), ps)) : Promise.resolve().then(() => (li(), us)) : Promise.resolve().then(() => (di(), cs));
     function Ti(...o13) {
       return me2(this, null, function* () {
         return (yield Si).default(...o13);
       });
     }
-    var wi = wt ? wt === "chooseFileSystemEntries" ? Promise.resolve().then(() => (hi(), fs)) : Promise.resolve().then(() => (ui(), Ts)) : Promise.resolve().then(() => (pi(), ms));
+    var wi = bt ? bt === "chooseFileSystemEntries" ? Promise.resolve().then(() => (hi(), Ss)) : Promise.resolve().then(() => (ui(), ws)) : Promise.resolve().then(() => (pi(), gs));
     function Ii(...o13) {
       return me2(this, null, function* () {
         return (yield wi).default(...o13);
@@ -18434,13 +18039,13 @@ Please add \`${key}Action\` when creating your handler.`);
   var {styled: v6, createTheme: oi} = X({themeMap: m8({}, r2), theme: {colors: {codeHl: "rgba(144, 144, 144, .15)", brushFill: "rgba(0,0,0,.05)", brushStroke: "rgba(0,0,0,.25)", hint: "rgba(216, 226, 249, 1.000)", selected: "rgba(66, 133, 244, 1.000)", bounds: "rgba(65, 132, 244, 1.000)", boundsBg: "rgba(65, 132, 244, 0.05)", highlight: "rgba(65, 132, 244, 0.15)", overlay: "rgba(0, 0, 0, 0.15)", overlayContrast: "rgba(255, 255, 255, 0.15)", border: "rgba(143, 146, 148, 1)", focused: "rgb(143, 146, 148, .35)", blurred: "rgb(143, 146, 148, .15)", canvas: "#f8f9fa", panel: "#fefefe", panelBorder: "rgba(0, 0, 0, 0.12)", panelActive: "#fefefe", inactive: "#cccccf", hover: "#eaf2ff", text: "#333333", tooltipBg: "#1d1d1d", tooltipText: "#ffffff", muted: "#777777", input: "#f3f3f3", inputBorder: "#dddddd", warn: "rgba(255, 100, 100, 1)", lineError: "rgba(255, 0, 0, .1)"}, shadows: {2: "0px 1px 1px rgba(0, 0, 0, 0.14)", 3: "0px 2px 3px rgba(0, 0, 0, 0.14)", 4: "0px 4px 5px -1px rgba(0, 0, 0, 0.14)", 8: "0px 12px 17px rgba(0, 0, 0, 0.14)", 12: "0px 12px 17px rgba(0, 0, 0, 0.14)", 24: "0px 24px 38px rgba(0, 0, 0, 0.14)", key: "1px 1px rgba(0,0,0,1)", panel: `0px 0px 16px -1px rgba(0, 0, 0, 0.05), 
         0px 0px 16px -8px rgba(0, 0, 0, 0.05), 
         0px 0px 16px -12px rgba(0, 0, 0, 0.12)`}, space: {0: "2px", 1: "3px", 2: "4px", 3: "8px", 4: "12px", 5: "16px"}, fontSizes: {0: "10px", 1: "12px", 2: "13px", 3: "16px", 4: "18px"}, fonts: {ui: '"Recursive", system-ui, sans-serif', body: '"Recursive", system-ui, sans-serif', mono: '"Recursive Mono", monospace'}, fontWeights: {}, lineHeights: {}, letterSpacings: {}, sizes: {}, borderWidths: {0: "$1"}, borderStyles: {}, radii: {0: "2px", 1: "4px", 2: "8px", 3: "12px", 4: "16px"}, zIndices: {}, transitions: {}}, media: {micro: "(max-width: 370px)", sm: "(min-width: 640px)", md: "(min-width: 768px)"}, utils: {zStrokeWidth: () => (o13) => Array.isArray(o13) ? {strokeWidth: `calc(${o13[0]}px / var(--camera-zoom))`} : {strokeWidth: `calc(${o13}px / var(--camera-zoom))`}}});
-  var _o = oi({colors: {brushFill: "rgba(180, 180, 180, .05)", brushStroke: "rgba(180, 180, 180, .25)", hint: "rgba(216, 226, 249, 1.000)", selected: "rgba(38, 150, 255, 1.000)", bounds: "rgba(38, 150, 255, 1.000)", boundsBg: "rgba(38, 150, 255, 0.05)", highlight: "rgba(38, 150, 255, 0.15)", overlay: "rgba(0, 0, 0, 0.15)", overlayContrast: "rgba(255, 255, 255, 0.15)", border: "rgb(32, 37, 41, 1)", focused: "rgb(32, 37, 41, 1, .15)", blurred: "rgb(32, 37, 41, 1, .05)", canvas: "#343d45", panel: "#49555f", panelBorder: "rgba(255, 255, 255, 0.12)", panelActive: "#fefefe", inactive: "#aaaaad", hover: "#343d45", text: "#f8f9fa", muted: "#e0e2e6", input: "#f3f3f3", inputBorder: "#ddd", tooltipBg: "#1d1d1d", tooltipText: "#ffffff", codeHl: "rgba(144, 144, 144, .15)", lineError: "rgba(255, 0, 0, .1)"}, shadows: {2: "0px 1px 1px rgba(0, 0, 0, 0.24)", 3: "0px 2px 3px rgba(0, 0, 0, 0.24)", 4: "0px 4px 5px -1px rgba(0, 0, 0, 0.24)", 8: "0px 12px 17px rgba(0, 0, 0, 0.24)", 12: "0px 12px 17px rgba(0, 0, 0, 0.24)", 24: "0px 24px 38px rgba(0, 0, 0, 0.24)", panel: `0px 0px 16px -1px rgba(0, 0, 0, 0.05), 
+  var qo = oi({colors: {brushFill: "rgba(180, 180, 180, .05)", brushStroke: "rgba(180, 180, 180, .25)", hint: "rgba(216, 226, 249, 1.000)", selected: "rgba(38, 150, 255, 1.000)", bounds: "rgba(38, 150, 255, 1.000)", boundsBg: "rgba(38, 150, 255, 0.05)", highlight: "rgba(38, 150, 255, 0.15)", overlay: "rgba(0, 0, 0, 0.15)", overlayContrast: "rgba(255, 255, 255, 0.15)", border: "rgb(32, 37, 41, 1)", focused: "rgb(32, 37, 41, 1, .15)", blurred: "rgb(32, 37, 41, 1, .05)", canvas: "#343d45", panel: "#49555f", panelBorder: "rgba(255, 255, 255, 0.12)", panelActive: "#fefefe", inactive: "#aaaaad", hover: "#343d45", text: "#f8f9fa", muted: "#e0e2e6", input: "#f3f3f3", inputBorder: "#ddd", tooltipBg: "#1d1d1d", tooltipText: "#ffffff", codeHl: "rgba(144, 144, 144, .15)", lineError: "rgba(255, 0, 0, .1)"}, shadows: {2: "0px 1px 1px rgba(0, 0, 0, 0.24)", 3: "0px 2px 3px rgba(0, 0, 0, 0.24)", 4: "0px 4px 5px -1px rgba(0, 0, 0, 0.24)", 8: "0px 12px 17px rgba(0, 0, 0, 0.24)", 12: "0px 12px 17px rgba(0, 0, 0, 0.24)", 24: "0px 24px 38px rgba(0, 0, 0, 0.24)", panel: `0px 0px 16px -1px rgba(0, 0, 0, 0.05), 
       0px 0px 16px -8px rgba(0, 0, 0, 0.09), 
       0px 0px 16px -12px rgba(0, 0, 0, 0.2)`}});
-  var qo;
+  var Qo;
   (function(s8) {
     s8.Idle = "idle", s8.Connecting = "connecting", s8.Connected = "connected", s8.Disconnected = "disconnected";
-  })(qo || (qo = {}));
+  })(Qo || (Qo = {}));
   var M4;
   (function(l10) {
     l10.Transform = "transform", l10.Translate = "translate", l10.TransformSingle = "transformSingle", l10.Brush = "brush", l10.Arrow = "arrow", l10.Draw = "draw", l10.Rotate = "rotate", l10.Handle = "handle", l10.Grid = "grid";
@@ -18474,10 +18079,10 @@ Please add \`${key}Action\` when creating your handler.`);
   (function(t14) {
     t14.Horizontal = "horizontal", t14.Vertical = "vertical";
   })(Me || (Me = {}));
-  var at;
+  var it;
   (function(t14) {
     t14.Horizontal = "horizontal", t14.Vertical = "vertical";
-  })(at || (at = {}));
+  })(it || (it = {}));
   var L4;
   (function(i9) {
     i9.Sticky = "sticky", i9.Ellipse = "ellipse", i9.Rectangle = "rectangle", i9.Draw = "draw", i9.Arrow = "arrow", i9.Text = "text", i9.Group = "group";
@@ -18498,12 +18103,12 @@ Please add \`${key}Action\` when creating your handler.`);
   (function(s8) {
     s8.Draw = "draw", s8.Solid = "solid", s8.Dashed = "dashed", s8.Dotted = "dotted";
   })(X3 || (X3 = {}));
-  var Qo;
+  var es;
   (function(s8) {
     s8.Small = "small", s8.Medium = "medium", s8.Large = "large", s8.ExtraLarge = "extraLarge";
-  })(Qo || (Qo = {}));
-  var Ct = {};
-  ei(Ct, {loadFileHandle: () => _n, migrate: () => Ye, openFromFileSystem: () => Qn, saveFileHandle: () => qn, saveToFileSystem: () => rn});
+  })(es || (es = {}));
+  var vt = {};
+  ei(vt, {loadFileHandle: () => qn, migrate: () => Ye, openFromFileSystem: () => eo, saveFileHandle: () => Qn, saveToFileSystem: () => an});
   function Ye(o13, e12) {
     let {version: t14 = 0} = o13;
     return t14 === e12 || (t14 <= 13 && Object.values(o13.pages).forEach((n6) => {
@@ -18513,14 +18118,14 @@ Please add \`${key}Action\` when creating your handler.`);
         Object.entries(s8.style).forEach(([r13, a10]) => {
           typeof a10 == "string" && (s8.style[r13] = a10.toLowerCase());
         }), s8.type === L4.Arrow && s8.decorations && Object.entries(s8.decorations).forEach(([r13, a10]) => {
-          a10 === "Arrow" && (s8.decorations = T5(m8({}, s8.decorations), {[r13]: je.Arrow}));
+          a10 === "Arrow" && (s8.decorations = w6(m8({}, s8.decorations), {[r13]: je.Arrow}));
         });
       });
     }), t14 <= 13.1 && (o13.name = "New Document"), Object.values(o13.pageStates).forEach((n6) => {
       n6.selectedIds = n6.selectedIds.filter((s8) => o13.pages[n6.id].shapes[s8] !== void 0), n6.bindingId = void 0, n6.editingId = void 0, n6.hoveredId = void 0, n6.pointedId = void 0;
     }), o13.version = e12), o13;
   }
-  var sn = Zo(Yn());
+  var rn = _o(Jn());
   function bi() {
     var o13 = !navigator.userAgentData && /Safari\//.test(navigator.userAgent) && !/Chrom(e|ium)\//.test(navigator.userAgent);
     if (!o13 || !indexedDB.databases)
@@ -18535,57 +18140,57 @@ Please add \`${key}Action\` when creating your handler.`);
       return clearInterval(e12);
     });
   }
-  var bs = bi;
-  function Jn(o13) {
+  var ys = bi;
+  function Zn(o13) {
     return new Promise((e12, t14) => {
       o13.oncomplete = o13.onsuccess = () => e12(o13.result), o13.onabort = o13.onerror = () => t14(o13.error);
     });
   }
   function yi(o13, e12) {
-    let t14 = bs().then(() => {
+    let t14 = ys().then(() => {
       let n6 = indexedDB.open(o13);
-      return n6.onupgradeneeded = () => n6.result.createObjectStore(e12), Jn(n6);
+      return n6.onupgradeneeded = () => n6.result.createObjectStore(e12), Zn(n6);
     });
     return (n6, s8) => t14.then((r13) => s8(r13.transaction(e12, n6).objectStore(e12)));
   }
-  var Zn;
-  function ys() {
-    return Zn || (Zn = yi("keyval-store", "keyval")), Zn;
+  var _n;
+  function Ds() {
+    return _n || (_n = yi("keyval-store", "keyval")), _n;
   }
-  function Ds(o13, e12 = ys()) {
-    return e12("readonly", (t14) => Jn(t14.get(o13)));
+  function xs(o13, e12 = Ds()) {
+    return e12("readonly", (t14) => Zn(t14.get(o13)));
   }
-  function xs(o13, e12, t14 = ys()) {
-    return t14("readwrite", (n6) => (n6.put(e12, o13), Jn(n6.transaction)));
+  function Ls(o13, e12, t14 = Ds()) {
+    return t14("readwrite", (n6) => (n6.put(e12, o13), Zn(n6.transaction)));
   }
-  var Ls = {mode: "readwrite"};
+  var Cs = {mode: "readwrite"};
   var Di = (o13) => q2(void 0, null, function* () {
-    return (yield o13.queryPermission(Ls)) === "granted" || (yield o13.requestPermission(Ls)) === "granted";
+    return (yield o13.queryPermission(Cs)) === "granted" || (yield o13.requestPermission(Cs)) === "granted";
   });
-  function _n() {
+  function qn() {
     return q2(this, null, function* () {
-      let o13 = yield Ds(`tldraw_file_handle_${window.location.origin}`);
+      let o13 = yield xs(`tldraw_file_handle_${window.location.origin}`);
       return o13 || null;
     });
   }
-  function qn(o13) {
+  function Qn(o13) {
     return q2(this, null, function* () {
-      return xs(`tldraw_file_handle_${window.location.origin}`, o13);
+      return Ls(`tldraw_file_handle_${window.location.origin}`, o13);
     });
   }
-  function rn(o13, e12) {
+  function an(o13, e12) {
     return q2(this, null, function* () {
       let t14 = {name: o13.name || "New Document", fileHandle: e12 != null ? e12 : null, document: o13, assets: {}}, n6 = JSON.stringify(t14, null, 2), s8 = new Blob([n6], {type: "application/vnd.tldraw+json"});
       if (e12 && !(yield Di(e12)))
         return null;
-      let r13 = yield (0, sn.fileSave)(s8, {fileName: `${t14.name}.tldr`, description: "TLDraw File", extensions: [".tldr"]}, e12);
-      return yield qn(r13), r13;
+      let r13 = yield (0, rn.fileSave)(s8, {fileName: `${t14.name}.tldr`, description: "TLDraw File", extensions: [".tldr"]}, e12);
+      return yield Qn(r13), r13;
     });
   }
-  function Qn() {
+  function eo() {
     return q2(this, null, function* () {
       var s8;
-      let o13 = yield (0, sn.fileOpen)({description: "TLDraw File", extensions: [".tldr"], multiple: false});
+      let o13 = yield (0, rn.fileOpen)({description: "TLDraw File", extensions: [".tldr"], multiple: false});
       if (!o13)
         return null;
       let e12 = yield new Promise((r13) => {
@@ -18594,16 +18199,16 @@ Please add \`${key}Action\` when creating your handler.`);
           a10.readyState === FileReader.DONE && r13(a10.result);
         }, a10.readAsText(o13, "utf8");
       }), t14 = JSON.parse(e12), n6 = (s8 = o13.handle) != null ? s8 : null;
-      return yield qn(n6), {fileHandle: n6, document: t14.document};
+      return yield Qn(n6), {fileHandle: n6, document: t14.document};
     });
   }
-  $t(Ct, Zo(Yn()));
-  var Cs = "#fafafa";
-  var eo = "#343d45";
-  var vt = {[N2.Black]: "#212528", [N2.White]: "#f0f1f3", [N2.LightGray]: "#c6cbd1", [N2.Gray]: "#788492", [N2.Green]: "#36b24d", [N2.Cyan]: "#0e98ad", [N2.Blue]: "#1c7ed6", [N2.Indigo]: "#4263eb", [N2.Violet]: "#7746f1", [N2.Red]: "#ff2133", [N2.Orange]: "#ff9433", [N2.Yellow]: "#ffc936"};
-  var xi = {light: T5(m8({}, Object.fromEntries(Object.entries(vt).map(([o13, e12]) => [o13, Utils.lerpColor(e12, Cs, 0.45)]))), {[N2.White]: "#ffffff", [N2.Black]: "#3d3d3d"}), dark: T5(m8({}, Object.fromEntries(Object.entries(vt).map(([o13, e12]) => [o13, Utils.lerpColor(Utils.lerpColor(e12, "#999999", 0.3), eo, 0.4)]))), {[N2.White]: "#bbbbbb", [N2.Black]: "#1d1d1d"})};
-  var it = {light: vt, dark: T5(m8({}, Object.fromEntries(Object.entries(vt).map(([o13, e12]) => [o13, Utils.lerpColor(e12, eo, 0.1)]))), {[N2.White]: "#ffffff", [N2.Black]: "#000"})};
-  var Li = {light: T5(m8({}, Object.fromEntries(Object.entries(vt).map(([o13, e12]) => [o13, Utils.lerpColor(e12, Cs, 0.82)]))), {[N2.White]: "#ffffff", [N2.Black]: "#ffffff"}), dark: Object.fromEntries(Object.entries(vt).map(([o13, e12]) => [o13, Utils.lerpColor(e12, eo, 0.618)]))};
+  Vt(vt, _o(Jn()));
+  var Ps = "#fafafa";
+  var to = "#343d45";
+  var kt = {[N2.Black]: "#212528", [N2.White]: "#f0f1f3", [N2.LightGray]: "#c6cbd1", [N2.Gray]: "#788492", [N2.Green]: "#36b24d", [N2.Cyan]: "#0e98ad", [N2.Blue]: "#1c7ed6", [N2.Indigo]: "#4263eb", [N2.Violet]: "#7746f1", [N2.Red]: "#ff2133", [N2.Orange]: "#ff9433", [N2.Yellow]: "#ffc936"};
+  var xi = {light: w6(m8({}, Object.fromEntries(Object.entries(kt).map(([o13, e12]) => [o13, Utils.lerpColor(e12, Ps, 0.45)]))), {[N2.White]: "#ffffff", [N2.Black]: "#3d3d3d"}), dark: w6(m8({}, Object.fromEntries(Object.entries(kt).map(([o13, e12]) => [o13, Utils.lerpColor(Utils.lerpColor(e12, "#999999", 0.3), to, 0.4)]))), {[N2.White]: "#bbbbbb", [N2.Black]: "#1d1d1d"})};
+  var dt = {light: kt, dark: w6(m8({}, Object.fromEntries(Object.entries(kt).map(([o13, e12]) => [o13, Utils.lerpColor(e12, to, 0.1)]))), {[N2.White]: "#ffffff", [N2.Black]: "#000"})};
+  var Li = {light: w6(m8({}, Object.fromEntries(Object.entries(kt).map(([o13, e12]) => [o13, Utils.lerpColor(e12, Ps, 0.82)]))), {[N2.White]: "#ffffff", [N2.Black]: "#ffffff"}), dark: Object.fromEntries(Object.entries(kt).map(([o13, e12]) => [o13, Utils.lerpColor(e12, to, 0.618)]))};
   var Ci = {[ie2.Small]: 2, [ie2.Medium]: 3.5, [ie2.Large]: 5};
   var Pi = {[ie2.Small]: 28, [ie2.Medium]: 48, [ie2.Large]: 96, auto: "auto"};
   var vi = {[ie2.Small]: 24, [ie2.Medium]: 36, [ie2.Large]: 48, auto: "auto"};
@@ -18616,41 +18221,41 @@ Please add \`${key}Action\` when creating your handler.`);
   function Ri(o13) {
     return vi[o13];
   }
-  function to(o13) {
+  function no(o13) {
     let e12 = ki(o13.size), {scale: t14 = 1} = o13;
     return `${e12 * t14}px/1.3 "Caveat Brush"`;
   }
-  function Ps(o13) {
+  function vs(o13) {
     let e12 = Ri(o13.size), {scale: t14 = 1} = o13;
     return `${e12 * t14}px/1.3 "Caveat Brush"`;
   }
-  function vs(o13, e12 = false) {
+  function Bs(o13, e12 = false) {
     let {color: t14} = o13, n6 = e12 ? "dark" : "light", s8 = t14 === N2.Black ? N2.Yellow : t14;
-    return {fill: xi[n6][s8], stroke: it[n6][s8], color: e12 ? "#1d1d1d" : "#0d0d0d"};
+    return {fill: xi[n6][s8], stroke: dt[n6][s8], color: e12 ? "#1d1d1d" : "#0d0d0d"};
   }
   function ee(o13, e12 = false) {
     let {color: t14, size: n6, isFilled: s8} = o13, r13 = Bi(n6), a10 = e12 ? "dark" : "light";
-    return {stroke: it[a10][t14], fill: s8 ? Li[a10][t14] : "none", strokeWidth: r13};
+    return {stroke: dt[a10][t14], fill: s8 ? Li[a10][t14] : "none", strokeWidth: r13};
   }
   var le2 = {color: N2.Black, size: ie2.Small, isFilled: false, dash: X3.Draw};
-  function Bt(o13, e12) {
+  function Rt(o13, e12) {
     let t14 = Utils.getFromCache(e12, o13, () => {
       let [n6, s8] = o13.size;
       return {minX: 0, maxX: n6, minY: 0, maxY: s8, width: n6, height: s8};
     });
     return Utils.translateBounds(t14, o13.point);
   }
-  function ks(o13, e12, {initialShape: t14, transformOrigin: n6, scaleX: s8, scaleY: r13}) {
+  function Rs(o13, e12, {initialShape: t14, transformOrigin: n6, scaleX: s8, scaleY: r13}) {
     if (o13.rotation || t14.isAspectRatioLocked) {
       let a10 = $a8e101027d325e52$export$2e2bcd8739ae039.round($a8e101027d325e52$export$2e2bcd8739ae039.mul(t14.size, Math.min(Math.abs(s8), Math.abs(r13)))), i9 = $a8e101027d325e52$export$2e2bcd8739ae039.round([e12.minX + (e12.width - o13.size[0]) * (s8 < 0 ? 1 - n6[0] : n6[0]), e12.minY + (e12.height - o13.size[1]) * (r13 < 0 ? 1 - n6[1] : n6[1])]), d9 = s8 < 0 && r13 >= 0 || r13 < 0 && s8 >= 0 ? t14.rotation ? -t14.rotation : 0 : t14.rotation;
       return {size: a10, point: i9, rotation: d9};
     } else
       return {point: $a8e101027d325e52$export$2e2bcd8739ae039.round([e12.minX, e12.minY]), size: $a8e101027d325e52$export$2e2bcd8739ae039.round([e12.width, e12.height])};
   }
-  function Es(o13, e12) {
+  function Ms(o13, e12) {
     return {size: $a8e101027d325e52$export$2e2bcd8739ae039.round([e12.width, e12.height]), point: $a8e101027d325e52$export$2e2bcd8739ae039.round([e12.minX, e12.minY])};
   }
-  var Ms = "  ";
+  var Hs = "  ";
   var pe = class {
     static insertTextFirefox(e12, t14) {
       e12.setRangeText(t14, e12.selectionStart || 0, e12.selectionEnd || 0, "end"), e12.dispatchEvent(new InputEvent("input", {data: t14, inputType: "insertText", isComposing: false}));
@@ -18689,10 +18294,10 @@ Please add \`${key}Action\` when creating your handler.`);
       let {selectionStart: t14, selectionEnd: n6, value: s8} = e12, r13 = s8.slice(t14, n6), a10 = (i9 = /\n/g.exec(r13)) == null ? void 0 : i9.length;
       if (a10 && a10 > 0) {
         let d9 = s8.lastIndexOf(`
-`, t14 - 1) + 1, l10 = e12.value.slice(d9, n6 - 1), p8 = l10.replace(/^|\n/g, `$&${Ms}`), c7 = p8.length - l10.length;
+`, t14 - 1) + 1, l10 = e12.value.slice(d9, n6 - 1), p8 = l10.replace(/^|\n/g, `$&${Hs}`), c7 = p8.length - l10.length;
         e12.setSelectionRange(d9, n6 - 1), pe.insert(e12, p8), e12.setSelectionRange(t14 + 1, n6 + c7);
       } else
-        pe.insert(e12, Ms);
+        pe.insert(e12, Hs);
     }
     static unindent(e12) {
       let {selectionStart: t14, selectionEnd: n6, value: s8} = e12, r13 = s8.lastIndexOf(`
@@ -18704,12 +18309,12 @@ Please add \`${key}Action\` when creating your handler.`);
   };
   var _5 = 24;
   var Le = 32;
-  var Vt = 128;
-  var kt = 5;
-  var Rt = 10;
-  var bu = Math.PI * 2;
-  var It = {linear: (o13) => o13, easeInQuad: (o13) => o13 * o13, easeOutQuad: (o13) => o13 * (2 - o13), easeInOutQuad: (o13) => o13 < 0.5 ? 2 * o13 * o13 : -1 + (4 - 2 * o13) * o13, easeInCubic: (o13) => o13 * o13 * o13, easeOutCubic: (o13) => --o13 * o13 * o13 + 1, easeInOutCubic: (o13) => o13 < 0.5 ? 4 * o13 * o13 * o13 : (o13 - 1) * (2 * o13 - 2) * (2 * o13 - 2) + 1, easeInQuart: (o13) => o13 * o13 * o13 * o13, easeOutQuart: (o13) => 1 - --o13 * o13 * o13 * o13, easeInOutQuart: (o13) => o13 < 0.5 ? 8 * o13 * o13 * o13 * o13 : 1 - 8 * --o13 * o13 * o13 * o13, easeInQuint: (o13) => o13 * o13 * o13 * o13 * o13, easeOutQuint: (o13) => 1 + --o13 * o13 * o13 * o13 * o13, easeInOutQuint: (o13) => o13 < 0.5 ? 16 * o13 * o13 * o13 * o13 * o13 : 1 + 16 * --o13 * o13 * o13 * o13 * o13, easeInSine: (o13) => 1 - Math.cos(o13 * Math.PI / 2), easeOutSine: (o13) => Math.sin(o13 * Math.PI / 2), easeInOutSine: (o13) => -(Math.cos(Math.PI * o13) - 1) / 2, easeInExpo: (o13) => o13 <= 0 ? 0 : Math.pow(2, 10 * o13 - 10), easeOutExpo: (o13) => o13 >= 1 ? 1 : 1 - Math.pow(2, -10 * o13), easeInOutExpo: (o13) => o13 <= 0 ? 0 : o13 >= 1 ? 1 : o13 < 0.5 ? Math.pow(2, 20 * o13 - 10) / 2 : (2 - Math.pow(2, -20 * o13 + 10)) / 2};
-  var an = ["#EC5E41", "#F2555A", "#F04F88", "#E34BA9", "#BD54C6", "#9D5BD2", "#7B66DC", "#02B1CC", "#11B3A3", "#39B178", "#55B467", "#FF802B"];
+  var Gt = 128;
+  var Et = 5;
+  var Mt = 10;
+  var yu = Math.PI * 2;
+  var yt = {linear: (o13) => o13, easeInQuad: (o13) => o13 * o13, easeOutQuad: (o13) => o13 * (2 - o13), easeInOutQuad: (o13) => o13 < 0.5 ? 2 * o13 * o13 : -1 + (4 - 2 * o13) * o13, easeInCubic: (o13) => o13 * o13 * o13, easeOutCubic: (o13) => --o13 * o13 * o13 + 1, easeInOutCubic: (o13) => o13 < 0.5 ? 4 * o13 * o13 * o13 : (o13 - 1) * (2 * o13 - 2) * (2 * o13 - 2) + 1, easeInQuart: (o13) => o13 * o13 * o13 * o13, easeOutQuart: (o13) => 1 - --o13 * o13 * o13 * o13, easeInOutQuart: (o13) => o13 < 0.5 ? 8 * o13 * o13 * o13 * o13 : 1 - 8 * --o13 * o13 * o13 * o13, easeInQuint: (o13) => o13 * o13 * o13 * o13 * o13, easeOutQuint: (o13) => 1 + --o13 * o13 * o13 * o13 * o13, easeInOutQuint: (o13) => o13 < 0.5 ? 16 * o13 * o13 * o13 * o13 * o13 : 1 + 16 * --o13 * o13 * o13 * o13 * o13, easeInSine: (o13) => 1 - Math.cos(o13 * Math.PI / 2), easeOutSine: (o13) => Math.sin(o13 * Math.PI / 2), easeInOutSine: (o13) => -(Math.cos(Math.PI * o13) - 1) / 2, easeInExpo: (o13) => o13 <= 0 ? 0 : Math.pow(2, 10 * o13 - 10), easeOutExpo: (o13) => o13 >= 1 ? 1 : 1 - Math.pow(2, -10 * o13), easeInOutExpo: (o13) => o13 <= 0 ? 0 : o13 >= 1 ? 1 : o13 < 0.5 ? Math.pow(2, 20 * o13 - 10) / 2 : (2 - Math.pow(2, -20 * o13 + 10)) / 2};
+  var dn = ["#EC5E41", "#F2555A", "#F04F88", "#E34BA9", "#BD54C6", "#9D5BD2", "#7B66DC", "#02B1CC", "#11B3A3", "#39B178", "#55B467", "#FF802B"];
   var G4 = class extends TLShapeUtil {
     constructor() {
       super(...arguments);
@@ -18732,11 +18337,11 @@ Please add \`${key}Action\` when creating your handler.`);
         }
       };
       this.mutate = (e12, t14) => t14;
-      this.transform = (e12, t14, n6) => T5(m8({}, e12), {point: [t14.minX, t14.minY]});
+      this.transform = (e12, t14, n6) => w6(m8({}, e12), {point: [t14.minX, t14.minY]});
       this.transformSingle = (e12, t14, n6) => this.transform(e12, t14, n6);
     }
   };
-  var no = class extends G4 {
+  var oo = class extends G4 {
     constructor() {
       super(...arguments);
       this.type = L4.Rectangle;
@@ -18746,56 +18351,56 @@ Please add \`${key}Action\` when creating your handler.`);
         let {id: a10, size: i9, style: d9} = e12, l10 = ee(d9, n6.isDarkMode), p8 = +l10.strokeWidth;
         if (d9.dash === X3.Draw) {
           let I3 = zi(e12);
-          return (0, import_react58.createElement)(SVGContainer, m8({ref: r13, id: e12.id + "_svg"}, s8), t14 && (0, import_react58.createElement)("rect", {className: "tl-binding-indicator", x: p8 / 2 - _5, y: p8 / 2 - _5, width: Math.max(0, i9[0] - p8 / 2) + _5 * 2, height: Math.max(0, i9[1] - p8 / 2) + _5 * 2}), (0, import_react58.createElement)("path", {d: Os(e12), fill: d9.isFilled ? l10.fill : "none", radius: p8, stroke: "none", pointerEvents: "all"}), (0, import_react58.createElement)("path", {d: I3, fill: l10.stroke, stroke: l10.stroke, strokeWidth: l10.strokeWidth, pointerEvents: "all"}));
+          return (0, import_react58.createElement)(SVGContainer, m8({ref: r13, id: e12.id + "_svg"}, s8), t14 && (0, import_react58.createElement)("rect", {className: "tl-binding-indicator", x: p8 / 2 - _5, y: p8 / 2 - _5, width: Math.max(0, i9[0] - p8 / 2) + _5 * 2, height: Math.max(0, i9[1] - p8 / 2) + _5 * 2}), (0, import_react58.createElement)("path", {d: Us(e12), fill: d9.isFilled ? l10.fill : "none", radius: p8, stroke: "none", pointerEvents: "all"}), (0, import_react58.createElement)("path", {d: I3, fill: l10.stroke, stroke: l10.stroke, strokeWidth: l10.strokeWidth, pointerEvents: "all"}));
         }
-        let c7 = 1 + p8 * 1.618, h4 = Math.max(0, i9[0] - c7 / 2), u5 = Math.max(0, i9[1] - c7 / 2), S3 = [[[c7 / 2, c7 / 2], [h4, c7 / 2], h4 - c7 / 2], [[h4, c7 / 2], [h4, u5], u5 - c7 / 2], [[h4, u5], [c7 / 2, u5], h4 - c7 / 2], [[c7 / 2, u5], [c7 / 2, c7 / 2], u5 - c7 / 2]].map(([I3, b8, x6], y4) => {
-          let {strokeDasharray: D7, strokeDashoffset: w6} = Utils.getPerfectDashProps(x6, p8 * 1.618, e12.style.dash);
-          return (0, import_react58.createElement)("line", {key: a10 + "_" + y4, x1: I3[0], y1: I3[1], x2: b8[0], y2: b8[1], stroke: l10.stroke, strokeWidth: c7, strokeLinecap: "round", strokeDasharray: D7, strokeDashoffset: w6});
+        let c7 = 1 + p8 * 1.618, h4 = Math.max(0, i9[0] - c7 / 2), u5 = Math.max(0, i9[1] - c7 / 2), S3 = [[[c7 / 2, c7 / 2], [h4, c7 / 2], h4 - c7 / 2], [[h4, c7 / 2], [h4, u5], u5 - c7 / 2], [[h4, u5], [c7 / 2, u5], h4 - c7 / 2], [[c7 / 2, u5], [c7 / 2, c7 / 2], u5 - c7 / 2]].map(([I3, b8, D7], y4) => {
+          let {strokeDasharray: x6, strokeDashoffset: T5} = Utils.getPerfectDashProps(D7, p8 * 1.618, e12.style.dash);
+          return (0, import_react58.createElement)("line", {key: a10 + "_" + y4, x1: I3[0], y1: I3[1], x2: b8[0], y2: b8[1], stroke: l10.stroke, strokeWidth: c7, strokeLinecap: "round", strokeDasharray: x6, strokeDashoffset: T5});
         });
         return (0, import_react58.createElement)(SVGContainer, m8({ref: r13, id: e12.id + "_svg"}, s8), t14 && (0, import_react58.createElement)("rect", {className: "tl-binding-indicator", x: c7 / 2 - 32, y: c7 / 2 - 32, width: h4 + 64, height: u5 + 64}), (0, import_react58.createElement)("rect", {x: c7 / 2, y: c7 / 2, width: h4, height: u5, fill: l10.fill, strokeWidth: c7, stroke: "none", pointerEvents: "all"}), (0, import_react58.createElement)("g", {pointerEvents: "stroke"}, S3));
       });
       this.Indicator = G4.Indicator(({shape: e12}) => {
         let {style: t14, size: [n6, s8]} = e12, i9 = +ee(t14, false).strokeWidth;
-        return t14.dash === X3.Draw ? (0, import_react58.createElement)("path", {d: Os(e12)}) : (0, import_react58.createElement)("rect", {x: i9, y: i9, rx: 1, ry: 1, width: Math.max(1, n6 - i9 * 2), height: Math.max(1, s8 - i9 * 2)});
+        return t14.dash === X3.Draw ? (0, import_react58.createElement)("path", {d: Us(e12)}) : (0, import_react58.createElement)("rect", {x: i9, y: i9, rx: 1, ry: 1, width: Math.max(1, n6 - i9 * 2), height: Math.max(1, s8 - i9 * 2)});
       });
-      this.getBounds = (e12) => Bt(e12, this.boundsCache);
+      this.getBounds = (e12) => Rt(e12, this.boundsCache);
       this.shouldRender = (e12, t14) => t14.size !== e12.size || t14.style !== e12.style;
-      this.transform = ks;
-      this.transformSingle = Es;
+      this.transform = Rs;
+      this.transformSingle = Ms;
     }
   };
   function Ui(o13) {
     let e12 = ee(o13.style), t14 = Utils.rng(o13.id), n6 = e12.strokeWidth, s8 = Math.max(0, o13.size[0]), r13 = Math.max(0, o13.size[1]), a10 = Array.from(Array(4)).map(() => [t14() * n6 * 0.75, t14() * n6 * 0.75]), i9 = $a8e101027d325e52$export$e947a0f742cf021e.add([n6 / 2, n6 / 2], a10[0]), d9 = $a8e101027d325e52$export$e947a0f742cf021e.add([s8 - n6 / 2, n6 / 2], a10[1]), l10 = $a8e101027d325e52$export$e947a0f742cf021e.add([s8 - n6 / 2, r13 - n6 / 2], a10[2]), p8 = $a8e101027d325e52$export$e947a0f742cf021e.add([n6 / 2, r13 - n6 / 2], a10[3]), c7 = Math.round(Math.abs(t14() * 2 * 4)), h4 = Math.min(s8 / 2, n6 * 2), u5 = Math.min(r13 / 2, n6 * 2), g5 = Math.max(8, Math.floor(s8 / 16)), S3 = Math.max(8, Math.floor(r13 / 16)), I3 = Utils.rotateArray([$a8e101027d325e52$export$e947a0f742cf021e.pointsBetween($a8e101027d325e52$export$e947a0f742cf021e.add(i9, [h4, 0]), $a8e101027d325e52$export$e947a0f742cf021e.sub(d9, [h4, 0]), g5), $a8e101027d325e52$export$e947a0f742cf021e.pointsBetween($a8e101027d325e52$export$e947a0f742cf021e.add(d9, [0, u5]), $a8e101027d325e52$export$e947a0f742cf021e.sub(l10, [0, u5]), S3), $a8e101027d325e52$export$e947a0f742cf021e.pointsBetween($a8e101027d325e52$export$e947a0f742cf021e.sub(l10, [h4, 0]), $a8e101027d325e52$export$e947a0f742cf021e.add(p8, [h4, 0]), g5), $a8e101027d325e52$export$e947a0f742cf021e.pointsBetween($a8e101027d325e52$export$e947a0f742cf021e.sub(p8, [0, u5]), $a8e101027d325e52$export$e947a0f742cf021e.add(i9, [0, u5]), S3)], c7);
     return {points: [...I3.flat(), ...I3[0]].slice(5, Math.floor((c7 % 2 == 0 ? g5 : S3) / -2) + 3)};
   }
-  function As(o13) {
+  function Os(o13) {
     let {points: e12} = Ui(o13), {strokeWidth: t14} = ee(o13.style);
     return {points: e12, options: {size: t14, thinning: 0.65, streamline: 0.3, smoothing: 1, simulatePressure: false, last: true}};
   }
   function zi(o13) {
-    let {points: e12, options: t14} = As(o13), n6 = me(e12, t14);
+    let {points: e12, options: t14} = Os(o13), n6 = me(e12, t14);
     return Utils.getSvgPathFromStroke(n6);
   }
-  function Os(o13) {
-    let {points: e12, options: t14} = As(o13), n6 = ce(e12, t14);
+  function Us(o13) {
+    let {points: e12, options: t14} = Os(o13), n6 = ce(e12, t14);
     return Utils.getSvgPathFromStroke(n6.map((s8) => s8.point.slice(0, 2)), false);
   }
-  function Us(o13, e12) {
+  function zs(o13, e12) {
     let {id: t14, radius: [n6, s8], point: r13, style: a10} = o13, {strokeWidth: i9} = ee(a10), d9 = Utils.rng(t14), l10 = $a8e101027d325e52$export$2e2bcd8739ae039.sub(e12, r13), p8 = n6 + d9() * i9 * 2, c7 = s8 + d9() * i9 * 2, h4 = Utils.perimeterOfEllipse(p8, c7), u5 = [], g5 = Math.PI + Math.PI * d9(), S3 = Math.abs(d9()), I3 = Math.max(16, h4 / 10);
     for (let b8 = 0; b8 < I3; b8++) {
-      let x6 = It.easeInOutSine(b8 / (I3 + 1)), y4 = g5 * 2 + Math.PI * (2 + S3) * x6, D7 = Math.cos(y4), w6 = Math.sin(y4);
-      u5.push([p8 * D7 + l10[0], c7 * w6 + l10[1], x6 + 0.5 + d9() / 2]);
+      let D7 = yt.easeInOutSine(b8 / (I3 + 1)), y4 = g5 * 2 + Math.PI * (2 + S3) * D7, x6 = Math.cos(y4), T5 = Math.sin(y4);
+      u5.push([p8 * x6 + l10[0], c7 * T5 + l10[1], D7 + 0.5 + d9() / 2]);
     }
     return ce(u5, {size: 1 + i9 * 2, thinning: 0.618, end: {taper: h4 / 8}, start: {taper: h4 / 12}, streamline: 0, simulatePressure: true});
   }
-  function zs(o13, e12) {
+  function Fs(o13, e12) {
     let {id: t14, radius: [n6, s8], style: r13} = o13, {strokeWidth: a10} = ee(r13), i9 = Utils.rng(t14), d9 = n6 + i9() * a10 * 2, l10 = s8 + i9() * a10 * 2, p8 = Utils.perimeterOfEllipse(d9, l10);
-    return Utils.getSvgPathFromStroke(ie(Us(o13, e12), {size: 1 + a10 * 2, thinning: 0.618, end: {taper: p8 / 8}, start: {taper: p8 / 12}, streamline: 0, simulatePressure: true}));
+    return Utils.getSvgPathFromStroke(ie(zs(o13, e12), {size: 1 + a10 * 2, thinning: 0.618, end: {taper: p8 / 8}, start: {taper: p8 / 12}, streamline: 0, simulatePressure: true}));
   }
-  function oo(o13, e12) {
-    return Utils.getSvgPathFromStroke(Us(o13, e12).map((t14) => t14.point.slice(0, 2)), false);
+  function so(o13, e12) {
+    return Utils.getSvgPathFromStroke(zs(o13, e12).map((t14) => t14.point.slice(0, 2)), false);
   }
-  var so = class extends G4 {
+  var ro = class extends G4 {
     constructor() {
       super(...arguments);
       this.type = L4.Ellipse;
@@ -18804,13 +18409,13 @@ Please add \`${key}Action\` when creating your handler.`);
       this.Component = G4.Component(({shape: e12, isBinding: t14, meta: n6, events: s8}, r13) => {
         let {radius: [a10, i9], style: d9} = e12, l10 = ee(d9, n6.isDarkMode), p8 = +l10.strokeWidth, c7 = 1 + p8 * 1.618, h4 = Math.max(0, a10 - c7 / 2), u5 = Math.max(0, i9 - c7 / 2);
         if (d9.dash === X3.Draw) {
-          let x6 = zs(e12, this.getCenter(e12));
-          return (0, import_react60.createElement)(SVGContainer, m8({ref: r13, id: e12.id + "_svg"}, s8), t14 && (0, import_react60.createElement)("ellipse", {className: "tl-binding-indicator", cx: a10, cy: i9, rx: h4 + 2, ry: u5 + 2}), (0, import_react60.createElement)("path", {d: oo(e12, this.getCenter(e12)), stroke: "none", fill: d9.isFilled ? l10.fill : "none", pointerEvents: "all"}), (0, import_react60.createElement)("path", {d: x6, fill: l10.stroke, stroke: l10.stroke, strokeWidth: l10.strokeWidth, pointerEvents: "all", strokeLinecap: "round", strokeLinejoin: "round"}));
+          let D7 = Fs(e12, this.getCenter(e12));
+          return (0, import_react60.createElement)(SVGContainer, m8({ref: r13, id: e12.id + "_svg"}, s8), t14 && (0, import_react60.createElement)("ellipse", {className: "tl-binding-indicator", cx: a10, cy: i9, rx: h4 + 2, ry: u5 + 2}), (0, import_react60.createElement)("path", {d: so(e12, this.getCenter(e12)), stroke: "none", fill: d9.isFilled ? l10.fill : "none", pointerEvents: "all"}), (0, import_react60.createElement)("path", {d: D7, fill: l10.stroke, stroke: l10.stroke, strokeWidth: l10.strokeWidth, pointerEvents: "all", strokeLinecap: "round", strokeLinejoin: "round"}));
         }
         let g5 = Math.pow(h4 - u5, 2) / Math.pow(h4 + u5, 2), S3 = Math.PI * (h4 + u5) * (1 + 3 * g5 / (10 + Math.sqrt(4 - 3 * g5))), {strokeDasharray: I3, strokeDashoffset: b8} = Utils.getPerfectDashProps(S3 < 64 ? S3 * 2 : S3, p8 * 1.618, e12.style.dash, 4);
         return (0, import_react60.createElement)(SVGContainer, m8({ref: r13, id: e12.id + "_svg"}, s8), t14 && (0, import_react60.createElement)("ellipse", {className: "tl-binding-indicator", cx: a10, cy: i9, rx: h4 + 32, ry: u5 + 32}), (0, import_react60.createElement)("ellipse", {cx: a10, cy: i9, rx: h4, ry: u5, fill: l10.fill, stroke: l10.stroke, strokeWidth: c7, strokeDasharray: I3, strokeDashoffset: b8, pointerEvents: "all", strokeLinecap: "round", strokeLinejoin: "round"}));
       });
-      this.Indicator = G4.Indicator(({shape: e12}) => (0, import_react60.createElement)("path", {d: oo(e12, this.getCenter(e12))}));
+      this.Indicator = G4.Indicator(({shape: e12}) => (0, import_react60.createElement)("path", {d: so(e12, this.getCenter(e12))}));
       this.getBounds = (e12) => Utils.getFromCache(this.boundsCache, e12, () => Utils.getRotatedEllipseBounds(e12.point[0], e12.point[1], e12.radius[0], e12.radius[1], 0));
       this.getRotatedBounds = (e12) => Utils.getRotatedEllipseBounds(e12.point[0], e12.point[1], e12.radius[0], e12.radius[1], e12.rotation);
       this.hitTestBounds = (e12, t14) => {
@@ -18849,72 +18454,72 @@ Please add \`${key}Action\` when creating your handler.`);
       this.transformSingle = (e12, t14) => ({point: $a8e101027d325e52$export$e947a0f742cf021e.round([t14.minX, t14.minY]), radius: $a8e101027d325e52$export$e947a0f742cf021e.div([t14.width, t14.height], 2)});
     }
   };
-  function Ws(o13, e12, t14, n6) {
+  function Vs(o13, e12, t14, n6) {
     return ["M", o13.point[0], o13.point[1], "A", t14[2], t14[2], 0, 0, n6 < 0 ? 0 : 1, e12.point[0], e12.point[1]].join(" ");
   }
-  function dn(o13, e12) {
+  function cn(o13, e12) {
     let {start: t14, end: n6} = o13, s8 = $a8e101027d325e52$export$2e2bcd8739ae039.dist(t14.point, n6.point), r13 = $a8e101027d325e52$export$2e2bcd8739ae039.med(t14.point, n6.point), a10 = s8 / 2 * e12, i9 = $a8e101027d325e52$export$2e2bcd8739ae039.uni($a8e101027d325e52$export$2e2bcd8739ae039.vec(t14.point, n6.point));
     return $a8e101027d325e52$export$2e2bcd8739ae039.round(Math.abs(a10) < 10 ? r13 : $a8e101027d325e52$export$2e2bcd8739ae039.add(r13, $a8e101027d325e52$export$2e2bcd8739ae039.mul($a8e101027d325e52$export$2e2bcd8739ae039.per(i9), a10)));
   }
-  function Vs(o13) {
+  function Ks(o13) {
     var c7, h4;
-    let {style: e12, id: t14} = o13, {start: n6, end: s8} = o13.handles, r13 = Utils.rng(t14), a10 = ee(e12).strokeWidth, i9 = ((c7 = o13.decorations) == null ? void 0 : c7.start) ? $a8e101027d325e52$export$2e2bcd8739ae039.nudge(n6.point, s8.point, a10) : n6.point, d9 = ((h4 = o13.decorations) == null ? void 0 : h4.end) ? $a8e101027d325e52$export$2e2bcd8739ae039.nudge(s8.point, n6.point, a10) : s8.point, l10 = Te([i9, d9], {size: a10, thinning: 0.618 + r13() * 0.2, easing: It.easeOutQuad, simulatePressure: true, streamline: 0, last: true});
+    let {style: e12, id: t14} = o13, {start: n6, end: s8} = o13.handles, r13 = Utils.rng(t14), a10 = ee(e12).strokeWidth, i9 = ((c7 = o13.decorations) == null ? void 0 : c7.start) ? $a8e101027d325e52$export$2e2bcd8739ae039.nudge(n6.point, s8.point, a10) : n6.point, d9 = ((h4 = o13.decorations) == null ? void 0 : h4.end) ? $a8e101027d325e52$export$2e2bcd8739ae039.nudge(s8.point, n6.point, a10) : s8.point, l10 = Te([i9, d9], {size: a10, thinning: 0.618 + r13() * 0.2, easing: yt.easeOutQuad, simulatePressure: true, streamline: 0, last: true});
     return Utils.getSvgPathFromStroke(l10);
   }
-  function Ks(o13, e12, t14, n6) {
-    var D7, w6;
-    let {style: s8, id: r13} = o13, {start: a10, end: i9} = o13.handles, d9 = Utils.rng(r13), l10 = ee(s8).strokeWidth, p8 = [e12[0], e12[1]], c7 = e12[2], h4 = ((D7 = o13.decorations) == null ? void 0 : D7.start) ? $a8e101027d325e52$export$2e2bcd8739ae039.rotWith(a10.point, p8, l10 / t14) : a10.point, u5 = ((w6 = o13.decorations) == null ? void 0 : w6.end) ? $a8e101027d325e52$export$2e2bcd8739ae039.rotWith(i9.point, p8, -(l10 / t14)) : i9.point, g5 = $a8e101027d325e52$export$2e2bcd8739ae039.angle(p8, h4), S3 = $a8e101027d325e52$export$2e2bcd8739ae039.angle(p8, u5), I3 = [], b8 = 8 + Math.floor(Math.abs(t14) / 20 * 1 + d9() / 2);
+  function Gs(o13, e12, t14, n6) {
+    var x6, T5;
+    let {style: s8, id: r13} = o13, {start: a10, end: i9} = o13.handles, d9 = Utils.rng(r13), l10 = ee(s8).strokeWidth, p8 = [e12[0], e12[1]], c7 = e12[2], h4 = ((x6 = o13.decorations) == null ? void 0 : x6.start) ? $a8e101027d325e52$export$2e2bcd8739ae039.rotWith(a10.point, p8, l10 / t14) : a10.point, u5 = ((T5 = o13.decorations) == null ? void 0 : T5.end) ? $a8e101027d325e52$export$2e2bcd8739ae039.rotWith(i9.point, p8, -(l10 / t14)) : i9.point, g5 = $a8e101027d325e52$export$2e2bcd8739ae039.angle(p8, h4), S3 = $a8e101027d325e52$export$2e2bcd8739ae039.angle(p8, u5), I3 = [], b8 = 8 + Math.floor(Math.abs(t14) / 20 * 1 + d9() / 2);
     for (let C6 = 0; C6 < b8; C6++) {
       let P3 = n6(C6 / b8), z3 = Utils.lerpAngles(g5, S3, P3);
       I3.push($a8e101027d325e52$export$2e2bcd8739ae039.round($a8e101027d325e52$export$2e2bcd8739ae039.nudgeAtAngle(p8, z3, c7)));
     }
-    let x6 = Te([h4, ...I3, u5], {size: 1 + l10, thinning: 0.618 + d9() * 0.2, easing: It.easeOutQuad, simulatePressure: false, streamline: 0, last: true});
-    return Utils.getSvgPathFromStroke(x6);
+    let D7 = Te([h4, ...I3, u5], {size: 1 + l10, thinning: 0.618 + d9() * 0.2, easing: yt.easeOutQuad, simulatePressure: false, streamline: 0, last: true});
+    return Utils.getSvgPathFromStroke(D7);
   }
-  function ro(o13) {
+  function ao(o13) {
     let {start: e12, end: t14, bend: n6} = o13.handles;
     return Utils.circleFromThreePoints(e12.point, t14.point, n6.point);
   }
-  function cn(o13) {
+  function ln(o13) {
     let {start: e12, end: t14, bend: n6} = o13.handles, [s8, r13, a10] = Utils.circleFromThreePoints(e12.point, t14.point, n6.point), i9 = [s8, r13], d9 = Ni(i9, a10, e12.point, t14.point);
     return {center: i9, radius: a10, length: d9};
   }
-  function ln(o13, e12, t14, n6, s8) {
+  function pn(o13, e12, t14, n6, s8) {
     let r13 = $a8e101027d325e52$export$a23722981a84d363(o13, e12 * 0.618, t14, n6).points;
     if (!r13)
       return console.warn("Could not find an intersection for the arrow head."), {left: o13, right: o13};
     let a10 = s8 ? r13[0] : r13[1], i9 = a10 ? $a8e101027d325e52$export$2e2bcd8739ae039.nudge($a8e101027d325e52$export$2e2bcd8739ae039.rotWith(a10, o13, Math.PI / 6), o13, e12 * -0.382) : o13, d9 = a10 ? $a8e101027d325e52$export$2e2bcd8739ae039.nudge($a8e101027d325e52$export$2e2bcd8739ae039.rotWith(a10, o13, -Math.PI / 6), o13, e12 * -0.382) : o13;
     return {left: i9, right: d9};
   }
-  function pn(o13, e12, t14) {
+  function hn(o13, e12, t14) {
     let n6 = $a8e101027d325e52$export$96be216a0fe3863e(o13, t14, o13, e12).points;
     if (!n6)
       return console.warn("Could not find an intersection for the arrow head."), {left: o13, right: o13};
     let s8 = n6[0], r13 = s8 ? $a8e101027d325e52$export$2e2bcd8739ae039.rotWith(s8, o13, Math.PI / 6) : o13, a10 = s8 ? $a8e101027d325e52$export$2e2bcd8739ae039.rotWith(s8, o13, -Math.PI / 6) : o13;
     return {left: r13, right: a10};
   }
-  function Gs(o13, e12, t14, n6, s8) {
-    let {left: r13, right: a10} = ln(o13, e12, t14, n6, s8);
+  function Ns(o13, e12, t14, n6, s8) {
+    let {left: r13, right: a10} = pn(o13, e12, t14, n6, s8);
     return `M ${r13} L ${o13} ${a10}`;
   }
-  function Ns(o13, e12, t14) {
-    let {left: n6, right: s8} = pn(o13, e12, t14);
+  function Xs(o13, e12, t14) {
+    let {left: n6, right: s8} = hn(o13, e12, t14);
     return `M ${n6} L ${o13} ${s8}`;
   }
-  function Xs(o13) {
+  function Ys(o13) {
     let {decorations: e12, handles: {start: t14, end: n6, bend: s8}, style: r13} = o13, {strokeWidth: a10} = ee(r13, false), i9 = $a8e101027d325e52$export$2e2bcd8739ae039.dist(t14.point, n6.point), d9 = Math.min(i9 / 3, a10 * 8), l10 = [];
     if ($a8e101027d325e52$export$2e2bcd8739ae039.dist(s8.point, $a8e101027d325e52$export$2e2bcd8739ae039.round($a8e101027d325e52$export$2e2bcd8739ae039.med(t14.point, n6.point))) < 1)
-      l10.push(`M ${t14.point} L ${n6.point}`), (e12 == null ? void 0 : e12.start) && l10.push(Ns(t14.point, n6.point, d9)), (e12 == null ? void 0 : e12.end) && l10.push(Ns(n6.point, t14.point, d9));
+      l10.push(`M ${t14.point} L ${n6.point}`), (e12 == null ? void 0 : e12.start) && l10.push(Xs(t14.point, n6.point, d9)), (e12 == null ? void 0 : e12.end) && l10.push(Xs(n6.point, t14.point, d9));
     else {
-      let {center: c7, radius: h4, length: u5} = cn(o13);
-      l10.push(`M ${t14.point} A ${h4} ${h4} 0 0 ${u5 > 0 ? "1" : "0"} ${n6.point}`), (e12 == null ? void 0 : e12.start) && l10.push(Gs(t14.point, d9, c7, h4, u5 < 0)), (e12 == null ? void 0 : e12.end) && l10.push(Gs(n6.point, d9, c7, h4, u5 >= 0));
+      let {center: c7, radius: h4, length: u5} = ln(o13);
+      l10.push(`M ${t14.point} A ${h4} ${h4} 0 0 ${u5 > 0 ? "1" : "0"} ${n6.point}`), (e12 == null ? void 0 : e12.start) && l10.push(Ns(t14.point, d9, c7, h4, u5 < 0)), (e12 == null ? void 0 : e12.end) && l10.push(Ns(n6.point, d9, c7, h4, u5 >= 0));
     }
     return l10.join(" ");
   }
-  function ao(o13) {
+  function io(o13) {
     let {start: e12, bend: t14, end: n6} = o13.handles, s8 = [e12.point, n6.point];
     if ($a8e101027d325e52$export$2e2bcd8739ae039.dist2(t14.point, $a8e101027d325e52$export$2e2bcd8739ae039.med(e12.point, n6.point)) > 4) {
-      let {center: r13, radius: a10} = cn(o13), i9 = $a8e101027d325e52$export$2e2bcd8739ae039.angle(r13, e12.point), d9 = $a8e101027d325e52$export$2e2bcd8739ae039.angle(r13, n6.point);
+      let {center: r13, radius: a10} = ln(o13), i9 = $a8e101027d325e52$export$2e2bcd8739ae039.angle(r13, e12.point), d9 = $a8e101027d325e52$export$2e2bcd8739ae039.angle(r13, n6.point);
       for (let l10 = 1 / 20; l10 < 1; l10 += 1 / 20) {
         let p8 = Utils.lerpAngles(i9, d9, l10);
         s8.push($a8e101027d325e52$export$2e2bcd8739ae039.nudgeAtAngle(r13, p8, a10));
@@ -18922,7 +18527,7 @@ Please add \`${key}Action\` when creating your handler.`);
     }
     return s8;
   }
-  function Ys(o13, e12, t14) {
+  function Js(o13, e12, t14) {
     if (t14 === o13 || t14 === e12)
       return true;
     let n6 = Math.PI * 2, s8 = (e12 - o13 + n6) % n6, r13 = (t14 - o13 + n6) % n6;
@@ -18932,34 +18537,34 @@ Please add \`${key}Action\` when creating your handler.`);
     let s8 = Utils.getSweep(o13, t14, n6);
     return e12 * (2 * Math.PI) * (s8 / (2 * Math.PI));
   }
-  var io = class extends G4 {
+  var co = class extends G4 {
     constructor() {
       super(...arguments);
       this.type = L4.Arrow;
       this.hideBounds = true;
       this.pathCache = new WeakMap();
-      this.getShape = (e12) => Utils.deepMerge({id: "id", type: L4.Arrow, name: "Arrow", parentId: "page", childIndex: 1, point: [0, 0], rotation: 0, bend: 0, handles: {start: {id: "start", index: 0, point: [0, 0], canBind: true}, end: {id: "end", index: 1, point: [1, 1], canBind: true}, bend: {id: "bend", index: 2, point: [0.5, 0.5]}}, decorations: {end: je.Arrow}, style: T5(m8({}, le2), {isFilled: false})}, e12);
+      this.getShape = (e12) => Utils.deepMerge({id: "id", type: L4.Arrow, name: "Arrow", parentId: "page", childIndex: 1, point: [0, 0], rotation: 0, bend: 0, handles: {start: {id: "start", index: 0, point: [0, 0], canBind: true}, end: {id: "end", index: 1, point: [1, 1], canBind: true}, bend: {id: "bend", index: 2, point: [0.5, 0.5]}}, decorations: {end: je.Arrow}, style: w6(m8({}, le2), {isFilled: false})}, e12);
       this.Component = G4.Component(({shape: e12, meta: t14, events: n6}, s8) => {
-        let {handles: {start: r13, bend: a10, end: i9}, decorations: d9 = {}, style: l10} = e12, p8 = l10.dash === X3.Draw, c7 = $a8e101027d325e52$export$e947a0f742cf021e.dist(a10.point, $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.med(r13.point, i9.point))) < 1, h4 = ee(l10, t14.isDarkMode), {strokeWidth: u5} = h4, g5 = $a8e101027d325e52$export$e947a0f742cf021e.dist(r13.point, i9.point), S3 = Math.min(g5 / 3, u5 * 8), I3 = 1 + u5 * 1.618, b8, x6, y4, D7 = Utils.rng(e12.id), w6 = It[D7() > 0 ? "easeInOutSine" : "easeInOutCubic"];
+        let {handles: {start: r13, bend: a10, end: i9}, decorations: d9 = {}, style: l10} = e12, p8 = l10.dash === X3.Draw, c7 = $a8e101027d325e52$export$e947a0f742cf021e.dist(a10.point, $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.med(r13.point, i9.point))) < 1, h4 = ee(l10, t14.isDarkMode), {strokeWidth: u5} = h4, g5 = $a8e101027d325e52$export$e947a0f742cf021e.dist(r13.point, i9.point), S3 = Math.min(g5 / 3, u5 * 8), I3 = 1 + u5 * 1.618, b8, D7, y4, x6 = Utils.rng(e12.id), T5 = yt[x6() > 0 ? "easeInOutSine" : "easeInOutCubic"];
         if (c7) {
-          let C6 = p8 ? Vs(e12) : "M" + $a8e101027d325e52$export$e947a0f742cf021e.round(r13.point) + "L" + $a8e101027d325e52$export$e947a0f742cf021e.round(i9.point), {strokeDasharray: P3, strokeDashoffset: z3} = Utils.getPerfectDashProps(g5, u5 * 1.618, e12.style.dash, 2, false);
-          d9.start && (x6 = pn(r13.point, i9.point, S3)), d9.end && (y4 = pn(i9.point, r13.point, S3)), b8 = g5 > 2 ? (0, import_react61.createElement)(import_react61.Fragment, null, (0, import_react61.createElement)("path", {d: C6, fill: "none", strokeWidth: Math.max(8, u5 * 2), strokeDasharray: "none", strokeDashoffset: "none", strokeLinecap: "round", strokeLinejoin: "round", pointerEvents: "stroke"}), (0, import_react61.createElement)("path", {d: C6, fill: h4.stroke, stroke: h4.stroke, strokeWidth: p8 ? I3 / 2 : I3, strokeDasharray: P3, strokeDashoffset: z3, strokeLinecap: "round", strokeLinejoin: "round", pointerEvents: "stroke"})) : null;
+          let C6 = p8 ? Ks(e12) : "M" + $a8e101027d325e52$export$e947a0f742cf021e.round(r13.point) + "L" + $a8e101027d325e52$export$e947a0f742cf021e.round(i9.point), {strokeDasharray: P3, strokeDashoffset: z3} = Utils.getPerfectDashProps(g5, u5 * 1.618, e12.style.dash, 2, false);
+          d9.start && (D7 = hn(r13.point, i9.point, S3)), d9.end && (y4 = hn(i9.point, r13.point, S3)), b8 = g5 > 2 ? (0, import_react61.createElement)(import_react61.Fragment, null, (0, import_react61.createElement)("path", {d: C6, fill: "none", strokeWidth: Math.max(8, u5 * 2), strokeDasharray: "none", strokeDashoffset: "none", strokeLinecap: "round", strokeLinejoin: "round", pointerEvents: "stroke"}), (0, import_react61.createElement)("path", {d: C6, fill: h4.stroke, stroke: h4.stroke, strokeWidth: p8 ? I3 / 2 : I3, strokeDasharray: P3, strokeDashoffset: z3, strokeLinecap: "round", strokeLinejoin: "round", pointerEvents: "stroke"})) : null;
         } else {
-          let C6 = ro(e12), {center: P3, radius: z3, length: $2} = cn(e12), Z4 = p8 ? Ks(e12, C6, $2, w6) : Ws(r13, i9, C6, e12.bend), {strokeDasharray: se2, strokeDashoffset: Se} = Utils.getPerfectDashProps(Math.abs($2), I3, e12.style.dash, 2, false);
-          d9.start && (x6 = ln(r13.point, S3, P3, z3, $2 < 0)), d9.end && (y4 = ln(i9.point, S3, P3, z3, $2 >= 0)), b8 = (0, import_react61.createElement)(import_react61.Fragment, null, (0, import_react61.createElement)("path", {d: Z4, fill: "none", stroke: "none", strokeWidth: Math.max(8, u5), strokeDasharray: "none", strokeDashoffset: "none", strokeLinecap: "round", strokeLinejoin: "round", pointerEvents: "stroke"}), (0, import_react61.createElement)("path", {d: Z4, fill: p8 ? h4.stroke : "none", stroke: h4.stroke, strokeWidth: p8 ? 0 : I3, strokeDasharray: se2, strokeDashoffset: Se, strokeLinecap: "round", strokeLinejoin: "round", pointerEvents: "stroke"}));
+          let C6 = ao(e12), {center: P3, radius: z3, length: $2} = ln(e12), Z4 = p8 ? Gs(e12, C6, $2, T5) : Vs(r13, i9, C6, e12.bend), {strokeDasharray: re2, strokeDashoffset: Se} = Utils.getPerfectDashProps(Math.abs($2), I3, e12.style.dash, 2, false);
+          d9.start && (D7 = pn(r13.point, S3, P3, z3, $2 < 0)), d9.end && (y4 = pn(i9.point, S3, P3, z3, $2 >= 0)), b8 = (0, import_react61.createElement)(import_react61.Fragment, null, (0, import_react61.createElement)("path", {d: Z4, fill: "none", stroke: "none", strokeWidth: Math.max(8, u5), strokeDasharray: "none", strokeDashoffset: "none", strokeLinecap: "round", strokeLinejoin: "round", pointerEvents: "stroke"}), (0, import_react61.createElement)("path", {d: Z4, fill: p8 ? h4.stroke : "none", stroke: h4.stroke, strokeWidth: p8 ? 0 : I3, strokeDasharray: re2, strokeDashoffset: Se, strokeLinecap: "round", strokeLinejoin: "round", pointerEvents: "stroke"}));
         }
-        return (0, import_react61.createElement)(SVGContainer, m8({ref: s8, id: e12.id + "_svg"}, n6), (0, import_react61.createElement)("g", {pointerEvents: "none"}, b8, x6 && (0, import_react61.createElement)("path", {d: `M ${x6.left} L ${r13.point} ${x6.right}`, fill: "none", stroke: h4.stroke, strokeWidth: I3, strokeDashoffset: "none", strokeDasharray: "none", strokeLinecap: "round", strokeLinejoin: "round", pointerEvents: "stroke"}), y4 && (0, import_react61.createElement)("path", {d: `M ${y4.left} L ${i9.point} ${y4.right}`, fill: "none", stroke: h4.stroke, strokeWidth: I3, strokeDashoffset: "none", strokeDasharray: "none", strokeLinecap: "round", strokeLinejoin: "round", pointerEvents: "stroke"})));
+        return (0, import_react61.createElement)(SVGContainer, m8({ref: s8, id: e12.id + "_svg"}, n6), (0, import_react61.createElement)("g", {pointerEvents: "none"}, b8, D7 && (0, import_react61.createElement)("path", {d: `M ${D7.left} L ${r13.point} ${D7.right}`, fill: "none", stroke: h4.stroke, strokeWidth: I3, strokeDashoffset: "none", strokeDasharray: "none", strokeLinecap: "round", strokeLinejoin: "round", pointerEvents: "stroke"}), y4 && (0, import_react61.createElement)("path", {d: `M ${y4.left} L ${i9.point} ${y4.right}`, fill: "none", stroke: h4.stroke, strokeWidth: I3, strokeDashoffset: "none", strokeDasharray: "none", strokeLinecap: "round", strokeLinejoin: "round", pointerEvents: "stroke"})));
       });
-      this.Indicator = G4.Indicator(({shape: e12}) => (0, import_react61.createElement)("path", {d: Xs(e12)}));
+      this.Indicator = G4.Indicator(({shape: e12}) => (0, import_react61.createElement)("path", {d: Ys(e12)}));
       this.getBounds = (e12) => {
         let t14 = Utils.getFromCache(this.boundsCache, e12, () => {
-          let n6 = ao(e12);
+          let n6 = io(e12);
           return Utils.getBoundsFromPoints(n6);
         });
         return Utils.translateBounds(t14, e12.point);
       };
       this.getRotatedBounds = (e12) => {
-        let t14 = ao(e12), {minX: n6, minY: s8, maxX: r13, maxY: a10} = Utils.getBoundsFromPoints(t14);
+        let t14 = io(e12), {minX: n6, minY: s8, maxX: r13, maxY: a10} = Utils.getBoundsFromPoints(t14);
         return e12.rotation !== 0 && (t14 = t14.map((i9) => $a8e101027d325e52$export$e947a0f742cf021e.rotWith(i9, [(n6 + r13) / 2, (s8 + a10) / 2], e12.rotation || 0))), Utils.translateBounds(Utils.getBoundsFromPoints(t14), e12.point);
       };
       this.getCenter = (e12) => {
@@ -18974,28 +18579,28 @@ Please add \`${key}Action\` when creating your handler.`);
         if ($a8e101027d325e52$export$e947a0f742cf021e.isEqual($a8e101027d325e52$export$e947a0f742cf021e.med(n6.point, s8.point), r13.point))
           return $a8e101027d325e52$export$42636bca3e2a61c7(a10, i9, t14).length > 0;
         {
-          let [d9, l10, p8] = ro(e12), c7 = $a8e101027d325e52$export$e947a0f742cf021e.add(e12.point, [d9, l10]);
+          let [d9, l10, p8] = ao(e12), c7 = $a8e101027d325e52$export$e947a0f742cf021e.add(e12.point, [d9, l10]);
           return $a8e101027d325e52$export$46e58070b8611a10(c7, p8, a10, i9, t14).length > 0;
         }
       };
       this.transform = (e12, t14, {initialShape: n6, scaleX: s8, scaleY: r13}) => {
         let a10 = this.getBounds(n6), i9 = ["start", "end"], d9 = m8({}, n6.handles);
         i9.forEach((b8) => {
-          let [x6, y4] = d9[b8].point, D7 = x6 / a10.width, w6 = y4 / a10.height;
-          d9[b8] = T5(m8({}, d9[b8]), {point: [t14.width * (s8 < 0 ? 1 - D7 : D7), t14.height * (r13 < 0 ? 1 - w6 : w6)]});
+          let [D7, y4] = d9[b8].point, x6 = D7 / a10.width, T5 = y4 / a10.height;
+          d9[b8] = w6(m8({}, d9[b8]), {point: [t14.width * (s8 < 0 ? 1 - x6 : x6), t14.height * (r13 < 0 ? 1 - T5 : T5)]});
         });
         let {start: l10, bend: p8, end: c7} = d9, h4 = $a8e101027d325e52$export$e947a0f742cf021e.dist(l10.point, c7.point), u5 = $a8e101027d325e52$export$e947a0f742cf021e.med(l10.point, c7.point), g5 = h4 / 2 * n6.bend, S3 = $a8e101027d325e52$export$e947a0f742cf021e.uni($a8e101027d325e52$export$e947a0f742cf021e.vec(l10.point, c7.point)), I3 = $a8e101027d325e52$export$e947a0f742cf021e.add(u5, $a8e101027d325e52$export$e947a0f742cf021e.mul($a8e101027d325e52$export$e947a0f742cf021e.per(S3), g5));
-        return d9.bend = T5(m8({}, p8), {point: $a8e101027d325e52$export$e947a0f742cf021e.round(Math.abs(g5) < 10 ? u5 : I3)}), {point: $a8e101027d325e52$export$e947a0f742cf021e.round([t14.minX, t14.minY]), handles: d9};
+        return d9.bend = w6(m8({}, p8), {point: $a8e101027d325e52$export$e947a0f742cf021e.round(Math.abs(g5) < 10 ? u5 : I3)}), {point: $a8e101027d325e52$export$e947a0f742cf021e.round([t14.minX, t14.minY]), handles: d9};
       };
       this.onDoubleClickHandle = (e12, t14) => {
         var n6, s8;
         switch (t14) {
           case "bend":
-            return {bend: 0, handles: T5(m8({}, e12.handles), {bend: T5(m8({}, e12.handles.bend), {point: dn(e12.handles, e12.bend)})})};
+            return {bend: 0, handles: w6(m8({}, e12.handles), {bend: w6(m8({}, e12.handles.bend), {point: cn(e12.handles, e12.bend)})})};
           case "start":
-            return {decorations: T5(m8({}, e12.decorations), {start: ((n6 = e12.decorations) == null ? void 0 : n6.start) ? void 0 : je.Arrow})};
+            return {decorations: w6(m8({}, e12.decorations), {start: ((n6 = e12.decorations) == null ? void 0 : n6.start) ? void 0 : je.Arrow})};
           case "end":
-            return {decorations: T5(m8({}, e12.decorations), {end: ((s8 = e12.decorations) == null ? void 0 : s8.end) ? void 0 : je.Arrow})};
+            return {decorations: w6(m8({}, e12.decorations), {end: ((s8 = e12.decorations) == null ? void 0 : s8.end) ? void 0 : je.Arrow})};
         }
         return this;
       };
@@ -19011,7 +18616,7 @@ Please add \`${key}Action\` when creating your handler.`);
             u5.length < 2 && (u5 = $a8e101027d325e52$export$19e2606d69733c40(c7, $a8e101027d325e52$export$e947a0f742cf021e.neg(h4), p8).filter((g5) => g5.didIntersect).map((g5) => g5.points[0]).sort((g5, S3) => $a8e101027d325e52$export$e947a0f742cf021e.dist(g5, c7) - $a8e101027d325e52$export$e947a0f742cf021e.dist(S3, c7))), u5[0] && (l10 = $a8e101027d325e52$export$e947a0f742cf021e.sub(u5[0], e12.point));
           }
         }
-        return this.onHandleChange(e12, {[a10.id]: T5(m8({}, a10), {point: $a8e101027d325e52$export$e947a0f742cf021e.round(l10)})}, {shiftKey: false});
+        return this.onHandleChange(e12, {[a10.id]: w6(m8({}, a10), {point: $a8e101027d325e52$export$e947a0f742cf021e.round(l10)})}, {shiftKey: false});
       };
       this.onHandleChange = (e12, t14, {shiftKey: n6}) => {
         let s8 = Utils.deepMerge(e12.handles, t14), r13 = e12.bend;
@@ -19020,20 +18625,20 @@ Please add \`${key}Action\` when creating your handler.`);
             let c7 = p8.point, h4 = p8.id === "start" ? e12.handles.end : e12.handles.start, u5 = $a8e101027d325e52$export$e947a0f742cf021e.angle(h4.point, c7), g5 = $a8e101027d325e52$export$e947a0f742cf021e.dist(h4.point, c7), S3 = Utils.snapAngleToSegments(u5, 24);
             p8.point = $a8e101027d325e52$export$e947a0f742cf021e.nudgeAtAngle(h4.point, S3, g5);
           }
-        }), s8 = T5(m8({}, s8), {start: T5(m8({}, s8.start), {point: $a8e101027d325e52$export$e947a0f742cf021e.round(s8.start.point)}), end: T5(m8({}, s8.end), {point: $a8e101027d325e52$export$e947a0f742cf021e.round(s8.end.point)})}), "bend" in t14) {
-          let {start: p8, end: c7, bend: h4} = s8, u5 = $a8e101027d325e52$export$e947a0f742cf021e.dist(p8.point, c7.point), g5 = $a8e101027d325e52$export$e947a0f742cf021e.med(p8.point, c7.point), S3 = $a8e101027d325e52$export$e947a0f742cf021e.angle(p8.point, c7.point), I3 = $a8e101027d325e52$export$e947a0f742cf021e.uni($a8e101027d325e52$export$e947a0f742cf021e.vec(p8.point, c7.point)), b8 = $a8e101027d325e52$export$e947a0f742cf021e.add(g5, $a8e101027d325e52$export$e947a0f742cf021e.mul($a8e101027d325e52$export$e947a0f742cf021e.per(I3), u5 / 2)), x6 = $a8e101027d325e52$export$e947a0f742cf021e.sub(g5, $a8e101027d325e52$export$e947a0f742cf021e.mul($a8e101027d325e52$export$e947a0f742cf021e.per(I3), u5 / 2)), y4 = $a8e101027d325e52$export$e947a0f742cf021e.nearestPointOnLineSegment(b8, x6, h4.point, true), D7 = $a8e101027d325e52$export$e947a0f742cf021e.dist(g5, y4);
-          r13 = Utils.clamp(D7 / (u5 / 2), -0.99, 0.99);
-          let w6 = $a8e101027d325e52$export$e947a0f742cf021e.angle(p8.point, y4);
-          $a8e101027d325e52$export$e947a0f742cf021e.isEqual(g5, dn(s8, r13)) ? r13 = 0 : Ys(S3, S3 + Math.PI, w6) && (r13 *= -1);
+        }), s8 = w6(m8({}, s8), {start: w6(m8({}, s8.start), {point: $a8e101027d325e52$export$e947a0f742cf021e.round(s8.start.point)}), end: w6(m8({}, s8.end), {point: $a8e101027d325e52$export$e947a0f742cf021e.round(s8.end.point)})}), "bend" in t14) {
+          let {start: p8, end: c7, bend: h4} = s8, u5 = $a8e101027d325e52$export$e947a0f742cf021e.dist(p8.point, c7.point), g5 = $a8e101027d325e52$export$e947a0f742cf021e.med(p8.point, c7.point), S3 = $a8e101027d325e52$export$e947a0f742cf021e.angle(p8.point, c7.point), I3 = $a8e101027d325e52$export$e947a0f742cf021e.uni($a8e101027d325e52$export$e947a0f742cf021e.vec(p8.point, c7.point)), b8 = $a8e101027d325e52$export$e947a0f742cf021e.add(g5, $a8e101027d325e52$export$e947a0f742cf021e.mul($a8e101027d325e52$export$e947a0f742cf021e.per(I3), u5 / 2)), D7 = $a8e101027d325e52$export$e947a0f742cf021e.sub(g5, $a8e101027d325e52$export$e947a0f742cf021e.mul($a8e101027d325e52$export$e947a0f742cf021e.per(I3), u5 / 2)), y4 = $a8e101027d325e52$export$e947a0f742cf021e.nearestPointOnLineSegment(b8, D7, h4.point, true), x6 = $a8e101027d325e52$export$e947a0f742cf021e.dist(g5, y4);
+          r13 = Utils.clamp(x6 / (u5 / 2), -0.99, 0.99);
+          let T5 = $a8e101027d325e52$export$e947a0f742cf021e.angle(p8.point, y4);
+          $a8e101027d325e52$export$e947a0f742cf021e.isEqual(g5, cn(s8, r13)) ? r13 = 0 : Js(S3, S3 + Math.PI, T5) && (r13 *= -1);
         }
-        let a10 = {point: e12.point, bend: r13, handles: T5(m8({}, s8), {bend: T5(m8({}, s8.bend), {point: dn(s8, r13)})})}, i9 = e12.point, d9 = this.getBounds(m8({}, a10)), l10 = $a8e101027d325e52$export$e947a0f742cf021e.sub([d9.minX, d9.minY], i9);
+        let a10 = {point: e12.point, bend: r13, handles: w6(m8({}, s8), {bend: w6(m8({}, s8.bend), {point: cn(s8, r13)})})}, i9 = e12.point, d9 = this.getBounds(m8({}, a10)), l10 = $a8e101027d325e52$export$e947a0f742cf021e.sub([d9.minX, d9.minY], i9);
         return $a8e101027d325e52$export$e947a0f742cf021e.isEqual(l10, [0, 0]) || (Object.values(a10.handles).forEach((p8) => {
           p8.point = $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.sub(p8.point, l10));
         }), a10.point = $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.add(a10.point, l10))), a10;
       };
     }
   };
-  var co = class extends G4 {
+  var lo = class extends G4 {
     constructor() {
       super(...arguments);
       this.type = L4.Group;
@@ -19041,18 +18646,18 @@ Please add \`${key}Action\` when creating your handler.`);
       this.getShape = (e12) => Utils.deepMerge({id: "id", type: L4.Group, name: "Group", parentId: "page", childIndex: 1, point: [0, 0], size: [100, 100], rotation: 0, children: [], style: le2}, e12);
       this.Component = G4.Component(({shape: e12, isBinding: t14, isHovered: n6, isSelected: s8, events: r13}, a10) => {
         let {id: i9, size: d9} = e12, l10 = 2, p8 = Math.max(0, d9[0] - l10 / 2), c7 = Math.max(0, d9[1] - l10 / 2), u5 = [[[l10 / 2, l10 / 2], [p8, l10 / 2], p8 - l10 / 2], [[p8, l10 / 2], [p8, c7], c7 - l10 / 2], [[p8, c7], [l10 / 2, c7], p8 - l10 / 2], [[l10 / 2, c7], [l10 / 2, l10 / 2], c7 - l10 / 2]].map(([g5, S3], I3) => (0, import_react62.createElement)("line", {key: i9 + "_" + I3, x1: g5[0], y1: g5[1], x2: S3[0], y2: S3[1]}));
-        return (0, import_react62.createElement)(SVGContainer, m8({ref: a10}, r13), t14 && (0, import_react62.createElement)("rect", {className: "tl-binding-indicator", x: -_5, y: -_5, width: d9[0] + _5 * 2, height: d9[1] + _5 * 2}), (0, import_react62.createElement)("rect", {x: 0, y: 0, width: d9[0], height: d9[1], fill: "transparent", pointerEvents: "all"}), (0, import_react62.createElement)(_s, {stroke: N2.Black, opacity: n6 || s8 ? 1 : 0, strokeLinecap: "round", pointerEvents: "stroke"}, u5));
+        return (0, import_react62.createElement)(SVGContainer, m8({ref: a10}, r13), t14 && (0, import_react62.createElement)("rect", {className: "tl-binding-indicator", x: -_5, y: -_5, width: d9[0] + _5 * 2, height: d9[1] + _5 * 2}), (0, import_react62.createElement)("rect", {x: 0, y: 0, width: d9[0], height: d9[1], fill: "transparent", pointerEvents: "all"}), (0, import_react62.createElement)(qs, {stroke: N2.Black, opacity: n6 || s8 ? 1 : 0, strokeLinecap: "round", pointerEvents: "stroke"}, u5));
       });
       this.Indicator = G4.Indicator(({shape: e12}) => {
         let {id: t14, size: n6} = e12, s8 = 2, r13 = Math.max(0, n6[0] - s8 / 2), a10 = Math.max(0, n6[1] - s8 / 2), d9 = [[[s8 / 2, s8 / 2], [r13, s8 / 2], r13 - s8 / 2], [[r13, s8 / 2], [r13, a10], a10 - s8 / 2], [[r13, a10], [s8 / 2, a10], r13 - s8 / 2], [[s8 / 2, a10], [s8 / 2, s8 / 2], a10 - s8 / 2]].map(([l10, p8], c7) => (0, import_react62.createElement)("line", {key: t14 + "_" + c7, x1: l10[0], y1: l10[1], x2: p8[0], y2: p8[1]}));
-        return (0, import_react62.createElement)(_s, {strokeLinecap: "round", pointerEvents: "stroke"}, d9);
+        return (0, import_react62.createElement)(qs, {strokeLinecap: "round", pointerEvents: "stroke"}, d9);
       });
-      this.getBounds = (e12) => Bt(e12, this.boundsCache);
+      this.getBounds = (e12) => Rt(e12, this.boundsCache);
       this.shouldRender = (e12, t14) => t14.size !== e12.size || t14.style !== e12.style;
     }
   };
-  var _s = v6("g", {strokeWidth: "calc(1.5px * var(--tl-scale))", strokeDasharray: "calc(1px * var(--tl-scale)), calc(3px * var(--tl-scale))"});
-  var lo = class extends G4 {
+  var qs = v6("g", {strokeWidth: "calc(1.5px * var(--tl-scale))", strokeDasharray: "calc(1px * var(--tl-scale)), calc(3px * var(--tl-scale))"});
+  var po = class extends G4 {
     constructor() {
       super(...arguments);
       this.type = L4.Sticky;
@@ -19060,70 +18665,70 @@ Please add \`${key}Action\` when creating your handler.`);
       this.canEdit = true;
       this.getShape = (e12) => Utils.deepMerge({id: "id", type: L4.Sticky, name: "Sticky", parentId: "page", childIndex: 1, point: [0, 0], size: [200, 200], text: "", rotation: 0, style: le2}, e12);
       this.Component = G4.Component(({shape: e12, meta: t14, events: n6, isEditing: s8, onShapeBlur: r13, onShapeChange: a10}, i9) => {
-        let d9 = Ps(e12.style), {color: l10, fill: p8} = vs(e12.style, t14.isDarkMode), c7 = (0, import_react63.useRef)(null), h4 = (0, import_react63.useRef)(null), u5 = (0, import_react63.useRef)(null), g5 = (0, import_react63.useRef)(false), S3 = (0, import_react63.useCallback)((w6) => {
-          w6.stopPropagation();
-        }, []), I3 = (0, import_react63.useCallback)((w6) => {
-          a10 == null || a10({id: e12.id, type: e12.type, text: qs(w6.currentTarget.value)});
-        }, [a10]), b8 = (0, import_react63.useCallback)((w6) => {
-          if (w6.key !== "Escape") {
-            if (w6.key === "Tab" && e12.text.length === 0) {
-              w6.preventDefault();
+        let d9 = vs(e12.style), {color: l10, fill: p8} = Bs(e12.style, t14.isDarkMode), c7 = (0, import_react63.useRef)(null), h4 = (0, import_react63.useRef)(null), u5 = (0, import_react63.useRef)(null), g5 = (0, import_react63.useRef)(false), S3 = (0, import_react63.useCallback)((T5) => {
+          T5.stopPropagation();
+        }, []), I3 = (0, import_react63.useCallback)((T5) => {
+          a10 == null || a10({id: e12.id, type: e12.type, text: Qs(T5.currentTarget.value)});
+        }, [a10]), b8 = (0, import_react63.useCallback)((T5) => {
+          if (T5.key !== "Escape") {
+            if (T5.key === "Tab" && e12.text.length === 0) {
+              T5.preventDefault();
               return;
             }
-            w6.stopPropagation(), w6.key === "Tab" && (w6.preventDefault(), w6.shiftKey ? pe.unindent(w6.currentTarget) : pe.indent(w6.currentTarget), a10 == null || a10(T5(m8({}, e12), {text: qs(w6.currentTarget.value)})));
+            T5.stopPropagation(), T5.key === "Tab" && (T5.preventDefault(), T5.shiftKey ? pe.unindent(T5.currentTarget) : pe.indent(T5.currentTarget), a10 == null || a10(w6(m8({}, e12), {text: Qs(T5.currentTarget.value)})));
           }
-        }, [e12, a10]), x6 = (0, import_react63.useCallback)((w6) => {
-          w6.currentTarget.setSelectionRange(0, 0), r13 == null || r13();
-        }, []), y4 = (0, import_react63.useCallback)((w6) => {
-          !s8 || !g5.current || w6.currentTarget.select();
+        }, [e12, a10]), D7 = (0, import_react63.useCallback)((T5) => {
+          T5.currentTarget.setSelectionRange(0, 0), r13 == null || r13();
+        }, []), y4 = (0, import_react63.useCallback)((T5) => {
+          !s8 || !g5.current || T5.currentTarget.select();
         }, [s8]);
         (0, import_react63.useEffect)(() => {
           if (s8) {
             g5.current = true;
-            let w6 = h4.current;
-            w6.focus(), w6.select();
+            let T5 = h4.current;
+            T5.focus(), T5.select();
           }
         }, [s8]), (0, import_react63.useEffect)(() => {
-          let w6 = u5.current, {size: C6} = e12, {offsetHeight: P3} = w6, z3 = po - yt * 2, $2 = C6[1] - yt * 2;
+          let T5 = u5.current, {size: C6} = e12, {offsetHeight: P3} = T5, z3 = ho - xt * 2, $2 = C6[1] - xt * 2;
           if (P3 === $2)
             return;
           if (P3 > z3) {
-            a10 == null || a10({id: e12.id, size: [C6[0], P3 + yt * 2]});
+            a10 == null || a10({id: e12.id, size: [C6[0], P3 + xt * 2]});
             return;
           }
-          if (P3 < z3 && C6[1] > po) {
-            a10 == null || a10({id: e12.id, size: [C6[0], po]});
+          if (P3 < z3 && C6[1] > ho) {
+            a10 == null || a10({id: e12.id, size: [C6[0], ho]});
             return;
           }
           let Z4 = h4.current;
           Z4 == null || Z4.focus();
         }, [e12.text, e12.size[1], e12.style]);
-        let D7 = {font: d9, color: l10, textShadow: t14.isDarkMode ? "0.5px 0.5px 2px rgba(255, 255, 255,.25)" : "0.5px 0.5px 2px rgba(255, 255, 255,.5)"};
-        return (0, import_react63.createElement)(HTMLContainer, m8({ref: i9}, n6), (0, import_react63.createElement)(sd, {ref: c7, isDarkMode: t14.isDarkMode, style: m8({backgroundColor: p8}, D7)}, (0, import_react63.createElement)(rd, {ref: u5, isEditing: s8}, e12.text, "\u200B"), s8 && (0, import_react63.createElement)(ad, {ref: h4, onPointerDown: S3, value: e12.text, onChange: I3, onKeyDown: b8, onFocus: y4, onBlur: x6, tabIndex: -1, autoComplete: "false", autoCapitalize: "false", autoCorrect: "false", autoSave: "false", autoFocus: true, spellCheck: false})));
+        let x6 = {font: d9, color: l10, textShadow: t14.isDarkMode ? "0.5px 0.5px 2px rgba(255, 255, 255,.25)" : "0.5px 0.5px 2px rgba(255, 255, 255,.5)"};
+        return (0, import_react63.createElement)(HTMLContainer, m8({ref: i9}, n6), (0, import_react63.createElement)(sd, {ref: c7, isDarkMode: t14.isDarkMode, style: m8({backgroundColor: p8}, x6)}, (0, import_react63.createElement)(rd, {ref: u5, isEditing: s8}, e12.text, "\u200B"), s8 && (0, import_react63.createElement)(ad, {ref: h4, onPointerDown: S3, value: e12.text, onChange: I3, onKeyDown: b8, onFocus: y4, onBlur: D7, tabIndex: -1, autoComplete: "false", autoCapitalize: "false", autoCorrect: "false", autoSave: "false", autoFocus: true, spellCheck: false})));
       });
       this.Indicator = G4.Indicator(({shape: e12}) => {
         let {size: [t14, n6]} = e12;
         return (0, import_react63.createElement)("rect", {x: 0, y: 0, rx: 3, ry: 3, width: Math.max(1, t14), height: Math.max(1, n6)});
       });
-      this.getBounds = (e12) => Bt(e12, this.boundsCache);
+      this.getBounds = (e12) => Rt(e12, this.boundsCache);
       this.shouldRender = (e12, t14) => t14.size !== e12.size || t14.style !== e12.style || t14.text !== e12.text;
       this.transform = (e12, t14, {scaleX: n6, scaleY: s8, transformOrigin: r13}) => ({point: $a8e101027d325e52$export$2e2bcd8739ae039.round([t14.minX + (t14.width - e12.size[0]) * (n6 < 0 ? 1 - r13[0] : r13[0]), t14.minY + (t14.height - e12.size[1]) * (s8 < 0 ? 1 - r13[1] : r13[1])])});
       this.transformSingle = (e12) => e12;
     }
   };
-  var yt = 16;
-  var po = 200;
+  var xt = 16;
+  var ho = 200;
   var nd = /\r?\n|\r/g;
   var od = / /g;
-  function qs(o13) {
+  function Qs(o13) {
     return o13.replace(nd, `
 `).replace(od, "\xA0");
   }
-  var sd = v6("div", {pointerEvents: "all", position: "relative", backgroundColor: "rgba(255, 220, 100)", fontFamily: "sans-serif", height: "100%", width: "100%", padding: yt + "px", borderRadius: "3px", perspective: "800px", variants: {isDarkMode: {true: {boxShadow: "2px 3px 12px -2px rgba(0,0,0,.3), 1px 1px 4px rgba(0,0,0,.3), 1px 1px 2px rgba(0,0,0,.3)"}, false: {boxShadow: "2px 3px 12px -2px rgba(0,0,0,.2), 1px 1px 4px rgba(0,0,0,.16),  1px 1px 2px rgba(0,0,0,.16)"}}}});
-  var Qs = {whiteSpace: "pre-wrap", overflowWrap: "break-word"};
-  var rd = v6("div", m8({position: "absolute", top: yt, left: yt, width: `calc(100% - ${yt * 2}px)`, height: "fit-content", font: "inherit", pointerEvents: "none", userSelect: "none", variants: {isEditing: {true: {opacity: 1}, false: {opacity: 1}}}}, Qs));
-  var ad = v6("textarea", m8({width: "100%", height: "100%", border: "none", overflow: "hidden", background: "none", outline: "none", textAlign: "left", font: "inherit", padding: 0, color: "transparent", verticalAlign: "top", resize: "none", caretColor: "black"}, Qs));
-  var uo = class extends G4 {
+  var sd = v6("div", {pointerEvents: "all", position: "relative", backgroundColor: "rgba(255, 220, 100)", fontFamily: "sans-serif", height: "100%", width: "100%", padding: xt + "px", borderRadius: "3px", perspective: "800px", variants: {isDarkMode: {true: {boxShadow: "2px 3px 12px -2px rgba(0,0,0,.3), 1px 1px 4px rgba(0,0,0,.3), 1px 1px 2px rgba(0,0,0,.3)"}, false: {boxShadow: "2px 3px 12px -2px rgba(0,0,0,.2), 1px 1px 4px rgba(0,0,0,.16),  1px 1px 2px rgba(0,0,0,.16)"}}}});
+  var er = {whiteSpace: "pre-wrap", overflowWrap: "break-word"};
+  var rd = v6("div", m8({position: "absolute", top: xt, left: xt, width: `calc(100% - ${xt * 2}px)`, height: "fit-content", font: "inherit", pointerEvents: "none", userSelect: "none", variants: {isEditing: {true: {opacity: 1}, false: {opacity: 1}}}}, er));
+  var ad = v6("textarea", m8({width: "100%", height: "100%", border: "none", overflow: "hidden", background: "none", outline: "none", textAlign: "left", font: "inherit", padding: 0, color: "transparent", verticalAlign: "top", resize: "none", caretColor: "black"}, er));
+  var mo = class extends G4 {
     constructor() {
       super(...arguments);
       this.type = L4.Text;
@@ -19132,28 +18737,28 @@ Please add \`${key}Action\` when creating your handler.`);
       this.canBind = true;
       this.getShape = (e12) => Utils.deepMerge({id: "id", type: L4.Text, name: "Text", parentId: "page", childIndex: 1, point: [0, 0], rotation: 0, text: " ", style: le2}, e12);
       this.Component = G4.Component(({shape: e12, isBinding: t14, isEditing: n6, onShapeBlur: s8, onShapeChange: r13, meta: a10, events: i9}, d9) => {
-        let l10 = (0, import_react64.useRef)(null), {text: p8, style: c7} = e12, h4 = ee(c7, a10.isDarkMode), u5 = to(e12.style), g5 = (0, import_react64.useRef)(false), S3 = (0, import_react64.useCallback)((D7) => {
-          r13 == null || r13(T5(m8({}, e12), {text: nr(D7.currentTarget.value)}));
-        }, [e12]), I3 = (0, import_react64.useCallback)((D7) => {
-          if (D7.stopPropagation(), D7.key === "Escape" || D7.key === "Enter" && (D7.ctrlKey || D7.metaKey)) {
-            D7.currentTarget.blur();
+        let l10 = (0, import_react64.useRef)(null), {text: p8, style: c7} = e12, h4 = ee(c7, a10.isDarkMode), u5 = no(e12.style), g5 = (0, import_react64.useRef)(false), S3 = (0, import_react64.useCallback)((x6) => {
+          r13 == null || r13(w6(m8({}, e12), {text: or(x6.currentTarget.value)}));
+        }, [e12]), I3 = (0, import_react64.useCallback)((x6) => {
+          if (x6.stopPropagation(), x6.key === "Escape" || x6.key === "Enter" && (x6.ctrlKey || x6.metaKey)) {
+            x6.currentTarget.blur();
             return;
           }
-          D7.key === "Tab" && (D7.preventDefault(), D7.shiftKey ? pe.unindent(D7.currentTarget) : pe.indent(D7.currentTarget), r13 == null || r13(T5(m8({}, e12), {text: nr(D7.currentTarget.value)})));
-        }, [e12, r13]), b8 = (0, import_react64.useCallback)((D7) => {
-          D7.currentTarget.setSelectionRange(0, 0), s8 == null || s8();
-        }, []), x6 = (0, import_react64.useCallback)((D7) => {
-          !n6 || !g5.current || document.activeElement === D7.currentTarget && D7.currentTarget.select();
-        }, [n6]), y4 = (0, import_react64.useCallback)((D7) => {
-          n6 && D7.stopPropagation();
+          x6.key === "Tab" && (x6.preventDefault(), x6.shiftKey ? pe.unindent(x6.currentTarget) : pe.indent(x6.currentTarget), r13 == null || r13(w6(m8({}, e12), {text: or(x6.currentTarget.value)})));
+        }, [e12, r13]), b8 = (0, import_react64.useCallback)((x6) => {
+          x6.currentTarget.setSelectionRange(0, 0), s8 == null || s8();
+        }, []), D7 = (0, import_react64.useCallback)((x6) => {
+          !n6 || !g5.current || document.activeElement === x6.currentTarget && x6.currentTarget.select();
+        }, [n6]), y4 = (0, import_react64.useCallback)((x6) => {
+          n6 && x6.stopPropagation();
         }, [n6]);
         return (0, import_react64.useEffect)(() => {
           n6 ? requestAnimationFrame(() => {
             g5.current = true;
-            let D7 = l10.current;
-            D7.focus(), D7.select();
+            let x6 = l10.current;
+            x6.focus(), x6.select();
           }) : s8 == null || s8();
-        }, [n6]), (0, import_react64.createElement)(HTMLContainer, m8({ref: d9}, i9), (0, import_react64.createElement)(pd, {isEditing: n6, onPointerDown: y4}, (0, import_react64.createElement)(hd, {style: {font: u5, color: h4.stroke}}, t14 && (0, import_react64.createElement)("div", {className: "tl-binding-indicator", style: {position: "absolute", top: -_5, left: -_5, width: `calc(100% + ${_5 * 2}px)`, height: `calc(100% + ${_5 * 2}px)`, backgroundColor: "var(--tl-selectFill)"}}), n6 ? (0, import_react64.createElement)(ud, {ref: l10, style: {font: u5, color: h4.stroke}, name: "text", defaultValue: p8, tabIndex: -1, autoComplete: "false", autoCapitalize: "false", autoCorrect: "false", autoSave: "false", autoFocus: true, placeholder: "", color: h4.stroke, onFocus: x6, onChange: S3, onKeyDown: I3, onBlur: b8, onPointerDown: y4, wrap: "off", dir: "auto", datatype: "wysiwyg"}) : p8)));
+        }, [n6]), (0, import_react64.createElement)(HTMLContainer, m8({ref: d9}, i9), (0, import_react64.createElement)(pd, {isEditing: n6, onPointerDown: y4}, (0, import_react64.createElement)(hd, {style: {font: u5, color: h4.stroke}}, t14 && (0, import_react64.createElement)("div", {className: "tl-binding-indicator", style: {position: "absolute", top: -_5, left: -_5, width: `calc(100% + ${_5 * 2}px)`, height: `calc(100% + ${_5 * 2}px)`, backgroundColor: "var(--tl-selectFill)"}}), n6 ? (0, import_react64.createElement)(ud, {ref: l10, style: {font: u5, color: h4.stroke}, name: "text", defaultValue: p8, tabIndex: -1, autoComplete: "false", autoCapitalize: "false", autoCorrect: "false", autoSave: "false", autoFocus: true, placeholder: "", color: h4.stroke, onFocus: D7, onChange: S3, onKeyDown: I3, onBlur: b8, onPointerDown: y4, wrap: "off", dir: "auto", datatype: "wysiwyg"}) : p8)));
       });
       this.Indicator = G4.Indicator(({shape: e12}) => {
         let {width: t14, height: n6} = this.getBounds(e12);
@@ -19161,10 +18766,10 @@ Please add \`${key}Action\` when creating your handler.`);
       });
       this.getBounds = (e12) => {
         let t14 = Utils.getFromCache(this.boundsCache, e12, () => {
-          if (!Ht)
+          if (!Ot)
             return {minX: 0, minY: 0, maxX: 10, maxY: 10, width: 10, height: 10};
-          Ht.innerHTML = `${e12.text}&zwj;`, Ht.style.font = to(e12.style);
-          let n6 = Ht.offsetWidth || 1, s8 = Ht.offsetHeight || 1;
+          Ot.innerHTML = `${e12.text}&zwj;`, Ot.style.font = no(e12.style);
+          let n6 = Ot.offsetWidth || 1, s8 = Ot.offsetHeight || 1;
           return {minX: 0, maxX: n6, minY: 0, maxY: s8, width: n6, height: s8};
         });
         return Utils.translateBounds(t14, e12.point);
@@ -19172,62 +18777,62 @@ Please add \`${key}Action\` when creating your handler.`);
       this.shouldRender = (e12, t14) => t14.text !== e12.text || t14.style.scale !== e12.style.scale || t14.style !== e12.style;
       this.transform = (e12, t14, {initialShape: n6, scaleX: s8, scaleY: r13}) => {
         let {rotation: a10 = 0, style: {scale: i9 = 1}} = n6, d9 = i9 * Math.abs(Math.min(s8, r13));
-        return {point: [t14.minX, t14.minY], rotation: s8 < 0 && r13 >= 0 || r13 < 0 && s8 >= 0 ? -(a10 || 0) : a10, style: T5(m8({}, n6.style), {scale: d9})};
+        return {point: [t14.minX, t14.minY], rotation: s8 < 0 && r13 >= 0 || r13 < 0 && s8 >= 0 ? -(a10 || 0) : a10, style: w6(m8({}, n6.style), {scale: d9})};
       };
       this.transformSingle = (e12, t14, {initialShape: n6, scaleX: s8, scaleY: r13}) => {
         let {style: {scale: a10 = 1}} = n6;
-        return {point: $a8e101027d325e52$export$2e2bcd8739ae039.round([t14.minX, t14.minY]), style: T5(m8({}, n6.style), {scale: a10 * Math.max(Math.abs(r13), Math.abs(s8))})};
+        return {point: $a8e101027d325e52$export$2e2bcd8739ae039.round([t14.minX, t14.minY]), style: w6(m8({}, n6.style), {scale: a10 * Math.max(Math.abs(r13), Math.abs(s8))})};
       };
       this.onDoubleClickBoundsHandle = (e12) => {
-        let t14 = this.getCenter(e12), n6 = this.getCenter(T5(m8({}, e12), {style: T5(m8({}, e12.style), {scale: 1})}));
-        return {style: T5(m8({}, e12.style), {scale: 1}), point: $a8e101027d325e52$export$2e2bcd8739ae039.round($a8e101027d325e52$export$2e2bcd8739ae039.add(e12.point, $a8e101027d325e52$export$2e2bcd8739ae039.sub(t14, n6)))};
+        let t14 = this.getCenter(e12), n6 = this.getCenter(w6(m8({}, e12), {style: w6(m8({}, e12.style), {scale: 1})}));
+        return {style: w6(m8({}, e12.style), {scale: 1}), point: $a8e101027d325e52$export$2e2bcd8739ae039.round($a8e101027d325e52$export$2e2bcd8739ae039.add(e12.point, $a8e101027d325e52$export$2e2bcd8739ae039.sub(t14, n6)))};
       };
     }
   };
-  var tr = -1.5;
+  var nr = -1.5;
   var dd = /\r?\n|\r/g;
   var cd = / /g;
-  function nr(o13) {
+  function or(o13) {
     return o13.replace(dd, `
 `).replace(cd, "\xA0");
   }
-  var Ht;
+  var Ot;
   function ld() {
     var e12;
     (e12 = document.getElementById("__textMeasure")) == null || e12.remove();
     let o13 = document.createElement("pre");
-    return o13.id = "__textMeasure", Object.assign(o13.style, {whiteSpace: "pre", width: "auto", border: "1px solid red", padding: "4px", margin: "0px", letterSpacing: `${tr}px`, opacity: "0", position: "absolute", top: "-500px", left: "0px", zIndex: "9999", pointerEvents: "none", userSelect: "none", alignmentBaseline: "mathematical", dominantBaseline: "mathematical"}), o13.tabIndex = -1, document.body.appendChild(o13), o13;
+    return o13.id = "__textMeasure", Object.assign(o13.style, {whiteSpace: "pre", width: "auto", border: "1px solid red", padding: "4px", margin: "0px", letterSpacing: `${nr}px`, opacity: "0", position: "absolute", top: "-500px", left: "0px", zIndex: "9999", pointerEvents: "none", userSelect: "none", alignmentBaseline: "mathematical", dominantBaseline: "mathematical"}), o13.tabIndex = -1, document.body.appendChild(o13), o13;
   }
-  typeof window != "undefined" && (Ht = ld());
+  typeof window != "undefined" && (Ot = ld());
   var pd = v6("div", {width: "100%", height: "100%", variants: {isEditing: {false: {pointerEvents: "all", userSelect: "all"}, true: {pointerEvents: "none", userSelect: "none"}}}});
-  var hd = v6("div", {position: "absolute", top: "var(--tl-padding)", left: "var(--tl-padding)", width: "calc(100% - (var(--tl-padding) * 2))", height: "calc(100% - (var(--tl-padding) * 2))", padding: "4px", zIndex: 1, minHeight: 1, minWidth: 1, lineHeight: 1.4, letterSpacing: tr, outline: 0, fontWeight: "500", backfaceVisibility: "hidden", userSelect: "none", pointerEvents: "none", WebkitUserSelect: "none", WebkitTouchCallout: "none", isEditing: {false: {}, true: {pointerEvents: "all", background: "$boundsBg", userSelect: "text", WebkitUserSelect: "text"}}});
+  var hd = v6("div", {position: "absolute", top: "var(--tl-padding)", left: "var(--tl-padding)", width: "calc(100% - (var(--tl-padding) * 2))", height: "calc(100% - (var(--tl-padding) * 2))", padding: "4px", zIndex: 1, minHeight: 1, minWidth: 1, lineHeight: 1.4, letterSpacing: nr, outline: 0, fontWeight: "500", backfaceVisibility: "hidden", userSelect: "none", pointerEvents: "none", WebkitUserSelect: "none", WebkitTouchCallout: "none", isEditing: {false: {}, true: {pointerEvents: "all", background: "$boundsBg", userSelect: "text", WebkitUserSelect: "text"}}});
   var ud = v6("textarea", {position: "absolute", top: 0, left: 0, zIndex: 1, width: "100%", height: "100%", border: "none", padding: "4px", whiteSpace: "pre", resize: "none", minHeight: "inherit", minWidth: "inherit", lineHeight: "inherit", letterSpacing: "inherit", outline: 0, fontWeight: "inherit", overflow: "hidden", backfaceVisibility: "hidden", display: "inline-block", pointerEvents: "all", background: "$boundsBg", userSelect: "text", WebkitUserSelect: "text"});
   var fd = {easing: (o13) => Math.sin(o13 * Math.PI / 2), simulatePressure: true};
   var Sd = {easing: (o13) => o13 * o13, simulatePressure: false};
-  function go(o13) {
+  function fo(o13) {
     let e12 = ee(o13.style);
-    return T5(m8({size: 1 + e12.strokeWidth * 1.5, thinning: 0.65, streamline: 0.65, smoothing: 0.65}, o13.points[1][2] === 0.5 ? fd : Sd), {last: o13.isComplete});
+    return w6(m8({size: 1 + e12.strokeWidth * 1.5, thinning: 0.65, streamline: 0.65, smoothing: 0.65}, o13.points[1][2] === 0.5 ? fd : Sd), {last: o13.isComplete});
   }
-  function rr(o13) {
-    return o13.points.length < 2 ? "" : Utils.getSvgPathFromStroke(ce(o13.points, go(o13)).map((e12) => e12.point));
+  function ar(o13) {
+    return o13.points.length < 2 ? "" : Utils.getSvgPathFromStroke(ce(o13.points, fo(o13)).map((e12) => e12.point));
   }
-  function ar(o13, e12) {
+  function ir(o13, e12) {
     return ce(o13.points, e12);
   }
-  function ir(o13) {
+  function dr(o13) {
     if (o13.points.length < 2)
       return "";
-    let e12 = go(o13), t14 = ar(o13, e12), n6 = ie(t14, e12);
+    let e12 = fo(o13), t14 = ir(o13, e12), n6 = ie(t14, e12);
     return Utils.getSvgPathFromStroke(n6);
   }
-  function fo(o13) {
+  function So(o13) {
     let {points: e12} = o13;
     if (e12.length < 2)
       return "M 0 0 L 0 0";
-    let t14 = go(o13), n6 = ar(o13, t14).map((r13) => r13.point.slice(0, 2));
+    let t14 = fo(o13), n6 = ir(o13, t14).map((r13) => r13.point.slice(0, 2));
     return Utils.getSvgPathFromStroke(n6, false);
   }
-  var To = class extends G4 {
+  var wo = class extends G4 {
     constructor() {
       super(...arguments);
       this.type = L4.Draw;
@@ -19237,10 +18842,10 @@ Please add \`${key}Action\` when creating your handler.`);
       this.pointCache = {};
       this.getShape = (e12) => Utils.deepMerge({id: "id", type: L4.Draw, name: "Draw", parentId: "page", childIndex: 1, point: [0, 0], rotation: 0, style: le2, points: [], isComplete: false}, e12);
       this.Component = G4.Component(({shape: e12, meta: t14, events: n6}, s8) => {
-        let {points: r13, style: a10, isComplete: i9} = e12, d9 = (0, import_react65.useMemo)(() => rr(e12), [r13, a10.size]), l10 = (0, import_react65.useMemo)(() => a10.dash === X3.Draw ? ir(e12) : fo(e12), [r13, a10.size, a10.dash, i9]), p8 = ee(a10, t14.isDarkMode), c7 = p8.strokeWidth, h4 = this.getBounds(e12);
+        let {points: r13, style: a10, isComplete: i9} = e12, d9 = (0, import_react65.useMemo)(() => ar(e12), [r13, a10.size]), l10 = (0, import_react65.useMemo)(() => a10.dash === X3.Draw ? dr(e12) : So(e12), [r13, a10.size, a10.dash, i9]), p8 = ee(a10, t14.isDarkMode), c7 = p8.strokeWidth, h4 = this.getBounds(e12);
         if (h4.width <= c7 / 2 && h4.height <= c7 / 2) {
-          let x6 = 1 + c7;
-          return (0, import_react65.createElement)(SVGContainer, m8({ref: s8, id: e12.id + "_svg"}, n6), (0, import_react65.createElement)("circle", {r: x6, fill: p8.stroke, stroke: p8.stroke, pointerEvents: "all"}));
+          let D7 = 1 + c7;
+          return (0, import_react65.createElement)(SVGContainer, m8({ref: s8, id: e12.id + "_svg"}, n6), (0, import_react65.createElement)("circle", {r: D7, fill: p8.stroke, stroke: p8.stroke, pointerEvents: "all"}));
         }
         let g5 = a10.isFilled && r13.length > 3 && $a8e101027d325e52$export$e947a0f742cf021e.dist(r13[0], r13[r13.length - 1]) < +p8.strokeWidth * 2;
         if (e12.style.dash === X3.Draw)
@@ -19249,7 +18854,7 @@ Please add \`${key}Action\` when creating your handler.`);
         return (0, import_react65.createElement)(SVGContainer, m8({ref: s8, id: e12.id + "_svg"}, n6), (0, import_react65.createElement)("path", {d: l10, fill: g5 ? p8.fill : "none", stroke: "none", strokeWidth: Math.min(4, c7 * 2), strokeLinejoin: "round", strokeLinecap: "round", pointerEvents: g5 ? "all" : "stroke"}), (0, import_react65.createElement)("path", {d: l10, fill: "none", stroke: p8.stroke, strokeWidth: b8, strokeDasharray: S3, strokeDashoffset: I3, strokeLinejoin: "round", strokeLinecap: "round", pointerEvents: "stroke"}));
       });
       this.Indicator = G4.Indicator(({shape: e12}) => {
-        let {points: t14} = e12, n6 = (0, import_react65.useMemo)(() => fo(e12), [t14]), s8 = this.getBounds(e12);
+        let {points: t14} = e12, n6 = (0, import_react65.useMemo)(() => So(e12), [t14]), s8 = this.getBounds(e12);
         return s8.width < 4 && s8.height < 4 ? (0, import_react65.createElement)("circle", {x: s8.width / 2, y: s8.height / 2, r: 1}) : (0, import_react65.createElement)("path", {d: n6});
       });
       this.transform = (e12, t14, {initialShape: n6, scaleX: s8, scaleY: r13}) => {
@@ -19279,18 +18884,18 @@ Please add \`${key}Action\` when creating your handler.`);
       };
     }
   };
-  var Io = new no();
-  var bo = new so();
-  var yo = new To();
-  var Do = new io();
-  var wd = new uo();
-  var Id = new co();
-  var mn = new lo();
-  var qe = {[L4.Rectangle]: Io, [L4.Ellipse]: bo, [L4.Draw]: yo, [L4.Arrow]: Do, [L4.Text]: wd, [L4.Group]: Id, [L4.Sticky]: mn};
-  var cr = (o13) => typeof o13 == "string" ? qe[o13] : qe[o13.type];
+  var bo = new oo();
+  var yo = new ro();
+  var Do = new wo();
+  var xo = new co();
+  var wd = new mo();
+  var Id = new lo();
+  var gn = new po();
+  var qe = {[L4.Rectangle]: bo, [L4.Ellipse]: yo, [L4.Draw]: Do, [L4.Arrow]: xo, [L4.Text]: wd, [L4.Group]: Id, [L4.Sticky]: gn};
+  var lr = (o13) => typeof o13 == "string" ? qe[o13] : qe[o13.type];
   var E6 = class {
     static getShapeUtils(e12) {
-      return cr(e12);
+      return lr(e12);
     }
     static getSelectedShapes(e12, t14) {
       let n6 = E6.getPage(e12, t14);
@@ -19381,9 +18986,9 @@ Please add \`${key}Action\` when creating your handler.`);
         if (!(c7 && p8.size))
           break;
         d9.has(c7) || (d9.add(c7), p8.forEach((h4) => {
-          var x6, y4;
+          var D7, y4;
           let {handles: {start: {bindingId: u5}, end: {bindingId: g5}}} = h4, S3 = u5 ? a10.bindings[u5] : null, I3 = g5 ? a10.bindings[g5] : null, b8 = false;
-          S3 && S3.toId === c7 ? (n6 === "center" ? b8 = true : ((x6 = h4.decorations) == null ? void 0 : x6.start) && I3 ? b8 = n6 === "left" : b8 = n6 === "right", b8 && (s8 && i9.add(h4.id), i9.add(c7), I3 && (i9.add(I3.toId), l10.push(I3.toId)))) : I3 && I3.toId === c7 && (n6 === "center" ? b8 = true : ((y4 = h4.decorations) == null ? void 0 : y4.end) && S3 ? b8 = n6 === "left" : b8 = n6 === "right", b8 && (s8 && i9.add(h4.id), i9.add(c7), S3 && (i9.add(S3.toId), l10.push(S3.toId)))), (!S3 || i9.has(S3.toId)) && (!I3 || i9.has(I3.toId)) && p8.delete(h4);
+          S3 && S3.toId === c7 ? (n6 === "center" ? b8 = true : ((D7 = h4.decorations) == null ? void 0 : D7.start) && I3 ? b8 = n6 === "left" : b8 = n6 === "right", b8 && (s8 && i9.add(h4.id), i9.add(c7), I3 && (i9.add(I3.toId), l10.push(I3.toId)))) : I3 && I3.toId === c7 && (n6 === "center" ? b8 = true : ((y4 = h4.decorations) == null ? void 0 : y4.end) && S3 ? b8 = n6 === "left" : b8 = n6 === "right", b8 && (s8 && i9.add(h4.id), i9.add(c7), S3 && (i9.add(S3.toId), l10.push(S3.toId)))), (!S3 || i9.has(S3.toId)) && (!I3 || i9.has(I3.toId)) && p8.delete(h4);
         }));
       }
       return Array.from(i9.values());
@@ -19487,9 +19092,9 @@ Please add \`${key}Action\` when creating your handler.`);
       var l10, p8;
       let r13 = $a8e101027d325e52$export$e947a0f742cf021e.sub(t14, e12.point), a10 = $a8e101027d325e52$export$e947a0f742cf021e.rotWith(t14, n6, s8), i9 = $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.sub(a10, r13));
       if (e12.handles !== void 0)
-        return (p8 = (l10 = this.getShapeUtils(e12)).onHandleChange) == null ? void 0 : p8.call(l10, T5(m8({}, e12), {point: i9}), Object.fromEntries(Object.entries(e12.handles).map(([h4, u5]) => {
+        return (p8 = (l10 = this.getShapeUtils(e12)).onHandleChange) == null ? void 0 : p8.call(l10, w6(m8({}, e12), {point: i9}), Object.fromEntries(Object.entries(e12.handles).map(([h4, u5]) => {
           let g5 = $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.rotWith(u5.point, r13, s8));
-          return [h4, T5(m8({}, u5), {point: g5})];
+          return [h4, w6(m8({}, u5), {point: g5})];
         })), {shiftKey: false});
       let d9 = Utils.clampRadians((e12.rotation || 0) + s8);
       return {point: i9, rotation: d9};
@@ -19577,7 +19182,7 @@ Please add \`${key}Action\` when creating your handler.`);
     let n6 = E6.getShapes(e12, t14);
     return n6.length === 0 ? 1 : n6.filter((s8) => s8.parentId === t14).sort((s8, r13) => r13.childIndex - s8.childIndex)[0].childIndex + 1;
   };
-  function pr(o13, e12, t14) {
+  function hr(o13, e12, t14) {
     let {currentPageId: n6} = o13.appState, s8 = e12.map((h4) => f12.getShape(o13, h4, n6)), r13 = s8.map((h4) => ({id: h4.id, point: [...h4.point], bounds: f12.getShapeUtils(h4).getBounds(h4)})), a10 = Utils.getCommonBounds(r13.map(({bounds: h4}) => h4)), i9 = a10.minX + a10.width / 2, d9 = a10.minY + a10.height / 2, l10 = Object.fromEntries(r13.map(({id: h4, point: u5, bounds: g5}) => [h4, {prev: u5, next: {[Q.CenterVertical]: [u5[0], d9 - g5.height / 2], [Q.CenterHorizontal]: [i9 - g5.width / 2, u5[1]], [Q.Top]: [u5[0], a10.minY], [Q.Bottom]: [u5[0], a10.maxY - g5.height], [Q.Left]: [a10.minX, u5[1]], [Q.Right]: [a10.maxX - g5.width, u5[1]]}[t14]}])), {before: p8, after: c7} = f12.mutateShapes(o13, e12, (h4) => l10[h4.id] ? {point: l10[h4.id].next} : h4, n6);
     return s8.forEach((h4) => {
       if (h4.type === L4.Group) {
@@ -19589,14 +19194,14 @@ Please add \`${key}Action\` when creating your handler.`);
       }
     }), {id: "align", before: {document: {pages: {[n6]: {shapes: p8}}, pageStates: {[n6]: {selectedIds: e12}}}}, after: {document: {pages: {[n6]: {shapes: c7}}, pageStates: {[n6]: {selectedIds: e12}}}}};
   }
-  function hr(o13, e12) {
+  function ur(o13, e12) {
     return {id: "change_page", before: {appState: {currentPageId: o13.appState.currentPageId}}, after: {appState: {currentPageId: e12}}};
   }
-  function ur(o13, e12, t14 = Utils.uniqueId()) {
+  function mr(o13, e12, t14 = Utils.uniqueId()) {
     let {currentPageId: n6} = o13.appState, s8 = Object.values(o13.document.pages).sort((l10, p8) => (p8.childIndex || 0) - (l10.childIndex || 0))[0], r13 = (s8 == null ? void 0 : s8.childIndex) ? (s8 == null ? void 0 : s8.childIndex) + 1 : 1, i9 = {id: t14, name: "New Page", childIndex: r13, shapes: {}, bindings: {}}, d9 = {id: t14, selectedIds: [], camera: {point: e12, zoom: 1}, editingId: void 0, bindingId: void 0, hoveredId: void 0, pointedId: void 0};
     return {id: "create_page", before: {appState: {currentPageId: n6}, document: {pages: {[t14]: void 0}, pageStates: {[t14]: void 0}}}, after: {appState: {currentPageId: i9.id}, document: {pages: {[t14]: i9}, pageStates: {[t14]: d9}}}};
   }
-  function xo(o13, e12, t14 = []) {
+  function Lo(o13, e12, t14 = []) {
     let {currentPageId: n6} = o13.appState, s8 = {}, r13 = {};
     e12.forEach((d9) => {
       s8[d9.id] = void 0, r13[d9.id] = d9;
@@ -19606,11 +19211,11 @@ Please add \`${key}Action\` when creating your handler.`);
       a10[d9.id] = void 0, i9[d9.id] = d9;
     }), {id: "create", before: {document: {pages: {[n6]: {shapes: s8, bindings: a10}}, pageStates: {[n6]: {selectedIds: [...f12.getSelectedIds(o13, n6)]}}}}, after: {document: {pages: {[n6]: {shapes: r13, bindings: i9}}, pageStates: {[n6]: {selectedIds: e12.map((d9) => d9.id)}}}}};
   }
-  function mr(o13, e12) {
+  function gr(o13, e12) {
     let {currentPageId: t14} = o13.appState, n6 = Object.values(o13.document.pages).sort((a10, i9) => (a10.childIndex || 0) - (i9.childIndex || 0)), s8 = n6.findIndex((a10) => a10.id === e12), r13;
     return e12 === t14 ? s8 === n6.length - 1 ? r13 = n6[n6.length - 2].id : r13 = n6[s8 + 1].id : r13 = t14, {id: "delete_page", before: {appState: {currentPageId: e12}, document: {pages: {[e12]: m8({}, o13.document.pages[e12])}, pageStates: {[e12]: m8({}, o13.document.pageStates[e12])}}}, after: {appState: {currentPageId: r13}, document: {pages: {[e12]: void 0}, pageStates: {[e12]: void 0}}}};
   }
-  function gr(o13, e12, t14) {
+  function fr(o13, e12, t14) {
     let n6 = {shapes: {}, bindings: {}}, s8 = {shapes: {}, bindings: {}}, r13 = [], a10 = new Set();
     e12.forEach((d9) => {
       a10.add(d9);
@@ -19631,16 +19236,16 @@ Please add \`${key}Action\` when creating your handler.`);
           let p8 = i9.shapes[l10];
           p8 && p8.handles && Object.values(p8.handles).filter((c7) => c7.bindingId === d9.id).forEach((c7) => {
             var h4, u5, g5, S3, I3, b8;
-            n6.shapes[l10] = T5(m8({}, n6.shapes[l10]), {handles: T5(m8({}, (h4 = n6.shapes[l10]) == null ? void 0 : h4.handles), {[c7.id]: T5(m8({}, (g5 = (u5 = n6.shapes[l10]) == null ? void 0 : u5.handles) == null ? void 0 : g5[c7.id]), {bindingId: d9.id})})}), a10.has(l10) || (s8.shapes[l10] = T5(m8({}, s8.shapes[l10]), {handles: T5(m8({}, (S3 = s8.shapes[l10]) == null ? void 0 : S3.handles), {[c7.id]: T5(m8({}, (b8 = (I3 = s8.shapes[l10]) == null ? void 0 : I3.handles) == null ? void 0 : b8[c7.id]), {bindingId: void 0})})}));
+            n6.shapes[l10] = w6(m8({}, n6.shapes[l10]), {handles: w6(m8({}, (h4 = n6.shapes[l10]) == null ? void 0 : h4.handles), {[c7.id]: w6(m8({}, (g5 = (u5 = n6.shapes[l10]) == null ? void 0 : u5.handles) == null ? void 0 : g5[c7.id]), {bindingId: d9.id})})}), a10.has(l10) || (s8.shapes[l10] = w6(m8({}, s8.shapes[l10]), {handles: w6(m8({}, (S3 = s8.shapes[l10]) == null ? void 0 : S3.handles), {[c7.id]: w6(m8({}, (b8 = (I3 = s8.shapes[l10]) == null ? void 0 : I3.handles) == null ? void 0 : b8[c7.id]), {bindingId: void 0})})}));
           });
         }
     }), {before: n6, after: s8};
   }
-  function Lo(o13, e12, t14 = o13.appState.currentPageId) {
-    let {before: n6, after: s8} = gr(o13, e12, t14);
+  function Co(o13, e12, t14 = o13.appState.currentPageId) {
+    let {before: n6, after: s8} = fr(o13, e12, t14);
     return {id: "delete", before: {document: {pages: {[t14]: n6}, pageStates: {[t14]: {selectedIds: f12.getSelectedIds(o13, t14)}}}}, after: {document: {pages: {[t14]: s8}, pageStates: {[t14]: {selectedIds: []}}}}};
   }
-  function Sr(o13, e12, t14) {
+  function Tr(o13, e12, t14) {
     let {currentPageId: n6} = o13.appState, s8 = e12.map((d9) => f12.getShape(o13, d9, n6)), r13 = Object.fromEntries(xd(s8, t14).map((d9) => [d9.id, d9])), {before: a10, after: i9} = f12.mutateShapes(o13, e12, (d9) => r13[d9.id] ? {point: r13[d9.id].next} : d9, n6);
     return s8.forEach((d9) => {
       if (d9.type === L4.Group) {
@@ -19691,31 +19296,31 @@ Please add \`${key}Action\` when creating your handler.`);
     }
     return r13;
   }
-  function Tr(o13, e12, t14) {
-    let n6 = Utils.uniqueId(), {currentPageId: s8} = o13.appState, r13 = o13.document.pages[t14], a10 = T5(m8({}, r13), {id: n6, name: r13.name + " Copy", shapes: Object.fromEntries(Object.entries(r13.shapes).map(([i9, d9]) => [i9, T5(m8({}, d9), {parentId: d9.parentId === t14 ? n6 : d9.parentId})]))});
-    return {id: "duplicate_page", before: {appState: {currentPageId: s8}, document: {pages: {[n6]: void 0}, pageStates: {[n6]: void 0}}}, after: {appState: {currentPageId: n6}, document: {pages: {[n6]: a10}, pageStates: {[n6]: T5(m8({}, r13), {id: n6, selectedIds: [], camera: o13.document.pageStates[s8].camera, editingId: void 0, bindingId: void 0, hoveredId: void 0, pointedId: void 0})}}}};
-  }
   function wr(o13, e12, t14) {
+    let n6 = Utils.uniqueId(), {currentPageId: s8} = o13.appState, r13 = o13.document.pages[t14], a10 = w6(m8({}, r13), {id: n6, name: r13.name + " Copy", shapes: Object.fromEntries(Object.entries(r13.shapes).map(([i9, d9]) => [i9, w6(m8({}, d9), {parentId: d9.parentId === t14 ? n6 : d9.parentId})]))});
+    return {id: "duplicate_page", before: {appState: {currentPageId: s8}, document: {pages: {[n6]: void 0}, pageStates: {[n6]: void 0}}}, after: {appState: {currentPageId: n6}, document: {pages: {[n6]: a10}, pageStates: {[n6]: w6(m8({}, r13), {id: n6, selectedIds: [], camera: o13.document.pageStates[s8].camera, editingId: void 0, bindingId: void 0, hoveredId: void 0, pointedId: void 0})}}}};
+  }
+  function Ir(o13, e12, t14) {
     let {currentPageId: n6} = o13.appState, s8 = f12.getPage(o13, n6), r13 = {shapes: {}, bindings: {}}, a10 = {shapes: {}, bindings: {}}, i9 = f12.getSelectedIds(o13, n6).map((c7) => f12.getShape(o13, c7, n6)), d9 = {};
     i9.filter((c7) => !e12.includes(c7.parentId)).forEach((c7) => {
       let h4 = Utils.uniqueId();
-      if (r13.shapes[h4] = void 0, a10.shapes[h4] = T5(m8({}, Utils.deepClone(c7)), {id: h4, childIndex: f12.getChildIndexAbove(o13, c7.id, n6)}), c7.children && (a10.shapes[h4].children = []), c7.parentId !== n6) {
+      if (r13.shapes[h4] = void 0, a10.shapes[h4] = w6(m8({}, Utils.deepClone(c7)), {id: h4, childIndex: f12.getChildIndexAbove(o13, c7.id, n6)}), c7.children && (a10.shapes[h4].children = []), c7.parentId !== n6) {
         let u5 = f12.getShape(o13, c7.parentId, n6);
-        r13.shapes[u5.id] = T5(m8({}, r13.shapes[u5.id]), {children: u5.children}), a10.shapes[u5.id] = T5(m8({}, a10.shapes[u5.id]), {children: [...(a10.shapes[u5.id] || u5).children, h4]});
+        r13.shapes[u5.id] = w6(m8({}, r13.shapes[u5.id]), {children: u5.children}), a10.shapes[u5.id] = w6(m8({}, a10.shapes[u5.id]), {children: [...(a10.shapes[u5.id] || u5).children, h4]});
       }
       d9[c7.id] = h4;
     }), i9.forEach((c7) => {
       c7.children && c7.children.forEach((h4) => {
         var I3, b8;
         let u5 = f12.getShape(o13, h4, n6), g5 = Utils.uniqueId(), S3 = d9[c7.id];
-        r13.shapes[g5] = void 0, a10.shapes[g5] = T5(m8({}, Utils.deepClone(u5)), {id: g5, parentId: S3, childIndex: f12.getChildIndexAbove(o13, u5.id, n6)}), d9[h4] = g5, (b8 = (I3 = a10.shapes[d9[c7.id]]) == null ? void 0 : I3.children) == null || b8.push(g5);
+        r13.shapes[g5] = void 0, a10.shapes[g5] = w6(m8({}, Utils.deepClone(u5)), {id: g5, parentId: S3, childIndex: f12.getChildIndexAbove(o13, u5.id, n6)}), d9[h4] = g5, (b8 = (I3 = a10.shapes[d9[c7.id]]) == null ? void 0 : I3.children) == null || b8.push(g5);
       });
     });
     let l10 = new Set(Object.keys(d9));
     Object.values(s8.bindings).filter((c7) => l10.has(c7.fromId) || l10.has(c7.toId)).forEach((c7) => {
       if (l10.has(c7.fromId))
         if (l10.has(c7.toId)) {
-          let h4 = Utils.uniqueId(), u5 = T5(m8({}, Utils.deepClone(c7)), {id: h4, fromId: d9[c7.fromId], toId: d9[c7.toId]});
+          let h4 = Utils.uniqueId(), u5 = w6(m8({}, Utils.deepClone(c7)), {id: h4, fromId: d9[c7.fromId], toId: d9[c7.toId]});
           r13.bindings[h4] = void 0, a10.bindings[h4] = u5;
           let g5 = a10.shapes[u5.fromId];
           Object.values(g5.handles).forEach((S3) => {
@@ -19742,15 +19347,15 @@ Please add \`${key}Action\` when creating your handler.`);
     }
     return {id: "duplicate", before: {document: {pages: {[n6]: r13}, pageStates: {[n6]: {selectedIds: e12}}}}, after: {document: {pages: {[n6]: a10}, pageStates: {[n6]: {selectedIds: Array.from(l10.values()).map((c7) => d9[c7])}}}}};
   }
-  function vo(o13, e12, t14) {
+  function Bo(o13, e12, t14) {
     let {currentPageId: n6} = o13.appState, r13 = e12.map((l10) => f12.getShape(o13, l10, n6)).map((l10) => f12.getBounds(l10)), a10 = Utils.getCommonBounds(r13), {before: i9, after: d9} = f12.mutateShapes(o13, e12, (l10) => {
       let p8 = f12.getBounds(l10);
       switch (t14) {
-        case at.Horizontal: {
+        case it.Horizontal: {
           let c7 = Utils.getRelativeTransformedBoundingBox(a10, a10, p8, true, false);
           return f12.getShapeUtils(l10).transform(l10, c7, {type: TLBoundsCorner.TopLeft, scaleX: -1, scaleY: 1, initialShape: l10, transformOrigin: [0.5, 0.5]});
         }
-        case at.Vertical: {
+        case it.Vertical: {
           let c7 = Utils.getRelativeTransformedBoundingBox(a10, a10, p8, false, true);
           return f12.getShapeUtils(l10).transform(l10, c7, {type: TLBoundsCorner.TopLeft, scaleX: 1, scaleY: -1, initialShape: l10, transformOrigin: [0.5, 0.5]});
         }
@@ -19758,72 +19363,72 @@ Please add \`${key}Action\` when creating your handler.`);
     }, n6);
     return {id: "flip", before: {document: {pages: {[o13.appState.currentPageId]: {shapes: i9}}, pageStates: {[n6]: {selectedIds: e12}}}}, after: {document: {pages: {[o13.appState.currentPageId]: {shapes: d9}}, pageStates: {[n6]: {selectedIds: e12}}}}};
   }
-  function br(o13, e12, t14, n6) {
-    var y4, D7;
+  function yr(o13, e12, t14, n6) {
+    var y4, x6;
     let s8 = {}, r13 = {}, a10 = {}, i9 = {}, d9 = [...e12], l10 = [], p8 = [], c7 = [];
-    for (let w6 of e12) {
-      let C6 = f12.getShape(o13, w6, n6);
+    for (let T5 of e12) {
+      let C6 = f12.getShape(o13, T5, n6);
       C6.children === void 0 ? l10.push(C6) : (c7.push(C6), d9.push(...C6.children), l10.push(...C6.children.map((P3) => f12.getShape(o13, P3, n6))));
     }
-    if (l10.every((w6) => w6.parentId === l10[0].parentId) && l10[0].parentId !== n6 && ((y4 = f12.getShape(o13, l10[0].parentId, n6).children) == null ? void 0 : y4.length) === d9.length)
+    if (l10.every((T5) => T5.parentId === l10[0].parentId) && l10[0].parentId !== n6 && ((y4 = f12.getShape(o13, l10[0].parentId, n6).children) == null ? void 0 : y4.length) === d9.length)
       return;
-    let h4 = f12.flattenPage(o13, n6), u5 = Object.fromEntries(l10.map((w6) => [w6.id, h4.indexOf(w6)])), g5 = l10.sort((w6, C6) => u5[w6.id] - u5[C6.id]), S3 = n6, I3 = (g5.filter((w6) => w6.parentId === n6)[0] || g5[0]).childIndex, b8 = Utils.getCommonBounds(l10.map((w6) => f12.getBounds(w6)));
-    for (s8[t14] = void 0, r13[t14] = f12.getShapeUtils(L4.Group).create({id: t14, childIndex: I3, parentId: S3, point: [b8.minX, b8.minY], size: [b8.width, b8.height], children: g5.map((w6) => w6.id)}), g5.forEach((w6, C6) => {
-      if (w6.parentId !== n6) {
-        let P3 = f12.getShape(o13, w6.parentId, n6);
+    let h4 = f12.flattenPage(o13, n6), u5 = Object.fromEntries(l10.map((T5) => [T5.id, h4.indexOf(T5)])), g5 = l10.sort((T5, C6) => u5[T5.id] - u5[C6.id]), S3 = n6, I3 = (g5.filter((T5) => T5.parentId === n6)[0] || g5[0]).childIndex, b8 = Utils.getCommonBounds(l10.map((T5) => f12.getBounds(T5)));
+    for (s8[t14] = void 0, r13[t14] = f12.getShapeUtils(L4.Group).create({id: t14, childIndex: I3, parentId: S3, point: [b8.minX, b8.minY], size: [b8.width, b8.height], children: g5.map((T5) => T5.id)}), g5.forEach((T5, C6) => {
+      if (T5.parentId !== n6) {
+        let P3 = f12.getShape(o13, T5.parentId, n6);
         c7.push(P3);
       }
-      s8[w6.id] = T5(m8({}, s8[w6.id]), {parentId: w6.parentId, childIndex: w6.childIndex}), r13[w6.id] = T5(m8({}, r13[w6.id]), {parentId: t14, childIndex: C6 + 1});
+      s8[T5.id] = w6(m8({}, s8[T5.id]), {parentId: T5.parentId, childIndex: T5.childIndex}), r13[T5.id] = w6(m8({}, r13[T5.id]), {parentId: t14, childIndex: C6 + 1});
     }); c7.length > 0; ) {
-      let w6 = c7.pop();
-      if (!w6)
+      let T5 = c7.pop();
+      if (!T5)
         break;
-      let C6 = (((D7 = s8[w6.id]) == null ? void 0 : D7.children) || w6.children).filter((P3) => P3 && !(d9.includes(P3) || p8.includes(P3)));
-      C6.length === 0 ? (s8[w6.id] = w6, r13[w6.id] = void 0, w6.parentId !== n6 && (p8.push(w6.id), c7.push(f12.getShape(o13, w6.parentId, n6)))) : (s8[w6.id] = T5(m8({}, s8[w6.id]), {children: w6.children}), r13[w6.id] = T5(m8({}, r13[w6.id]), {children: C6}));
+      let C6 = (((x6 = s8[T5.id]) == null ? void 0 : x6.children) || T5.children).filter((P3) => P3 && !(d9.includes(P3) || p8.includes(P3)));
+      C6.length === 0 ? (s8[T5.id] = T5, r13[T5.id] = void 0, T5.parentId !== n6 && (p8.push(T5.id), c7.push(f12.getShape(o13, T5.parentId, n6)))) : (s8[T5.id] = w6(m8({}, s8[T5.id]), {children: T5.children}), r13[T5.id] = w6(m8({}, r13[T5.id]), {children: C6}));
     }
-    let x6 = f12.getPage(o13, n6);
-    return Object.values(x6.bindings).forEach((w6) => {
-      for (let C6 of [w6.toId, w6.fromId])
+    let D7 = f12.getPage(o13, n6);
+    return Object.values(D7.bindings).forEach((T5) => {
+      for (let C6 of [T5.toId, T5.fromId])
         if (r13[C6] === void 0) {
-          a10[w6.id] = w6, i9[w6.id] = void 0;
+          a10[T5.id] = T5, i9[T5.id] = void 0;
           let P3 = f12.getShape(o13, C6, n6);
-          P3.handles && Object.values(P3.handles).filter((z3) => z3.bindingId === w6.id).forEach((z3) => {
+          P3.handles && Object.values(P3.handles).filter((z3) => z3.bindingId === T5.id).forEach((z3) => {
             var $2, Z4;
-            s8[C6] = T5(m8({}, s8[C6]), {handles: T5(m8({}, ($2 = s8[C6]) == null ? void 0 : $2.handles), {[z3.id]: {bindingId: w6.id}})}), p8.includes(C6) || (r13[C6] = T5(m8({}, r13[C6]), {handles: T5(m8({}, (Z4 = r13[C6]) == null ? void 0 : Z4.handles), {[z3.id]: {bindingId: void 0}})}));
+            s8[C6] = w6(m8({}, s8[C6]), {handles: w6(m8({}, ($2 = s8[C6]) == null ? void 0 : $2.handles), {[z3.id]: {bindingId: T5.id}})}), p8.includes(C6) || (r13[C6] = w6(m8({}, r13[C6]), {handles: w6(m8({}, (Z4 = r13[C6]) == null ? void 0 : Z4.handles), {[z3.id]: {bindingId: void 0}})}));
           });
         }
     }), {id: "group", before: {document: {pages: {[n6]: {shapes: s8, bindings: a10}}, pageStates: {[n6]: {selectedIds: e12}}}}, after: {document: {pages: {[n6]: {shapes: r13, bindings: a10}}, pageStates: {[n6]: {selectedIds: [t14]}}}}};
   }
-  function Dr(o13, e12, t14, n6, s8) {
+  function xr(o13, e12, t14, n6, s8) {
     let {currentPageId: r13} = o13.appState, a10 = f12.getPage(o13, r13), i9 = {before: {shapes: {}, bindings: {}}, after: {shapes: {}, bindings: {}}}, d9 = {before: {shapes: {}, bindings: {}}, after: {shapes: {}, bindings: {}}}, l10 = new Set(), p8 = new Set();
     e12.map((y4) => f12.getShape(o13, y4, n6)).forEach((y4) => {
-      l10.add(y4.id), p8.add(y4), y4.children !== void 0 && y4.children.forEach((D7) => {
-        l10.add(D7), p8.add(f12.getShape(o13, D7, n6));
+      l10.add(y4.id), p8.add(y4), y4.children !== void 0 && y4.children.forEach((x6) => {
+        l10.add(x6), p8.add(f12.getShape(o13, x6, n6));
       });
     });
     let c7 = f12.getTopChildIndex(o13, s8), h4 = Array.from(p8.values());
-    h4.forEach((y4, D7) => {
-      if (i9.before.shapes[y4.id] = y4, i9.after.shapes[y4.id] = void 0, d9.before.shapes[y4.id] = void 0, d9.after.shapes[y4.id] = y4, !l10.has(y4.parentId) && (d9.after.shapes[y4.id] = T5(m8({}, y4), {parentId: s8, childIndex: c7 + D7}), y4.parentId !== n6)) {
-        let w6 = f12.getShape(o13, y4.parentId, n6);
-        i9.before.shapes[w6.id] = {children: w6.children}, i9.after.shapes[w6.id] = {children: w6.children.filter((C6) => C6 !== y4.id)};
+    h4.forEach((y4, x6) => {
+      if (i9.before.shapes[y4.id] = y4, i9.after.shapes[y4.id] = void 0, d9.before.shapes[y4.id] = void 0, d9.after.shapes[y4.id] = y4, !l10.has(y4.parentId) && (d9.after.shapes[y4.id] = w6(m8({}, y4), {parentId: s8, childIndex: c7 + x6}), y4.parentId !== n6)) {
+        let T5 = f12.getShape(o13, y4.parentId, n6);
+        i9.before.shapes[T5.id] = {children: T5.children}, i9.after.shapes[T5.id] = {children: T5.children.filter((C6) => C6 !== y4.id)};
       }
     }), Object.values(a10.bindings).filter((y4) => l10.has(y4.fromId) || l10.has(y4.toId)).forEach((y4) => {
       i9.before.bindings[y4.id] = y4, i9.after.bindings[y4.id] = void 0;
-      let D7 = f12.getShape(o13, y4.fromId, n6);
+      let x6 = f12.getShape(o13, y4.fromId, n6);
       if (l10.has(y4.fromId) && l10.has(y4.toId))
         d9.before.bindings[y4.id] = void 0, d9.after.bindings[y4.id] = y4;
       else if (l10.has(y4.fromId)) {
-        let C6 = f12.getShape(o13, y4.fromId, n6), z3 = Object.values(D7.handles).find((Z4) => Z4.bindingId === y4.id).id, $2 = d9.after.shapes[C6.id];
-        $2.handles = T5(m8({}, $2.handles), {[z3]: T5(m8({}, $2.handles[z3]), {bindingId: void 0})});
+        let C6 = f12.getShape(o13, y4.fromId, n6), z3 = Object.values(x6.handles).find((Z4) => Z4.bindingId === y4.id).id, $2 = d9.after.shapes[C6.id];
+        $2.handles = w6(m8({}, $2.handles), {[z3]: w6(m8({}, $2.handles[z3]), {bindingId: void 0})});
       } else {
-        let C6 = f12.getShape(o13, y4.fromId, n6), P3 = Object.values(D7.handles).find((z3) => z3.bindingId === y4.id);
+        let C6 = f12.getShape(o13, y4.fromId, n6), P3 = Object.values(x6.handles).find((z3) => z3.bindingId === y4.id);
         i9.before.shapes[C6.id] = {handles: {[P3.id]: {bindingId: y4.id}}}, i9.after.shapes[C6.id] = {handles: {[P3.id]: {bindingId: void 0}}};
       }
     });
-    let u5 = o13.document.pageStates[s8], g5 = Utils.getCommonBounds(h4.map((y4) => f12.getBounds(y4))), S3 = f12.getCameraZoom(t14.width < t14.height ? (t14.width - 128) / g5.width : (t14.height - 128) / g5.height), I3 = (t14.width - g5.width * S3) / 2 / S3, b8 = (t14.height - g5.height * S3) / 2 / S3, x6 = $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.add([-g5.minX, -g5.minY], [I3, b8]));
-    return {id: "move_to_page", before: {appState: {currentPageId: n6}, document: {pages: {[n6]: i9.before, [s8]: d9.before}, pageStates: {[n6]: {selectedIds: e12}, [s8]: {selectedIds: u5.selectedIds, camera: u5.camera}}}}, after: {appState: {currentPageId: s8}, document: {pages: {[n6]: i9.after, [s8]: d9.after}, pageStates: {[n6]: {selectedIds: []}, [s8]: {selectedIds: e12, camera: {zoom: S3, point: x6}}}}}};
+    let u5 = o13.document.pageStates[s8], g5 = Utils.getCommonBounds(h4.map((y4) => f12.getBounds(y4))), S3 = f12.getCameraZoom(t14.width < t14.height ? (t14.width - 128) / g5.width : (t14.height - 128) / g5.height), I3 = (t14.width - g5.width * S3) / 2 / S3, b8 = (t14.height - g5.height * S3) / 2 / S3, D7 = $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.add([-g5.minX, -g5.minY], [I3, b8]));
+    return {id: "move_to_page", before: {appState: {currentPageId: n6}, document: {pages: {[n6]: i9.before, [s8]: d9.before}, pageStates: {[n6]: {selectedIds: e12}, [s8]: {selectedIds: u5.selectedIds, camera: u5.camera}}}}, after: {appState: {currentPageId: s8}, document: {pages: {[n6]: i9.after, [s8]: d9.after}, pageStates: {[n6]: {selectedIds: []}, [s8]: {selectedIds: e12, camera: {zoom: S3, point: D7}}}}}};
   }
-  function Jt(o13, e12, t14) {
+  function _t(o13, e12, t14) {
     let {currentPageId: n6} = o13.appState, s8 = new Set(e12.map((p8) => f12.getShape(o13, p8, n6).parentId)), r13 = {before: {}, after: {}}, a10, i9, d9, l10 = f12.getPage(o13, n6);
     return Array.from(s8.values()).forEach((p8) => {
       let c7 = [];
@@ -19862,10 +19467,10 @@ Please add \`${key}Action\` when creating your handler.`);
               if (u5.includes(S3)) {
                 for (let I3 = S3; I3 >= 0; I3--)
                   if (!u5.includes(I3)) {
-                    let b8 = c7[I3].childIndex, x6, y4;
-                    I3 === 0 ? (x6 = b8 / 2, y4 = b8 / 2 / (S3 - I3 + 1)) : (x6 = c7[I3 - 1].childIndex, y4 = (b8 - x6) / (S3 - I3 + 1), x6 += y4);
-                    for (let D7 = 0; D7 < S3 - I3; D7++)
-                      g5[c7[I3 + D7 + 1].id] = x6 + y4 * D7;
+                    let b8 = c7[I3].childIndex, D7, y4;
+                    I3 === 0 ? (D7 = b8 / 2, y4 = b8 / 2 / (S3 - I3 + 1)) : (D7 = c7[I3 - 1].childIndex, y4 = (b8 - D7) / (S3 - I3 + 1), D7 += y4);
+                    for (let x6 = 0; x6 < S3 - I3; x6++)
+                      g5[c7[I3 + x6 + 1].id] = D7 + y4 * x6;
                     break;
                   }
               }
@@ -19880,8 +19485,8 @@ Please add \`${key}Action\` when creating your handler.`);
                   if (!u5.includes(I3)) {
                     i9 = c7[I3].childIndex;
                     let b8 = I3 === h4.length - 1 ? 1 : (c7[I3 + 1].childIndex - i9) / (I3 - S3 + 1);
-                    for (let x6 = 0; x6 < I3 - S3; x6++)
-                      g5[c7[S3 + x6].id] = i9 + b8 * (x6 + 1);
+                    for (let D7 = 0; D7 < I3 - S3; D7++)
+                      g5[c7[S3 + D7].id] = i9 + b8 * (D7 + 1);
                     break;
                   }
               }
@@ -19891,11 +19496,11 @@ Please add \`${key}Action\` when creating your handler.`);
         }
     }), {id: "move", before: {document: {pages: {[n6]: {shapes: r13.before}}, pageStates: {[n6]: {selectedIds: e12}}}}, after: {document: {pages: {[n6]: {shapes: r13.after}}, pageStates: {[n6]: {selectedIds: e12}}}}};
   }
-  function xr(o13, e12, t14) {
+  function Lr(o13, e12, t14) {
     let n6 = o13.document.pages[e12];
     return {id: "rename_page", before: {document: {pages: {[e12]: {name: n6.name}}}}, after: {document: {pages: {[e12]: {name: t14}}}}};
   }
-  function Bo(o13, e12, t14) {
+  function ko(o13, e12, t14) {
     let {currentPageId: n6} = o13.appState, {before: s8, after: r13} = f12.mutateShapes(o13, e12, (a10) => {
       var i9, d9;
       return (d9 = (i9 = f12.getShapeUtils(a10)).onDoubleClickBoundsHandle) == null ? void 0 : d9.call(i9, a10);
@@ -19903,7 +19508,7 @@ Please add \`${key}Action\` when creating your handler.`);
     return {id: "reset_bounds", before: {document: {pages: {[o13.appState.currentPageId]: {shapes: s8}}, pageStates: {[n6]: {selectedIds: e12}}}}, after: {document: {pages: {[o13.appState.currentPageId]: {shapes: r13}}, pageStates: {[n6]: {selectedIds: e12}}}}};
   }
   var vd = Math.PI * 2;
-  function Cr(o13, e12, t14 = -vd / 4) {
+  function Pr(o13, e12, t14 = -vd / 4) {
     let {currentPageId: n6} = o13.appState, s8 = {}, r13 = {}, a10 = e12.flatMap((d9) => {
       let l10 = f12.getShape(o13, d9, n6);
       return l10.children ? l10.children.map((p8) => f12.getShape(o13, p8, n6)) : l10;
@@ -19913,7 +19518,7 @@ Please add \`${key}Action\` when creating your handler.`);
       !l10 || (s8[d9.id] = f12.getBeforeShape(d9, l10), r13[d9.id] = l10);
     }), {id: "rotate", before: {document: {pages: {[n6]: {shapes: s8}}, pageStates: {[n6]: {selectedIds: e12}}}}, after: {document: {pages: {[n6]: {shapes: r13}}, pageStates: {[n6]: {selectedIds: e12}}}}};
   }
-  function vr(o13, e12, t14) {
+  function Br(o13, e12, t14) {
     let {currentPageId: n6} = o13.appState, s8 = e12.map((p8) => f12.getShape(o13, p8, n6)), r13 = s8.map((p8) => f12.getBounds(p8)), a10 = Utils.getCommonBounds(r13), i9 = e12.flatMap((p8) => {
       let c7 = f12.getShape(o13, p8, n6);
       return c7.children ? c7.children : c7.id;
@@ -19921,11 +19526,11 @@ Please add \`${key}Action\` when creating your handler.`);
       let c7 = f12.getBounds(p8);
       switch (t14) {
         case Ee.Horizontal: {
-          let h4 = T5(m8({}, c7), {minX: a10.minX, maxX: a10.maxX, width: a10.width});
+          let h4 = w6(m8({}, c7), {minX: a10.minX, maxX: a10.maxX, width: a10.width});
           return f12.getShapeUtils(p8).transformSingle(p8, h4, {type: TLBoundsCorner.TopLeft, scaleX: h4.width / c7.width, scaleY: 1, initialShape: p8, transformOrigin: [0.5, 0.5]});
         }
         case Ee.Vertical: {
-          let h4 = T5(m8({}, c7), {minY: a10.minY, maxY: a10.maxY, height: a10.height});
+          let h4 = w6(m8({}, c7), {minY: a10.minY, maxY: a10.maxY, height: a10.height});
           return f12.getShapeUtils(p8).transformSingle(p8, h4, {type: TLBoundsCorner.TopLeft, scaleX: 1, scaleY: h4.height / c7.height, initialShape: p8, transformOrigin: [0.5, 0.5]});
         }
       }
@@ -19934,13 +19539,13 @@ Please add \`${key}Action\` when creating your handler.`);
       p8.type === L4.Group && (delete d9[p8.id], delete l10[p8.id]);
     }), {id: "stretch", before: {document: {pages: {[n6]: {shapes: d9}}, pageStates: {[n6]: {selectedIds: e12}}}}, after: {document: {pages: {[n6]: {shapes: l10}}, pageStates: {[n6]: {selectedIds: e12}}}}};
   }
-  function Br(o13, e12, t14) {
+  function kr(o13, e12, t14) {
     let {currentPageId: n6} = o13.appState, s8 = e12.flatMap((i9) => f12.getDocumentBranch(o13, i9, n6)), r13 = {}, a10 = {};
     return s8.map((i9) => f12.getShape(o13, i9, n6)).filter((i9) => !i9.isLocked).forEach((i9) => {
-      r13[i9.id] = {style: m8({}, Object.fromEntries(Object.keys(t14).map((d9) => [d9, i9.style[d9]])))}, a10[i9.id] = {style: t14}, i9.type === L4.Text && (r13[i9.id].point = i9.point, a10[i9.id].point = $a8e101027d325e52$export$2e2bcd8739ae039.round($a8e101027d325e52$export$2e2bcd8739ae039.add(i9.point, $a8e101027d325e52$export$2e2bcd8739ae039.sub(f12.getShapeUtils(i9).getCenter(i9), f12.getShapeUtils(i9).getCenter(T5(m8({}, i9), {style: m8(m8({}, i9.style), t14)}))))));
+      r13[i9.id] = {style: m8({}, Object.fromEntries(Object.keys(t14).map((d9) => [d9, i9.style[d9]])))}, a10[i9.id] = {style: t14}, i9.type === L4.Text && (r13[i9.id].point = i9.point, a10[i9.id].point = $a8e101027d325e52$export$2e2bcd8739ae039.round($a8e101027d325e52$export$2e2bcd8739ae039.add(i9.point, $a8e101027d325e52$export$2e2bcd8739ae039.sub(f12.getShapeUtils(i9).getCenter(i9), f12.getShapeUtils(i9).getCenter(w6(m8({}, i9), {style: m8(m8({}, i9.style), t14)}))))));
     }), {id: "style", before: {document: {pages: {[n6]: {shapes: r13}}, pageStates: {[n6]: {selectedIds: e12}}}, appState: {currentStyle: m8({}, o13.appState.currentStyle)}}, after: {document: {pages: {[n6]: {shapes: a10}}, pageStates: {[n6]: {selectedIds: e12}}}, appState: {currentStyle: m8(m8({}, o13.appState.currentStyle), t14)}}};
   }
-  function kr(o13, e12, t14) {
+  function Rr(o13, e12, t14) {
     let {currentPageId: n6} = o13.appState, s8 = Object.fromEntries(e12.map((a10) => {
       var i9;
       return [a10, {decorations: {[t14]: (i9 = f12.getShape(o13, a10, n6).decorations) == null ? void 0 : i9[t14]}}];
@@ -19950,11 +19555,11 @@ Please add \`${key}Action\` when creating your handler.`);
     }));
     return {id: "toggle_decorations", before: {document: {pages: {[n6]: {shapes: s8}}, pageStates: {[n6]: {selectedIds: e12}}}}, after: {document: {pages: {[n6]: {shapes: r13}}, pageStates: {[n6]: {selectedIds: e12}}}}};
   }
-  function gn(o13, e12, t14) {
+  function fn(o13, e12, t14) {
     let {currentPageId: n6} = o13.appState, r13 = e12.map((d9) => f12.getShape(o13, d9, n6)).every((d9) => d9[t14]), {before: a10, after: i9} = f12.mutateShapes(o13, f12.getSelectedIds(o13, n6), () => ({[t14]: !r13}), n6);
     return {id: "toggle", before: {document: {pages: {[n6]: {shapes: a10}}, pageStates: {[n6]: {selectedIds: e12}}}}, after: {document: {pages: {[n6]: {shapes: i9}}, pageStates: {[n6]: {selectedIds: e12}}}}};
   }
-  function Er(o13, e12, t14) {
+  function Mr(o13, e12, t14) {
     let {currentPageId: n6} = o13.appState;
     j4.cache.selectedIds = f12.getSelectedIds(o13, o13.appState.currentPageId);
     let s8 = {shapes: {}, bindings: {}}, r13 = {shapes: {}, bindings: {}}, a10 = e12.flatMap((l10) => {
@@ -19967,43 +19572,43 @@ Please add \`${key}Action\` when creating your handler.`);
         let c7 = f12.getShape(o13, p8, o13.appState.currentPageId);
         !c7.handles || Object.values(c7.handles).filter((h4) => h4.bindingId === l10.id).forEach((h4) => {
           var u5, g5;
-          s8.shapes[p8] = T5(m8({}, s8.shapes[p8]), {handles: T5(m8({}, (u5 = s8.shapes[p8]) == null ? void 0 : u5.handles), {[h4.id]: {bindingId: l10.id}})}), r13.shapes[p8] = T5(m8({}, r13.shapes[p8]), {handles: T5(m8({}, (g5 = r13.shapes[p8]) == null ? void 0 : g5.handles), {[h4.id]: {bindingId: void 0}})});
+          s8.shapes[p8] = w6(m8({}, s8.shapes[p8]), {handles: w6(m8({}, (u5 = s8.shapes[p8]) == null ? void 0 : u5.handles), {[h4.id]: {bindingId: l10.id}})}), r13.shapes[p8] = w6(m8({}, r13.shapes[p8]), {handles: w6(m8({}, (g5 = r13.shapes[p8]) == null ? void 0 : g5.handles), {[h4.id]: {bindingId: void 0}})});
         });
       }
     }), {id: "translate", before: {document: {pages: {[n6]: s8}, pageStates: {[n6]: {selectedIds: e12}}}}, after: {document: {pages: {[n6]: r13}, pageStates: {[n6]: {selectedIds: e12}}}}};
   }
-  function Mr(o13, e12, t14, n6) {
+  function Hr(o13, e12, t14, n6) {
     let s8 = {}, r13 = {}, a10 = {}, i9 = {}, d9 = e12, l10 = e12.filter((p8) => !t14.find((c7) => c7.id === p8));
     return t14.forEach((p8) => {
       let c7 = [], h4 = [];
-      s8[p8.id] = p8, r13[p8.id] = void 0, p8.children.forEach((x6) => {
-        l10.push(x6);
-        let y4 = f12.getShape(o13, x6, n6);
+      s8[p8.id] = p8, r13[p8.id] = void 0, p8.children.forEach((D7) => {
+        l10.push(D7);
+        let y4 = f12.getShape(o13, D7, n6);
         c7.push(y4);
       });
       let u5 = p8.childIndex, S3 = (f12.getChildIndexAbove(o13, p8.id, n6) - u5) / c7.length;
-      c7.sort((x6, y4) => x6.childIndex - y4.childIndex).forEach((x6, y4) => {
-        s8[x6.id] = {parentId: x6.parentId, childIndex: x6.childIndex}, r13[x6.id] = {parentId: n6, childIndex: u5 + S3 * y4};
+      c7.sort((D7, y4) => D7.childIndex - y4.childIndex).forEach((D7, y4) => {
+        s8[D7.id] = {parentId: D7.parentId, childIndex: D7.childIndex}, r13[D7.id] = {parentId: n6, childIndex: u5 + S3 * y4};
       });
       let b8 = f12.getPage(o13, n6);
-      Object.values(b8.bindings).filter((x6) => x6.toId === p8.id || x6.fromId === p8.id).forEach((x6) => {
-        for (let y4 of [x6.toId, x6.fromId])
+      Object.values(b8.bindings).filter((D7) => D7.toId === p8.id || D7.fromId === p8.id).forEach((D7) => {
+        for (let y4 of [D7.toId, D7.fromId])
           if (r13[y4] === void 0) {
-            a10[x6.id] = x6, i9[x6.id] = void 0;
-            let D7 = f12.getShape(o13, y4, n6);
-            D7.handles && Object.values(D7.handles).filter((w6) => w6.bindingId === x6.id).forEach((w6) => {
+            a10[D7.id] = D7, i9[D7.id] = void 0;
+            let x6 = f12.getShape(o13, y4, n6);
+            x6.handles && Object.values(x6.handles).filter((T5) => T5.bindingId === D7.id).forEach((T5) => {
               var C6, P3;
-              s8[y4] = T5(m8({}, s8[y4]), {handles: T5(m8({}, (C6 = s8[y4]) == null ? void 0 : C6.handles), {[w6.id]: {bindingId: x6.id}})}), h4.includes(y4) || (r13[y4] = T5(m8({}, r13[y4]), {handles: T5(m8({}, (P3 = r13[y4]) == null ? void 0 : P3.handles), {[w6.id]: {bindingId: void 0}})}));
+              s8[y4] = w6(m8({}, s8[y4]), {handles: w6(m8({}, (C6 = s8[y4]) == null ? void 0 : C6.handles), {[T5.id]: {bindingId: D7.id}})}), h4.includes(y4) || (r13[y4] = w6(m8({}, r13[y4]), {handles: w6(m8({}, (P3 = r13[y4]) == null ? void 0 : P3.handles), {[T5.id]: {bindingId: void 0}})}));
             });
           }
       });
     }), {id: "ungroup", before: {document: {pages: {[n6]: {shapes: s8, bindings: a10}}, pageStates: {[n6]: {selectedIds: d9}}}}, after: {document: {pages: {[n6]: {shapes: r13, bindings: a10}}, pageStates: {[n6]: {selectedIds: l10}}}}};
   }
-  function Ro(o13, e12, t14) {
+  function Eo(o13, e12, t14) {
     let n6 = e12.map((i9) => i9.id), s8 = {shapes: {}, bindings: {}}, r13 = {shapes: {}, bindings: {}}, a10 = f12.mutateShapes(o13, n6, (i9, d9) => e12[d9], t14);
     return s8.shapes = a10.before, r13.shapes = a10.after, {id: "update", before: {document: {pages: {[t14]: s8}}}, after: {document: {pages: {[t14]: r13}}}};
   }
-  var Sn = class extends j4 {
+  var Tn = class extends j4 {
     constructor(e12, t14, n6, s8, r13 = false) {
       super(t14);
       this.status = W4.TranslatingHandle;
@@ -20015,42 +19620,42 @@ Please add \`${key}Action\` when creating your handler.`);
       this.start = () => {
       };
       this.update = (e13, t15, n7 = false, s9 = false, r14 = false) => {
-        var b8, x6, y4;
+        var b8, D7, y4;
         let {initialShape: a11} = this, i10 = f12.getPage(e13, e13.appState.currentPageId), d9 = f12.getShape(e13, a11.id, e13.appState.currentPageId), l11 = d9.handles, p9 = this.handleId;
         if (!l11[p9].canBind)
           return;
-        let c7 = $a8e101027d325e52$export$e947a0f742cf021e.sub(t15, l11[p9].point), h4 = T5(m8({}, l11[p9]), {point: $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.sub($a8e101027d325e52$export$e947a0f742cf021e.add(l11[p9].point, c7), d9.point)), bindingId: void 0}), u5 = qe[L4.Arrow], g5 = (b8 = u5.onHandleChange) == null ? void 0 : b8.call(u5, d9, {[p9]: h4}, {delta: c7, shiftKey: n7, altKey: s9, metaKey: r14});
+        let c7 = $a8e101027d325e52$export$e947a0f742cf021e.sub(t15, l11[p9].point), h4 = w6(m8({}, l11[p9]), {point: $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.sub($a8e101027d325e52$export$e947a0f742cf021e.add(l11[p9].point, c7), d9.point)), bindingId: void 0}), u5 = qe[L4.Arrow], g5 = (b8 = u5.onHandleChange) == null ? void 0 : b8.call(u5, d9, {[p9]: h4}, {delta: c7, shiftKey: n7, altKey: s9, metaKey: r14});
         if (!g5)
           return;
         let S3 = {shape: Utils.deepMerge(d9, g5), bindings: {}};
         if (this.initialBinding && (S3.bindings[this.initialBinding.id] = void 0), this.startBindingShapeId) {
-          let D7, w6 = i10.shapes[this.startBindingShapeId], C6 = f12.getShapeUtils(w6);
+          let x6, T5 = i10.shapes[this.startBindingShapeId], C6 = f12.getShapeUtils(T5);
           if (!r14) {
-            let P3 = C6.getCenter(w6), z3 = S3.shape.handles.start, $2 = $a8e101027d325e52$export$e947a0f742cf021e.add(z3.point, S3.shape.point), Z4 = P3, se2 = $a8e101027d325e52$export$e947a0f742cf021e.uni($a8e101027d325e52$export$e947a0f742cf021e.sub($2, Z4));
-            D7 = this.findBindingPoint(d9, w6, "start", this.newStartBindingId, P3, Z4, se2, false);
+            let P3 = C6.getCenter(T5), z3 = S3.shape.handles.start, $2 = $a8e101027d325e52$export$e947a0f742cf021e.add(z3.point, S3.shape.point), Z4 = P3, re2 = $a8e101027d325e52$export$e947a0f742cf021e.uni($a8e101027d325e52$export$e947a0f742cf021e.sub($2, Z4));
+            x6 = this.findBindingPoint(d9, T5, "start", this.newStartBindingId, P3, Z4, re2, false);
           }
-          if (D7) {
-            this.didBind = true, S3.bindings[this.newStartBindingId] = D7, S3.shape.handles = T5(m8({}, S3.shape.handles), {start: T5(m8({}, S3.shape.handles.start), {bindingId: D7.id})});
-            let P3 = i10.shapes[this.startBindingShapeId], z3 = f12.getShapeUtils(P3), $2 = (y4 = (x6 = f12.getShapeUtils(S3.shape.type)).onBindingChange) == null ? void 0 : y4.call(x6, S3.shape, D7, P3, z3.getBounds(P3), z3.getCenter(P3));
+          if (x6) {
+            this.didBind = true, S3.bindings[this.newStartBindingId] = x6, S3.shape.handles = w6(m8({}, S3.shape.handles), {start: w6(m8({}, S3.shape.handles.start), {bindingId: x6.id})});
+            let P3 = i10.shapes[this.startBindingShapeId], z3 = f12.getShapeUtils(P3), $2 = (y4 = (D7 = f12.getShapeUtils(S3.shape.type)).onBindingChange) == null ? void 0 : y4.call(D7, S3.shape, x6, P3, z3.getBounds(P3), z3.getCenter(P3));
             $2 && Object.assign(S3.shape, $2);
           } else
-            this.didBind = this.didBind || false, i10.bindings[this.newStartBindingId] && (S3.bindings[this.newStartBindingId] = void 0), d9.handles.start.bindingId === this.newStartBindingId && (S3.shape.handles = T5(m8({}, S3.shape.handles), {start: T5(m8({}, S3.shape.handles.start), {bindingId: void 0})}));
+            this.didBind = this.didBind || false, i10.bindings[this.newStartBindingId] && (S3.bindings[this.newStartBindingId] = void 0), d9.handles.start.bindingId === this.newStartBindingId && (S3.shape.handles = w6(m8({}, S3.shape.handles), {start: w6(m8({}, S3.shape.handles.start), {bindingId: void 0})}));
         }
         let I3;
         if (!r14) {
-          let D7 = S3.shape.handles[this.handleId], w6 = S3.shape.handles[this.handleId === "start" ? "end" : "start"], C6 = $a8e101027d325e52$export$e947a0f742cf021e.add(w6.point, S3.shape.point), P3 = $a8e101027d325e52$export$e947a0f742cf021e.add(D7.point, S3.shape.point), z3 = $a8e101027d325e52$export$e947a0f742cf021e.uni($a8e101027d325e52$export$e947a0f742cf021e.sub(P3, C6)), $2 = this.bindableShapeIds.map((Z4) => i10.shapes[Z4]);
+          let x6 = S3.shape.handles[this.handleId], T5 = S3.shape.handles[this.handleId === "start" ? "end" : "start"], C6 = $a8e101027d325e52$export$e947a0f742cf021e.add(T5.point, S3.shape.point), P3 = $a8e101027d325e52$export$e947a0f742cf021e.add(x6.point, S3.shape.point), z3 = $a8e101027d325e52$export$e947a0f742cf021e.uni($a8e101027d325e52$export$e947a0f742cf021e.sub(P3, C6)), $2 = this.bindableShapeIds.map((Z4) => i10.shapes[Z4]);
           for (let Z4 of $2)
             if (I3 = this.findBindingPoint(d9, Z4, this.handleId, this.draggedBindingId, P3, C6, z3, s9), I3)
               break;
         }
         if (I3) {
-          this.didBind = true, S3.bindings[this.draggedBindingId] = I3, S3.shape.handles = T5(m8({}, S3.shape.handles), {[this.handleId]: T5(m8({}, S3.shape.handles[this.handleId]), {bindingId: this.draggedBindingId})});
-          let D7 = i10.shapes[I3.toId], w6 = f12.getShapeUtils(D7), P3 = qe[L4.Arrow].onBindingChange(S3.shape, I3, D7, w6.getBounds(D7), w6.getCenter(D7));
+          this.didBind = true, S3.bindings[this.draggedBindingId] = I3, S3.shape.handles = w6(m8({}, S3.shape.handles), {[this.handleId]: w6(m8({}, S3.shape.handles[this.handleId]), {bindingId: this.draggedBindingId})});
+          let x6 = i10.shapes[I3.toId], T5 = f12.getShapeUtils(x6), P3 = qe[L4.Arrow].onBindingChange(S3.shape, I3, x6, T5.getBounds(x6), T5.getCenter(x6));
           P3 && Object.assign(S3.shape, P3);
         } else {
           this.didBind = this.didBind || false;
-          let D7 = d9.handles[this.handleId].bindingId;
-          D7 && (S3.bindings = T5(m8({}, S3.bindings), {[D7]: void 0}), S3.shape.handles = T5(m8({}, S3.shape.handles), {[this.handleId]: T5(m8({}, S3.shape.handles[this.handleId]), {bindingId: void 0})}));
+          let x6 = d9.handles[this.handleId].bindingId;
+          x6 && (S3.bindings = w6(m8({}, S3.bindings), {[x6]: void 0}), S3.shape.handles = w6(m8({}, S3.shape.handles), {[this.handleId]: w6(m8({}, S3.shape.handles[this.handleId]), {bindingId: void 0})}));
         }
         return {document: {pages: {[e13.appState.currentPageId]: {shapes: {[d9.id]: S3.shape}, bindings: S3.bindings}}, pageStates: {[e13.appState.currentPageId]: {bindingId: S3.shape.handles[p9].bindingId}}}};
       };
@@ -20078,8 +19683,8 @@ Please add \`${key}Action\` when creating your handler.`);
       }
     }
   };
-  Sn.type = M4.Arrow;
-  var Tn = class extends j4 {
+  Tn.type = M4.Arrow;
+  var wn = class extends j4 {
     constructor(e12, t14, n6) {
       super(t14);
       this.status = W4.Brushing;
@@ -20087,11 +19692,11 @@ Please add \`${key}Action\` when creating your handler.`);
       };
       this.update = (e13, t15, n7 = false, s8 = false, r13 = false) => {
         let {snapshot: a10, origin: i9} = this, {currentPageId: d9} = e13.appState, l10 = Utils.getBoundsFromPoints([i9, t15]), p8 = new Set(), c7 = new Set(a10.selectedIds), h4 = f12.getPage(e13, d9);
-        a10.shapesToTest.forEach(({id: I3, util: b8, selectId: x6}) => {
+        a10.shapesToTest.forEach(({id: I3, util: b8, selectId: D7}) => {
           if (c7.has(I3))
             return;
           let y4 = h4.shapes[I3];
-          p8.has(x6) || ((r13 ? Utils.boundsContain(l10, b8.getBounds(y4)) : b8.hitTestBounds(y4, l10)) ? (p8.add(x6), c7.has(x6) || c7.add(x6)) : c7.has(x6) && c7.delete(x6));
+          p8.has(D7) || ((r13 ? Utils.boundsContain(l10, b8.getBounds(y4)) : b8.hitTestBounds(y4, l10)) ? (p8.add(D7), c7.has(D7) || c7.add(D7)) : c7.has(D7) && c7.delete(D7));
         });
         let u5 = e13.document.pageStates[e13.appState.currentPageId].selectedIds, S3 = c7.size !== u5.length || u5.some((I3) => !c7.has(I3)) ? Array.from(c7.values()) : u5;
         return {document: {pageStates: {[d9]: {brush: l10, selectedIds: S3}}}};
@@ -20107,12 +19712,12 @@ Please add \`${key}Action\` when creating your handler.`);
       this.origin = $a8e101027d325e52$export$e947a0f742cf021e.round(n6), this.snapshot = Rd(e12);
     }
   };
-  Tn.type = M4.Brush;
+  wn.type = M4.Brush;
   function Rd(o13) {
     let {currentPageId: e12} = o13.appState, t14 = [...f12.getSelectedIds(o13, e12)], n6 = f12.getShapes(o13, e12).filter((s8) => !(s8.isHidden || s8.children !== void 0 || t14.includes(s8.id) || t14.includes(s8.parentId))).map((s8) => ({id: s8.id, util: f12.getShapeUtils(s8), bounds: f12.getShapeUtils(s8).getBounds(s8), selectId: s8.id}));
     return {selectedIds: t14, shapesToTest: n6};
   }
-  var wn = class extends j4 {
+  var In = class extends j4 {
     constructor(e12, t14, n6, s8) {
       super(t14);
       this.status = W4.Creating;
@@ -20151,13 +19756,13 @@ Please add \`${key}Action\` when creating your handler.`);
       };
       this.complete = (e13) => {
         let {shapeId: t15} = this, n7 = e13.appState.currentPageId;
-        return {id: "create_draw", before: {document: {pages: {[n7]: {shapes: {[t15]: void 0}}}, pageStates: {[n7]: {selectedIds: []}}}}, after: {document: {pages: {[n7]: {shapes: {[t15]: T5(m8({}, f12.getShape(e13, t15, n7)), {isComplete: true})}}}, pageStates: {[e13.appState.currentPageId]: {selectedIds: []}}}}};
+        return {id: "create_draw", before: {document: {pages: {[n7]: {shapes: {[t15]: void 0}}}, pageStates: {[n7]: {selectedIds: []}}}}, after: {document: {pages: {[n7]: {shapes: {[t15]: w6(m8({}, f12.getShape(e13, t15, n7)), {isComplete: true})}}}, pageStates: {[e13.appState.currentPageId]: {selectedIds: []}}}}};
       };
       this.origin = n6, this.previous = n6, this.last = n6, this.topLeft = n6, this.shapeId = s8, this.points = [[0, 0, n6[2] || 0.5]];
     }
   };
-  wn.type = M4.Draw;
-  var In = class extends j4 {
+  In.type = M4.Draw;
+  var bn = class extends j4 {
     constructor(e12, t14, n6, s8, r13 = "move_handle") {
       super(t14);
       this.status = W4.TranslatingHandle;
@@ -20167,7 +19772,7 @@ Please add \`${key}Action\` when creating your handler.`);
       };
       this.update = (e13, t15, n7 = false, s9 = false, r14 = false) => {
         var g5, S3;
-        let {initialShape: a11} = this, {currentPageId: i10} = e13.appState, d9 = f12.getShape(e13, a11.id, i10), l10 = d9.handles, p8 = this.handleId, c7 = $a8e101027d325e52$export$e947a0f742cf021e.sub(t15, l10[p8].point), h4 = T5(m8({}, l10[p8]), {point: $a8e101027d325e52$export$e947a0f742cf021e.sub($a8e101027d325e52$export$e947a0f742cf021e.add(l10[p8].point, c7), d9.point)}), u5 = (S3 = (g5 = f12.getShapeUtils(d9)).onHandleChange) == null ? void 0 : S3.call(g5, d9, {[p8]: h4}, {delta: c7, shiftKey: n7, altKey: s9, metaKey: r14});
+        let {initialShape: a11} = this, {currentPageId: i10} = e13.appState, d9 = f12.getShape(e13, a11.id, i10), l10 = d9.handles, p8 = this.handleId, c7 = $a8e101027d325e52$export$e947a0f742cf021e.sub(t15, l10[p8].point), h4 = w6(m8({}, l10[p8]), {point: $a8e101027d325e52$export$e947a0f742cf021e.sub($a8e101027d325e52$export$e947a0f742cf021e.add(l10[p8].point, c7), d9.point)}), u5 = (S3 = (g5 = f12.getShapeUtils(d9)).onHandleChange) == null ? void 0 : S3.call(g5, d9, {[p8]: h4}, {delta: c7, shiftKey: n7, altKey: s9, metaKey: r14});
         return u5 ? {document: {pages: {[i10]: {shapes: {[d9.id]: u5}}}}} : e13;
       };
       this.cancel = (e13) => {
@@ -20182,8 +19787,8 @@ Please add \`${key}Action\` when creating your handler.`);
       this.topLeft = n6, this.origin = n6, this.handleId = s8, this.initialShape = f12.getShape(e12, i9, a10), this.commandId = r13;
     }
   };
-  In.type = M4.Handle;
-  var yn = class extends j4 {
+  bn.type = M4.Handle;
+  var Dn = class extends j4 {
     constructor(e12, t14, n6) {
       super(t14);
       this.status = W4.Transforming;
@@ -20215,7 +19820,7 @@ Please add \`${key}Action\` when creating your handler.`);
       this.origin = n6, this.snapshot = Ed(e12), this.initialAngle = $a8e101027d325e52$export$e947a0f742cf021e.angle(this.snapshot.commonBoundsCenter, this.origin);
     }
   };
-  yn.type = M4.Rotate;
+  Dn.type = M4.Rotate;
   function Ed(o13) {
     let e12 = o13.appState.currentPageId, t14 = f12.getPageState(o13, e12), n6 = f12.getSelectedBranchSnapshot(o13, e12);
     if (n6.length === 0)
@@ -20232,7 +19837,7 @@ Please add \`${key}Action\` when creating your handler.`);
       return {id: r13.id, shape: r13, center: a10};
     })};
   }
-  var Dn = class extends j4 {
+  var xn = class extends j4 {
     constructor(e12, t14, n6, s8 = TLBoundsCorner.BottomRight, r13 = false) {
       super(t14);
       this.status = W4.Transforming;
@@ -20250,13 +19855,13 @@ Please add \`${key}Action\` when creating your handler.`);
         let g5 = u5 - this.speed;
         this.speed = this.speed + g5 * (g5 > 1 ? 0.5 : 0.15);
         let S3 = [], {currentPageId: I3} = e13.appState, {zoom: b8} = e13.document.pageStates[I3].camera;
-        if ((e13.settings.isSnapping && !r14 || !e13.settings.isSnapping && r14) && this.speed * b8 < Rt && this.snapInfo.state === "ready") {
-          let x6 = Utils.getSnapPoints(Utils.getBoundsWithCenter(h4), this.snapInfo.bounds.filter((y4) => Utils.boundsContain(this.viewport, y4) || Utils.boundsCollide(this.viewport, y4)), kt / b8);
-          x6 && (S3 = x6.snapLines, h4 = Utils.getTransformedBoundingBox(d9, a10, $a8e101027d325e52$export$e947a0f742cf021e.sub(c7, x6.offset), 0, n7 || l10));
+        if ((e13.settings.isSnapping && !r14 || !e13.settings.isSnapping && r14) && this.speed * b8 < Mt && this.snapInfo.state === "ready") {
+          let D7 = Utils.getSnapPoints(Utils.getBoundsWithCenter(h4), this.snapInfo.bounds.filter((y4) => Utils.boundsContain(this.viewport, y4) || Utils.boundsCollide(this.viewport, y4)), Et / b8);
+          D7 && (S3 = D7.snapLines, h4 = Utils.getTransformedBoundingBox(d9, a10, $a8e101027d325e52$export$e947a0f742cf021e.sub(c7, D7.offset), 0, n7 || l10));
         }
-        return this.scaleX = h4.scaleX, this.scaleY = h4.scaleY, i9.forEach(({id: x6, initialShape: y4, initialShapeBounds: D7, transformOrigin: w6}) => {
-          let C6 = Utils.getRelativeTransformedBoundingBox(h4, d9, D7, this.scaleX < 0, this.scaleY < 0);
-          p8[x6] = f12.transform(f12.getShape(e13, x6, e13.appState.currentPageId), C6, {type: this.transformType, initialShape: y4, scaleX: this.scaleX, scaleY: this.scaleY, transformOrigin: w6});
+        return this.scaleX = h4.scaleX, this.scaleY = h4.scaleY, i9.forEach(({id: D7, initialShape: y4, initialShapeBounds: x6, transformOrigin: T5}) => {
+          let C6 = Utils.getRelativeTransformedBoundingBox(h4, d9, x6, this.scaleX < 0, this.scaleY < 0);
+          p8[D7] = f12.transform(f12.getShape(e13, D7, e13.appState.currentPageId), C6, {type: this.transformType, initialShape: y4, scaleX: this.scaleX, scaleY: this.scaleY, transformOrigin: T5});
         }), {appState: {snapLines: S3}, document: {pages: {[e13.appState.currentPageId]: {shapes: p8}}}};
       };
       this.cancel = (e13) => {
@@ -20281,7 +19886,7 @@ Please add \`${key}Action\` when creating your handler.`);
       this.origin = n6, this.transformType = s8, this.snapshot = Hd(e12, s8), this.isCreate = r13, this.initialSelectedIds = f12.getSelectedIds(e12, e12.appState.currentPageId), j4.cache.selectedIds = [...this.initialSelectedIds];
     }
   };
-  Dn.type = M4.Transform;
+  xn.type = M4.Transform;
   function Hd(o13, e12) {
     let t14 = f12.getSelectedBranchSnapshot(o13, o13.appState.currentPageId), n6 = t14.map((p8) => p8.id), s8 = t14.length > 0, r13 = t14.every((p8) => p8.isAspectRatioLocked || f12.getShapeUtils(p8).isAspectRatioLocked), a10 = Object.fromEntries(t14.map((p8) => [p8.id, f12.getBounds(p8)])), i9 = Object.values(a10), d9 = Utils.getCommonBounds(i9), l10 = Utils.getBoundsFromPoints(i9.map(Utils.getBoundsCenter));
     return {type: e12, hasUnlockedShapes: s8, isAllAspectRatioLocked: r13, initialShapeIds: n6, initialShapes: t14, initialBounds: d9, shapeBounds: t14.map((p8) => {
@@ -20289,7 +19894,7 @@ Please add \`${key}Action\` when creating your handler.`);
       return {id: p8.id, initialShape: p8, initialShapeBounds: c7, transformOrigin: [u5, g5]};
     })};
   }
-  var Ao = class extends j4 {
+  var Oo = class extends j4 {
     constructor(e12, t14, n6, s8 = TLBoundsCorner.BottomRight, r13 = false) {
       super(t14);
       this.type = M4.TransformSingle;
@@ -20307,13 +19912,13 @@ Please add \`${key}Action\` when creating your handler.`);
         this.prevPoint = t15;
         let b8 = I3 - this.speed;
         this.speed = this.speed + b8 * (b8 > 1 ? 0.5 : 0.15);
-        let x6 = [], {zoom: y4} = e13.document.pageStates[i9].camera;
-        if ((e13.settings.isSnapping && !r14 || !e13.settings.isSnapping && r14) && !l10.rotation && this.speed * y4 < Rt && this.snapInfo.state === "ready") {
-          let w6 = Utils.getSnapPoints(Utils.getBoundsWithCenter(S3), this.snapInfo.bounds.filter((C6) => Utils.boundsContain(this.viewport, C6) || Utils.boundsCollide(this.viewport, C6)), kt / y4);
-          w6 && (x6 = w6.snapLines, S3 = Utils.getTransformedBoundingBox(d9, a10, $a8e101027d325e52$export$e947a0f742cf021e.sub(c7, w6.offset), u5.rotation, n7 || u5.isAspectRatioLocked || g5.isAspectRatioLocked));
+        let D7 = [], {zoom: y4} = e13.document.pageStates[i9].camera;
+        if ((e13.settings.isSnapping && !r14 || !e13.settings.isSnapping && r14) && !l10.rotation && this.speed * y4 < Mt && this.snapInfo.state === "ready") {
+          let T5 = Utils.getSnapPoints(Utils.getBoundsWithCenter(S3), this.snapInfo.bounds.filter((C6) => Utils.boundsContain(this.viewport, C6) || Utils.boundsCollide(this.viewport, C6)), Et / y4);
+          T5 && (D7 = T5.snapLines, S3 = Utils.getTransformedBoundingBox(d9, a10, $a8e101027d325e52$export$e947a0f742cf021e.sub(c7, T5.offset), u5.rotation, n7 || u5.isAspectRatioLocked || g5.isAspectRatioLocked));
         }
-        let D7 = f12.getShapeUtils(u5).transformSingle(u5, S3, {initialShape: l10, type: this.transformType, scaleX: S3.scaleX, scaleY: S3.scaleY, transformOrigin: [0.5, 0.5]});
-        return D7 && (h4[u5.id] = D7), {appState: {snapLines: x6}, document: {pages: {[e13.appState.currentPageId]: {shapes: h4}}}};
+        let x6 = f12.getShapeUtils(u5).transformSingle(u5, S3, {initialShape: l10, type: this.transformType, scaleX: S3.scaleX, scaleY: S3.scaleY, transformOrigin: [0.5, 0.5]});
+        return x6 && (h4[u5.id] = x6), {appState: {snapLines: D7}, document: {pages: {[e13.appState.currentPageId]: {shapes: h4}}}};
       };
       this.cancel = (e13) => {
         let {initialShape: t15} = this.snapshot, n7 = {};
@@ -20338,7 +19943,7 @@ Please add \`${key}Action\` when creating your handler.`);
       throw Error("You must have one shape selected.");
     return {id: n6.id, currentPageId: t14, hasUnlockedShape: !n6.isLocked, type: e12, initialShape: Utils.deepClone(n6), initialShapeBounds: f12.getBounds(n6), commonBounds: f12.getRotatedBounds(n6)};
   }
-  var Oo = class extends j4 {
+  var Uo = class extends j4 {
     constructor(e12, t14, n6, s8 = false, r13 = false) {
       super(t14);
       this.type = M4.Translate;
@@ -20365,63 +19970,63 @@ Please add \`${key}Action\` when creating your handler.`);
         this.prevPoint = t15;
         let b8 = I3 - this.speed;
         this.speed = this.speed + b8 * (b8 > 1 ? 0.5 : 0.15), this.snapLines = [];
-        let {zoom: x6} = e13.document.pageStates[p8].camera;
-        if ((e13.settings.isSnapping && !r14 || !e13.settings.isSnapping && r14) && this.speed * x6 < Rt && this.snapInfo.state === "ready") {
-          let D7 = Utils.getBoundsWithCenter(Utils.translateBounds(this.snapshot.commonBounds, g5)), w6 = Utils.getSnapPoints(D7, (this.isCloning ? this.snapInfo.bounds : this.snapInfo.others).filter((C6) => Utils.boundsContain(this.viewport, C6) || Utils.boundsCollide(this.viewport, C6)), kt / x6);
-          w6 && (this.snapLines = w6.snapLines, g5 = $a8e101027d325e52$export$e947a0f742cf021e.sub(g5, w6.offset));
+        let {zoom: D7} = e13.document.pageStates[p8].camera;
+        if ((e13.settings.isSnapping && !r14 || !e13.settings.isSnapping && r14) && this.speed * D7 < Mt && this.snapInfo.state === "ready") {
+          let x6 = Utils.getBoundsWithCenter(Utils.translateBounds(this.snapshot.commonBounds, g5)), T5 = Utils.getSnapPoints(x6, (this.isCloning ? this.snapInfo.bounds : this.snapInfo.others).filter((C6) => Utils.boundsContain(this.viewport, C6) || Utils.boundsCollide(this.viewport, C6)), Et / D7);
+          T5 && (this.snapLines = T5.snapLines, g5 = $a8e101027d325e52$export$e947a0f742cf021e.sub(g5, T5.offset));
         }
         let y4 = $a8e101027d325e52$export$e947a0f742cf021e.sub(g5, this.prev);
         if (this.prev = g5, this.isCloning) {
           if (S3) {
             if (this.cloneInfo.state === "empty" && this.createCloneInfo(e13), this.cloneInfo.state === "empty")
               throw Error;
-            let {clones: w6, clonedBindings: C6} = this.cloneInfo;
-            this.isCloning = true, l10.forEach((P3) => c7[P3.id] = P3), d9.forEach((P3) => h4[P3.id] = {point: P3.point}), w6.forEach((P3) => {
+            let {clones: T5, clonedBindings: C6} = this.cloneInfo;
+            this.isCloning = true, l10.forEach((P3) => c7[P3.id] = P3), d9.forEach((P3) => h4[P3.id] = {point: P3.point}), T5.forEach((P3) => {
               var z3;
-              if (h4[P3.id] = T5(m8({}, P3), {point: $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.add(P3.point, g5))}), P3.parentId !== e13.appState.currentPageId && !a10.includes(P3.parentId)) {
+              if (h4[P3.id] = w6(m8({}, P3), {point: $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.add(P3.point, g5))}), P3.parentId !== e13.appState.currentPageId && !a10.includes(P3.parentId)) {
                 let $2 = ((z3 = h4[P3.parentId]) == null ? void 0 : z3.children) || i9[P3.parentId];
-                $2.includes(P3.id) || (h4[P3.parentId] = T5(m8({}, h4[P3.parentId]), {children: [...$2, P3.id]}));
+                $2.includes(P3.id) || (h4[P3.parentId] = w6(m8({}, h4[P3.parentId]), {children: [...$2, P3.id]}));
               }
             });
             for (let P3 of C6)
               c7[P3.id] = P3;
-            u5.selectedIds = w6.map((P3) => P3.id);
+            u5.selectedIds = T5.map((P3) => P3.id);
           }
           if (this.cloneInfo.state === "empty")
             throw Error;
-          let {clones: D7} = this.cloneInfo;
-          D7.forEach((w6) => {
-            let C6 = h4[w6.id] || f12.getShape(e13, w6.id, e13.appState.currentPageId);
+          let {clones: x6} = this.cloneInfo;
+          x6.forEach((T5) => {
+            let C6 = h4[T5.id] || f12.getShape(e13, T5.id, e13.appState.currentPageId);
             if (!C6.point)
               throw Error("No point on that clone!");
-            h4[w6.id] = T5(m8({}, h4[w6.id]), {point: $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.add(C6.point, y4))});
+            h4[T5.id] = w6(m8({}, h4[T5.id]), {point: $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.add(C6.point, y4))});
           });
         } else {
           if (S3) {
             if (this.cloneInfo.state === "empty")
               throw Error;
-            let {clones: D7, clonedBindings: w6} = this.cloneInfo;
-            this.isCloning = false, l10.forEach((C6) => c7[C6.id] = void 0), D7.forEach((C6) => {
-              C6.parentId !== p8 && (h4[C6.parentId] = T5(m8({}, h4[C6.parentId]), {children: i9[C6.parentId]}));
-            }), D7.forEach((C6) => h4[C6.id] = void 0), d9.forEach((C6) => {
+            let {clones: x6, clonedBindings: T5} = this.cloneInfo;
+            this.isCloning = false, l10.forEach((C6) => c7[C6.id] = void 0), x6.forEach((C6) => {
+              C6.parentId !== p8 && (h4[C6.parentId] = w6(m8({}, h4[C6.parentId]), {children: i9[C6.parentId]}));
+            }), x6.forEach((C6) => h4[C6.id] = void 0), d9.forEach((C6) => {
               h4[C6.id] = {point: $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.add(C6.point, g5))};
             });
-            for (let C6 of w6)
+            for (let C6 of T5)
               c7[C6.id] = void 0;
             u5.selectedIds = d9.map((C6) => C6.id);
           }
-          d9.forEach((D7) => {
-            let w6 = h4[D7.id] || f12.getShape(e13, D7.id, e13.appState.currentPageId);
-            if (!w6.point)
+          d9.forEach((x6) => {
+            let T5 = h4[x6.id] || f12.getShape(e13, x6.id, e13.appState.currentPageId);
+            if (!T5.point)
               throw Error("No point on that clone!");
-            h4[D7.id] = T5(m8({}, h4[D7.id]), {point: $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.add(w6.point, y4))});
+            h4[x6.id] = w6(m8({}, h4[x6.id]), {point: $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.add(T5.point, y4))});
           });
         }
         return {appState: {snapLines: this.snapLines}, document: {pages: {[e13.appState.currentPageId]: {shapes: h4, bindings: c7}}, pageStates: {[e13.appState.currentPageId]: u5}}};
       };
       this.cancel = (e13) => {
         let {initialShapes: t15, bindingsToDelete: n7} = this.snapshot, s9 = {}, r14 = {}, a10 = {editingId: void 0, hoveredId: void 0};
-        if (n7.forEach((i9) => s9[i9.id] = i9), this.isCreate ? (t15.forEach(({id: i9}) => r14[i9] = void 0), a10.selectedIds = []) : (t15.forEach(({id: i9, point: d9}) => r14[i9] = T5(m8({}, r14[i9]), {point: d9})), a10.selectedIds = this.snapshot.selectedIds), this.cloneInfo.state === "ready") {
+        if (n7.forEach((i9) => s9[i9.id] = i9), this.isCreate ? (t15.forEach(({id: i9}) => r14[i9] = void 0), a10.selectedIds = []) : (t15.forEach(({id: i9, point: d9}) => r14[i9] = w6(m8({}, r14[i9]), {point: d9})), a10.selectedIds = this.snapshot.selectedIds), this.cloneInfo.state === "ready") {
           let {clones: i9, clonedBindings: d9} = this.cloneInfo;
           i9.forEach((l10) => r14[l10.id] = void 0), d9.forEach((l10) => s9[l10.id] = void 0);
         }
@@ -20434,20 +20039,20 @@ Please add \`${key}Action\` when creating your handler.`);
             throw Error;
           let {clones: p8, clonedBindings: c7} = this.cloneInfo;
           p8.forEach((h4) => {
-            i9[h4.id] = void 0, l10[h4.id] = f12.getShape(e13, h4.id, t15), h4.parentId !== t15 && (i9[h4.parentId] = T5(m8({}, i9[h4.parentId]), {children: s9[h4.parentId]}), l10[h4.parentId] = T5(m8({}, l10[h4.parentId]), {children: f12.getShape(e13, h4.parentId, t15).children}));
+            i9[h4.id] = void 0, l10[h4.id] = f12.getShape(e13, h4.id, t15), h4.parentId !== t15 && (i9[h4.parentId] = w6(m8({}, i9[h4.parentId]), {children: s9[h4.parentId]}), l10[h4.parentId] = w6(m8({}, l10[h4.parentId]), {children: f12.getShape(e13, h4.parentId, t15).children}));
           }), c7.forEach((h4) => {
             a10[h4.id] = void 0, d9[h4.id] = f12.getBinding(e13, h4.id, t15);
           });
         } else
           n7.forEach((p8) => {
-            i9[p8.id] = this.isCreate ? void 0 : T5(m8({}, i9[p8.id]), {point: p8.point}), l10[p8.id] = m8(m8({}, l10[p8.id]), this.isCreate ? f12.getShape(e13, p8.id, t15) : {point: f12.getShape(e13, p8.id, t15).point});
+            i9[p8.id] = this.isCreate ? void 0 : w6(m8({}, i9[p8.id]), {point: p8.point}), l10[p8.id] = m8(m8({}, l10[p8.id]), this.isCreate ? f12.getShape(e13, p8.id, t15) : {point: f12.getShape(e13, p8.id, t15).point});
           });
         return r14.forEach((p8) => {
           a10[p8.id] = p8;
           for (let c7 of [p8.toId, p8.fromId]) {
             let h4 = f12.getShape(e13, c7, t15);
             !h4.handles || Object.values(h4.handles).filter((u5) => u5.bindingId === p8.id).forEach((u5) => {
-              i9[c7] = T5(m8({}, i9[c7]), {handles: {}}), l10[c7] = T5(m8({}, l10[c7]), {handles: {}}), i9[c7].handles[u5.id] = {bindingId: p8.id}, l10[c7].handles[u5.id] = {bindingId: void 0};
+              i9[c7] = w6(m8({}, i9[c7]), {handles: {}}), l10[c7] = w6(m8({}, l10[c7]), {handles: {}}), i9[c7].handles[u5.id] = {bindingId: p8.id}, l10[c7].handles[u5.id] = {bindingId: void 0};
             });
           }
         }), {id: "translate", before: {appState: {snapLines: []}, document: {pages: {[e13.appState.currentPageId]: {shapes: i9, bindings: a10}}, pageStates: {[e13.appState.currentPageId]: {selectedIds: this.isCreate ? [] : [...this.snapshot.selectedIds]}}}}, after: {appState: {snapLines: []}, document: {pages: {[e13.appState.currentPageId]: {shapes: l10, bindings: d9}}, pageStates: {[e13.appState.currentPageId]: {selectedIds: [...f12.getSelectedIds(e13, e13.appState.currentPageId)]}}}}};
@@ -20464,7 +20069,7 @@ Please add \`${key}Action\` when creating your handler.`);
         r14.forEach((h4) => {
           let u5 = Utils.uniqueId();
           a10[u5] = a10[h4.id], i9[h4.id] = u5;
-          let g5 = T5(m8({}, Utils.deepClone(h4)), {id: u5, parentId: h4.parentId, childIndex: f12.getChildIndexAbove(e13, h4.id, t15)});
+          let g5 = w6(m8({}, Utils.deepClone(h4)), {id: u5, parentId: h4.parentId, childIndex: f12.getChildIndexAbove(e13, h4.id, t15)});
           p8.push(g5);
         }), p8.forEach((h4) => {
           h4.children !== void 0 && (h4.children = h4.children.map((u5) => i9[u5]));
@@ -20474,7 +20079,7 @@ Please add \`${key}Action\` when creating your handler.`);
         let c7 = new Set(Object.keys(i9));
         Object.values(n7.bindings).filter((h4) => c7.has(h4.fromId) || c7.has(h4.toId)).forEach((h4) => {
           if (c7.has(h4.fromId) && c7.has(h4.toId)) {
-            let u5 = Utils.uniqueId(), g5 = T5(m8({}, Utils.deepClone(h4)), {id: u5, fromId: i9[h4.fromId] || h4.fromId, toId: i9[h4.toId] || h4.toId});
+            let u5 = Utils.uniqueId(), g5 = w6(m8({}, Utils.deepClone(h4)), {id: u5, fromId: i9[h4.fromId] || h4.fromId, toId: i9[h4.toId] || h4.toId});
             d9[h4.id] = u5, l10.push(g5);
           }
         }), p8.forEach((h4) => {
@@ -20504,7 +20109,7 @@ Please add \`${key}Action\` when creating your handler.`);
     let h4 = Utils.getCommonBounds(d9.map(f12.getRotatedBounds));
     return {selectedIds: s8, hasUnlockedShapes: i9, initialParentChildren: c7, idsToMove: l10, shapesToMove: d9, bindingsToDelete: p8, commonBounds: h4, initialShapes: d9.map(({id: u5, point: g5, parentId: S3}) => ({id: u5, point: g5, parentId: S3}))};
   }
-  var Uo = class extends j4 {
+  var zo = class extends j4 {
     constructor(e12, t14, n6, s8, r13) {
       super(t14);
       this.type = M4.Grid;
@@ -20516,24 +20121,24 @@ Please add \`${key}Action\` when creating your handler.`);
       this.start = () => {
       };
       this.getClone = (e13, t15) => {
-        let n7 = T5(m8({}, this.shape), {id: Utils.uniqueId(), point: e13});
+        let n7 = w6(m8({}, this.shape), {id: Utils.uniqueId(), point: e13});
         return t15 || n7.type === L4.Sticky && (n7.text = ""), n7;
       };
       this.update = (e13, t15, n7 = false, s9 = false, r14 = false) => {
         let a11 = {}, i9 = {}, d9 = Utils.getBoundsCenter(this.bounds), l10 = $a8e101027d325e52$export$e947a0f742cf021e.sub(t15, d9);
         n7 && (Math.abs(l10[0]) < Math.abs(l10[1]) ? l10[0] = 0 : l10[1] = 0);
-        let p8 = this.bounds.width + 32, c7 = this.bounds.height + 32, h4 = Math.ceil(l10[0] / p8), u5 = Math.ceil(l10[1] / c7), g5 = Math.min(h4, 0), S3 = Math.min(u5, 0), I3 = Math.max(h4, 1), b8 = Math.max(u5, 1), x6 = new Set(), y4 = s9;
-        y4 !== this.isCopying && (Object.values(this.grid).filter((D7) => D7 !== this.shape.id).forEach((D7) => a11[D7] = void 0), this.grid = {"0_0": this.shape.id}, this.isCopying = y4);
-        for (let D7 = g5; D7 < I3; D7++)
-          for (let w6 = S3; w6 < b8; w6++) {
-            let C6 = `${D7}_${w6}`;
-            if (x6.add(C6), this.grid[C6] || D7 === 0 && w6 === 0)
+        let p8 = this.bounds.width + 32, c7 = this.bounds.height + 32, h4 = Math.ceil(l10[0] / p8), u5 = Math.ceil(l10[1] / c7), g5 = Math.min(h4, 0), S3 = Math.min(u5, 0), I3 = Math.max(h4, 1), b8 = Math.max(u5, 1), D7 = new Set(), y4 = s9;
+        y4 !== this.isCopying && (Object.values(this.grid).filter((x6) => x6 !== this.shape.id).forEach((x6) => a11[x6] = void 0), this.grid = {"0_0": this.shape.id}, this.isCopying = y4);
+        for (let x6 = g5; x6 < I3; x6++)
+          for (let T5 = S3; T5 < b8; T5++) {
+            let C6 = `${x6}_${T5}`;
+            if (D7.add(C6), this.grid[C6] || x6 === 0 && T5 === 0)
               continue;
-            let P3 = this.getClone($a8e101027d325e52$export$e947a0f742cf021e.add(this.shape.point, [D7 * p8, w6 * c7]), y4);
+            let P3 = this.getClone($a8e101027d325e52$export$e947a0f742cf021e.add(this.shape.point, [x6 * p8, T5 * c7]), y4);
             a11[P3.id] = P3, this.grid[C6] = P3.id;
           }
-        if (Object.entries(this.grid).forEach(([D7, w6]) => {
-          x6.has(D7) || (a11[w6] = void 0, delete this.grid[D7]);
+        if (Object.entries(this.grid).forEach(([x6, T5]) => {
+          D7.has(x6) || (a11[T5] = void 0, delete this.grid[x6]);
         }), Object.values(a11).length !== 0)
           return this.initialSiblings && (a11[this.shape.parentId] = {children: [...this.initialSiblings, ...Object.values(this.grid)]}), {document: {pages: {[e13.appState.currentPageId]: {shapes: a11}}, pageStates: {[e13.appState.currentPageId]: i9}}};
       };
@@ -20541,7 +20146,7 @@ Please add \`${key}Action\` when creating your handler.`);
         let t15 = {};
         return Object.values(this.grid).forEach((n7) => {
           t15[n7] = void 0;
-        }), t15[this.shape.id] = T5(m8({}, t15[this.shape.id]), {point: this.shape.point}), this.initialSiblings && (t15[this.shape.parentId] = {children: [...this.initialSiblings, this.shape.id]}), {document: {pages: {[e13.appState.currentPageId]: {shapes: t15}}, pageStates: {[e13.appState.currentPageId]: {selectedIds: [this.shape.id]}}}};
+        }), t15[this.shape.id] = w6(m8({}, t15[this.shape.id]), {point: this.shape.point}), this.initialSiblings && (t15[this.shape.parentId] = {children: [...this.initialSiblings, this.shape.id]}), {document: {pages: {[e13.appState.currentPageId]: {shapes: t15}}, pageStates: {[e13.appState.currentPageId]: {selectedIds: [this.shape.id]}}}};
       };
       this.complete = (e13) => {
         let t15 = e13.appState.currentPageId, n7 = {}, s9 = {}, r14 = [];
@@ -20554,8 +20159,8 @@ Please add \`${key}Action\` when creating your handler.`);
       this.origin = r13, this.shape = f12.getShape(e12, n6, s8), this.grid["0_0"] = this.shape.id, this.bounds = f12.getBounds(this.shape), this.initialSelectedIds = f12.getSelectedIds(e12, s8), this.shape.parentId !== s8 && (this.initialSiblings = (a10 = f12.getShape(e12, this.shape.parentId, s8).children) == null ? void 0 : a10.filter((i9) => i9 !== this.shape.id));
     }
   };
-  var zd = {[M4.Arrow]: Sn, [M4.Brush]: Tn, [M4.Draw]: wn, [M4.Handle]: In, [M4.Rotate]: yn, [M4.Transform]: Dn, [M4.TransformSingle]: Ao, [M4.Translate]: Oo, [M4.Grid]: Uo};
-  var Fr = (o13) => zd[o13];
+  var zd = {[M4.Arrow]: Tn, [M4.Brush]: wn, [M4.Draw]: In, [M4.Handle]: bn, [M4.Rotate]: Dn, [M4.Transform]: xn, [M4.TransformSingle]: Oo, [M4.Translate]: Uo, [M4.Grid]: zo};
+  var jr = (o13) => zd[o13];
   var F5;
   (function(n6) {
     n6.Idle = "idle", n6.Creating = "creating", n6.Pinching = "pinching";
@@ -20617,22 +20222,22 @@ Please add \`${key}Action\` when creating your handler.`);
       this.state = e12;
     }
   };
-  var xn = class extends Ie {
+  var Ln = class extends Ie {
     constructor() {
       super(...arguments);
       this.type = L4.Arrow;
       this.onPointerDown = (e12) => {
-        let t14 = $a8e101027d325e52$export$2e2bcd8739ae039.round(this.state.getPagePoint(e12.point)), {appState: {currentPageId: n6, currentStyle: s8}} = this.state, r13 = this.getNextChildIndex(), a10 = Utils.uniqueId(), i9 = Do.create({id: a10, parentId: n6, childIndex: r13, point: t14, style: m8({}, s8)});
+        let t14 = $a8e101027d325e52$export$2e2bcd8739ae039.round(this.state.getPagePoint(e12.point)), {appState: {currentPageId: n6, currentStyle: s8}} = this.state, r13 = this.getNextChildIndex(), a10 = Utils.uniqueId(), i9 = xo.create({id: a10, parentId: n6, childIndex: r13, point: t14, style: m8({}, s8)});
         this.state.patchCreate([i9]), this.state.startSession(M4.Arrow, t14, "end", true), this.setStatus(F5.Creating);
       };
     }
   };
-  var Ln = class extends Ie {
+  var Cn = class extends Ie {
     constructor() {
       super(...arguments);
       this.type = L4.Draw;
       this.onPointerDown = (e12) => {
-        let t14 = $a8e101027d325e52$export$2e2bcd8739ae039.round(this.state.getPagePoint(e12.point)), {shapes: n6, appState: {currentPageId: s8, currentStyle: r13}} = this.state, a10 = n6.length === 0 ? 1 : n6.filter((l10) => l10.parentId === s8).sort((l10, p8) => p8.childIndex - l10.childIndex)[0].childIndex + 1, i9 = Utils.uniqueId(), d9 = yo.create({id: i9, parentId: s8, childIndex: a10, point: [...t14, e12.pressure || 0.5], style: m8({}, r13)});
+        let t14 = $a8e101027d325e52$export$2e2bcd8739ae039.round(this.state.getPagePoint(e12.point)), {shapes: n6, appState: {currentPageId: s8, currentStyle: r13}} = this.state, a10 = n6.length === 0 ? 1 : n6.filter((l10) => l10.parentId === s8).sort((l10, p8) => p8.childIndex - l10.childIndex)[0].childIndex + 1, i9 = Utils.uniqueId(), d9 = Do.create({id: i9, parentId: s8, childIndex: a10, point: [...t14, e12.pressure || 0.5], style: m8({}, r13)});
         this.state.patchCreate([d9]), this.state.startSession(M4.Draw, t14, i9), this.setStatus(F5.Creating);
       };
       this.onPointerMove = (e12) => {
@@ -20646,22 +20251,22 @@ Please add \`${key}Action\` when creating your handler.`);
       };
     }
   };
-  var Cn = class extends Ie {
+  var Pn = class extends Ie {
     constructor() {
       super(...arguments);
       this.type = L4.Ellipse;
       this.onPointerDown = (e12) => {
-        let t14 = $a8e101027d325e52$export$2e2bcd8739ae039.round(this.state.getPagePoint(e12.point)), {appState: {currentPageId: n6, currentStyle: s8}} = this.state, r13 = this.getNextChildIndex(), a10 = Utils.uniqueId(), i9 = bo.create({id: a10, parentId: n6, childIndex: r13, point: t14, style: m8({}, s8)});
+        let t14 = $a8e101027d325e52$export$2e2bcd8739ae039.round(this.state.getPagePoint(e12.point)), {appState: {currentPageId: n6, currentStyle: s8}} = this.state, r13 = this.getNextChildIndex(), a10 = Utils.uniqueId(), i9 = yo.create({id: a10, parentId: n6, childIndex: r13, point: t14, style: m8({}, s8)});
         this.state.patchCreate([i9]), this.state.startSession(M4.TransformSingle, t14, TLBoundsCorner.BottomRight, true), this.setStatus(F5.Creating);
       };
     }
   };
-  var Pn = class extends Ie {
+  var vn = class extends Ie {
     constructor() {
       super(...arguments);
       this.type = L4.Rectangle;
       this.onPointerDown = (e12) => {
-        let t14 = $a8e101027d325e52$export$2e2bcd8739ae039.round(this.state.getPagePoint(e12.point)), {appState: {currentPageId: n6, currentStyle: s8}} = this.state, r13 = this.getNextChildIndex(), a10 = Utils.uniqueId(), i9 = Io.create({id: a10, parentId: n6, childIndex: r13, point: t14, style: m8({}, s8)});
+        let t14 = $a8e101027d325e52$export$2e2bcd8739ae039.round(this.state.getPagePoint(e12.point)), {appState: {currentPageId: n6, currentStyle: s8}} = this.state, r13 = this.getNextChildIndex(), a10 = Utils.uniqueId(), i9 = bo.create({id: a10, parentId: n6, childIndex: r13, point: t14, style: m8({}, s8)});
         this.state.patchCreate([i9]), this.state.startSession(M4.TransformSingle, t14, TLBoundsCorner.BottomRight, true), this.setStatus(F5.Creating);
       };
     }
@@ -20670,7 +20275,7 @@ Please add \`${key}Action\` when creating your handler.`);
   (function(b8) {
     b8.Idle = "idle", b8.Creating = "creating", b8.Pinching = "pinching", b8.PointingCanvas = "pointingCanvas", b8.PointingHandle = "pointingHandle", b8.PointingBounds = "pointingBounds", b8.PointingClone = "pointingClone", b8.TranslatingClone = "translatingClone", b8.PointingBoundsHandle = "pointingBoundsHandle", b8.TranslatingHandle = "translatingHandle", b8.Translating = "translating", b8.Transforming = "transforming", b8.Rotating = "rotating", b8.Brushing = "brushing", b8.GridCloning = "gridCloning", b8.ClonePainting = "clonePainting", b8.SpacePanning = "spacePanning";
   })(H3 || (H3 = {}));
-  var vn = class extends Ie {
+  var Bn = class extends Ie {
     constructor() {
       super(...arguments);
       this.type = "select";
@@ -20694,7 +20299,7 @@ Please add \`${key}Action\` when creating your handler.`);
             let p8 = $a8e101027d325e52$export$2e2bcd8739ae039.add(i9, [r13.width / 2, r13.height / 2]), c7 = $a8e101027d325e52$export$2e2bcd8739ae039.rotWith(p8, a10, n6.rotation || 0);
             i9 = $a8e101027d325e52$export$2e2bcd8739ae039.sub(c7, [r13.width / 2, r13.height / 2]);
           }
-          let d9 = Utils.uniqueId(), l10 = T5(m8({}, n6), {id: d9, point: i9});
+          let d9 = Utils.uniqueId(), l10 = w6(m8({}, n6), {id: d9, point: i9});
           return l10.type === L4.Sticky && (l10.text = ""), l10;
         }
       };
@@ -20736,7 +20341,7 @@ Please add \`${key}Action\` when creating your handler.`);
         var s8, r13;
         let n6 = this.state.getPagePoint(e12.origin);
         if (this.status === H3.SpacePanning && t14.buttons === 1) {
-          (r13 = (s8 = this.state).onPan) == null || r13.call(s8, T5(m8({}, e12), {delta: $a8e101027d325e52$export$2e2bcd8739ae039.neg(e12.delta)}), t14);
+          (r13 = (s8 = this.state).onPan) == null || r13.call(s8, w6(m8({}, e12), {delta: $a8e101027d325e52$export$2e2bcd8739ae039.neg(e12.delta)}), t14);
           return;
         }
         if (this.status === H3.PointingBoundsHandle) {
@@ -20919,7 +20524,7 @@ Please add \`${key}Action\` when creating your handler.`);
       this.state.selectNone();
     }
   };
-  var Bn = class extends Ie {
+  var kn = class extends Ie {
     constructor() {
       super(...arguments);
       this.type = L4.Sticky;
@@ -20931,7 +20536,7 @@ Please add \`${key}Action\` when creating your handler.`);
         if (this.status === F5.Idle) {
           let t14 = $a8e101027d325e52$export$2e2bcd8739ae039.round(this.state.getPagePoint(e12.point)), {appState: {currentPageId: n6, currentStyle: s8}} = this.state, r13 = this.getNextChildIndex(), a10 = Utils.uniqueId();
           this.shapeId = a10;
-          let i9 = mn.create({id: a10, parentId: n6, childIndex: r13, point: t14, style: m8({}, s8)}), d9 = mn.getBounds(i9);
+          let i9 = gn.create({id: a10, parentId: n6, childIndex: r13, point: t14, style: m8({}, s8)}), d9 = gn.getBounds(i9);
           i9.point = $a8e101027d325e52$export$2e2bcd8739ae039.sub(i9.point, [d9.width / 2, d9.height / 2]), this.state.createShapes(i9), this.state.startSession(M4.Translate, t14), this.setStatus(F5.Creating);
         }
       };
@@ -20940,7 +20545,7 @@ Please add \`${key}Action\` when creating your handler.`);
       };
     }
   };
-  var kn = class extends Ie {
+  var Rn = class extends Ie {
     constructor() {
       super(...arguments);
       this.type = L4.Text;
@@ -20973,17 +20578,17 @@ Please add \`${key}Action\` when creating your handler.`);
       };
     }
   };
-  var gD = {select: vn, [L4.Text]: kn, [L4.Draw]: Ln, [L4.Ellipse]: Cn, [L4.Rectangle]: Pn, [L4.Arrow]: xn, [L4.Sticky]: Bn};
-  function zo(o13) {
-    return {select: new vn(o13), [L4.Text]: new kn(o13), [L4.Draw]: new Ln(o13), [L4.Ellipse]: new Cn(o13), [L4.Rectangle]: new Pn(o13), [L4.Arrow]: new xn(o13), [L4.Sticky]: new Bn(o13)};
+  var fD = {select: Bn, [L4.Text]: Rn, [L4.Draw]: Cn, [L4.Ellipse]: Pn, [L4.Rectangle]: vn, [L4.Arrow]: Ln, [L4.Sticky]: kn};
+  function Fo(o13) {
+    return {select: new Bn(o13), [L4.Text]: new Rn(o13), [L4.Draw]: new Cn(o13), [L4.Ellipse]: new Pn(o13), [L4.Rectangle]: new vn(o13), [L4.Arrow]: new Ln(o13), [L4.Sticky]: new kn(o13)};
   }
-  var Ot = Utils.uniqueId();
+  var zt = Utils.uniqueId();
   var fe2 = class extends $3defa9818521434e$export$4d5c8163a511d38a {
     constructor(e12, t14 = {}) {
-      super(fe2.defaultState, e12, fe2.version, (n6, s8, r13) => T5(m8({}, s8), {document: Ye(T5(m8(m8({}, s8.document), n6.document), {version: r13}), fe2.version)}));
+      super(fe2.defaultState, e12, fe2.version, (n6, s8, r13) => w6(m8({}, s8), {document: Ye(w6(m8(m8({}, s8.document), n6.document), {version: r13}), fe2.version)}));
       this.callbacks = {};
       this.selectHistory = {stack: [[]], pointer: 0};
-      this.tools = zo(this);
+      this.tools = Fo(this);
       this.currentTool = this.tools.select;
       this.editingStartTime = -1;
       this.isCreating = false;
@@ -20995,13 +20600,13 @@ Please add \`${key}Action\` when creating your handler.`);
       this.isDirty = false;
       this.onReady = () => {
         var e13, t15;
-        this.loadDocument(this.document), _n().then((n6) => {
+        this.loadDocument(this.document), qn().then((n6) => {
           this.fileSystemHandle = n6;
         });
         try {
           this.patchState({appState: {status: W4.Idle}, document: Ye(this.document, fe2.version)});
         } catch (n6) {
-          console.error("The data appears to be corrupted. Resetting!", n6), localStorage.setItem(this.document.id + "_corrupted", JSON.stringify(this.document)), this.patchState(T5(m8({}, fe2.defaultState), {appState: T5(m8({}, fe2.defaultState.appState), {status: W4.Idle})}));
+          console.error("The data appears to be corrupted. Resetting!", n6), localStorage.setItem(this.document.id + "_corrupted", JSON.stringify(this.document)), this.patchState(w6(m8({}, fe2.defaultState), {appState: w6(m8({}, fe2.defaultState.appState), {status: W4.Idle})}));
         }
         (t15 = (e13 = this.callbacks).onMount) == null || t15.call(e13, this);
       };
@@ -21025,19 +20630,19 @@ Please add \`${key}Action\` when creating your handler.`);
             });
             let h4 = Object.values(d9.shapes).filter((g5) => (l10 == null ? void 0 : l10.shapes[g5.id]) !== g5).map((g5) => g5.id);
             n6.document.pages[i9] = d9, f12.getRelatedBindings(n6, h4, i9).forEach((g5) => {
-              var D7;
+              var x6;
               if (!d9.bindings[g5.id])
                 return;
-              let S3 = d9.shapes[g5.toId], I3 = d9.shapes[g5.fromId], b8 = f12.getShapeUtils(S3), x6 = f12.getShapeUtils(I3), y4 = (D7 = x6.onBindingChange) == null ? void 0 : D7.call(x6, I3, g5, S3, b8.getBounds(S3), b8.getCenter(S3));
+              let S3 = d9.shapes[g5.toId], I3 = d9.shapes[g5.fromId], b8 = f12.getShapeUtils(S3), D7 = f12.getShapeUtils(I3), y4 = (x6 = D7.onBindingChange) == null ? void 0 : x6.call(D7, I3, g5, S3, b8.getBounds(S3), b8.getCenter(S3));
               if (y4) {
-                let w6 = m8(m8({}, I3), y4);
-                d9.shapes[I3.id] = w6;
+                let T5 = m8(m8({}, I3), y4);
+                d9.shapes[I3.id] = T5;
               }
             }), c7.forEach((g5) => {
               if (!g5)
                 throw Error("no group!");
               let S3 = g5.children.filter((b8) => d9.shapes[b8] !== void 0), I3 = Utils.getCommonBounds(S3.map((b8) => d9.shapes[b8]).filter(Boolean).map((b8) => f12.getRotatedBounds(b8)));
-              d9.shapes[g5.id] = T5(m8({}, g5), {point: [I3.minX, I3.minY], size: [I3.width, I3.height], children: S3});
+              d9.shapes[g5.id] = w6(m8({}, g5), {point: [I3.minX, I3.minY], size: [I3.width, I3.height], children: S3});
             });
           }
           let p8 = m8({}, n6.document.pageStates[i9]);
@@ -21045,14 +20650,14 @@ Please add \`${key}Action\` when creating your handler.`);
         });
         let s8 = n6.appState.currentPageId, r13 = n6.document.pageStates[s8];
         if (n6.room && n6.room !== t15.room) {
-          let i9 = T5(m8({}, n6.room), {users: m8({}, n6.room.users)});
+          let i9 = w6(m8({}, n6.room), {users: m8({}, n6.room.users)});
           t15.room && Object.values(t15.room.users).filter(Boolean).forEach((d9) => {
             i9.users[d9.id] === void 0 && delete i9.users[d9.id];
           }), n6.room = i9;
         }
-        n6.room && (n6.room.users[n6.room.userId] = T5(m8({}, n6.room.users[n6.room.userId]), {point: this.pointerPoint, selectedIds: r13.selectedIds}));
+        n6.room && (n6.room.users[n6.room.userId] = w6(m8({}, n6.room.users[n6.room.userId]), {point: this.pointerPoint, selectedIds: r13.selectedIds}));
         let a10 = f12.getSelectedStyle(n6, s8);
-        return a10 && (n6.appState = T5(m8({}, n6.appState), {selectedStyle: a10})), this.readOnly && (n6.document.pages = t15.document.pages), n6;
+        return a10 && (n6.appState = w6(m8({}, n6.appState), {selectedStyle: a10})), this.readOnly && (n6.document.pages = t15.document.pages), n6;
       };
       this.onPatch = (e13, t15) => {
         var n6, s8;
@@ -21082,10 +20687,10 @@ Please add \`${key}Action\` when creating your handler.`);
         (s8 = (n6 = this.callbacks).onChange) == null || s8.call(n6, this, t15);
       };
       this.updateBounds = (e13) => {
-        this.bounds = m8({}, e13), this.session && (this.session.updateViewport(this.viewport), this.session.update(this.state, this.pointerPoint, false, false, false));
+        this.readOnly || (this.bounds = m8({}, e13), this.session && (this.session.updateViewport(this.viewport), this.session.update(this.state, this.pointerPoint, false, false, false)));
       };
       this.setEditingId = (e13) => {
-        this.editingStartTime = Date.now(), this.patchState({document: {pageStates: {[this.currentPageId]: {editingId: e13}}}}, "set_editing_id");
+        this.readOnly || (this.editingStartTime = Date.now(), this.patchState({document: {pageStates: {[this.currentPageId]: {editingId: e13}}}}, "set_editing_id"));
       };
       this.setHoveredId = (e13) => {
         this.patchState({document: {pageStates: {[this.currentPageId]: {hoveredId: e13}}}}, "set_hovered_id");
@@ -21098,13 +20703,13 @@ Please add \`${key}Action\` when creating your handler.`);
       this.toggleDebugMode = () => this.session ? this : (this.patchState({settings: {isDebugMode: !this.state.settings.isDebugMode}}, "settings:toggled_debug"), this.persist(), this);
       this.toggleStylePanel = () => this.session ? this : (this.patchState({appState: {isStyleOpen: !this.appState.isStyleOpen}}, "ui:toggled_style_panel"), this.persist(), this);
       this.selectTool = (e13) => {
-        if (this.session)
+        if (this.readOnly || this.session)
           return this;
         let t15 = this.tools[e13];
         return t15 === this.currentTool ? this : (this.currentTool.onExit(), this.currentTool = t15, this.currentTool.onEnter(), this.patchState({appState: {activeTool: e13}}, `selected_tool:${e13}`));
       };
       this.toggleToolLock = () => this.session ? this : this.patchState({appState: {isToolLocked: !this.appState.isToolLocked}}, "toggled_tool_lock");
-      this.resetDocument = () => this.session ? this : (this.session = void 0, this.pasteInfo.offset = [0, 0], this.tools = zo(this), this.currentTool = this.tools.select, this.resetHistory().clearSelectHistory().loadDocument(Ye(fe2.defaultDocument, fe2.version)).persist(), this);
+      this.resetDocument = () => this.session ? this : (this.session = void 0, this.pasteInfo.offset = [0, 0], this.tools = Fo(this), this.currentTool = this.tools.select, this.resetHistory().clearSelectHistory().loadDocument(Ye(fe2.defaultDocument, fe2.version)).persist(), this);
       this.updateUsers = (e13, t15 = false) => {
         this.patchState({room: {users: Object.fromEntries(e13.map((n6) => [n6.id, n6]))}}, t15 ? "room:self:update" : "room:user:update");
       };
@@ -21113,8 +20718,8 @@ Please add \`${key}Action\` when creating your handler.`);
       };
       this.mergeDocument = (e13) => {
         if (this.document.id !== e13.id)
-          return this.replaceState(T5(m8({}, this.state), {appState: T5(m8({}, this.appState), {currentPageId: Object.keys(e13.pages)[0]}), document: Ye(e13, fe2.version)})), this;
-        let t15 = m8({}, this.document.pageStates), n6 = T5(m8({}, this.appState), {currentPageId: e13.pages[this.currentPageId] ? this.currentPageId : Object.keys(e13.pages)[0], pages: Object.values(e13.pages).map((r13, a10) => ({id: r13.id, name: r13.name, childIndex: r13.childIndex || a10}))});
+          return this.replaceState(w6(m8({}, this.state), {appState: w6(m8({}, this.appState), {currentPageId: Object.keys(e13.pages)[0]}), document: Ye(e13, fe2.version)})), this;
+        let t15 = m8({}, this.document.pageStates), n6 = w6(m8({}, this.appState), {currentPageId: e13.pages[this.currentPageId] ? this.currentPageId : Object.keys(e13.pages)[0], pages: Object.values(e13.pages).map((r13, a10) => ({id: r13.id, name: r13.name, childIndex: r13.childIndex || a10}))});
         this.resetHistory(), Object.keys(this.document.pages).forEach((r13) => {
           e13.pages[r13] || (r13 === this.appState.currentPageId && (this.cancelSession(), this.selectNone()), t15[r13] = void 0);
         }), this.session && this.selectedIds.filter((r13) => !e13.pages[this.currentPageId].shapes[r13]).forEach((r13) => e13.pages[this.currentPageId].shapes[r13] = this.page.shapes[r13]), Object.entries(t15).forEach(([r13, a10]) => {
@@ -21126,11 +20731,11 @@ Please add \`${key}Action\` when creating your handler.`);
             throw Error("Huh?");
           e13.pages[this.currentPageId].shapes[s8] = this.page.shapes[s8], t15[this.currentPageId].selectedIds = [s8];
         }
-        return this.replaceState(T5(m8({}, this.state), {appState: n6, document: T5(m8({}, Ye(e13, fe2.version)), {pageStates: t15})}), "merge");
+        return this.replaceState(w6(m8({}, this.state), {appState: n6, document: w6(m8({}, Ye(e13, fe2.version)), {pageStates: t15})}), "merge");
       };
       this.updateDocument = (e13, t15 = "updated_document") => {
-        let n6 = this.state, s8 = T5(m8({}, n6), {document: m8({}, n6.document)});
-        e13.pages[this.currentPageId] || (s8.appState = T5(m8({}, n6.appState), {currentPageId: Object.keys(e13.pages)[0]}));
+        let n6 = this.state, s8 = w6(m8({}, n6), {document: m8({}, n6.document)});
+        e13.pages[this.currentPageId] || (s8.appState = w6(m8({}, n6.appState), {currentPageId: Object.keys(e13.pages)[0]}));
         let r13 = 1;
         for (let a10 of Object.values(e13.pages))
           a10 !== n6.document.pages[a10.id] && (s8.document.pages[a10.id] = a10, a10.name || (s8.document.pages[a10.id].name = `Page ${r13 + 1}`, r13++));
@@ -21145,16 +20750,16 @@ Please add \`${key}Action\` when creating your handler.`);
         return s8.document = Ye(s8.document, s8.document.version || 0), this.replaceState(s8, `${t15}:${e13.id}`);
       };
       this.loadRoom = (e13) => {
-        this.patchState({room: {id: e13, userId: Ot, users: {[Ot]: {id: Ot, color: an[Math.floor(Math.random() * an.length)], point: [100, 100], selectedIds: [], activeShapes: []}}}});
+        this.patchState({room: {id: e13, userId: zt, users: {[zt]: {id: zt, color: dn[Math.floor(Math.random() * dn.length)], point: [100, 100], selectedIds: [], activeShapes: []}}}});
       };
-      this.loadDocument = (e13) => (this.selectNone(), this.resetHistory(), this.clearSelectHistory(), this.session = void 0, this.replaceState(T5(m8({}, fe2.defaultState), {document: Ye(e13, fe2.version), appState: T5(m8({}, fe2.defaultState.appState), {currentPageId: Object.keys(e13.pages)[0]})}), "loaded_document"), this);
+      this.loadDocument = (e13) => (this.selectNone(), this.resetHistory(), this.clearSelectHistory(), this.session = void 0, this.replaceState(w6(m8({}, fe2.defaultState), {document: Ye(e13, fe2.version), appState: w6(m8({}, fe2.defaultState.appState), {currentPageId: Object.keys(e13.pages)[0]})}), "loaded_document"), this);
       this.newProject = () => {
         !this.isLocal || (this.fileSystemHandle = null, this.resetDocument());
       };
       this.saveProject = () => q2(this, null, function* () {
         if (!this.readOnly) {
           try {
-            let e13 = yield rn(this.document, this.fileSystemHandle);
+            let e13 = yield an(this.document, this.fileSystemHandle);
             this.fileSystemHandle = e13, this.persist(), this.isDirty = false;
           } catch (e13) {
             console.error(e13.message);
@@ -21164,7 +20769,7 @@ Please add \`${key}Action\` when creating your handler.`);
       });
       this.saveProjectAs = () => q2(this, null, function* () {
         try {
-          let e13 = yield rn(this.document, null);
+          let e13 = yield an(this.document, null);
           this.fileSystemHandle = e13, this.persist(), this.isDirty = false;
         } catch (e13) {
           console.error(e13.message);
@@ -21174,7 +20779,7 @@ Please add \`${key}Action\` when creating your handler.`);
       this.openProject = () => q2(this, null, function* () {
         if (!!this.isLocal)
           try {
-            let e13 = yield Qn();
+            let e13 = yield eo();
             if (!e13)
               throw Error();
             let {fileHandle: t15, document: n6} = e13;
@@ -21199,11 +20804,11 @@ Please add \`${key}Action\` when creating your handler.`);
         let {camera: n6} = this.getPageState(t15);
         return $a8e101027d325e52$export$e947a0f742cf021e.sub($a8e101027d325e52$export$e947a0f742cf021e.div(e13, n6.zoom), n6.point);
       };
-      this.createPage = (e13) => this.setState(ur(this.state, [-this.bounds.width / 2, -this.bounds.height / 2], e13));
-      this.changePage = (e13) => this.setState(hr(this.state, e13));
-      this.renamePage = (e13, t15) => this.setState(xr(this.state, e13, t15));
-      this.duplicatePage = (e13) => this.readOnly ? this : this.setState(Tr(this.state, [-this.bounds.width / 2, -this.bounds.height / 2], e13));
-      this.deletePage = (e13) => this.readOnly ? this : Object.values(this.document.pages).length <= 1 ? this : this.setState(mr(this.state, e13 || this.currentPageId));
+      this.createPage = (e13) => this.readOnly ? this : this.setState(mr(this.state, [-this.bounds.width / 2, -this.bounds.height / 2], e13));
+      this.changePage = (e13) => this.setState(ur(this.state, e13));
+      this.renamePage = (e13, t15) => this.readOnly ? this : this.setState(Lr(this.state, e13, t15));
+      this.duplicatePage = (e13) => this.readOnly ? this : this.setState(wr(this.state, [-this.bounds.width / 2, -this.bounds.height / 2], e13));
+      this.deletePage = (e13) => this.readOnly ? this : Object.values(this.document.pages).length <= 1 ? this : this.setState(gr(this.state, e13 || this.currentPageId));
       this.copy = (e13 = this.selectedIds) => {
         let t15 = e13.flatMap((r13) => f12.getDocumentBranch(this.state, r13, this.currentPageId)), n6 = t15.map((r13) => Utils.deepClone(this.getShape(r13, this.currentPageId)));
         if (n6.length === 0)
@@ -21227,14 +20832,14 @@ Please add \`${key}Action\` when creating your handler.`);
           let r13 = {};
           n6.forEach((u5) => r13[u5.id] = Utils.uniqueId()), s8.forEach((u5) => r13[u5.id] = Utils.uniqueId());
           let a10 = f12.getTopChildIndex(this.state, this.currentPageId), i9 = n6.sort((u5, g5) => u5.childIndex - g5.childIndex).map((u5) => {
-            let g5 = r13[u5.parentId], S3 = T5(m8({}, u5), {id: r13[u5.id], parentId: g5 || this.currentPageId});
+            let g5 = r13[u5.parentId], S3 = w6(m8({}, u5), {id: r13[u5.id], parentId: g5 || this.currentPageId});
             return u5.children && (S3.children = u5.children.map((I3) => r13[I3])), g5 || (S3.childIndex = a10, a10++), S3.handles && Object.values(S3.handles).forEach((I3) => {
               I3.bindingId && (I3.bindingId = r13[I3.bindingId]);
             }), S3;
-          }), d9 = s8.map((u5) => T5(m8({}, u5), {id: r13[u5.id], toId: r13[u5.toId], fromId: r13[u5.fromId]})), l10 = Utils.getCommonBounds(i9.map(f12.getBounds)), p8 = $a8e101027d325e52$export$e947a0f742cf021e.round(this.getPagePoint(e13 || this.centerPoint));
+          }), d9 = s8.map((u5) => w6(m8({}, u5), {id: r13[u5.id], toId: r13[u5.toId], fromId: r13[u5.fromId]})), l10 = Utils.getCommonBounds(i9.map(f12.getBounds)), p8 = $a8e101027d325e52$export$e947a0f742cf021e.round(this.getPagePoint(e13 || this.centerPoint));
           $a8e101027d325e52$export$e947a0f742cf021e.dist(p8, this.pasteInfo.center) < 2 || $a8e101027d325e52$export$e947a0f742cf021e.dist(p8, $a8e101027d325e52$export$e947a0f742cf021e.round(Utils.getBoundsCenter(l10))) < 2 ? (p8 = $a8e101027d325e52$export$e947a0f742cf021e.add(p8, this.pasteInfo.offset), this.pasteInfo.offset = $a8e101027d325e52$export$e947a0f742cf021e.add(this.pasteInfo.offset, [this.state.settings.nudgeDistanceLarge, this.state.settings.nudgeDistanceLarge])) : (this.pasteInfo.center = p8, this.pasteInfo.offset = [0, 0]);
           let c7 = Utils.centerBounds(l10, p8), h4 = $a8e101027d325e52$export$e947a0f742cf021e.sub(Utils.getBoundsCenter(c7), Utils.getBoundsCenter(l10));
-          this.create(i9.map((u5) => f12.getShapeUtils(u5.type).create(T5(m8({}, u5), {point: $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.add(u5.point, h4)), parentId: u5.parentId || this.currentPageId}))), d9);
+          this.create(i9.map((u5) => f12.getShapeUtils(u5.type).create(w6(m8({}, u5), {point: $a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.add(u5.point, h4)), parentId: u5.parentId || this.currentPageId}))), d9);
         };
         try {
           if (!("clipboard" in navigator && navigator.clipboard.readText))
@@ -21312,7 +20917,7 @@ Please add \`${key}Action\` when creating your handler.`);
         let e13 = this.getShapes();
         if (e13.length === 0)
           return this;
-        let t15 = Utils.getCommonBounds(e13.map(f12.getBounds)), n6 = f12.getCameraZoom(Math.min((this.bounds.width - Vt) / t15.width, (this.bounds.height - Vt) / t15.height));
+        let t15 = Utils.getCommonBounds(e13.map(f12.getBounds)), n6 = f12.getCameraZoom(Math.min((this.bounds.width - Gt) / t15.width, (this.bounds.height - Gt) / t15.height));
         n6 = this.pageState.camera.zoom === n6 || this.pageState.camera.zoom < 1 ? Math.min(1, n6) : n6;
         let s8 = (this.bounds.width - t15.width * n6) / 2 / n6, r13 = (this.bounds.height - t15.height * n6) / 2 / n6;
         return this.setCamera($a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.add([-t15.minX, -t15.minY], [s8, r13])), n6, "zoomed_to_fit");
@@ -21320,7 +20925,7 @@ Please add \`${key}Action\` when creating your handler.`);
       this.zoomToSelection = () => {
         if (this.selectedIds.length === 0)
           return this;
-        let e13 = f12.getSelectedBounds(this.state), t15 = f12.getCameraZoom(Math.min((this.bounds.width - Vt) / e13.width, (this.bounds.height - Vt) / e13.height));
+        let e13 = f12.getSelectedBounds(this.state), t15 = f12.getCameraZoom(Math.min((this.bounds.width - Gt) / e13.width, (this.bounds.height - Gt) / e13.height));
         t15 = this.pageState.camera.zoom === t15 || this.pageState.camera.zoom < 1 ? Math.min(1, t15) : t15;
         let n6 = (this.bounds.width - e13.width * t15) / 2 / t15, s8 = (this.bounds.height - e13.height * t15) / 2 / t15;
         return this.setCamera($a8e101027d325e52$export$e947a0f742cf021e.round($a8e101027d325e52$export$e947a0f742cf021e.add([-e13.minX, -e13.minY], [n6, s8])), t15, "zoomed_to_selection");
@@ -21344,7 +20949,7 @@ Please add \`${key}Action\` when creating your handler.`);
         let n6 = t15 ? [...this.pageState.selectedIds, ...e13] : [...e13];
         if (this.state.room) {
           let {users: a10, userId: i9} = this.state.room;
-          (r13 = (s8 = this.callbacks).onUserChange) == null || r13.call(s8, this, T5(m8({}, a10[i9]), {selectedIds: n6}));
+          (r13 = (s8 = this.callbacks).onUserChange) == null || r13.call(s8, this, w6(m8({}, a10[i9]), {selectedIds: n6}));
         }
         return this.patchState({appState: {activeTool: "select"}, document: {pageStates: {[this.currentPageId]: {selectedIds: n6}}}}, "selected");
       };
@@ -21361,10 +20966,10 @@ Please add \`${key}Action\` when creating your handler.`);
           return this;
         if (this.session)
           throw Error(`Already in a session! (${this.session.constructor.name})`);
-        let n6 = Fr(e13);
+        let n6 = jr(e13);
         this.session = new n6(this.state, this.viewport, ...t15);
         let s8 = this.session.start(this.state);
-        return s8 && this.patchState(T5(m8({}, s8), {appState: m8({}, s8.appState)}), `session:start_${this.session.constructor.name}`), this;
+        return s8 && this.patchState(w6(m8({}, s8), {appState: m8({}, s8.appState)}), `session:start_${this.session.constructor.name}`), this;
       };
       this.updateSession = (...e13) => {
         let {session: t15} = this;
@@ -21392,56 +20997,56 @@ Please add \`${key}Action\` when creating your handler.`);
           return this.isCreating = false, this.patchState({appState: {status: W4.Idle}, document: {pageStates: {[this.currentPageId]: {editingId: void 0, bindingId: void 0, hoveredId: void 0}}}}, `session:complete:${e13.constructor.name}`);
         if ("after" in t15) {
           if (this.isCreating) {
-            if (t15.before = {appState: T5(m8({}, t15.before.appState), {status: W4.Idle}), document: {pages: {[this.currentPageId]: {shapes: Object.fromEntries(this.selectedIds.map((h4) => [h4, void 0]))}}, pageStates: {[this.currentPageId]: {selectedIds: [], editingId: null, bindingId: null, hoveredId: null}}}}, this.appState.isToolLocked) {
+            if (t15.before = {appState: w6(m8({}, t15.before.appState), {status: W4.Idle}), document: {pages: {[this.currentPageId]: {shapes: Object.fromEntries(this.selectedIds.map((h4) => [h4, void 0]))}}, pageStates: {[this.currentPageId]: {selectedIds: [], editingId: null, bindingId: null, hoveredId: null}}}}, this.appState.isToolLocked) {
               let h4 = ((i9 = (a10 = (r13 = t15.after) == null ? void 0 : r13.document) == null ? void 0 : a10.pageStates) == null ? void 0 : i9[this.currentPageId]) || {};
               h4.selectedIds = [];
             }
             this.isCreating = false;
           }
-          t15.after.appState = T5(m8({}, t15.after.appState), {status: W4.Idle}), t15.after.document = T5(m8({}, t15.after.document), {pageStates: T5(m8({}, (d9 = t15.after.document) == null ? void 0 : d9.pageStates), {[this.currentPageId]: T5(m8({}, (((l10 = t15.after.document) == null ? void 0 : l10.pageStates) || {})[this.currentPageId]), {editingId: null})})}), this.setState(t15, `session:complete:${e13.constructor.name}`);
+          t15.after.appState = w6(m8({}, t15.after.appState), {status: W4.Idle}), t15.after.document = w6(m8({}, t15.after.document), {pageStates: w6(m8({}, (d9 = t15.after.document) == null ? void 0 : d9.pageStates), {[this.currentPageId]: w6(m8({}, (((l10 = t15.after.document) == null ? void 0 : l10.pageStates) || {})[this.currentPageId]), {editingId: null})})}), this.setState(t15, `session:complete:${e13.constructor.name}`);
         } else
-          this.patchState(T5(m8({}, t15), {appState: T5(m8({}, t15.appState), {status: W4.Idle}), document: {pageStates: {[this.currentPageId]: T5(m8({}, (c7 = (p8 = t15.document) == null ? void 0 : p8.pageStates) == null ? void 0 : c7[this.currentPageId]), {editingId: null})}}}), `session:complete:${e13.constructor.name}`);
+          this.patchState(w6(m8({}, t15), {appState: w6(m8({}, t15.appState), {status: W4.Idle}), document: {pageStates: {[this.currentPageId]: w6(m8({}, (c7 = (p8 = t15.document) == null ? void 0 : p8.pageStates) == null ? void 0 : c7[this.currentPageId]), {editingId: null})}}}), `session:complete:${e13.constructor.name}`);
         let {isToolLocked: n6, activeTool: s8} = this.appState;
         return !n6 && s8 !== L4.Draw && this.selectTool("select"), this;
       };
       this.createShapes = (...e13) => e13.length === 0 ? this : this.create(e13.map((t15) => f12.getShapeUtils(t15.type).create(m8({parentId: this.currentPageId}, t15))));
       this.updateShapes = (...e13) => {
         let t15 = this.document.pages[this.currentPageId].shapes, n6 = e13.filter((s8) => t15[s8.id]);
-        return n6.length === 0 ? this : this.setState(Ro(this.state, n6, this.currentPageId), "updated_shapes");
+        return n6.length === 0 ? this : this.setState(Eo(this.state, n6, this.currentPageId), "updated_shapes");
       };
       this.patchShapes = (...e13) => {
         let t15 = this.document.pages[this.currentPageId].shapes, n6 = e13.filter((s8) => t15[s8.id]);
-        return n6.length === 0 ? this : this.patchState(Ro(this.state, n6, this.currentPageId).after, "updated_shapes");
+        return n6.length === 0 ? this : this.patchState(Eo(this.state, n6, this.currentPageId).after, "updated_shapes");
       };
-      this.create = (e13 = [], t15 = []) => e13.length === 0 ? this : this.setState(xo(this.state, e13, t15));
-      this.patchCreate = (e13 = [], t15 = []) => e13.length === 0 ? this : this.patchState(xo(this.state, e13, t15).after);
-      this.delete = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(Lo(this.state, e13));
+      this.create = (e13 = [], t15 = []) => e13.length === 0 ? this : this.setState(Lo(this.state, e13, t15));
+      this.patchCreate = (e13 = [], t15 = []) => e13.length === 0 ? this : this.patchState(Lo(this.state, e13, t15).after);
+      this.delete = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(Co(this.state, e13));
       this.deleteAll = () => (this.selectAll(), this.delete(), this);
-      this.style = (e13, t15 = this.selectedIds) => this.setState(Br(this.state, t15, e13));
-      this.align = (e13, t15 = this.selectedIds) => t15.length < 2 ? this : this.setState(pr(this.state, t15, e13));
-      this.distribute = (e13, t15 = this.selectedIds) => t15.length < 3 ? this : this.setState(Sr(this.state, t15, e13));
-      this.stretch = (e13, t15 = this.selectedIds) => t15.length < 2 ? this : this.setState(vr(this.state, t15, e13));
-      this.flipHorizontal = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(vo(this.state, e13, at.Horizontal));
-      this.flipVertical = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(vo(this.state, e13, at.Vertical));
-      this.moveToPage = (e13, t15 = this.currentPageId, n6 = this.selectedIds) => n6.length === 0 ? this : (this.setState(Dr(this.state, n6, this.bounds, t15, e13)), this);
-      this.moveToBack = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(Jt(this.state, e13, Pe.ToBack));
-      this.moveBackward = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(Jt(this.state, e13, Pe.Backward));
-      this.moveForward = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(Jt(this.state, e13, Pe.Forward));
-      this.moveToFront = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(Jt(this.state, e13, Pe.ToFront));
-      this.nudge = (e13, t15 = false, n6 = this.selectedIds) => n6.length === 0 ? this : this.setState(Er(this.state, n6, $a8e101027d325e52$export$e947a0f742cf021e.mul(e13, t15 ? 10 : 1)));
-      this.duplicate = (e13 = this.selectedIds, t15) => this.readOnly ? this : e13.length === 0 ? this : this.setState(wr(this.state, e13, t15));
+      this.style = (e13, t15 = this.selectedIds) => this.setState(kr(this.state, t15, e13));
+      this.align = (e13, t15 = this.selectedIds) => t15.length < 2 ? this : this.setState(hr(this.state, t15, e13));
+      this.distribute = (e13, t15 = this.selectedIds) => t15.length < 3 ? this : this.setState(Tr(this.state, t15, e13));
+      this.stretch = (e13, t15 = this.selectedIds) => t15.length < 2 ? this : this.setState(Br(this.state, t15, e13));
+      this.flipHorizontal = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(Bo(this.state, e13, it.Horizontal));
+      this.flipVertical = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(Bo(this.state, e13, it.Vertical));
+      this.moveToPage = (e13, t15 = this.currentPageId, n6 = this.selectedIds) => n6.length === 0 ? this : (this.setState(xr(this.state, n6, this.bounds, t15, e13)), this);
+      this.moveToBack = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(_t(this.state, e13, Pe.ToBack));
+      this.moveBackward = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(_t(this.state, e13, Pe.Backward));
+      this.moveForward = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(_t(this.state, e13, Pe.Forward));
+      this.moveToFront = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(_t(this.state, e13, Pe.ToFront));
+      this.nudge = (e13, t15 = false, n6 = this.selectedIds) => n6.length === 0 ? this : this.setState(Mr(this.state, n6, $a8e101027d325e52$export$e947a0f742cf021e.mul(e13, t15 ? 10 : 1)));
+      this.duplicate = (e13 = this.selectedIds, t15) => this.readOnly ? this : e13.length === 0 ? this : this.setState(Ir(this.state, e13, t15));
       this.resetBounds = (e13 = this.selectedIds) => {
-        let t15 = Bo(this.state, e13, this.currentPageId);
-        return this.setState(Bo(this.state, e13, this.currentPageId), t15.id);
+        let t15 = ko(this.state, e13, this.currentPageId);
+        return this.setState(ko(this.state, e13, this.currentPageId), t15.id);
       };
-      this.toggleHidden = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(gn(this.state, e13, "isHidden"));
-      this.toggleLocked = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(gn(this.state, e13, "isLocked"));
-      this.toggleAspectRatioLocked = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(gn(this.state, e13, "isAspectRatioLocked"));
-      this.toggleDecoration = (e13, t15 = this.selectedIds) => t15.length === 0 || !(e13 === "start" || e13 === "end") ? this : this.setState(kr(this.state, t15, e13));
+      this.toggleHidden = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(fn(this.state, e13, "isHidden"));
+      this.toggleLocked = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(fn(this.state, e13, "isLocked"));
+      this.toggleAspectRatioLocked = (e13 = this.selectedIds) => e13.length === 0 ? this : this.setState(fn(this.state, e13, "isAspectRatioLocked"));
+      this.toggleDecoration = (e13, t15 = this.selectedIds) => t15.length === 0 || !(e13 === "start" || e13 === "end") ? this : this.setState(Rr(this.state, t15, e13));
       this.rotate = (e13 = Math.PI * -0.5, t15 = this.selectedIds) => {
         if (t15.length === 0)
           return this;
-        let n6 = Cr(this.state, t15, e13);
+        let n6 = Pr(this.state, t15, e13);
         return n6 ? this.setState(n6) : this;
       };
       this.group = (e13 = this.selectedIds, t15 = Utils.uniqueId(), n6 = this.currentPageId) => {
@@ -21451,7 +21056,7 @@ Please add \`${key}Action\` when creating your handler.`);
           return this.ungroup(e13, n6);
         if (e13.length < 2)
           return this;
-        let s8 = br(this.state, e13, t15, n6);
+        let s8 = yr(this.state, e13, t15, n6);
         return s8 ? this.setState(s8) : this;
       };
       this.ungroup = (e13 = this.selectedIds, t15 = this.currentPageId) => {
@@ -21460,7 +21065,7 @@ Please add \`${key}Action\` when creating your handler.`);
         let n6 = e13.map((r13) => this.getShape(r13, t15)).filter((r13) => r13.type === L4.Group);
         if (n6.length === 0)
           return this;
-        let s8 = Mr(this.state, e13, n6, t15);
+        let s8 = Hr(this.state, e13, n6, t15);
         return s8 ? this.setState(s8) : this;
       };
       this.cancel = () => {
@@ -21504,7 +21109,7 @@ Please add \`${key}Action\` when creating your handler.`);
         var n6, s8, r13, a10;
         if ((s8 = (n6 = this.currentTool).onPointerMove) == null || s8.call(n6, e13, t15), this.pointerPoint = this.getPagePoint(e13.point), this.state.room) {
           let {users: i9, userId: d9} = this.state.room;
-          (a10 = (r13 = this.callbacks).onUserChange) == null || a10.call(r13, this, T5(m8({}, i9[d9]), {point: this.getPagePoint(e13.point)}));
+          (a10 = (r13 = this.callbacks).onUserChange) == null || a10.call(r13, this, w6(m8({}, i9[d9]), {point: this.getPagePoint(e13.point)}));
         }
       };
       this.onPointerDown = (...e13) => {
@@ -21657,7 +21262,7 @@ Please add \`${key}Action\` when creating your handler.`);
         let {editingId: e13} = this.pageState;
         if (e13) {
           let s8 = this.getShape(e13);
-          this.setEditingId(), s8.type === L4.Text && (s8.text.trim().length <= 0 ? this.setState(Lo(this.state, [e13]), "delete_empty_text") : this.select(e13));
+          this.setEditingId(), s8.type === L4.Text && (s8.text.trim().length <= 0 ? this.setState(Co(this.state, [e13]), "delete_empty_text") : this.select(e13));
         }
         (n6 = (t15 = this.currentTool).onShapeBlur) == null || n6.call(t15);
       };
@@ -21731,9 +21336,9 @@ Please add \`${key}Action\` when creating your handler.`);
       return {minX: s8, minY: r13, maxX: a10, maxY: i9, height: a10 - s8, width: i9 - r13};
     }
   };
-  var ut = fe2;
-  ut.version = 13, ut.defaultDocument = {id: "doc", name: "New Document", version: 13, pages: {page: {id: "page", name: "Page 1", childIndex: 1, shapes: {}, bindings: {}}}, pageStates: {page: {id: "page", selectedIds: [], camera: {point: [0, 0], zoom: 1}}}}, ut.defaultState = {settings: {isPenMode: false, isDarkMode: false, isZoomSnap: false, isFocusMode: false, isSnapping: false, isDebugMode: false, isReadonlyMode: false, nudgeDistanceLarge: 16, nudgeDistanceSmall: 1, showRotateHandles: true, showBindingHandles: true, showCloneHandles: false}, appState: {activeTool: "select", hoveredId: void 0, currentPageId: "page", pages: [{id: "page", name: "page", childIndex: 1}], currentStyle: le2, selectedStyle: le2, isToolLocked: false, isStyleOpen: false, isEmptyCanvas: false, status: W4.Idle, snapLines: []}, document: fe2.defaultDocument, room: {id: "local", userId: Ot, users: {[Ot]: {id: Ot, color: an[0], point: [100, 100], selectedIds: [], activeShapes: []}}}};
-  function Wr(o13) {
+  var mt = fe2;
+  mt.version = 13, mt.defaultDocument = {id: "doc", name: "New Document", version: 13, pages: {page: {id: "page", name: "Page 1", childIndex: 1, shapes: {}, bindings: {}}}, pageStates: {page: {id: "page", selectedIds: [], camera: {point: [0, 0], zoom: 1}}}}, mt.defaultState = {settings: {isPenMode: false, isDarkMode: false, isZoomSnap: false, isFocusMode: false, isSnapping: false, isDebugMode: false, isReadonlyMode: false, nudgeDistanceLarge: 16, nudgeDistanceSmall: 1, showRotateHandles: true, showBindingHandles: true, showCloneHandles: false}, appState: {activeTool: "select", hoveredId: void 0, currentPageId: "page", pages: [{id: "page", name: "page", childIndex: 1}], currentStyle: le2, selectedStyle: le2, isToolLocked: false, isStyleOpen: false, isEmptyCanvas: false, status: W4.Idle, snapLines: []}, document: fe2.defaultDocument, room: {id: "local", userId: zt, users: {[zt]: {id: zt, color: dn[0], point: [100, 100], selectedIds: [], activeShapes: []}}}};
+  function Vr(o13) {
     let {state: e12} = U2(), t14 = (0, import_react66.useCallback)(() => {
       let i9 = o13.current;
       return i9 && (document.activeElement === i9 || i9.contains(document.activeElement));
@@ -21757,7 +21362,7 @@ Please add \`${key}Action\` when creating your handler.`);
     }, void 0, [e12]), useHotkeys("ctrl+.,command+.", () => {
       t14() && e12.toggleFocusMode();
     }, void 0, [e12]);
-    let {onNewProject: n6, onOpenProject: s8, onSaveProject: r13, onSaveProjectAs: a10} = Rn();
+    let {onNewProject: n6, onOpenProject: s8, onSaveProject: r13, onSaveProjectAs: a10} = En();
     useHotkeys("ctrl+n,command+n", (i9) => {
       t14() && n6(i9);
     }, void 0, [e12]), useHotkeys("ctrl+s,command+s", (i9) => {
@@ -21834,24 +21439,24 @@ Please add \`${key}Action\` when creating your handler.`);
       t14() && i9.preventDefault();
     }, void 0, [e12]);
   }
-  var Fo = (0, import_react67.createContext)({});
+  var jo = (0, import_react67.createContext)({});
   function U2() {
-    return (0, import_react67.useContext)(Fo);
+    return (0, import_react67.useContext)(jo);
   }
-  var jo = new Map();
-  var _t = "tldraw-fonts";
-  var Vr = "@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap')";
-  function Kr() {
+  var $o = new Map();
+  var Qt = "tldraw-fonts";
+  var Kr = "@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap')";
+  function Gr() {
     (0, import_react68.useLayoutEffect)(() => {
-      if (jo.get(_t))
+      if ($o.get(Qt))
         return;
       let o13 = document.createElement("style");
-      return o13.innerHTML = Vr, o13.setAttribute("id", _t), document.head.appendChild(o13), jo.set(_t, o13), () => {
-        o13 && document.head.contains(o13) && (document.head.removeChild(o13), jo.delete(_t));
+      return o13.innerHTML = Kr, o13.setAttribute("id", Qt), document.head.appendChild(o13), $o.set(Qt, o13), () => {
+        o13 && document.head.contains(o13) && (document.head.removeChild(o13), $o.delete(Qt));
       };
-    }, [_t, Vr]);
+    }, [Qt, Kr]);
   }
-  function Rn() {
+  function En() {
     let {state: o13} = U2(), e12 = (0, import_react69.useCallback)((r13) => q2(this, null, function* () {
       var a10, i9;
       r13 && o13.callbacks.onOpenProject && r13.preventDefault(), (i9 = (a10 = o13.callbacks).onNewProject) == null || i9.call(a10, o13);
@@ -21870,33 +21475,33 @@ Please add \`${key}Action\` when creating your handler.`);
   var Ke = {"@initial": "mobile", "@sm": "small"};
   var sc = (o13) => o13.appState.status;
   var rc = (o13) => o13.appState.activeTool;
-  function Gr() {
+  function Nr() {
     let {useSelector: o13} = U2(), e12 = o13(sc), t14 = o13(rc);
     return (0, import_react72.createElement)(ac, {bp: Ke}, (0, import_react72.createElement)(ic, null, t14, " | ", e12));
   }
   var ac = v6("div", {height: 40, userSelect: "none", borderTop: "1px solid $border", gridArea: "status", display: "flex", color: "$text", justifyContent: "space-between", alignItems: "center", backgroundColor: "$panel", gap: 8, fontFamily: "$ui", fontSize: "$0", padding: "0 16px", variants: {bp: {small: {fontSize: "$1"}}}});
   var ic = v6("div", {whiteSpace: "nowrap", overflow: "hidden"});
   var cc = () => Utils.isDarwin() ? "\u2318" : "Ctrl";
-  function Mn({variant: o13, children: e12}) {
+  function Hn({variant: o13, children: e12}) {
     return (0, import_react75.createElement)(lc, {variant: o13}, e12.replaceAll("#", cc()).split("").map((t14, n6) => (0, import_react75.createElement)("span", {key: n6}, t14)));
   }
-  var lc = v6("kbd", {marginLeft: "$3", textShadow: "$2", textAlign: "center", fontSize: "$0", fontFamily: "$ui", fontWeight: 400, color: "$text", gap: "$1", display: "flex", alignItems: "center", "& > span": {padding: "$0", borderRadius: "$0", display: "flex", alignItems: "center", justifyContent: "center"}, variants: {variant: {tooltip: {"& > span": {background: "$overlayContrast", boxShadow: "$key", width: "20px", height: "20px"}}, menu: {}}}});
+  var lc = v6("kbd", {marginLeft: "$3", textShadow: "$2", textAlign: "center", fontSize: "$0", fontFamily: "$ui", fontWeight: 400, color: "$text", gap: "$1", display: "flex", alignItems: "center", "& > span": {padding: "$0", borderRadius: "$0", display: "flex", alignItems: "center", justifyContent: "center"}, variants: {variant: {tooltip: {"& > span": {color: "$tooltipText", background: "$overlayContrast", boxShadow: "$key", width: "20px", height: "20px"}}, menu: {}}}});
   var Ge = v6("div", {height: "100%", borderRadius: "4px", marginRight: "1px", width: "fit-content", display: "grid", alignItems: "center", justifyContent: "center", outline: "none", border: "none", pointerEvents: "all", cursor: "pointer", color: "$text", "& svg": {height: 16, width: 16, strokeWidth: 1}, "& > *": {gridRow: 1, gridColumn: 1}});
   var de = (0, import_react74.forwardRef)((p8, l10) => {
     var c7 = p8, {onSelect: o13, isActive: e12 = false, isWarning: t14 = false, hasIndicator: n6 = false, hasArrow: s8 = false, disabled: r13 = false, kbd: a10, children: i9} = c7, d9 = ce2(c7, ["onSelect", "isActive", "isWarning", "hasIndicator", "hasArrow", "disabled", "kbd", "children"]);
-    return (0, import_react74.createElement)(mc, m8({ref: l10, bp: Ke, isWarning: t14, isActive: e12, disabled: r13, onPointerDown: o13}, d9), (0, import_react74.createElement)($o, null, i9, a10 ? (0, import_react74.createElement)(Mn, {variant: "menu"}, a10) : void 0, n6 && (0, import_react74.createElement)(ItemIndicator2, {dir: "ltr"}, (0, import_react74.createElement)(Ge, null, (0, import_react74.createElement)(CheckIcon, null))), s8 && (0, import_react74.createElement)(Ge, null, (0, import_react74.createElement)(ChevronRightIcon, null))));
+    return (0, import_react74.createElement)(mc, m8({ref: l10, bp: Ke, isWarning: t14, isActive: e12, disabled: r13, onPointerDown: o13}, d9), (0, import_react74.createElement)(Wo, null, i9, a10 ? (0, import_react74.createElement)(Hn, {variant: "menu"}, a10) : void 0, n6 && (0, import_react74.createElement)(ItemIndicator2, {dir: "ltr"}, (0, import_react74.createElement)(Ge, null, (0, import_react74.createElement)(CheckIcon, null))), s8 && (0, import_react74.createElement)(Ge, null, (0, import_react74.createElement)(ChevronRightIcon, null))));
   });
-  var $o = v6("div", {height: "100%", width: "100%", color: "$text", fontFamily: "$ui", fontWeight: 400, fontSize: "$1", backgroundColor: "$panel", borderRadius: "$2", display: "flex", flexDirection: "row", alignItems: "center", padding: "0 $3", justifyContent: "space-between", border: "1px solid transparent", "& svg": {position: "relative", stroke: "$overlay", strokeWidth: 1, zIndex: 1}});
-  var mc = v6("button", {position: "relative", width: "100%", background: "none", border: "none", cursor: "pointer", height: "32px", outline: "none", borderRadius: 4, userSelect: "none", margin: 0, padding: "0 0", "&[data-disabled]": {opacity: 0.3}, "&:disabled": {opacity: 0.3}, [`&:focus:not(:disabled) ${$o}`]: {backgroundColor: "$hover"}, variants: {bp: {mobile: {}, small: {}}, size: {icon: {padding: "4px ", width: "auto"}}, isWarning: {true: {color: "$warn"}}, isActive: {true: {backgroundColor: "$hover"}, false: {[`&:hover:not(:disabled) ${$o}`]: {backgroundColor: "$hover", border: "1px solid $panel", '& *[data-shy="true"]': {opacity: 1}}}}}});
+  var Wo = v6("div", {height: "100%", width: "100%", color: "$text", fontFamily: "$ui", fontWeight: 400, fontSize: "$1", backgroundColor: "$panel", borderRadius: "$2", display: "flex", flexDirection: "row", alignItems: "center", padding: "0 $3", justifyContent: "space-between", border: "1px solid transparent", "& svg": {position: "relative", stroke: "$overlay", strokeWidth: 1, zIndex: 1}});
+  var mc = v6("button", {position: "relative", width: "100%", background: "none", border: "none", cursor: "pointer", height: "32px", outline: "none", borderRadius: 4, userSelect: "none", margin: 0, padding: "0 0", "&[data-disabled]": {opacity: 0.3}, "&:disabled": {opacity: 0.3}, [`&:focus:not(:disabled) ${Wo}`]: {backgroundColor: "$hover"}, variants: {bp: {mobile: {}, small: {}}, size: {icon: {padding: "4px ", width: "auto"}}, isWarning: {true: {color: "$warn"}}, isActive: {true: {backgroundColor: "$hover"}, false: {[`&:hover:not(:disabled) ${Wo}`]: {backgroundColor: "$hover", border: "1px solid $panel", '& *[data-shy="true"]': {opacity: 1}}}}}});
   var ze = v6("div", {position: "relative", overflow: "hidden", userSelect: "none", display: "flex", flexDirection: "column", zIndex: 180, minWidth: 180, pointerEvents: "all", backgroundColor: "$panel", boxShadow: "$panel", padding: "$2 $2", borderRadius: "$3", font: "$ui"});
   var fc = (o13) => Object.keys(o13.document.pages[o13.appState.currentPageId].shapes).length > 0 && o13.appState.isEmptyCanvas;
-  var Yr = (0, import_react73.memo)(function() {
+  var Jr = (0, import_react73.memo)(function() {
     let {state: e12, useSelector: t14} = U2();
     return t14(fc) ? (0, import_react73.createElement)(Sc, null, (0, import_react73.createElement)(de, {onSelect: e12.zoomToContent}, "Back to content")) : null;
   });
   var Sc = v6(ze, {pointerEvents: "all", width: "fit-content", minWidth: 0, gridRow: 1, flexGrow: 2, display: "block"});
   function be2({children: o13, label: e12, kbd: t14, side: n6 = "top"}) {
-    return (0, import_react78.createElement)(Root7, null, (0, import_react78.createElement)(Trigger2, {asChild: true}, (0, import_react78.createElement)("span", null, o13)), (0, import_react78.createElement)(wc, {side: n6, sideOffset: 8}, e12, t14 ? (0, import_react78.createElement)(Mn, {variant: "tooltip"}, t14) : null, (0, import_react78.createElement)(Ic, null)));
+    return (0, import_react78.createElement)(Root7, null, (0, import_react78.createElement)(Trigger2, {asChild: true}, (0, import_react78.createElement)("span", null, o13)), (0, import_react78.createElement)(wc, {side: n6, sideOffset: 8}, e12, t14 ? (0, import_react78.createElement)(Hn, {variant: "tooltip"}, t14) : null, (0, import_react78.createElement)(Ic, null)));
   }
   var wc = v6(Content4, {borderRadius: 3, padding: "$3 $3 $3 $3", fontSize: "$1", backgroundColor: "$tooltipBg", color: "$tooltipText", boxShadow: "$3", display: "flex", alignItems: "center", fontFamily: "$ui", userSelect: "none"});
   var Ic = v6(Arrow5, {fill: "$tooltipBg", margin: "0 8px"});
@@ -21904,15 +21509,15 @@ Please add \`${key}Action\` when creating your handler.`);
     var l10 = d9, {onSelect: o13, onClick: e12, onDoubleClick: t14, isActive: n6 = false, variant: s8, children: r13} = l10, a10 = ce2(l10, ["onSelect", "onClick", "onDoubleClick", "isActive", "variant", "children"]);
     return (0, import_react77.createElement)(Lc, m8({ref: i9, isActive: n6, variant: s8, onClick: e12, onPointerDown: o13, onDoubleClick: t14, bp: Ke}, a10), (0, import_react77.createElement)(Ne, null, r13));
   });
-  function gt(n6) {
+  function ft(n6) {
     var s8 = n6, {label: o13, kbd: e12} = s8, t14 = ce2(s8, ["label", "kbd"]);
     return (0, import_react77.createElement)(be2, {label: o13[0].toUpperCase() + o13.slice(1), kbd: e12}, (0, import_react77.createElement)(ne2, m8({variant: "primary"}, t14)));
   }
   var Ne = v6("div", {position: "relative", height: "100%", width: "100%", color: "$text", backgroundColor: "$panel", borderRadius: "$2", margin: "0", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "$ui", userSelect: "none", boxSizing: "border-box", border: "1px solid transparent"});
   var Lc = v6("button", {position: "relative", color: "$text", fontSize: "$0", background: "none", margin: "0", padding: "$2", display: "flex", alignItems: "center", justifyContent: "center", outline: "none", cursor: "pointer", pointerEvents: "all", border: "none", height: "40px", width: "40px", variants: {variant: {primary: {marginTop: "0"}, icon: {[`& ${Ne}`]: {display: "grid", "& > *": {gridRow: 1, gridColumn: 1}}}, text: {width: "auto", [`& ${Ne}`]: {fontSize: "$1", padding: "0 $3"}}, circle: {padding: "$2", [`& ${Ne}`]: {borderRadius: "100%", boxShadow: "$panel"}, [`& ${Ne} > svg`]: {width: 14, height: 14}}}, isActive: {true: {[`${Ne}`]: {backgroundColor: "$selected", color: "$panelActive"}}, false: {[`&:hover:not(:disabled) ${Ne}`]: {backgroundColor: "$hover", border: "1px solid $panel"}, [`&:focus:not(:disabled) ${Ne}`]: {backgroundColor: "$hover"}}}, bp: {mobile: {}, small: {}}}, compoundVariants: [{variant: "primary", bp: "mobile", css: {height: "40px", width: "40px", [`& ${Ne} > svg`]: {width: 16, height: 16}}}, {variant: "primary", bp: "small", css: {height: "44px", width: "44px", [`& ${Ne} > svg`]: {width: 20, height: 20}}}]});
-  var Qt = v6("div", {backgroundColor: "$panel", display: "flex", flexDirection: "row", boxShadow: "$panel", padding: "$2", variants: {side: {center: {borderTopLeftRadius: "$4", borderTopRightRadius: "$4"}, left: {borderBottomRightRadius: "$3"}, right: {borderBottomLeftRadius: "$3"}}}});
+  var tn = v6("div", {backgroundColor: "$panel", display: "flex", flexDirection: "row", boxShadow: "$panel", padding: "$2", variants: {side: {center: {borderTopLeftRadius: "$4", borderTopRightRadius: "$4"}, left: {borderBottomRightRadius: "$3"}, right: {borderBottomLeftRadius: "$3"}}}});
   var Hc = (o13) => o13.appState.activeTool;
-  var Zr = (0, import_react76.memo)(function() {
+  var _r = (0, import_react76.memo)(function() {
     let {state: e12, useSelector: t14} = U2(), n6 = t14(Hc), s8 = (0, import_react76.useCallback)(() => {
       e12.selectTool("select");
     }, [e12]), r13 = (0, import_react76.useCallback)(() => {
@@ -21928,14 +21533,14 @@ Please add \`${key}Action\` when creating your handler.`);
     }, [e12]), p8 = (0, import_react76.useCallback)(() => {
       e12.selectTool(L4.Sticky);
     }, [e12]);
-    return (0, import_react76.createElement)(Qt, {side: "center"}, (0, import_react76.createElement)(gt, {kbd: "2", label: "select", onClick: s8, isActive: n6 === "select"}, (0, import_react76.createElement)(CursorArrowIcon, null)), (0, import_react76.createElement)(gt, {kbd: "2", label: L4.Draw, onClick: r13, isActive: n6 === L4.Draw}, (0, import_react76.createElement)(Pencil1Icon, null)), (0, import_react76.createElement)(gt, {kbd: "3", label: L4.Rectangle, onClick: a10, isActive: n6 === L4.Rectangle}, (0, import_react76.createElement)(SquareIcon, null)), (0, import_react76.createElement)(gt, {kbd: "4", label: L4.Draw, onClick: i9, isActive: n6 === L4.Ellipse}, (0, import_react76.createElement)(CircleIcon, null)), (0, import_react76.createElement)(gt, {kbd: "5", label: L4.Arrow, onClick: d9, isActive: n6 === L4.Arrow}, (0, import_react76.createElement)(ArrowTopRightIcon, null)), (0, import_react76.createElement)(gt, {kbd: "6", label: L4.Text, onClick: l10, isActive: n6 === L4.Text}, (0, import_react76.createElement)(TextIcon, null)), (0, import_react76.createElement)(gt, {kbd: "7", label: L4.Sticky, onClick: p8, isActive: n6 === L4.Sticky}, (0, import_react76.createElement)(Pencil2Icon, null)));
+    return (0, import_react76.createElement)(tn, {side: "center"}, (0, import_react76.createElement)(ft, {kbd: "1", label: "select", onClick: s8, isActive: n6 === "select"}, (0, import_react76.createElement)(CursorArrowIcon, null)), (0, import_react76.createElement)(ft, {kbd: "2", label: L4.Draw, onClick: r13, isActive: n6 === L4.Draw}, (0, import_react76.createElement)(Pencil1Icon, null)), (0, import_react76.createElement)(ft, {kbd: "3", label: L4.Rectangle, onClick: a10, isActive: n6 === L4.Rectangle}, (0, import_react76.createElement)(SquareIcon, null)), (0, import_react76.createElement)(ft, {kbd: "4", label: L4.Ellipse, onClick: i9, isActive: n6 === L4.Ellipse}, (0, import_react76.createElement)(CircleIcon, null)), (0, import_react76.createElement)(ft, {kbd: "5", label: L4.Arrow, onClick: d9, isActive: n6 === L4.Arrow}, (0, import_react76.createElement)(ArrowTopRightIcon, null)), (0, import_react76.createElement)(ft, {kbd: "6", label: L4.Text, onClick: l10, isActive: n6 === L4.Text}, (0, import_react76.createElement)(TextIcon, null)), (0, import_react76.createElement)(ft, {kbd: "7", label: L4.Sticky, onClick: p8, isActive: n6 === L4.Sticky}, (0, import_react76.createElement)(Pencil2Icon, null)));
   });
-  var jx = v6(Arrow4, {fill: "$panel", bp: Ke});
+  var $x = v6(Arrow4, {fill: "$panel", bp: Ke});
   function te(t14) {
     var n6 = t14, {onSelect: o13} = n6, e12 = ce2(n6, ["onSelect"]);
     return (0, import_react80.createElement)(Item3, {dir: "ltr", asChild: true, onSelect: o13}, (0, import_react80.createElement)(de, m8({}, e12)));
   }
-  function ft({checked: o13, disabled: e12 = false, onCheckedChange: t14, kbd: n6, children: s8}) {
+  function St({checked: o13, disabled: e12 = false, onCheckedChange: t14, kbd: n6, children: s8}) {
     return (0, import_react81.createElement)(CheckboxItem2, {dir: "ltr", onCheckedChange: t14, checked: o13, disabled: e12, asChild: true}, (0, import_react81.createElement)(de, {kbd: n6, hasIndicator: true}, s8));
   }
   var jc = (o13) => o13.stopPropagation();
@@ -21944,47 +21549,47 @@ Please add \`${key}Action\` when creating your handler.`);
   }
   var $c = v6(ze, {width: "fit-content", height: "fit-content", minWidth: 0, variants: {variant: {grid: {display: "grid", gridTemplateColumns: "repeat(4, auto)", gap: 0}, horizontal: {flexDirection: "row"}, menu: {minWidth: 128}}}});
   var Xe = v6(Separator2, {backgroundColor: "$hover", height: 1, marginTop: "$2", marginRight: "-$2", marginBottom: "$2", marginLeft: "-$2"});
-  var iL = v6(RadioItem2, {height: "32px", width: "32px", backgroundColor: "$panel", borderRadius: "4px", padding: "0", margin: "0", display: "flex", alignItems: "center", justifyContent: "center", outline: "none", border: "none", pointerEvents: "all", cursor: "pointer", "&:focus": {backgroundColor: "$hover"}, "&:hover:not(:disabled)": {backgroundColor: "$hover"}});
-  function en({children: o13, disabled: e12 = false, label: t14}) {
+  var dL = v6(RadioItem2, {height: "32px", width: "32px", backgroundColor: "$panel", borderRadius: "4px", padding: "0", margin: "0", display: "flex", alignItems: "center", justifyContent: "center", outline: "none", border: "none", pointerEvents: "all", cursor: "pointer", "&:focus": {backgroundColor: "$hover"}, "&:hover:not(:disabled)": {backgroundColor: "$hover"}});
+  function nn({children: o13, disabled: e12 = false, label: t14}) {
     return (0, import_react83.createElement)(Root5, {dir: "ltr"}, (0, import_react83.createElement)(TriggerItem, {dir: "ltr", asChild: true}, (0, import_react83.createElement)(de, {disabled: e12, hasArrow: true}, t14)), (0, import_react83.createElement)(Content3, {dir: "ltr", asChild: true, sideOffset: 2, alignOffset: -2}, (0, import_react83.createElement)(ze, null, o13, (0, import_react83.createElement)(Arrow4, {offset: 13}))));
   }
-  function St({children: o13}) {
+  function Tt({children: o13}) {
     return (0, import_react84.createElement)(Trigger, {asChild: true}, (0, import_react84.createElement)(ne2, null, o13));
   }
   var et = v6("hr", {height: 1, marginTop: "$1", marginRight: "-$2", marginBottom: "$1", marginLeft: "-$2", border: "none", borderBottom: "1px solid $hover"});
-  function An({fill: o13 = "none", stroke: e12 = "currentColor"}) {
+  function On({fill: o13 = "none", stroke: e12 = "currentColor"}) {
     return (0, import_react86.createElement)("svg", {width: "24", height: "24", viewBox: "0 0 24 24", stroke: e12, fill: o13, xmlns: "http://www.w3.org/2000/svg"}, (0, import_react86.createElement)("rect", {x: "4", y: "4", width: "16", height: "16", rx: "2", strokeWidth: "2"}));
   }
-  function na(o13) {
+  function oa(o13) {
     let n6 = o13, {size: e12 = 16} = n6, t14 = ce2(n6, ["size"]);
     return (0, import_react87.createElement)("svg", m8({width: 24, height: 24}, t14), (0, import_react87.createElement)("circle", {cx: 12, cy: 12, r: e12 / 2}));
   }
-  function sa() {
+  function ra() {
     return (0, import_react88.createElement)("svg", {width: "24", height: "24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg"}, (0, import_react88.createElement)("circle", {cx: 12, cy: 12, r: 8, fill: "none", strokeWidth: 2.5, strokeLinecap: "round", strokeDasharray: 50.26548 * 0.1}));
   }
   var Jc = `${50.26548 * 0.025} ${50.26548 * 0.1}`;
-  function aa() {
+  function ia() {
     return (0, import_react89.createElement)("svg", {width: "24", height: "24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg"}, (0, import_react89.createElement)("circle", {cx: 12, cy: 12, r: 8, fill: "none", strokeWidth: 2.5, strokeLinecap: "round", strokeDasharray: Jc}));
   }
-  function da() {
+  function ca() {
     return (0, import_react90.createElement)("svg", {width: "24", height: "24", viewBox: "1 1.5 21 22", fill: "currentColor", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg"}, (0, import_react90.createElement)("path", {d: "M10.0162 19.2768C10.0162 19.2768 9.90679 19.2517 9.6879 19.2017C9.46275 19.1454 9.12816 19.0422 8.68413 18.8921C8.23384 18.7358 7.81482 18.545 7.42707 18.3199C7.03307 18.101 6.62343 17.7883 6.19816 17.3818C5.77289 16.9753 5.33511 16.3718 4.88482 15.5713C4.43453 14.7645 4.1531 13.8545 4.04053 12.8414C3.92795 11.822 4.04991 10.8464 4.40639 9.91451C4.76286 8.98266 5.39452 8.10084 6.30135 7.26906C7.21444 6.44353 8.29325 5.83377 9.5378 5.43976C10.7823 5.05202 11.833 4.92068 12.6898 5.04576C13.5466 5.16459 14.3878 5.43664 15.2133 5.86191C16.0388 6.28718 16.7768 6.8688 17.4272 7.60678C18.0714 8.34475 18.5404 9.21406 18.8344 10.2147C19.1283 11.2153 19.1721 12.2598 18.9657 13.348C18.7593 14.4299 18.2872 15.4337 17.5492 16.3593C16.8112 17.2849 15.9263 18.0072 14.8944 18.5263C13.8624 19.0391 12.9056 19.3174 12.0238 19.3612C11.142 19.405 10.2101 19.2705 9.22823 18.9578C8.24635 18.6451 7.35828 18.151 6.56402 17.4756C5.77601 16.8002 6.08871 16.8658 7.50212 17.6726C8.90927 18.4731 10.1444 18.8484 11.2076 18.7983C12.2645 18.7545 13.2965 18.4825 14.3034 17.9822C15.3102 17.4819 16.1264 16.8221 16.7518 16.0028C17.3772 15.1835 17.7681 14.3111 17.9244 13.3855C18.0808 12.4599 18.0401 11.5781 17.8025 10.74C17.5586 9.902 17.1739 9.15464 16.6486 8.49797C16.1233 7.8413 15.2289 7.27844 13.9656 6.80939C12.7086 6.34034 11.4203 6.20901 10.1007 6.41539C8.78732 6.61552 7.69599 7.06893 6.82669 7.77564C5.96363 8.48859 5.34761 9.26409 4.97863 10.1021C4.60964 10.9402 4.45329 11.8376 4.50958 12.7945C4.56586 13.7513 4.79101 14.6238 5.18501 15.4118C5.57276 16.1998 5.96363 16.8002 6.35764 17.2129C6.75164 17.6257 7.13313 17.9509 7.50212 18.1886C7.87736 18.4325 8.28074 18.642 8.71227 18.8171C9.15005 18.9922 9.47839 19.111 9.69728 19.1736C9.91617 19.2361 10.0256 19.2705 10.0256 19.2768H10.0162Z", strokeWidth: "2"}));
   }
-  function la() {
+  function pa() {
     return (0, import_react91.createElement)("svg", {width: "24", height: "24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg"}, (0, import_react91.createElement)("circle", {cx: 12, cy: 12, r: 8, fill: "none", strokeWidth: 2, strokeLinecap: "round"}));
   }
-  function ha() {
+  function ua() {
     return (0, import_react92.createElement)("svg", {width: "24", height: "24", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg"}, (0, import_react92.createElement)("rect", {x: "4", y: "4", width: "16", height: "16", rx: "2", strokeWidth: "2", fill: "currentColor", opacity: ".3"}));
   }
-  function ma(o13) {
+  function ga(o13) {
     return (0, import_react94.createElement)("svg", m8({width: 18, height: 18, viewBox: "0 0 15 15", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg"}, o13), (0, import_react94.createElement)("path", {fillRule: "evenodd", clipRule: "evenodd", d: "M2 4.656a.5.5 0 01.5-.5h9.7a.5.5 0 010 1H2.5a.5.5 0 01-.5-.5z"}), (0, import_react94.createElement)("path", {fillRule: "evenodd", clipRule: "evenodd", d: "M6.272 3a.578.578 0 00-.578.578v.578h3.311v-.578A.578.578 0 008.428 3H6.272zm3.733 1.156v-.578A1.578 1.578 0 008.428 2H6.272a1.578 1.578 0 00-1.578 1.578v.578H3.578a.5.5 0 00-.5.5V12.2a1.578 1.578 0 001.577 1.578h5.39a1.578 1.578 0 001.577-1.578V4.656a.5.5 0 00-.5-.5h-1.117zm-5.927 1V12.2a.578.578 0 00.577.578h5.39a.578.578 0 00.577-.578V5.156H4.078z"}), (0, import_react94.createElement)("path", {fillRule: "evenodd", clipRule: "evenodd", d: "M6.272 6.85a.5.5 0 01.5.5v3.233a.5.5 0 11-1 0V7.35a.5.5 0 01.5-.5zM8.428 6.85a.5.5 0 01.5.5v3.233a.5.5 0 11-1 0V7.35a.5.5 0 01.5-.5z"}));
   }
-  function ga(o13) {
+  function fa(o13) {
     return (0, import_react96.createElement)("svg", m8({width: 24, height: 24, viewBox: "-2 -2 28 28", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg"}, o13), (0, import_react96.createElement)("path", {d: "M12.4239 4.62C13.3572 4.62 14.1572 4.73333 14.8239 4.96C15.4906 5.17333 15.9772 5.43333 16.2839 5.74C16.3639 5.82 16.4039 5.94 16.4039 6.1V8.86H14.0639C13.9172 8.86 13.8439 8.78666 13.8439 8.64V7.26C13.4306 7.12666 12.9572 7.06 12.4239 7.06C11.6506 7.06 11.0639 7.18 10.6639 7.42C10.2639 7.66 10.0639 8.04666 10.0639 8.58V9C10.0639 9.38666 10.1639 9.69333 10.3639 9.92C10.5772 10.1333 11.0306 10.3467 11.7239 10.56L13.6439 11.14C14.4706 11.38 15.1172 11.66 15.5839 11.98C16.0506 12.3 16.3772 12.68 16.5639 13.12C16.7639 13.5467 16.8639 14.0733 16.8639 14.7V15.62C16.8639 16.7933 16.4039 17.7133 15.4839 18.38C14.5639 19.0467 13.2839 19.38 11.6439 19.38C10.6706 19.38 9.79723 19.2867 9.0239 19.1C8.2639 18.9133 7.71056 18.6533 7.3639 18.32C7.3239 18.28 7.29056 18.24 7.2639 18.2C7.25056 18.1467 7.2439 18.06 7.2439 17.94V15.74H7.6239C8.2239 16.1533 8.85056 16.4533 9.5039 16.64C10.1572 16.8267 10.9306 16.92 11.8239 16.92C12.6506 16.92 13.2506 16.7867 13.6239 16.52C14.0106 16.2533 14.2039 15.9333 14.2039 15.56V14.88C14.2039 14.6667 14.1639 14.48 14.0839 14.32C14.0172 14.16 13.8706 14.0133 13.6439 13.88C13.4172 13.7467 13.0572 13.6067 12.5639 13.46L10.6639 12.88C9.7839 12.6133 9.11056 12.3 8.6439 11.94C8.17723 11.58 7.85056 11.18 7.6639 10.74C7.49056 10.3 7.4039 9.83333 7.4039 9.34V8.38C7.4039 7.64666 7.61056 7 8.0239 6.44C8.43723 5.88 9.01723 5.44 9.7639 5.12C10.5239 4.78666 11.4106 4.62 12.4239 4.62Z"}));
   }
-  function Sa(o13) {
+  function Ta(o13) {
     return (0, import_react97.createElement)("svg", m8({width: 24, height: 24, viewBox: "-2 -2 28 28", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg"}, o13), (0, import_react97.createElement)("path", {d: "M8.16191 19H5.68191C5.53525 19 5.46191 18.9267 5.46191 18.78V5H8.76191C8.88191 5 8.97525 5.03333 9.04191 5.1C9.10858 5.15333 9.17525 5.27333 9.24191 5.46C9.72191 6.59333 10.1686 7.7 10.5819 8.78C11.0086 9.84667 11.4352 10.98 11.8619 12.18H12.1619C12.6019 10.9667 13.0352 9.79333 13.4619 8.66C13.8886 7.52667 14.3552 6.30667 14.8619 5H18.3219C18.4686 5 18.5419 5.07333 18.5419 5.22V19H16.0619C15.9152 19 15.8419 18.9267 15.8419 18.78V16.26C15.8419 15.5267 15.8486 14.8133 15.8619 14.12C15.8886 13.4267 15.9286 12.6867 15.9819 11.9C16.0486 11.1 16.1419 10.1933 16.2619 9.18H15.9019C15.4352 10.3533 14.9486 11.5667 14.4419 12.82C13.9486 14.06 13.4819 15.2333 13.0419 16.34H11.1019C11.0619 16.34 11.0152 16.3333 10.9619 16.32C10.9219 16.2933 10.8886 16.2467 10.8619 16.18C10.4619 15.18 10.0086 14.06 9.50191 12.82C9.00858 11.58 8.53525 10.3667 8.08191 9.18H7.70191C7.83525 10.18 7.93525 11.0733 8.00191 11.86C8.06858 12.6467 8.10858 13.3933 8.12191 14.1C8.14858 14.8067 8.16191 15.5267 8.16191 16.26V19Z"}));
   }
-  function wa(o13) {
+  function Ia(o13) {
     return (0, import_react98.createElement)("svg", m8({width: 24, height: 24, viewBox: "-2 -2 28 28", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg"}, o13), (0, import_react98.createElement)("path", {d: "M7.68191 19C7.53525 19 7.46191 18.9267 7.46191 18.78V5H10.1219C10.2686 5 10.3419 5.07333 10.3419 5.22V16.56H13.4419V15.02H15.7619C15.9086 15.02 15.9819 15.0933 15.9819 15.24V19H7.68191Z"}));
   }
   var Y3 = v6("button", {position: "relative", height: "32px", width: "32px", backgroundColor: "$panel", borderRadius: "4px", padding: "0", margin: "0", outline: "none", border: "none", pointerEvents: "all", fontSize: "$0", color: "$text", cursor: "pointer", display: "grid", alignItems: "center", justifyContent: "center", "& > *": {gridRow: 1, gridColumn: 1}, "&:disabled": {opacity: "0.5"}, "& > span": {width: "100%", height: "100%", display: "flex", alignItems: "center"}, variants: {bp: {mobile: {backgroundColor: "transparent"}, small: {"&:hover:not(:disabled)": {backgroundColor: "$hover"}}}, size: {small: {height: 32, width: 32, "& svg:nth-of-type(1)": {height: "16px", width: "16px"}}, medium: {height: 44, width: 44, "& svg:nth-of-type(1)": {height: "18px", width: "18px"}}, large: {height: 44, width: 44, "& svg:nth-of-type(1)": {height: "20px", width: "20px"}}}, isActive: {true: {color: "$selected"}}}});
@@ -22009,7 +21614,7 @@ Please add \`${key}Action\` when creating your handler.`);
     let {selectedIds: e12} = o13.document.pageStates[o13.appState.currentPageId];
     return e12.length > 1;
   };
-  function ba() {
+  function ya() {
     let {state: o13, useSelector: e12} = U2(), t14 = e12(Tl), n6 = e12(wl), s8 = e12(Il), r13 = e12(bl), a10 = e12(yl), i9 = (0, import_react79.useCallback)(() => {
       o13.rotate();
     }, [o13]), d9 = (0, import_react79.useCallback)(() => {
@@ -22032,13 +21637,13 @@ Please add \`${key}Action\` when creating your handler.`);
       o13.delete();
     }, [o13]), b8 = (0, import_react79.useCallback)(() => {
       o13.align(Q.Top);
-    }, [o13]), x6 = (0, import_react79.useCallback)(() => {
+    }, [o13]), D7 = (0, import_react79.useCallback)(() => {
       o13.align(Q.CenterVertical);
     }, [o13]), y4 = (0, import_react79.useCallback)(() => {
       o13.align(Q.Bottom);
-    }, [o13]), D7 = (0, import_react79.useCallback)(() => {
+    }, [o13]), x6 = (0, import_react79.useCallback)(() => {
       o13.stretch(Ee.Vertical);
-    }, [o13]), w6 = (0, import_react79.useCallback)(() => {
+    }, [o13]), T5 = (0, import_react79.useCallback)(() => {
       o13.distribute(Me.Vertical);
     }, [o13]), C6 = (0, import_react79.useCallback)(() => {
       o13.align(Q.Left);
@@ -22050,26 +21655,26 @@ Please add \`${key}Action\` when creating your handler.`);
       o13.stretch(Ee.Horizontal);
     }, [o13]), Z4 = (0, import_react79.useCallback)(() => {
       o13.distribute(Me.Horizontal);
-    }, [o13]), se2 = e12(Sl), Se = se2 > 1, nn = se2 > 2;
-    return (0, import_react79.createElement)(Root5, {dir: "ltr"}, (0, import_react79.createElement)(Trigger, {dir: "ltr", asChild: true}, (0, import_react79.createElement)(ne2, {variant: "circle"}, (0, import_react79.createElement)(DotsHorizontalIcon, null))), (0, import_react79.createElement)(xe, null, (0, import_react79.createElement)(import_react79.Fragment, null, (0, import_react79.createElement)(Un, null, (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: d9}, (0, import_react79.createElement)(be2, {label: "Duplicate", kbd: "#D"}, (0, import_react79.createElement)(CopyIcon, null))), (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: i9}, (0, import_react79.createElement)(be2, {label: "Rotate"}, (0, import_react79.createElement)(RotateCounterClockwiseIcon, null))), (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: l10}, (0, import_react79.createElement)(be2, {label: "Toogle Locked", kbd: "#L"}, t14 ? (0, import_react79.createElement)(LockClosedIcon, null) : (0, import_react79.createElement)(LockOpen1Icon, {opacity: 0.4}))), (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: p8}, (0, import_react79.createElement)(be2, {label: "Toogle Aspect Ratio Lock"}, (0, import_react79.createElement)(AspectRatioIcon, {opacity: n6 ? 1 : 0.4}))), (0, import_react79.createElement)(Y3, {disabled: !s8 && !a10, onClick: c7}, (0, import_react79.createElement)(be2, {label: "Group", kbd: "#G"}, (0, import_react79.createElement)(GroupIcon, {opacity: s8 ? 1 : 0.4})))), (0, import_react79.createElement)(Un, null, (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: h4}, (0, import_react79.createElement)(be2, {label: "Move to Back", kbd: "#\u21E7["}, (0, import_react79.createElement)(PinBottomIcon, null))), (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: u5}, (0, import_react79.createElement)(be2, {label: "Move Backward", kbd: "#["}, (0, import_react79.createElement)(ArrowDownIcon, null))), (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: g5}, (0, import_react79.createElement)(be2, {label: "Move Forward", kbd: "#]"}, (0, import_react79.createElement)(ArrowUpIcon, null))), (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: S3}, (0, import_react79.createElement)(be2, {label: "More to Front", kbd: "#\u21E7]"}, (0, import_react79.createElement)(PinTopIcon, null))), (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: I3}, (0, import_react79.createElement)(be2, {label: "Delete", kbd: "\u232B"}, (0, import_react79.createElement)(ma, null)))), (0, import_react79.createElement)(et, null), (0, import_react79.createElement)(Un, null, (0, import_react79.createElement)(Y3, {disabled: !Se, onClick: C6}, (0, import_react79.createElement)(AlignLeftIcon, null)), (0, import_react79.createElement)(Y3, {disabled: !Se, onClick: P3}, (0, import_react79.createElement)(AlignCenterHorizontallyIcon, null)), (0, import_react79.createElement)(Y3, {disabled: !Se, onClick: z3}, (0, import_react79.createElement)(AlignRightIcon, null)), (0, import_react79.createElement)(Y3, {disabled: !Se, onClick: $2}, (0, import_react79.createElement)(StretchHorizontallyIcon, null)), (0, import_react79.createElement)(Y3, {disabled: !nn, onClick: Z4}, (0, import_react79.createElement)(SpaceEvenlyHorizontallyIcon, null))), (0, import_react79.createElement)(Un, null, (0, import_react79.createElement)(Y3, {disabled: !Se, onClick: b8}, (0, import_react79.createElement)(AlignTopIcon, null)), (0, import_react79.createElement)(Y3, {disabled: !Se, onClick: x6}, (0, import_react79.createElement)(AlignCenterVerticallyIcon, null)), (0, import_react79.createElement)(Y3, {disabled: !Se, onClick: y4}, (0, import_react79.createElement)(AlignBottomIcon, null)), (0, import_react79.createElement)(Y3, {disabled: !Se, onClick: D7}, (0, import_react79.createElement)(StretchVerticallyIcon, null)), (0, import_react79.createElement)(Y3, {disabled: !nn, onClick: w6}, (0, import_react79.createElement)(SpaceEvenlyVerticallyIcon, null))))));
+    }, [o13]), re2 = e12(Sl), Se = re2 > 1, It = re2 > 2;
+    return (0, import_react79.createElement)(Root5, {dir: "ltr"}, (0, import_react79.createElement)(Trigger, {dir: "ltr", asChild: true}, (0, import_react79.createElement)(ne2, {variant: "circle"}, (0, import_react79.createElement)(DotsHorizontalIcon, null))), (0, import_react79.createElement)(xe, null, (0, import_react79.createElement)(import_react79.Fragment, null, (0, import_react79.createElement)(zn, null, (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: d9}, (0, import_react79.createElement)(be2, {label: "Duplicate", kbd: "#D"}, (0, import_react79.createElement)(CopyIcon, null))), (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: i9}, (0, import_react79.createElement)(be2, {label: "Rotate"}, (0, import_react79.createElement)(RotateCounterClockwiseIcon, null))), (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: l10}, (0, import_react79.createElement)(be2, {label: "Toogle Locked", kbd: "#L"}, t14 ? (0, import_react79.createElement)(LockClosedIcon, null) : (0, import_react79.createElement)(LockOpen1Icon, {opacity: 0.4}))), (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: p8}, (0, import_react79.createElement)(be2, {label: "Toogle Aspect Ratio Lock"}, (0, import_react79.createElement)(AspectRatioIcon, {opacity: n6 ? 1 : 0.4}))), (0, import_react79.createElement)(Y3, {disabled: !s8 && !a10, onClick: c7}, (0, import_react79.createElement)(be2, {label: "Group", kbd: "#G"}, (0, import_react79.createElement)(GroupIcon, {opacity: s8 ? 1 : 0.4})))), (0, import_react79.createElement)(zn, null, (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: h4}, (0, import_react79.createElement)(be2, {label: "Move to Back", kbd: "#\u21E7["}, (0, import_react79.createElement)(PinBottomIcon, null))), (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: u5}, (0, import_react79.createElement)(be2, {label: "Move Backward", kbd: "#["}, (0, import_react79.createElement)(ArrowDownIcon, null))), (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: g5}, (0, import_react79.createElement)(be2, {label: "Move Forward", kbd: "#]"}, (0, import_react79.createElement)(ArrowUpIcon, null))), (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: S3}, (0, import_react79.createElement)(be2, {label: "More to Front", kbd: "#\u21E7]"}, (0, import_react79.createElement)(PinTopIcon, null))), (0, import_react79.createElement)(Y3, {disabled: !r13, onClick: I3}, (0, import_react79.createElement)(be2, {label: "Delete", kbd: "\u232B"}, (0, import_react79.createElement)(ga, null)))), (0, import_react79.createElement)(et, null), (0, import_react79.createElement)(zn, null, (0, import_react79.createElement)(Y3, {disabled: !Se, onClick: C6}, (0, import_react79.createElement)(AlignLeftIcon, null)), (0, import_react79.createElement)(Y3, {disabled: !Se, onClick: P3}, (0, import_react79.createElement)(AlignCenterHorizontallyIcon, null)), (0, import_react79.createElement)(Y3, {disabled: !Se, onClick: z3}, (0, import_react79.createElement)(AlignRightIcon, null)), (0, import_react79.createElement)(Y3, {disabled: !Se, onClick: $2}, (0, import_react79.createElement)(StretchHorizontallyIcon, null)), (0, import_react79.createElement)(Y3, {disabled: !It, onClick: Z4}, (0, import_react79.createElement)(SpaceEvenlyHorizontallyIcon, null))), (0, import_react79.createElement)(zn, null, (0, import_react79.createElement)(Y3, {disabled: !Se, onClick: b8}, (0, import_react79.createElement)(AlignTopIcon, null)), (0, import_react79.createElement)(Y3, {disabled: !Se, onClick: D7}, (0, import_react79.createElement)(AlignCenterVerticallyIcon, null)), (0, import_react79.createElement)(Y3, {disabled: !Se, onClick: y4}, (0, import_react79.createElement)(AlignBottomIcon, null)), (0, import_react79.createElement)(Y3, {disabled: !Se, onClick: x6}, (0, import_react79.createElement)(StretchVerticallyIcon, null)), (0, import_react79.createElement)(Y3, {disabled: !It, onClick: T5}, (0, import_react79.createElement)(SpaceEvenlyVerticallyIcon, null))))));
   }
-  var Un = v6("div", {position: "relative", display: "flex", width: "100%", background: "none", border: "none", cursor: "pointer", outline: "none", alignItems: "center", justifyContent: "flex-start", padding: 0});
+  var zn = v6("div", {position: "relative", display: "flex", width: "100%", background: "none", border: "none", cursor: "pointer", outline: "none", alignItems: "center", justifyContent: "flex-start", padding: 0});
   var vl = (o13) => o13.appState.isToolLocked;
-  function ya() {
+  function Da() {
     let {state: o13, useSelector: e12} = U2(), t14 = e12(vl);
     return (0, import_react99.createElement)(be2, {label: "Lock Tool", kbd: "7"}, (0, import_react99.createElement)(ne2, {variant: "circle", isActive: t14, onSelect: o13.toggleToolLock}, t14 ? (0, import_react99.createElement)(LockClosedIcon, null) : (0, import_react99.createElement)(LockOpen1Icon, null)));
   }
   var Bl = (o13) => o13.settings.isDebugMode;
-  var Da = (0, import_react71.memo)(function() {
+  var xa = (0, import_react71.memo)(function() {
     let {useSelector: e12} = U2(), t14 = e12(Bl);
-    return (0, import_react71.createElement)(kl, null, (0, import_react71.createElement)(Rl, null, (0, import_react71.createElement)(Yr, null), (0, import_react71.createElement)(Ml, null, (0, import_react71.createElement)(ba, null), (0, import_react71.createElement)(Zr, null), (0, import_react71.createElement)(ya, null))), t14 && (0, import_react71.createElement)(El, null, (0, import_react71.createElement)(Gr, null)));
+    return (0, import_react71.createElement)(kl, null, (0, import_react71.createElement)(Rl, null, (0, import_react71.createElement)(Jr, null), (0, import_react71.createElement)(Ml, null, (0, import_react71.createElement)(ya, null), (0, import_react71.createElement)(_r, null), (0, import_react71.createElement)(Da, null))), t14 && (0, import_react71.createElement)(El, null, (0, import_react71.createElement)(Nr, null)));
   });
   var kl = v6("div", {position: "absolute", bottom: 0, left: 0, right: 0, width: "100%", minWidth: 0, maxWidth: "100%", display: "grid", gridTemplateColumns: "auto auto auto", gridTemplateRows: "auto auto", justifyContent: "space-between", padding: "0", zIndex: 200, pointerEvents: "none", "& > div > *": {pointerEvents: "all"}});
   var Rl = v6("div", {gridRow: 1, gridColumn: 2, display: "flex", width: "fit-content", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: "$4"});
   var El = v6("div", {gridRow: 2, gridColumn: "1 / span 3"});
   var Ml = v6("div", {position: "relative", display: "flex", alignItems: "center", gap: "$2"});
   var Al = (o13) => o13.settings;
-  function xa() {
+  function La() {
     let {state: o13, useSelector: e12} = U2(), t14 = e12(Al), n6 = (0, import_react102.useCallback)(() => {
       o13.setSetting("isDebugMode", (p8) => !p8);
     }, [o13]), s8 = (0, import_react102.useCallback)(() => {
@@ -22085,15 +21690,15 @@ Please add \`${key}Action\` when creating your handler.`);
     }, [o13]), l10 = (0, import_react102.useCallback)(() => {
       o13.setSetting("showCloneHandles", (p8) => !p8);
     }, [o13]);
-    return (0, import_react102.createElement)(en, {label: "Preferences"}, (0, import_react102.createElement)(ft, {checked: t14.isDarkMode, onCheckedChange: s8, kbd: "#\u21E7D"}, "Dark Mode"), (0, import_react102.createElement)(ft, {checked: t14.isFocusMode, onCheckedChange: r13, kbd: "\u21E7."}, "Focus Mode"), (0, import_react102.createElement)(ft, {checked: t14.isDebugMode, onCheckedChange: n6}, "Debug Mode"), (0, import_react102.createElement)(Xe, null), (0, import_react102.createElement)(ft, {checked: t14.showRotateHandles, onCheckedChange: a10}, "Rotate Handles"), (0, import_react102.createElement)(ft, {checked: t14.showBindingHandles, onCheckedChange: i9}, "Binding Handles"), (0, import_react102.createElement)(ft, {checked: t14.showCloneHandles, onCheckedChange: l10}, "Clone Handles"), (0, import_react102.createElement)(ft, {checked: t14.isSnapping, onCheckedChange: d9}, "Always Show Snaps"));
+    return (0, import_react102.createElement)(nn, {label: "Preferences"}, (0, import_react102.createElement)(St, {checked: t14.isDarkMode, onCheckedChange: s8, kbd: "#\u21E7D"}, "Dark Mode"), (0, import_react102.createElement)(St, {checked: t14.isFocusMode, onCheckedChange: r13, kbd: "\u21E7."}, "Focus Mode"), (0, import_react102.createElement)(St, {checked: t14.isDebugMode, onCheckedChange: n6}, "Debug Mode"), (0, import_react102.createElement)(Xe, null), (0, import_react102.createElement)(St, {checked: t14.showRotateHandles, onCheckedChange: a10}, "Rotate Handles"), (0, import_react102.createElement)(St, {checked: t14.showBindingHandles, onCheckedChange: i9}, "Binding Handles"), (0, import_react102.createElement)(St, {checked: t14.showCloneHandles, onCheckedChange: l10}, "Clone Handles"), (0, import_react102.createElement)(St, {checked: t14.isSnapping, onCheckedChange: d9}, "Always Show Snaps"));
   }
-  var La = (0, import_react101.memo)(function({readOnly: e12}) {
-    let {state: t14} = U2(), {onNewProject: n6, onOpenProject: s8, onSaveProject: r13, onSaveProjectAs: a10} = Rn(), i9 = (0, import_react101.useCallback)(() => {
-      var x6, y4;
-      (y4 = (x6 = t14.callbacks).onSignIn) == null || y4.call(x6, t14);
+  var Ca = (0, import_react101.memo)(function({readOnly: e12}) {
+    let {state: t14} = U2(), {onNewProject: n6, onOpenProject: s8, onSaveProject: r13, onSaveProjectAs: a10} = En(), i9 = (0, import_react101.useCallback)(() => {
+      var D7, y4;
+      (y4 = (D7 = t14.callbacks).onSignIn) == null || y4.call(D7, t14);
     }, [t14]), d9 = (0, import_react101.useCallback)(() => {
-      var x6, y4;
-      (y4 = (x6 = t14.callbacks).onSignOut) == null || y4.call(x6, t14);
+      var D7, y4;
+      (y4 = (D7 = t14.callbacks).onSignOut) == null || y4.call(D7, t14);
     }, [t14]), l10 = (0, import_react101.useCallback)(() => {
       t14.cut();
     }, [t14]), p8 = (0, import_react101.useCallback)(() => {
@@ -22109,10 +21714,10 @@ Please add \`${key}Action\` when creating your handler.`);
     }, [t14]), S3 = (0, import_react101.useCallback)(() => {
       t14.selectNone();
     }, [t14]), I3 = t14.callbacks.onNewProject || t14.callbacks.onOpenProject || t14.callbacks.onSaveProject || t14.callbacks.onSaveProjectAs, b8 = t14.callbacks.onSignIn || t14.callbacks.onSignOut;
-    return (0, import_react101.createElement)(Root5, null, (0, import_react101.createElement)(St, null, (0, import_react101.createElement)(HamburgerMenuIcon, null)), (0, import_react101.createElement)(xe, {variant: "menu"}, I3 && (0, import_react101.createElement)(en, {label: "File..."}, t14.callbacks.onNewProject && (0, import_react101.createElement)(te, {onSelect: n6, kbd: "#N"}, "New Project"), t14.callbacks.onOpenProject && (0, import_react101.createElement)(te, {onSelect: s8, kbd: "#O"}, "Open..."), t14.callbacks.onSaveProject && (0, import_react101.createElement)(te, {onSelect: r13, kbd: "#S"}, "Save"), t14.callbacks.onSaveProjectAs && (0, import_react101.createElement)(te, {onSelect: a10, kbd: "\u21E7#S"}, "Save As...")), !e12 && (0, import_react101.createElement)(import_react101.Fragment, null, (0, import_react101.createElement)(en, {label: "Edit..."}, (0, import_react101.createElement)(te, {onSelect: t14.undo, kbd: "#Z"}, "Undo"), (0, import_react101.createElement)(te, {onSelect: t14.redo, kbd: "#\u21E7Z"}, "Redo"), (0, import_react101.createElement)(Xe, {dir: "ltr"}), (0, import_react101.createElement)(te, {onSelect: l10, kbd: "#X"}, "Cut"), (0, import_react101.createElement)(te, {onSelect: p8, kbd: "#C"}, "Copy"), (0, import_react101.createElement)(te, {onSelect: c7, kbd: "#V"}, "Paste"), (0, import_react101.createElement)(Xe, {dir: "ltr"}), (0, import_react101.createElement)(te, {onSelect: h4, kbd: "#\u21E7C"}, "Copy as SVG"), (0, import_react101.createElement)(te, {onSelect: u5}, "Copy as JSON"), (0, import_react101.createElement)(Xe, {dir: "ltr"}), (0, import_react101.createElement)(te, {onSelect: g5, kbd: "#A"}, "Select All"), (0, import_react101.createElement)(te, {onSelect: S3}, "Select None")), (0, import_react101.createElement)(Xe, {dir: "ltr"})), (0, import_react101.createElement)(xa, null), b8 && (0, import_react101.createElement)(import_react101.Fragment, null, (0, import_react101.createElement)(Xe, {dir: "ltr"}), " ", t14.callbacks.onSignIn && (0, import_react101.createElement)(te, {onSelect: i9}, "Sign In"), t14.callbacks.onSignOut && (0, import_react101.createElement)(te, {onSelect: d9}, "Sign Out", (0, import_react101.createElement)(Ge, null, (0, import_react101.createElement)(ExitIcon, null))))));
+    return (0, import_react101.createElement)(Root5, null, (0, import_react101.createElement)(Tt, null, (0, import_react101.createElement)(HamburgerMenuIcon, null)), (0, import_react101.createElement)(xe, {variant: "menu"}, I3 && (0, import_react101.createElement)(nn, {label: "File..."}, t14.callbacks.onNewProject && (0, import_react101.createElement)(te, {onSelect: n6, kbd: "#N"}, "New Project"), t14.callbacks.onOpenProject && (0, import_react101.createElement)(te, {onSelect: s8, kbd: "#O"}, "Open..."), t14.callbacks.onSaveProject && (0, import_react101.createElement)(te, {onSelect: r13, kbd: "#S"}, "Save"), t14.callbacks.onSaveProjectAs && (0, import_react101.createElement)(te, {onSelect: a10, kbd: "\u21E7#S"}, "Save As...")), !e12 && (0, import_react101.createElement)(import_react101.Fragment, null, (0, import_react101.createElement)(nn, {label: "Edit..."}, (0, import_react101.createElement)(te, {onSelect: t14.undo, kbd: "#Z"}, "Undo"), (0, import_react101.createElement)(te, {onSelect: t14.redo, kbd: "#\u21E7Z"}, "Redo"), (0, import_react101.createElement)(Xe, {dir: "ltr"}), (0, import_react101.createElement)(te, {onSelect: l10, kbd: "#X"}, "Cut"), (0, import_react101.createElement)(te, {onSelect: p8, kbd: "#C"}, "Copy"), (0, import_react101.createElement)(te, {onSelect: c7, kbd: "#V"}, "Paste"), (0, import_react101.createElement)(Xe, {dir: "ltr"}), (0, import_react101.createElement)(te, {onSelect: h4, kbd: "#\u21E7C"}, "Copy as SVG"), (0, import_react101.createElement)(te, {onSelect: u5}, "Copy as JSON"), (0, import_react101.createElement)(Xe, {dir: "ltr"}), (0, import_react101.createElement)(te, {onSelect: g5, kbd: "#A"}, "Select All"), (0, import_react101.createElement)(te, {onSelect: S3}, "Select None")), (0, import_react101.createElement)(Xe, {dir: "ltr"})), (0, import_react101.createElement)(La, null), b8 && (0, import_react101.createElement)(import_react101.Fragment, null, (0, import_react101.createElement)(Xe, {dir: "ltr"}), " ", t14.callbacks.onSignIn && (0, import_react101.createElement)(te, {onSelect: i9}, "Sign In"), t14.callbacks.onSignOut && (0, import_react101.createElement)(te, {onSelect: d9}, "Sign Out", (0, import_react101.createElement)(Ge, null, (0, import_react101.createElement)(ExitIcon, null))))));
   });
   var $l = (o13) => Object.keys(o13.document.pages).length > 1;
-  function Pa({page: o13, onOpen: e12, onClose: t14}) {
+  function va({page: o13, onOpen: e12, onClose: t14}) {
     let {state: n6, useSelector: s8} = U2(), [r13, a10] = (0, import_react104.useState)(false), i9 = s8($l), d9 = (0, import_react104.useRef)(null), l10 = (0, import_react104.useCallback)(() => {
       n6.duplicatePage(o13.id), t14 == null || t14();
     }, [n6]), p8 = (0, import_react104.useCallback)(() => {
@@ -22135,18 +21740,18 @@ Please add \`${key}Action\` when creating your handler.`);
         var g5, S3;
         (g5 = d9.current) == null || g5.focus(), (S3 = d9.current) == null || S3.select();
       });
-    }, [r13]), (0, import_react104.createElement)(Root9, {open: r13, onOpenChange: c7}, (0, import_react104.createElement)(Trigger4, {asChild: true, "data-shy": "true"}, (0, import_react104.createElement)(Y3, {bp: Ke}, (0, import_react104.createElement)(Ge, null, (0, import_react104.createElement)(MixerVerticalIcon, null)))), (0, import_react104.createElement)(Vl, null), (0, import_react104.createElement)(Wl, {onKeyDown: h4, onKeyUp: h4}, (0, import_react104.createElement)(Wo, {onSelect: u5}, "Rename"), (0, import_react104.createElement)(Wo, {onSelect: l10}, "Duplicate"), (0, import_react104.createElement)(Wo, {disabled: !i9, onSelect: p8}, "Delete"), (0, import_react104.createElement)(et, null), (0, import_react104.createElement)(Cancel, {asChild: true}, (0, import_react104.createElement)(de, null, "Cancel"))));
+    }, [r13]), (0, import_react104.createElement)(Root9, {open: r13, onOpenChange: c7}, (0, import_react104.createElement)(Trigger4, {asChild: true, "data-shy": "true"}, (0, import_react104.createElement)(Y3, {bp: Ke}, (0, import_react104.createElement)(Ge, null, (0, import_react104.createElement)(MixerVerticalIcon, null)))), (0, import_react104.createElement)(Vl, null), (0, import_react104.createElement)(Wl, {onKeyDown: h4, onKeyUp: h4}, (0, import_react104.createElement)(Vo, {onSelect: u5}, "Rename"), (0, import_react104.createElement)(Vo, {onSelect: l10}, "Duplicate"), (0, import_react104.createElement)(Vo, {disabled: !i9, onSelect: p8}, "Delete"), (0, import_react104.createElement)(et, null), (0, import_react104.createElement)(Cancel, {asChild: true}, (0, import_react104.createElement)(de, null, "Cancel"))));
   }
   var Wl = v6(Content6, {position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)", minWidth: 240, maxWidth: "fit-content", maxHeight: "85vh", marginTop: "-5vh", pointerEvents: "all", backgroundColor: "$panel", border: "1px solid $panelBorder", padding: "$0", borderRadius: "$2", font: "$ui", "&:focus": {outline: "none"}});
   var Vl = v6(Overlay3, {backgroundColor: "rgba(0, 0, 0, .15)", position: "fixed", top: 0, right: 0, bottom: 0, left: 0, width: "100%", height: "100%"});
-  function Wo(t14) {
+  function Vo(t14) {
     var n6 = t14, {onSelect: o13} = n6, e12 = ce2(n6, ["onSelect"]);
     return (0, import_react104.createElement)(Action, {asChild: true, onClick: o13}, (0, import_react104.createElement)(de, m8({}, e12)));
   }
   var tp = (o13) => Object.values(o13.document.pages).sort((e12, t14) => (e12.childIndex || 0) - (t14.childIndex || 0));
   var np = (o13) => o13.document.pages[o13.appState.currentPageId].name;
   var op = (o13) => o13.document.pages[o13.appState.currentPageId].id;
-  function va() {
+  function Ba() {
     let {useSelector: o13} = U2(), e12 = (0, import_react103.useRef)(false), [t14, n6] = (0, import_react103.useState)(false);
     (0, import_react103.useEffect)(() => {
       e12.current !== t14 && (e12.current = t14);
@@ -22164,44 +21769,44 @@ Please add \`${key}Action\` when creating your handler.`);
     }, [e12]), a10 = (0, import_react103.useCallback)((i9) => {
       o13(), e12.changePage(i9);
     }, [e12]);
-    return (0, import_react103.createElement)(import_react103.Fragment, null, (0, import_react103.createElement)(RadioGroup2, {value: s8, onValueChange: a10}, n6.map((i9) => (0, import_react103.createElement)(rp, {key: i9.id}, (0, import_react103.createElement)(RadioItem2, {title: i9.name || "Page", value: i9.id, key: i9.id, asChild: true}, (0, import_react103.createElement)(ap, null, (0, import_react103.createElement)("span", null, i9.name || "Page"), (0, import_react103.createElement)(ItemIndicator2, null, (0, import_react103.createElement)(Ge, null, (0, import_react103.createElement)(CheckIcon, null))))), (0, import_react103.createElement)(Pa, {page: i9, onClose: o13})))), (0, import_react103.createElement)(Xe, null), (0, import_react103.createElement)(Item3, {onSelect: r13, asChild: true}, (0, import_react103.createElement)(de, null, (0, import_react103.createElement)("span", null, "Create Page"), (0, import_react103.createElement)(Ge, null, (0, import_react103.createElement)(PlusIcon, null)))));
+    return (0, import_react103.createElement)(import_react103.Fragment, null, (0, import_react103.createElement)(RadioGroup2, {value: s8, onValueChange: a10}, n6.map((i9) => (0, import_react103.createElement)(rp, {key: i9.id}, (0, import_react103.createElement)(RadioItem2, {title: i9.name || "Page", value: i9.id, key: i9.id, asChild: true}, (0, import_react103.createElement)(ap, null, (0, import_react103.createElement)("span", null, i9.name || "Page"), (0, import_react103.createElement)(ItemIndicator2, null, (0, import_react103.createElement)(Ge, null, (0, import_react103.createElement)(CheckIcon, null))))), (0, import_react103.createElement)(va, {page: i9, onClose: o13})))), (0, import_react103.createElement)(Xe, null), (0, import_react103.createElement)(Item3, {onSelect: r13, asChild: true}, (0, import_react103.createElement)(de, null, (0, import_react103.createElement)("span", null, "Create Page"), (0, import_react103.createElement)(Ge, null, (0, import_react103.createElement)(PlusIcon, null)))));
   }
   var rp = v6("div", {display: "grid", gridTemplateColumns: "1fr auto", gridAutoFlow: "column", '& > *[data-shy="true"]': {opacity: 0}, '&:hover > *[data-shy="true"]': {opacity: 1}});
   var ap = v6(de, {minWidth: 128});
   var Sp = (o13) => o13.document.pageStates[o13.appState.currentPageId].camera.zoom;
-  function Ba() {
+  function ka() {
     let {state: o13, useSelector: e12} = U2(), t14 = e12(Sp);
     return (0, import_react105.createElement)(Root5, null, (0, import_react105.createElement)(Trigger, {asChild: true}, (0, import_react105.createElement)(Tp, {variant: "text"}, Math.round(t14 * 100), "%")), (0, import_react105.createElement)(xe, {align: "end"}, (0, import_react105.createElement)(te, {onSelect: o13.zoomIn, kbd: "#+"}, "Zoom In"), (0, import_react105.createElement)(te, {onSelect: o13.zoomOut, kbd: "#\u2212"}, "Zoom Out"), (0, import_react105.createElement)(te, {onSelect: o13.resetZoom, kbd: "\u21E70"}, "To 100%"), (0, import_react105.createElement)(te, {onSelect: o13.zoomToFit, kbd: "\u21E71"}, "To Fit"), (0, import_react105.createElement)(te, {onSelect: o13.zoomToSelection, kbd: "\u21E72"}, "To Selection")));
   }
   var Tp = v6(ne2, {minWidth: 56});
-  var ka = {[X3.Draw]: (0, import_react106.createElement)(da, null), [X3.Solid]: (0, import_react106.createElement)(la, null), [X3.Dashed]: (0, import_react106.createElement)(sa, null), [X3.Dotted]: (0, import_react106.createElement)(aa, null)};
+  var Ra = {[X3.Draw]: (0, import_react106.createElement)(ca, null), [X3.Solid]: (0, import_react106.createElement)(pa, null), [X3.Dashed]: (0, import_react106.createElement)(ra, null), [X3.Dotted]: (0, import_react106.createElement)(ia, null)};
   var bp = (o13) => o13.appState.selectedStyle.dash;
   var yp = (o13) => o13.preventDefault();
-  var Ra = (0, import_react106.memo)(function() {
+  var Ea = (0, import_react106.memo)(function() {
     let {state: e12, useSelector: t14} = U2(), n6 = t14(bp);
-    return (0, import_react106.createElement)(Root5, {dir: "ltr"}, (0, import_react106.createElement)(St, null, ka[n6]), (0, import_react106.createElement)(xe, {variant: "horizontal"}, Object.values(X3).map((s8) => (0, import_react106.createElement)(Item3, {key: s8, onSelect: yp, asChild: true}, (0, import_react106.createElement)(ne2, {variant: "icon", isActive: n6 === s8, onClick: () => e12.style({dash: s8})}, ka[s8])))));
+    return (0, import_react106.createElement)(Root5, {dir: "ltr"}, (0, import_react106.createElement)(Tt, null, Ra[n6]), (0, import_react106.createElement)(xe, {variant: "horizontal"}, Object.values(X3).map((s8) => (0, import_react106.createElement)(Item3, {key: s8, onSelect: yp, asChild: true}, (0, import_react106.createElement)(ne2, {variant: "icon", isActive: n6 === s8, onClick: () => e12.style({dash: s8})}, Ra[s8])))));
   });
-  var Ea = {[ie2.Small]: (0, import_react107.createElement)(ga, null), [ie2.Medium]: (0, import_react107.createElement)(Sa, null), [ie2.Large]: (0, import_react107.createElement)(wa, null)};
+  var Ma = {[ie2.Small]: (0, import_react107.createElement)(fa, null), [ie2.Medium]: (0, import_react107.createElement)(Ta, null), [ie2.Large]: (0, import_react107.createElement)(Ia, null)};
   var Cp = (o13) => o13.appState.selectedStyle.size;
   var Pp = (o13) => o13.preventDefault();
-  var Ma = (0, import_react107.memo)(function() {
+  var Ha = (0, import_react107.memo)(function() {
     let {state: e12, useSelector: t14} = U2(), n6 = t14(Cp);
-    return (0, import_react107.createElement)(Root5, {dir: "ltr"}, (0, import_react107.createElement)(St, null, Ea[n6]), (0, import_react107.createElement)(xe, {variant: "horizontal"}, Object.values(ie2).map((s8) => (0, import_react107.createElement)(Item3, {key: s8, onSelect: Pp, asChild: true}, (0, import_react107.createElement)(ne2, {isActive: n6 === s8, variant: "icon", onClick: () => e12.style({size: s8})}, Ea[s8])))));
+    return (0, import_react107.createElement)(Root5, {dir: "ltr"}, (0, import_react107.createElement)(Tt, null, Ma[n6]), (0, import_react107.createElement)(xe, {variant: "horizontal"}, Object.values(ie2).map((s8) => (0, import_react107.createElement)(Item3, {key: s8, onSelect: Pp, asChild: true}, (0, import_react107.createElement)(ne2, {isActive: n6 === s8, variant: "icon", onClick: () => e12.style({size: s8})}, Ma[s8])))));
   });
   var Rp = (o13) => o13.appState.selectedStyle.isFilled;
-  var Ha = (0, import_react108.memo)(function() {
+  var Aa = (0, import_react108.memo)(function() {
     let {state: e12, useSelector: t14} = U2(), n6 = t14(Rp), s8 = (0, import_react108.useCallback)((r13) => e12.style({isFilled: r13}), [e12]);
-    return (0, import_react108.createElement)(Root10, {dir: "ltr", asChild: true, checked: n6, onCheckedChange: s8}, (0, import_react108.createElement)(ne2, {variant: "icon"}, (0, import_react108.createElement)(An, null), (0, import_react108.createElement)(Indicator, null, (0, import_react108.createElement)(ha, null))));
+    return (0, import_react108.createElement)(Root10, {dir: "ltr", asChild: true, checked: n6, onCheckedChange: s8}, (0, import_react108.createElement)(ne2, {variant: "icon"}, (0, import_react108.createElement)(On, null), (0, import_react108.createElement)(Indicator, null, (0, import_react108.createElement)(ua, null))));
   });
   var Op = (o13) => o13.appState.selectedStyle.color;
   var Up = (o13) => o13.preventDefault();
   var zp = (o13) => o13.settings.isDarkMode ? "dark" : "light";
-  var Aa = (0, import_react109.memo)(function() {
+  var Oa = (0, import_react109.memo)(function() {
     let {state: e12, useSelector: t14} = U2(), n6 = t14(zp), s8 = t14(Op);
-    return (0, import_react109.createElement)(Root5, {dir: "ltr"}, (0, import_react109.createElement)(St, null, (0, import_react109.createElement)(na, {size: 16, fill: it[n6][s8], stroke: it[n6][s8]})), (0, import_react109.createElement)(xe, {variant: "grid"}, Object.keys(it[n6]).map((r13) => (0, import_react109.createElement)(Item3, {key: r13, onSelect: Up, asChild: true}, (0, import_react109.createElement)(ne2, {variant: "icon", isActive: s8 === r13, onClick: () => e12.style({color: r13})}, (0, import_react109.createElement)(An, {fill: it[n6][r13], stroke: it[n6][r13]}))))));
+    return (0, import_react109.createElement)(Root5, {dir: "ltr"}, (0, import_react109.createElement)(Tt, null, (0, import_react109.createElement)(oa, {size: 16, fill: dt[n6][s8], stroke: dt[n6][s8]})), (0, import_react109.createElement)(xe, {variant: "grid"}, Object.keys(dt[n6]).map((r13) => (0, import_react109.createElement)(Item3, {key: r13, onSelect: Up, asChild: true}, (0, import_react109.createElement)(ne2, {variant: "icon", isActive: s8 === r13, onClick: () => e12.style({color: r13})}, (0, import_react109.createElement)(On, {fill: dt[n6][r13], stroke: dt[n6][r13]}))))));
   });
-  function Oa({readOnly: o13, showPages: e12, showMenu: t14, showStyles: n6, showZoom: s8}) {
-    return (0, import_react100.createElement)(Wp, null, (t14 || e12) && (0, import_react100.createElement)(Qt, {side: "left"}, t14 && (0, import_react100.createElement)(La, {readOnly: o13}), e12 && (0, import_react100.createElement)(va, null)), (0, import_react100.createElement)(Vp, null), (n6 || s8) && (0, import_react100.createElement)(Qt, {side: "right"}, n6 && !o13 && (0, import_react100.createElement)(import_react100.Fragment, null, (0, import_react100.createElement)(Aa, null), (0, import_react100.createElement)(Ma, null), (0, import_react100.createElement)(Ra, null), (0, import_react100.createElement)(Ha, null)), s8 && (0, import_react100.createElement)(Ba, null)));
+  function Ua({readOnly: o13, showPages: e12, showMenu: t14, showStyles: n6, showZoom: s8}) {
+    return (0, import_react100.createElement)(Wp, null, (t14 || e12) && (0, import_react100.createElement)(tn, {side: "left"}, t14 && (0, import_react100.createElement)(Ca, {readOnly: o13}), e12 && (0, import_react100.createElement)(Ba, null)), (0, import_react100.createElement)(Vp, null), (n6 || s8) && (0, import_react100.createElement)(tn, {side: "right"}, n6 && !o13 && (0, import_react100.createElement)(import_react100.Fragment, null, (0, import_react100.createElement)(Oa, null), (0, import_react100.createElement)(Ha, null), (0, import_react100.createElement)(Ea, null), (0, import_react100.createElement)(Aa, null)), s8 && (0, import_react100.createElement)(ka, null)));
   }
   var Wp = v6("div", {width: "100%", position: "absolute", top: 0, left: 0, right: 0, display: "flex", flexDirection: "row", pointerEvents: "none", "& > *": {pointerEvents: "all"}});
   var Vp = v6("div", {flexGrow: 2, pointerEvents: "none"});
@@ -22213,7 +21818,7 @@ Please add \`${key}Action\` when creating your handler.`);
     var n6 = t14, {onSelect: o13} = n6, e12 = ce2(n6, ["onSelect"]);
     return (0, import_react112.createElement)(ContextMenuItem, {dir: "ltr", onSelect: o13, asChild: true}, (0, import_react112.createElement)(ne2, m8({}, e12)));
   }
-  var jn = (t14) => {
+  var $n = (t14) => {
     var n6 = t14, {isSubmenu: o13} = n6, e12 = ce2(n6, ["isSubmenu"]);
     return (0, import_react113.createElement)(ContextMenuTriggerItem, {asChild: true}, (0, import_react113.createElement)(de, m8({hasArrow: o13}, e12)));
   };
@@ -22223,39 +21828,39 @@ Please add \`${key}Action\` when creating your handler.`);
   var ih = (o13) => o13.settings.isDebugMode;
   var dh = (o13) => o13.document.pageStates[o13.appState.currentPageId].selectedIds.some((e12) => o13.document.pages[o13.appState.currentPageId].shapes[e12].children !== void 0);
   var ch = (o13) => o13.stopPropagation();
-  var ja = ({children: o13}) => {
-    let {state: e12, useSelector: t14} = U2(), n6 = t14(sh), s8 = t14(rh), r13 = t14(ah), a10 = t14(ih), i9 = t14(dh), d9 = (0, import_react110.useRef)(null), l10 = (0, import_react110.useCallback)(() => {
-      e12.flipHorizontal();
-    }, [e12]), p8 = (0, import_react110.useCallback)(() => {
-      e12.flipVertical();
-    }, [e12]), c7 = (0, import_react110.useCallback)(() => {
-      e12.duplicate();
-    }, [e12]), h4 = (0, import_react110.useCallback)(() => {
-      e12.group();
-    }, [e12]), u5 = (0, import_react110.useCallback)(() => {
-      e12.moveToBack();
-    }, [e12]), g5 = (0, import_react110.useCallback)(() => {
-      e12.moveBackward();
-    }, [e12]), S3 = (0, import_react110.useCallback)(() => {
-      e12.moveForward();
-    }, [e12]), I3 = (0, import_react110.useCallback)(() => {
-      e12.moveToFront();
-    }, [e12]), b8 = (0, import_react110.useCallback)(() => {
-      e12.delete();
-    }, [e12]), x6 = (0, import_react110.useCallback)(() => {
-      e12.copyJson();
-    }, [e12]), y4 = (0, import_react110.useCallback)(() => {
-      e12.copy();
-    }, [e12]), D7 = (0, import_react110.useCallback)(() => {
-      e12.paste();
-    }, [e12]), w6 = (0, import_react110.useCallback)(() => {
-      e12.copySvg();
-    }, [e12]), C6 = (0, import_react110.useCallback)(() => {
-      e12.undo();
-    }, [e12]), P3 = (0, import_react110.useCallback)(() => {
-      e12.redo();
-    }, [e12]);
-    return (0, import_react110.createElement)(Root11, null, (0, import_react110.createElement)(Trigger5, {dir: "ltr"}, o13), (0, import_react110.createElement)(Content7, {dir: "ltr", ref: d9, onEscapeKeyDown: ch, asChild: true}, (0, import_react110.createElement)(ze, null, n6 ? (0, import_react110.createElement)(import_react110.Fragment, null, (0, import_react110.createElement)(ae, {onSelect: l10, kbd: "\u21E7H"}, "Flip Horizontal"), (0, import_react110.createElement)(ae, {onSelect: p8, kbd: "\u21E7V"}, "Flip Vertical"), (0, import_react110.createElement)(ae, {onSelect: c7, kbd: "#D"}, "Duplicate"), (s8 || i9) && (0, import_react110.createElement)(et, null), s8 && (0, import_react110.createElement)(ae, {onSelect: h4, kbd: "#G"}, "Group"), i9 && (0, import_react110.createElement)(ae, {onSelect: h4, kbd: "#\u21E7G"}, "Ungroup"), (0, import_react110.createElement)(et, null), (0, import_react110.createElement)(gh, {label: "Move"}, (0, import_react110.createElement)(ae, {onSelect: I3, kbd: "\u21E7]"}, "To Front"), (0, import_react110.createElement)(ae, {onSelect: S3, kbd: "]"}, "Forward"), (0, import_react110.createElement)(ae, {onSelect: g5, kbd: "["}, "Backward"), (0, import_react110.createElement)(ae, {onSelect: u5, kbd: "\u21E7["}, "To Back")), (0, import_react110.createElement)(mh, null), s8 && (0, import_react110.createElement)(lh, {hasTwoOrMore: s8, hasThreeOrMore: r13}), (0, import_react110.createElement)(et, null), (0, import_react110.createElement)(ae, {onSelect: y4, kbd: "#C"}, "Copy"), (0, import_react110.createElement)(ae, {onSelect: w6, kbd: "\u21E7#C"}, "Copy as SVG"), a10 && (0, import_react110.createElement)(ae, {onSelect: x6}, "Copy as JSON"), (0, import_react110.createElement)(ae, {onSelect: D7, kbd: "#V"}, "Paste"), (0, import_react110.createElement)(et, null), (0, import_react110.createElement)(ae, {onSelect: b8, kbd: "\u232B"}, "Delete")) : (0, import_react110.createElement)(import_react110.Fragment, null, (0, import_react110.createElement)(ae, {onSelect: D7, kbd: "#V"}, "Paste"), (0, import_react110.createElement)(ae, {onSelect: C6, kbd: "#Z"}, "Undo"), (0, import_react110.createElement)(ae, {onSelect: P3, kbd: "#\u21E7Z"}, "Redo")))));
+  var $a = ({onBlur: o13, children: e12}) => {
+    let {state: t14, useSelector: n6} = U2(), s8 = n6(sh), r13 = n6(rh), a10 = n6(ah), i9 = n6(ih), d9 = n6(dh), l10 = (0, import_react110.useRef)(null), p8 = (0, import_react110.useCallback)(() => {
+      t14.flipHorizontal();
+    }, [t14]), c7 = (0, import_react110.useCallback)(() => {
+      t14.flipVertical();
+    }, [t14]), h4 = (0, import_react110.useCallback)(() => {
+      t14.duplicate();
+    }, [t14]), u5 = (0, import_react110.useCallback)(() => {
+      t14.group();
+    }, [t14]), g5 = (0, import_react110.useCallback)(() => {
+      t14.moveToBack();
+    }, [t14]), S3 = (0, import_react110.useCallback)(() => {
+      t14.moveBackward();
+    }, [t14]), I3 = (0, import_react110.useCallback)(() => {
+      t14.moveForward();
+    }, [t14]), b8 = (0, import_react110.useCallback)(() => {
+      t14.moveToFront();
+    }, [t14]), D7 = (0, import_react110.useCallback)(() => {
+      t14.delete();
+    }, [t14]), y4 = (0, import_react110.useCallback)(() => {
+      t14.copyJson();
+    }, [t14]), x6 = (0, import_react110.useCallback)(() => {
+      t14.copy();
+    }, [t14]), T5 = (0, import_react110.useCallback)(() => {
+      t14.paste();
+    }, [t14]), C6 = (0, import_react110.useCallback)(() => {
+      t14.copySvg();
+    }, [t14]), P3 = (0, import_react110.useCallback)(() => {
+      t14.undo();
+    }, [t14]), z3 = (0, import_react110.useCallback)(() => {
+      t14.redo();
+    }, [t14]);
+    return (0, import_react110.createElement)(Root11, null, (0, import_react110.createElement)(Trigger5, {dir: "ltr"}, e12), (0, import_react110.createElement)(Content7, {dir: "ltr", ref: l10, onEscapeKeyDown: ch, asChild: true, tabIndex: -1, onBlur: o13}, (0, import_react110.createElement)(ze, null, s8 ? (0, import_react110.createElement)(import_react110.Fragment, null, (0, import_react110.createElement)(ae, {onSelect: p8, kbd: "\u21E7H"}, "Flip Horizontal"), (0, import_react110.createElement)(ae, {onSelect: c7, kbd: "\u21E7V"}, "Flip Vertical"), (0, import_react110.createElement)(ae, {onSelect: h4, kbd: "#D"}, "Duplicate"), (r13 || d9) && (0, import_react110.createElement)(et, null), r13 && (0, import_react110.createElement)(ae, {onSelect: u5, kbd: "#G"}, "Group"), d9 && (0, import_react110.createElement)(ae, {onSelect: u5, kbd: "#\u21E7G"}, "Ungroup"), (0, import_react110.createElement)(et, null), (0, import_react110.createElement)(gh, {label: "Move"}, (0, import_react110.createElement)(ae, {onSelect: b8, kbd: "\u21E7]"}, "To Front"), (0, import_react110.createElement)(ae, {onSelect: I3, kbd: "]"}, "Forward"), (0, import_react110.createElement)(ae, {onSelect: S3, kbd: "["}, "Backward"), (0, import_react110.createElement)(ae, {onSelect: g5, kbd: "\u21E7["}, "To Back")), (0, import_react110.createElement)(mh, null), r13 && (0, import_react110.createElement)(lh, {hasTwoOrMore: r13, hasThreeOrMore: a10}), (0, import_react110.createElement)(et, null), (0, import_react110.createElement)(ae, {onSelect: x6, kbd: "#C"}, "Copy"), (0, import_react110.createElement)(ae, {onSelect: C6, kbd: "\u21E7#C"}, "Copy as SVG"), i9 && (0, import_react110.createElement)(ae, {onSelect: y4}, "Copy as JSON"), (0, import_react110.createElement)(ae, {onSelect: T5, kbd: "#V"}, "Paste"), (0, import_react110.createElement)(et, null), (0, import_react110.createElement)(ae, {onSelect: D7, kbd: "\u232B"}, "Delete")) : (0, import_react110.createElement)(import_react110.Fragment, null, (0, import_react110.createElement)(ae, {onSelect: T5, kbd: "#V"}, "Paste"), (0, import_react110.createElement)(ae, {onSelect: P3, kbd: "#Z"}, "Undo"), (0, import_react110.createElement)(ae, {onSelect: z3, kbd: "#\u21E7Z"}, "Redo")))));
   };
   function lh({hasThreeOrMore: o13}) {
     let {state: e12} = U2(), t14 = (0, import_react110.useCallback)(() => {
@@ -22279,20 +21884,20 @@ Please add \`${key}Action\` when creating your handler.`);
     }, [e12]), c7 = (0, import_react110.useCallback)(() => {
       e12.distribute(Me.Horizontal);
     }, [e12]);
-    return (0, import_react110.createElement)(Root11, null, (0, import_react110.createElement)(jn, {isSubmenu: true}, "Align / Distribute"), (0, import_react110.createElement)(Content7, {asChild: true, sideOffset: 2, alignOffset: -2}, (0, import_react110.createElement)(ph, {selectedStyle: o13 ? "threeOrMore" : "twoOrMore"}, (0, import_react110.createElement)(Fe, {onSelect: i9}, (0, import_react110.createElement)(AlignLeftIcon, null)), (0, import_react110.createElement)(Fe, {onSelect: d9}, (0, import_react110.createElement)(AlignCenterHorizontallyIcon, null)), (0, import_react110.createElement)(Fe, {onSelect: l10}, (0, import_react110.createElement)(AlignRightIcon, null)), (0, import_react110.createElement)(Fe, {onSelect: p8}, (0, import_react110.createElement)(StretchHorizontallyIcon, null)), o13 && (0, import_react110.createElement)(Fe, {onSelect: c7}, (0, import_react110.createElement)(SpaceEvenlyHorizontallyIcon, null)), (0, import_react110.createElement)(Fe, {onSelect: t14}, (0, import_react110.createElement)(AlignTopIcon, null)), (0, import_react110.createElement)(Fe, {onSelect: n6}, (0, import_react110.createElement)(AlignCenterVerticallyIcon, null)), (0, import_react110.createElement)(Fe, {onSelect: s8}, (0, import_react110.createElement)(AlignBottomIcon, null)), (0, import_react110.createElement)(Fe, {onSelect: r13}, (0, import_react110.createElement)(StretchVerticallyIcon, null)), o13 && (0, import_react110.createElement)(Fe, {onSelect: a10}, (0, import_react110.createElement)(SpaceEvenlyVerticallyIcon, null)), (0, import_react110.createElement)(Ko, {offset: 13}))));
+    return (0, import_react110.createElement)(Root11, null, (0, import_react110.createElement)($n, {isSubmenu: true}, "Align / Distribute"), (0, import_react110.createElement)(Content7, {asChild: true, sideOffset: 2, alignOffset: -2}, (0, import_react110.createElement)(ph, {selectedStyle: o13 ? "threeOrMore" : "twoOrMore"}, (0, import_react110.createElement)(Fe, {onSelect: i9}, (0, import_react110.createElement)(AlignLeftIcon, null)), (0, import_react110.createElement)(Fe, {onSelect: d9}, (0, import_react110.createElement)(AlignCenterHorizontallyIcon, null)), (0, import_react110.createElement)(Fe, {onSelect: l10}, (0, import_react110.createElement)(AlignRightIcon, null)), (0, import_react110.createElement)(Fe, {onSelect: p8}, (0, import_react110.createElement)(StretchHorizontallyIcon, null)), o13 && (0, import_react110.createElement)(Fe, {onSelect: c7}, (0, import_react110.createElement)(SpaceEvenlyHorizontallyIcon, null)), (0, import_react110.createElement)(Fe, {onSelect: t14}, (0, import_react110.createElement)(AlignTopIcon, null)), (0, import_react110.createElement)(Fe, {onSelect: n6}, (0, import_react110.createElement)(AlignCenterVerticallyIcon, null)), (0, import_react110.createElement)(Fe, {onSelect: s8}, (0, import_react110.createElement)(AlignBottomIcon, null)), (0, import_react110.createElement)(Fe, {onSelect: r13}, (0, import_react110.createElement)(StretchVerticallyIcon, null)), o13 && (0, import_react110.createElement)(Fe, {onSelect: a10}, (0, import_react110.createElement)(SpaceEvenlyVerticallyIcon, null)), (0, import_react110.createElement)(Go, {offset: 13}))));
   }
   var ph = v6(ze, {display: "grid", variants: {selectedStyle: {threeOrMore: {gridTemplateColumns: "repeat(5, auto)"}, twoOrMore: {gridTemplateColumns: "repeat(4, auto)"}}}});
   var hh = (o13) => o13.appState.currentPageId;
   var uh = (o13) => o13.document.pages;
   function mh() {
     let {state: o13, useSelector: e12} = U2(), t14 = e12(hh), n6 = e12(uh), s8 = Object.values(n6).sort((r13, a10) => (r13.childIndex || 0) - (a10.childIndex || 0)).filter((r13) => r13.id !== t14);
-    return s8.length === 0 ? null : (0, import_react110.createElement)(Root11, {dir: "ltr"}, (0, import_react110.createElement)(jn, {isSubmenu: true}, "Move To Page"), (0, import_react110.createElement)(Content7, {dir: "ltr", sideOffset: 2, alignOffset: -2, asChild: true}, (0, import_react110.createElement)(ze, null, s8.map(({id: r13, name: a10}, i9) => (0, import_react110.createElement)(ae, {key: r13, disabled: r13 === t14, onSelect: () => o13.moveToPage(r13)}, a10 || `Page ${i9}`)), (0, import_react110.createElement)(Ko, {offset: 13}))));
+    return s8.length === 0 ? null : (0, import_react110.createElement)(Root11, {dir: "ltr"}, (0, import_react110.createElement)($n, {isSubmenu: true}, "Move To Page"), (0, import_react110.createElement)(Content7, {dir: "ltr", sideOffset: 2, alignOffset: -2, asChild: true}, (0, import_react110.createElement)(ze, null, s8.map(({id: r13, name: a10}, i9) => (0, import_react110.createElement)(ae, {key: r13, disabled: r13 === t14, onSelect: () => o13.moveToPage(r13)}, a10 || `Page ${i9}`)), (0, import_react110.createElement)(Go, {offset: 13}))));
   }
   function gh({children: o13, label: e12}) {
-    return (0, import_react110.createElement)(Root11, {dir: "ltr"}, (0, import_react110.createElement)(jn, {isSubmenu: true}, e12), (0, import_react110.createElement)(Content7, {dir: "ltr", sideOffset: 2, alignOffset: -2, asChild: true}, (0, import_react110.createElement)(ze, null, o13, (0, import_react110.createElement)(Ko, {offset: 13}))));
+    return (0, import_react110.createElement)(Root11, {dir: "ltr"}, (0, import_react110.createElement)($n, {isSubmenu: true}, e12), (0, import_react110.createElement)(Content7, {dir: "ltr", sideOffset: 2, alignOffset: -2, asChild: true}, (0, import_react110.createElement)(ze, null, o13, (0, import_react110.createElement)(Go, {offset: 13}))));
   }
-  var Ko = v6(ContextMenuArrow, {fill: "$panel"});
-  function Wa({onSelect: o13}) {
+  var Go = v6(ContextMenuArrow, {fill: "$panel"});
+  function Va({onSelect: o13}) {
     return (0, import_react114.createElement)(Ih, null, (0, import_react114.createElement)(Y3, {onClick: o13}, (0, import_react114.createElement)(DotFilledIcon, null)));
   }
   var Ih = v6("div", {opacity: 1, zIndex: 100, backgroundColor: "transparent", "& svg": {color: "$muted"}, "&:hover svg": {color: "$text"}});
@@ -22309,30 +21914,35 @@ Please add \`${key}Action\` when creating your handler.`);
   };
   var vh = (o13) => o13.document.pageStates[o13.appState.currentPageId];
   var Bh = (o13) => o13.settings;
-  function Hv({id: o13, document: e12, currentPageId: t14, autofocus: n6 = true, showMenu: s8 = true, showPages: r13 = true, showTools: a10 = true, showZoom: i9 = true, showStyles: d9 = true, showUI: l10 = true, readOnly: p8 = false, onMount: c7, onChange: h4, onUserChange: u5, onNewProject: g5, onSaveProject: S3, onSaveProjectAs: I3, onOpenProject: b8, onSignOut: x6, onSignIn: y4, onUndo: D7, onRedo: w6, onPersist: C6, onPatch: P3, onCommand: z3}) {
-    let [$2, Z4] = (0, import_react56.useState)(o13), [se2, Se] = (0, import_react56.useState)(() => new ut(o13, {onMount: c7, onChange: h4, onUserChange: u5, onNewProject: g5, onSaveProject: S3, onSaveProjectAs: I3, onOpenProject: b8, onSignOut: x6, onSignIn: y4, onUndo: D7, onRedo: w6, onPatch: P3, onCommand: z3, onPersist: C6})), [nn, Ga] = (0, import_react56.useState)(() => ({state: se2, useSelector: se2.useStore}));
+  function Av({id: o13, document: e12, currentPageId: t14, autofocus: n6 = true, showMenu: s8 = true, showPages: r13 = true, showTools: a10 = true, showZoom: i9 = true, showStyles: d9 = true, showUI: l10 = true, readOnly: p8 = false, onMount: c7, onChange: h4, onUserChange: u5, onNewProject: g5, onSaveProject: S3, onSaveProjectAs: I3, onOpenProject: b8, onSignOut: D7, onSignIn: y4, onUndo: x6, onRedo: T5, onPersist: C6, onPatch: P3, onCommand: z3}) {
+    let [$2, Z4] = (0, import_react56.useState)(o13), [re2, Se] = (0, import_react56.useState)(() => new mt(o13, {onMount: c7, onChange: h4, onUserChange: u5, onNewProject: g5, onSaveProject: S3, onSaveProjectAs: I3, onOpenProject: b8, onSignOut: D7, onSignIn: y4, onUndo: x6, onRedo: T5, onPatch: P3, onCommand: z3, onPersist: C6})), [It, Kn] = (0, import_react56.useState)(() => ({state: re2, useSelector: re2.useStore}));
     return (0, import_react56.useEffect)(() => {
       if (o13 === $2)
         return;
-      let Vn = new ut(o13, {onMount: c7, onChange: h4, onUserChange: u5, onNewProject: g5, onSaveProject: S3, onSaveProjectAs: I3, onOpenProject: b8, onSignOut: x6, onSignIn: y4, onUndo: D7, onRedo: w6, onPatch: P3, onCommand: z3, onPersist: C6});
-      Z4(o13), Ga((Na) => T5(m8({}, Na), {state: Vn, useSelector: Vn.useStore})), Se(Vn);
+      let at = new mt(o13, {onMount: c7, onChange: h4, onUserChange: u5, onNewProject: g5, onSaveProject: S3, onSaveProjectAs: I3, onOpenProject: b8, onSignOut: D7, onSignIn: y4, onUndo: x6, onRedo: T5, onPatch: P3, onCommand: z3, onPersist: C6});
+      Z4(o13), Kn((Na) => w6(m8({}, Na), {state: at, useSelector: at.useStore})), Se(at);
     }, [$2, o13]), (0, import_react56.useEffect)(() => {
-      se2.readOnly = p8;
-    }, [se2, p8]), (0, import_react56.useEffect)(() => {
-      !e12 || (e12.id === se2.document.id ? se2.updateDocument(e12) : se2.loadDocument(e12));
-    }, [e12, se2]), (0, import_react56.useEffect)(() => {
-      se2.callbacks = {onMount: c7, onChange: h4, onUserChange: u5, onNewProject: g5, onSaveProject: S3, onSaveProjectAs: I3, onOpenProject: b8, onSignOut: x6, onSignIn: y4, onUndo: D7, onRedo: w6, onPatch: P3, onCommand: z3, onPersist: C6};
-    }, [se2, c7, h4, u5, g5, S3, I3, b8, x6, y4, D7, w6, P3, z3, C6]), (0, import_react56.createElement)(Fo.Provider, {value: nn}, (0, import_react56.createElement)(IdProvider, null, (0, import_react56.createElement)(kh, {key: $2 || "tldraw", id: $2, currentPageId: t14, autofocus: n6, showPages: r13, showMenu: s8, showStyles: d9, showZoom: i9, showTools: a10, showUI: l10, readOnly: p8})));
+      re2.readOnly = p8;
+    }, [re2, p8]), (0, import_react56.useEffect)(() => {
+      !e12 || (e12.id === re2.document.id ? re2.updateDocument(e12) : re2.loadDocument(e12));
+    }, [e12, re2]), (0, import_react56.useEffect)(() => {
+      re2.callbacks = {onMount: c7, onChange: h4, onUserChange: u5, onNewProject: g5, onSaveProject: S3, onSaveProjectAs: I3, onOpenProject: b8, onSignOut: D7, onSignIn: y4, onUndo: x6, onRedo: T5, onPatch: P3, onCommand: z3, onPersist: C6};
+    }, [re2, c7, h4, u5, g5, S3, I3, b8, D7, y4, x6, T5, P3, z3, C6]), (0, import_react56.createElement)(jo.Provider, {value: It}, (0, import_react56.createElement)(IdProvider, null, (0, import_react56.createElement)(kh, {key: $2 || "tldraw", id: $2, currentPageId: t14, autofocus: n6, showPages: r13, showMenu: s8, showStyles: d9, showZoom: i9, showTools: a10, showUI: l10, readOnly: p8})));
   }
   var kh = (0, import_react56.memo)(function({id: e12, currentPageId: t14, autofocus: n6, showPages: s8, showMenu: r13, showZoom: a10, showStyles: i9, showTools: d9, readOnly: l10, showUI: p8}) {
-    var se2, Se;
-    let {state: c7, useSelector: h4} = U2(), u5 = (0, import_react56.useRef)(null), g5 = h4(Lh), S3 = h4(vh), I3 = h4(Ch), b8 = h4(Ph), x6 = h4(Bh), y4 = h4(Dh), D7 = h4(xh), w6 = c7.session !== void 0, C6 = w6 && ((se2 = c7.session) == null ? void 0 : se2.constructor.name) !== "BrushSession" || !y4 || D7 || !!S3.editingId, P3 = w6 || !y4, z3 = w6 && c7.appState.status !== W4.Brushing || !y4, $2 = (0, import_react56.useMemo)(() => ({isDarkMode: x6.isDarkMode}), [x6.isDarkMode]), Z4 = (0, import_react56.useMemo)(() => x6.isDarkMode ? {brushFill: "rgba(180, 180, 180, .05)", brushStroke: "rgba(180, 180, 180, .25)", selected: "rgba(38, 150, 255, 1.000)", selectFill: "rgba(38, 150, 255, 0.05)", background: "#343d45", foreground: "#49555f"} : {}, [x6.isDarkMode]);
-    return (0, import_react56.useEffect)(() => {
+    var Se, It;
+    let {state: c7, useSelector: h4} = U2(), u5 = (0, import_react56.useRef)(null), g5 = h4(Lh), S3 = h4(vh), I3 = h4(Ch), b8 = h4(Ph), D7 = h4(Bh), y4 = h4(Dh), x6 = h4(xh), T5 = c7.session !== void 0, C6 = T5 && ((Se = c7.session) == null ? void 0 : Se.constructor.name) !== "BrushSession" || !y4 || x6 || !!S3.editingId, P3 = T5 || !y4, z3 = T5 && c7.appState.status !== W4.Brushing || !y4, $2 = (0, import_react56.useMemo)(() => ({isDarkMode: D7.isDarkMode}), [D7.isDarkMode]), Z4 = (0, import_react56.useMemo)(() => D7.isDarkMode ? {brushFill: "rgba(180, 180, 180, .05)", brushStroke: "rgba(180, 180, 180, .25)", selected: "rgba(38, 150, 255, 1.000)", selectFill: "rgba(38, 150, 255, 0.05)", background: "#343d45", foreground: "#49555f"} : {}, [D7.isDarkMode]);
+    (0, import_react56.useEffect)(() => {
       !t14 || c7.changePage(t14);
-    }, [t14, c7]), (0, import_react56.createElement)(Eh, {ref: u5, tabIndex: 0, className: x6.isDarkMode ? _o : ""}, (0, import_react56.createElement)(Rh, {focusableRef: u5, autofocus: n6}), (0, import_react56.createElement)(ja, null, (0, import_react56.createElement)(Renderer, {id: e12, containerRef: u5, shapeUtils: qe, page: g5, pageState: S3, snapLines: I3, users: b8, userId: (Se = c7.state.room) == null ? void 0 : Se.userId, theme: Z4, meta: $2, hideBounds: C6, hideHandles: P3, hideIndicators: z3, hideBindingHandles: !x6.showBindingHandles, hideCloneHandles: !x6.showCloneHandles, hideRotateHandles: !x6.showRotateHandles, onPinchStart: c7.onPinchStart, onPinchEnd: c7.onPinchEnd, onPinch: c7.onPinch, onPan: c7.onPan, onZoom: c7.onZoom, onPointerDown: c7.onPointerDown, onPointerMove: c7.onPointerMove, onPointerUp: c7.onPointerUp, onPointCanvas: c7.onPointCanvas, onDoubleClickCanvas: c7.onDoubleClickCanvas, onRightPointCanvas: c7.onRightPointCanvas, onDragCanvas: c7.onDragCanvas, onReleaseCanvas: c7.onReleaseCanvas, onPointShape: c7.onPointShape, onDoubleClickShape: c7.onDoubleClickShape, onRightPointShape: c7.onRightPointShape, onDragShape: c7.onDragShape, onHoverShape: c7.onHoverShape, onUnhoverShape: c7.onUnhoverShape, onReleaseShape: c7.onReleaseShape, onPointBounds: c7.onPointBounds, onDoubleClickBounds: c7.onDoubleClickBounds, onRightPointBounds: c7.onRightPointBounds, onDragBounds: c7.onDragBounds, onHoverBounds: c7.onHoverBounds, onUnhoverBounds: c7.onUnhoverBounds, onReleaseBounds: c7.onReleaseBounds, onPointBoundsHandle: c7.onPointBoundsHandle, onDoubleClickBoundsHandle: c7.onDoubleClickBoundsHandle, onRightPointBoundsHandle: c7.onRightPointBoundsHandle, onDragBoundsHandle: c7.onDragBoundsHandle, onHoverBoundsHandle: c7.onHoverBoundsHandle, onUnhoverBoundsHandle: c7.onUnhoverBoundsHandle, onReleaseBoundsHandle: c7.onReleaseBoundsHandle, onPointHandle: c7.onPointHandle, onDoubleClickHandle: c7.onDoubleClickHandle, onRightPointHandle: c7.onRightPointHandle, onDragHandle: c7.onDragHandle, onHoverHandle: c7.onHoverHandle, onUnhoverHandle: c7.onUnhoverHandle, onReleaseHandle: c7.onReleaseHandle, onError: c7.onError, onRenderCountChange: c7.onRenderCountChange, onShapeChange: c7.onShapeChange, onShapeBlur: c7.onShapeBlur, onShapeClone: c7.onShapeClone, onBoundsChange: c7.updateBounds, onKeyDown: c7.onKeyDown, onKeyUp: c7.onKeyUp})), p8 && (0, import_react56.createElement)(Mh, null, x6.isFocusMode ? (0, import_react56.createElement)(Wa, {onSelect: c7.toggleFocusMode}) : (0, import_react56.createElement)(import_react56.Fragment, null, (0, import_react56.createElement)(Oa, {readOnly: l10, showPages: s8, showMenu: r13, showStyles: i9, showZoom: a10}), (0, import_react56.createElement)(Hh, null), d9 && !l10 && (0, import_react56.createElement)(Da, null))));
+    }, [t14, c7]);
+    let re2 = (0, import_react56.useCallback)((Kn) => {
+      let at = u5.current;
+      !at || !at.contains(Kn.relatedTarget) || (at.dispatchEvent(new Event("pointerdown", {bubbles: true})), at.dispatchEvent(new Event("pointerup", {bubbles: true})));
+    }, []);
+    return (0, import_react56.createElement)(Eh, {ref: u5, tabIndex: 0, className: D7.isDarkMode ? qo : ""}, (0, import_react56.createElement)(Rh, {focusableRef: u5, autofocus: n6}), (0, import_react56.createElement)($a, {onBlur: re2}, (0, import_react56.createElement)(Renderer, {id: e12, containerRef: u5, shapeUtils: qe, page: g5, pageState: S3, snapLines: I3, users: b8, userId: (It = c7.state.room) == null ? void 0 : It.userId, theme: Z4, meta: $2, hideBounds: C6, hideHandles: P3, hideIndicators: z3, hideBindingHandles: !D7.showBindingHandles, hideCloneHandles: !D7.showCloneHandles, hideRotateHandles: !D7.showRotateHandles, onPinchStart: c7.onPinchStart, onPinchEnd: c7.onPinchEnd, onPinch: c7.onPinch, onPan: c7.onPan, onZoom: c7.onZoom, onPointerDown: c7.onPointerDown, onPointerMove: c7.onPointerMove, onPointerUp: c7.onPointerUp, onPointCanvas: c7.onPointCanvas, onDoubleClickCanvas: c7.onDoubleClickCanvas, onRightPointCanvas: c7.onRightPointCanvas, onDragCanvas: c7.onDragCanvas, onReleaseCanvas: c7.onReleaseCanvas, onPointShape: c7.onPointShape, onDoubleClickShape: c7.onDoubleClickShape, onRightPointShape: c7.onRightPointShape, onDragShape: c7.onDragShape, onHoverShape: c7.onHoverShape, onUnhoverShape: c7.onUnhoverShape, onReleaseShape: c7.onReleaseShape, onPointBounds: c7.onPointBounds, onDoubleClickBounds: c7.onDoubleClickBounds, onRightPointBounds: c7.onRightPointBounds, onDragBounds: c7.onDragBounds, onHoverBounds: c7.onHoverBounds, onUnhoverBounds: c7.onUnhoverBounds, onReleaseBounds: c7.onReleaseBounds, onPointBoundsHandle: c7.onPointBoundsHandle, onDoubleClickBoundsHandle: c7.onDoubleClickBoundsHandle, onRightPointBoundsHandle: c7.onRightPointBoundsHandle, onDragBoundsHandle: c7.onDragBoundsHandle, onHoverBoundsHandle: c7.onHoverBoundsHandle, onUnhoverBoundsHandle: c7.onUnhoverBoundsHandle, onReleaseBoundsHandle: c7.onReleaseBoundsHandle, onPointHandle: c7.onPointHandle, onDoubleClickHandle: c7.onDoubleClickHandle, onRightPointHandle: c7.onRightPointHandle, onDragHandle: c7.onDragHandle, onHoverHandle: c7.onHoverHandle, onUnhoverHandle: c7.onUnhoverHandle, onReleaseHandle: c7.onReleaseHandle, onError: c7.onError, onRenderCountChange: c7.onRenderCountChange, onShapeChange: c7.onShapeChange, onShapeBlur: c7.onShapeBlur, onShapeClone: c7.onShapeClone, onBoundsChange: c7.updateBounds, onKeyDown: c7.onKeyDown, onKeyUp: c7.onKeyUp})), p8 && (0, import_react56.createElement)(Mh, null, D7.isFocusMode ? (0, import_react56.createElement)(Va, {onSelect: c7.toggleFocusMode}) : (0, import_react56.createElement)(import_react56.Fragment, null, (0, import_react56.createElement)(Ua, {readOnly: l10, showPages: s8, showMenu: r13, showStyles: i9, showZoom: a10}), (0, import_react56.createElement)(Hh, null), d9 && !l10 && (0, import_react56.createElement)(xa, null))));
   });
   var Rh = (0, import_react56.memo)(function({focusableRef: e12, autofocus: t14}) {
-    return Wr(e12), Kr(), (0, import_react56.useEffect)(() => {
+    return Vr(e12), Gr(), (0, import_react56.useEffect)(() => {
       var n6;
       t14 && ((n6 = e12.current) == null || n6.focus());
     }, [t14]), null;
@@ -22342,14 +21952,14 @@ Please add \`${key}Action\` when creating your handler.`);
   var Hh = v6("div", {flexGrow: 2});
   // @license © 2020 Google LLC. Licensed under the Apache License, Version 2.0.
 
-  // src/utils/vscode.ts
+  // editor/src/utils/vscode.ts
   var vscode = acquireVsCodeApi();
 
-  // src/utils/defaultDocument.ts
+  // editor/src/utils/defaultDocument.ts
   var defaultDocument = {
     id: "doc",
     name: "New Document",
-    version: ut.version,
+    version: mt.version,
     pages: {
       page: {
         id: "page",
@@ -22371,7 +21981,7 @@ Please add \`${key}Action\` when creating your handler.`);
     }
   };
 
-  // src/types.ts
+  // editor/src/types.ts
   var UI_EVENT;
   (function(UI_EVENT2) {
     UI_EVENT2["TLDRAW_UPDATED"] = "TLDRAW_UPDATED";
@@ -22381,12 +21991,12 @@ Please add \`${key}Action\` when creating your handler.`);
     EXTENSION_EVENT2["FILE_UPDATED"] = "FILE_UPDATED";
   })(EXTENSION_EVENT || (EXTENSION_EVENT = {}));
 
-  // src/utils/sanitizeDocument.ts
+  // editor/src/utils/sanitizeDocument.ts
   function sanitizeDocument(prev, next) {
     return next;
   }
 
-  // src/app.tsx
+  // editor/src/app.tsx
   function App() {
     const rTLDrawState = React8.useRef();
     const rInitialDocument = React8.useRef(currentFile ? currentFile.document : defaultDocument);
@@ -22405,7 +22015,7 @@ Please add \`${key}Action\` when creating your handler.`);
     }, []);
     return /* @__PURE__ */ React8.createElement("div", {
       className: "tldraw"
-    }, /* @__PURE__ */ React8.createElement(Hv, {
+    }, /* @__PURE__ */ React8.createElement(Av, {
       id: rInitialDocument.current.id,
       document: rInitialDocument.current,
       onMount: handleMount,
@@ -22414,6 +22024,6 @@ Please add \`${key}Action\` when creating your handler.`);
     }));
   }
 
-  // src/index.tsx
+  // editor/src/index.tsx
   import_react_dom2.default.render(/* @__PURE__ */ import_react115.default.createElement(import_react115.default.StrictMode, null, /* @__PURE__ */ import_react115.default.createElement(App, null)), document.getElementById("root"));
 })();

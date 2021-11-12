@@ -4,7 +4,7 @@ import { vscode } from './utils/vscode'
 import { defaultDocument } from './utils/defaultDocument'
 import { UI_EVENT } from './types'
 import './styles.css'
-import { sanitizeDocument } from 'utils/sanitizeDocument'
+import { sanitizeDocument } from './utils/sanitizeDocument'
 
 // Will be placed in global scope by extension
 declare let currentFile: TLDrawFile

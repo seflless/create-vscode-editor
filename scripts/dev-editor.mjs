@@ -3,15 +3,15 @@ import fs from 'fs'
 import esbuildServe from 'esbuild-serve'
 
 async function main() {
-  if (!fs.existsSync('./dist')) {
-    fs.mkdirSync('./dist')
+  if (!fs.existsSync('./editor/dist')) {
+    fs.mkdirSync('./editor/dist')
   }
 
   try {
     await esbuildServe(
       {
-        entryPoints: ['src/index.tsx'],
-        outfile: 'dist/index.js',
+        entryPoints: ['editor/src/index.tsx'],
+        outfile: 'editor/dist/index.js',
         minify: false,
         bundle: true,
         incremental: true,
@@ -26,7 +26,7 @@ async function main() {
         },
       },
       {
-        port: 5420,
+        port: 4000,
         root: './dist',
         live: true,
       }
