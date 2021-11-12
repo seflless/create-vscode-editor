@@ -13,10 +13,12 @@ Checkout the [Tldraw VS Code editor](https://marketplace.visualstudio.com/items?
  - Make `yarn start` work. Currently you need to have two windows running
    - auto open VS Code to project root
  - Remove need to have a VS Code window to debug/run the extension
+ - Get installer building working 
  - Make sure setup instructions are accurate
  - Add npm publish script
 
 **Future Work**
+ - Add instructions and scripts for publishing automatically to the Marketplace
  - Add hot reloading to both the extension and editor app. Switch from esbuild to Vite (uses esbuild anyway)
  - Optimize editor instance launch times. Feels like >1sec right now on github.dev, vscode.dev, Codespaces
    - It's much faster on desktop but still not code editor level fast. Tldraw itself might need some optimizing for initialization speed.
