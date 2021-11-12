@@ -32,6 +32,7 @@ Checkout the [Tldraw VS Code editor](https://marketplace.visualstudio.com/items?
  - Provide some optional useful editor building infrastructure 
   - An undo/redo manager
   - An app data model
+  - Multiplayer framework or Live Share integration
   - Utilities for maintaining file formats with best practices for being easily evolvable/serializable.
  - Add CLI support for flags for language `ts`/`js` and UI frameworks other than `react` like `vue`
  - Use a proper CLI framework for the generator
