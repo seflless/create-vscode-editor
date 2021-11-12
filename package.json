@@ -8,9 +8,11 @@
   "keywords": [
   ],
   "scripts": {
+    "start": "yarn start:editor && yarn start:extension",
     "start:editor": "node scripts/dev-editor.mjs -w",
-    "start:extension": "node scripts/dev-extension.mjs -w",
-    "build": "node scripts/build.mjs"
+    "start:extension": "code extension && node scripts/dev-extension.mjs -w",
+    "build:editor": "node scripts/build-editor.mjs",
+    "build:extension": "node scripts/build-extension.mjs"
   },
   "dependencies": {},
   "devDependencies": {

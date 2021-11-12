@@ -26,7 +26,7 @@ async function main() {
         },
       },
       {
-        port: 4000,
+        port: 5420,
         root: './dist',
         live: true,
       }
