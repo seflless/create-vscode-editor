@@ -3,6 +3,14 @@
   "version": "0.0.1",
   "description": "A custom editor for VS Code",
   "author": "@seflless",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seflless/create-vscode-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seflless/create-vscode-editor/issues"
+  },
+  "homepage": "https://github.com/seflless/create-vscode-editor",
   "license": "MIT",
   "keywords": [
   ],
