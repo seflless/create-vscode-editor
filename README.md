@@ -7,6 +7,7 @@ Checkout the [Tldraw VS Code editor](https://marketplace.visualstudio.com/items?
  - Make it follow the `yarn create` / create-react-app approach for easily quickly creating a new project
   - https://classic.yarnpkg.com/en/docs/cli/create
   - https://classic.yarnpkg.com/blog/2017/05/12/introducing-yarn/
+ - Switch out Tldraw for a much simpler editor example. Make sure it's somewhat compelling and matches the vision of the project.
  - Make `yarn start` work. Currently you need to have two windows running
    - auto open VS Code to project root
  - Remove need to have a VS Code window to debug/run the extension

@@ -1,5 +1,5 @@
 {
-  "name": "vscode-editor",
+  "name": "create-vscode-extension",
   "version": "0.0.1",
   "private": true,
   "description": "A VS Code extension for a custom editor",
