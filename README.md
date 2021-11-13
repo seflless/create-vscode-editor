@@ -12,7 +12,7 @@ Checkout the [Tldraw VS Code editor](https://marketplace.visualstudio.com/items?
 
 ### Todos
  - Register create-vscode-editor. Running it would be
-  - `yarn create vscode-editor custom-editor`
+  - `yarn create vscode-editor my-editor`
  - Make it follow the `yarn create` / create-react-app approach for easily quickly creating a new project
   - https://classic.yarnpkg.com/en/docs/cli/create
   - https://classic.yarnpkg.com/blog/2017/05/12/introducing-yarn/
@@ -84,6 +84,8 @@ In the `vscode/extension` folder:
 
 #### References
 
+- [yarn create](https://classic.yarnpkg.com/en/docs/cli/create)
+ - [Yarn Create & Yarn 1.0](https://classic.yarnpkg.com/blog/2017/05/12/introducing-yarn/)
 - [VS Code Marketplace Manager](https://marketplace.visualstudio.com/manage/)
 - [Web Extensions Guide](https://code.visualstudio.com/api/extension-guides/web-extensions)
   - [Test Your Web Extension](https://code.visualstudio.com/api/extension-guides/web-extensions#test-your-web-extension)

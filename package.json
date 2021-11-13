@@ -1,6 +1,6 @@
 {
   "name": "create-vscode-editor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A custom editor for VS Code",
   "author": "@seflless",
   "repository": {
@@ -12,8 +12,8 @@
   },
   "homepage": "https://github.com/seflless/create-vscode-editor",
   "license": "MIT",
-  "keywords": [
-  ],
+  "keywords": [],
+  "bin": "./bin/generate.mjs",
   "scripts": {
     "start": "yarn start:editor && yarn start:extension",
     "start:editor": "node scripts/dev-editor.mjs -w",
@@ -21,7 +21,10 @@
     "build:editor": "node scripts/build-editor.mjs",
     "build:extension": "node scripts/build-extension.mjs"
   },
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "fs-extra": "^10.0.0"
+  },
   "devDependencies": {
     "@tldraw/tldraw": "^0.1.11",
     "@types/node": "^14.14.35",
