@@ -4,7 +4,7 @@ Easily create custom VS Code editors, using React for the UI.
 **WARNING: This project is not ready for production use. Proceed with caution**
 
 This is an opionated VS Code extension generator with the following features out of the box:
- - Editor UIs are built with React
+ - You use React to build the Editor UX
  - Editors will automatically work in all VS Code distributions: 
    - [VS Code desktop](https://code.visualstudio.com/download)
    - [github.dev](https://github.dev)
