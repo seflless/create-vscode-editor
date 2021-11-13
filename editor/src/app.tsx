@@ -36,7 +36,6 @@ export default function App(): JSX.Element {
 
   return (
     <div className="tldraw">
-      <h1>Bye!</h1>
       <TLDraw
         id={rInitialDocument.current.id}
         document={rInitialDocument.current}
