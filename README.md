@@ -3,16 +3,16 @@ Easily create custom VS Code editors, using React for the UI.
 
 This is an opionated VS Code extension generator with the following features out of the box:
  - Editor UIs are built with React
- - Editors will automatically work in all VS Code distributions
-   - VS Code desktop
-   - https://github.dev
-   - https://vscode.dev
-   - Github Codespaces
- - Fast hot-module-reloading using Vite (Coming soon)
+ - Editors will automatically work in all VS Code distributions: 
+   - [VS Code desktop](https://code.visualstudio.com/download)
+   - [github.dev](https://github.dev)
+   - [vscode.dev](https://vscode.dev)
+   - [Github Codespaces](https://github.com/features/codespaces)
+ - Fast HMR using Vite (Coming soon)
  - VS Code (F5) launching integrating
  - Instructions and scripts for automatically publishing to the VS Code Marketplace
 
-Checkout the [Tldraw VS Code editor](https://marketplace.visualstudio.com/items?itemName=tldraw-org.tldraw-vscode), that I and other's built, that this is based on.
+Checkout the [Tldraw VS Code editor extension](https://marketplace.visualstudio.com/items?itemName=tldraw-org.tldraw-vscode), that others and I built. This code is extracted from the [Tldraw repo](https://github.com/tldraw/tldraw/tree/main/vscode).
 
 ### Install and Run
 
@@ -24,10 +24,11 @@ Checkout the [Tldraw VS Code editor](https://marketplace.visualstudio.com/items?
    1. Changing the code in editor/src
    1. Use Command+R to reload the extension after you make changes to the editor code ()
    1. Rinse and repeat
- 1. To 
- 1. Coming soon: automated publishing to the Marketplace. For now you can use the workflow where you upload the .vsix installer file
+ 1. To share your extension:
+  1. Create an extension installer, you can share directly to people
+    1. `yarn package`
+  1. Coming soon: automated publishing to the Marketplace. For now you can use the workflow where you upload the .vsix installer file
  
-
 ### Todos
  - Register create-vscode-editor. Running it would be
   - `yarn create vscode-editor my-editor`
