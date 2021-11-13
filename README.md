@@ -16,7 +16,7 @@ Checkout the [Tldraw VS Code editor extension](https://marketplace.visualstudio.
 
 Example editors built with this project:
 
- - [Make your own custom Tldraw VS Code Editor](https://github.com/seflless/tldraw-vscode-editor)
+ - [Make your own customized Tldraw editor for VS Code](https://github.com/seflless/tldraw-vscode-editor)
 
 ### Install and Run
 
