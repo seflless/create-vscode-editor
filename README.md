@@ -14,6 +14,10 @@ This is an opionated VS Code extension generator with the following features out
 
 Checkout the [Tldraw VS Code editor extension](https://marketplace.visualstudio.com/items?itemName=tldraw-org.tldraw-vscode), that others and I built. This code is extracted from the [Tldraw repo](https://github.com/tldraw/tldraw/tree/main/vscode).
 
+Example editors built with this project:
+
+ - [Make your own custom Tldraw VS Code Editor](https://github.com/seflless/tldraw-vscode-editor)
+
 ### Install and Run
 
  1. `yarn create vscode-editor my-editor`
