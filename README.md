@@ -1,6 +1,8 @@
 ## Create VS Code Editors
 Easily create custom VS Code editors, using React for the UI.
 
+While working on the Tldraw extension I couldn't find any projects that uses React for the editor UI. Also none of the example editors supported web VS Code like GitHub.dev, vscode.dev, and GitHub Codespaces. This project generated an app that has all of these types of things working out of the box. Also a better dev workflow than the VS Code team's example code.
+
 Like create-react-app, this is a project generator that is very opinionated in order work out of the box.
 
 Checkout the [Tldraw VS Code editor](https://marketplace.visualstudio.com/items?itemName=tldraw-org.tldraw-vscode), that this module was spun out from.
