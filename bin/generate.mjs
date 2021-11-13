@@ -25,6 +25,7 @@ if( fs.existsSync(appFolderPath) ){
 await fs.mkdir(appFolderPath);
 
 const copyList = [
+    ".vscode",
     "docs",
     "editor",
     "extension",
