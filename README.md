@@ -28,7 +28,7 @@ Example editors built with this project:
  1. This will automatically open your editor project in VS Code
  1. Now iterate on your custom editor by
    1. Changing the code in editor/src
-   1. Use Command+R to reload the extension after you make changes to the editor code ()
+   1. Use `Command+R` to reload the extension after you make changes to the editor code (HMR coming soon)
    1. Rinse and repeat
  1. To share your extension:
   1. Create an extension installer, you can share directly to people
