@@ -1,6 +1,6 @@
 {
   "name": "create-vscode-editor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A custom editor for VS Code",
   "author": "@seflless",
   "repository": {
@@ -18,10 +18,10 @@
     "start": "concurrently npm:start:*",
     "start:editor": "node scripts/dev-editor.mjs -w",
     "start:extension": "code extension && node scripts/dev-extension.mjs -w",
-    "build": "npm run build:editor && npm run build:extension",
+    "build": "yarn build:editor && yarn build:extension",
     "build:editor": "node scripts/build-editor.mjs",
-    "build:extension": "node scripts/build-extension.mjs",
-    "package": "npm run build:editor && npm run build:extension && vsce package"
+    "build:extension": "node scripts/build-extension.js",
+    "package": "yarn build && node scripts/package.js"
   },
   "dependencies": {
     "chalk": "^4.1.2",

@@ -1,13 +1,11 @@
 {
-	"name": "tldraw-vscode",
-	"displayName": "TLDraw",
-	"description": "The TLDraw Extension for VS Code.",
-	"version": "0.1.15",
-	"license": "MIT",
-	"publisher": "tldraw-org",
-	"repository": {
+	"name": "vscode-editor",
+	"displayName": "VS Code Editor",
+	"description": "A Custom Editor Extension for VS Code.",
+	"version": "0.0.4",
+	"license": "MIT","repository": {
 		"type": "git",
-		"url": "https://github.com/tldraw/tldraw"
+		"url": "https://github.com/seflless/create-vscode-editor"
 	},
 	"engines": {
 		"vscode": "^1.59.0"
@@ -63,8 +61,6 @@
 		"start:vscode": "node scripts/dev & yarn types:dev",
 		"types:dev": "tsc -w",
 		"web": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=.",
-		"package": "cd ../editor && yarn build && cd ../extension && node scripts/build && node scripts/package",
-		"vscode:publish": "yarn version && yarn package && vsce publish",
 		"lint": "eslint src --ext ts"
 	},
 	"dependencies": {},

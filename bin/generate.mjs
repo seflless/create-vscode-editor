@@ -32,6 +32,7 @@ const copyList = [
     ".npmignore",
     ".gitignore",
     "package.json",
+    "tsconfig.json",
     "yarn.lock",
     "node_modules"
 ]

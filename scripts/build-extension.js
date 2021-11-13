@@ -5,18 +5,19 @@ const { gzip } = require('zlib')
 const pkg = require('../package.json')
 
 async function main() {
-  if (fs.existsSync('./dist')) {
-    fs.rmSync('./dist', { recursive: true }, (e) => {
+  if (fs.existsSync('./extension/dist')) {
+    fs.rmSync('./extension/dist', { recursive: true }, (e) => {
       if (e) {
         throw e
       }
     })
   }
+  
 
   try {
     const esmResult = esbuild.buildSync({
-      entryPoints: ['./src/extension.ts'],
-      outdir: 'dist/web',
+      entryPoints: ['./extension/src/extension.ts'],
+      outdir: 'extension/dist/web',
       minify: true,
       bundle: true,
       format: 'cjs',
@@ -24,8 +25,11 @@ async function main() {
       define: {
         'process.env.NODE_ENV': '"production"',
       },
-      tsconfig: './tsconfig.json',
-      external: Object.keys(pkg.dependencies).concat(Object.keys(pkg.peerDependencies)).concat(["vscode"]),
+      tsconfig: '../extension/tsconfig.json',
+      external: Object.keys(pkg.dependencies)
+        .concat(Object.keys(pkg.devDependencies))
+        .concat(['vscode'])
+        ,
       metafile: true,
       
     })

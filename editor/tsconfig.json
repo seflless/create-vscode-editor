@@ -1,0 +1,18 @@
+{
+    "include": ["src"],
+    "exclude": ["node_modules", "dist", "docs"],
+    "compilerOptions": {
+      "outDir": "./dist/types",
+      "rootDir": "src",
+      "baseUrl": "src",
+      "emitDeclarationOnly": false,
+      "paths": {
+      }
+    },
+    "references": [
+    ],
+    "typedocOptions": {
+      "entryPoints": ["src/index.ts"],
+      "out": "docs"
+    }
+  }

@@ -6,8 +6,8 @@ import { createRequire } from 'module'
 const pkg = createRequire(import.meta.url)('../package.json')
 
 async function main() {
-  if (fs.existsSync('./dist')) {
-    fs.rmSync('./dist', { recursive: true }, (e) => {
+  if (fs.existsSync('./editor/dist')) {
+    fs.rmSync('./editor/dist', { recursive: true }, (e) => {
       if (e) {
         throw e
       }
@@ -16,15 +16,16 @@ async function main() {
 
   try {
     esbuild.buildSync({
-      entryPoints: ['./src/index.tsx'],
-      outfile: 'dist/index.js',
+      entryPoints: ['./editor/src/index.tsx'],
+      outfile: 'editor/dist/index.js',
       minify: false,
       bundle: true,
       format: 'cjs',
       target: 'es6',
       jsxFactory: 'React.createElement',
       jsxFragment: 'React.Fragment',
-      tsconfig: './tsconfig.json',
+      //tsconfig: '../editor/tsconfig.json',
+      tsconfig: './editor/tsconfig.json',
       define: {
         'process.env.NODE_ENV': '"production"',
       },

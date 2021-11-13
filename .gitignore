@@ -1,4 +1,5 @@
 .DS_Store
+out
 editor/dist
 extension/dist
 node_modules
