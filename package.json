@@ -10,6 +10,7 @@
   "bugs": {
     "url": "https://github.com/seflless/create-vscode-editor/issues"
   },
+  
   "homepage": "https://github.com/seflless/create-vscode-editor",
   "license": "MIT",
   "keywords": [],
@@ -17,7 +18,7 @@
   "scripts": {
     "start": "concurrently npm:start:*",
     "start:editor": "node scripts/dev-editor.mjs -w",
-    "start:extension": "code extension && node scripts/dev-extension.mjs -w",
+    "start:extension": "code . editor/src/App.tsx && node scripts/dev-extension.mjs -w",
     "build": "yarn build:editor && yarn build:extension",
     "build:editor": "node scripts/build-editor.mjs",
     "build:extension": "node scripts/build-extension.js",

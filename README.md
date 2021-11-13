@@ -110,7 +110,7 @@ In the `vscode/extension` folder:
 
 - Run `yarn vscode:publish`
 
-#### References
+#### Implementation References
 
 - [yarn create](https://classic.yarnpkg.com/en/docs/cli/create)
  - [Yarn Create & Yarn 1.0](https://classic.yarnpkg.com/blog/2017/05/12/introducing-yarn/)
