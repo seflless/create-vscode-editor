@@ -1,14 +1,32 @@
 ## Create VS Code Editors
 Easily create custom VS Code editors, using React for the UI.
 
-While working on the Tldraw extension I couldn't find any projects that uses React for the editor UI. Also none of the example editors supported web VS Code like GitHub.dev, vscode.dev, and GitHub Codespaces. This project generated an app that has all of these types of things working out of the box. Also a better dev workflow than the VS Code team's example code.
+This is an opionated VS Code extension generator with the following features out of the box:
+ - Editor UIs are built with React
+ - Editors will automatically work in all VS Code distributions
+   - VS Code desktop
+   - https://github.dev
+   - https://vscode.dev
+   - Github Codespaces
+ - Fast hot-module-reloading using Vite (Coming soon)
+ - VS Code (F5) launching integrating
+ - Instructions and scripts for automatically publishing to the VS Code Marketplace
 
-https://github.com/microsoft/vscode-extension-samples/tree/main/custom-editor-sample
+Checkout the [Tldraw VS Code editor](https://marketplace.visualstudio.com/items?itemName=tldraw-org.tldraw-vscode), that I and other's built, that this is based on.
 
+### Install and Run
 
-Like create-react-app, this is a project generator that is very opinionated in order work out of the box.
-
-Checkout the [Tldraw VS Code editor](https://marketplace.visualstudio.com/items?itemName=tldraw-org.tldraw-vscode), that this module was spun out from.
+ 1. `yarn create vscode-editor my-editor`
+ 1. `cd my-editor`
+ 1. `yarn start`
+ 1. This will automatically open your editor project in VS Code
+ 1. Now iterate on your custom editor by
+   1. Changing the code in editor/src
+   1. Use Command+R to reload the extension after you make changes to the editor code ()
+   1. Rinse and repeat
+ 1. To 
+ 1. Coming soon: automated publishing to the Marketplace. For now you can use the workflow where you upload the .vsix installer file
+ 
 
 ### Todos
  - Register create-vscode-editor. Running it would be

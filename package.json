@@ -15,9 +15,10 @@
   "keywords": [],
   "bin": "./bin/generate.mjs",
   "scripts": {
-    "start": "yarn start:editor && yarn start:extension",
+    "start": "concurrently npm:start:*",
     "start:editor": "node scripts/dev-editor.mjs -w",
     "start:extension": "code extension && node scripts/dev-extension.mjs -w",
+    "build": "npm run build:editor && npm run build:extension",
     "build:editor": "node scripts/build-editor.mjs",
     "build:extension": "node scripts/build-extension.mjs"
   },
@@ -31,7 +32,7 @@
     "@types/react": "^16.9.55",
     "@types/react-dom": "^16.9.9",
     "@types/react-router-dom": "^5.1.8",
-    "concurrently": "6.0.1",
+    "concurrently": "^6.4.0",
     "create-serve": "1.0.1",
     "esbuild": "^0.13.8",
     "esbuild-serve": "^1.0.1",
