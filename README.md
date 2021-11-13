@@ -34,6 +34,8 @@ Example editors built with this project:
   1. Create an extension installer, you can share directly to people
     1. `yarn package`
     1. The installer will be created in the `out` folder
+    1. People can then use the installer by going to the extension window and choosing `Install from VSIX...`
+       - <img src="docs/how-use-extension-installer.png"/>
   1. Coming soon: automated publishing to the Marketplace. For now you can use the workflow where you upload the .vsix installer file
  
 ### Todos
