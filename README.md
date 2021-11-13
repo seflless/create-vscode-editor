@@ -1,5 +1,7 @@
 ## Create VS Code Editors
-A module/template to make it super easy to make custom VS Code editors, using React for the UI. Think of it like a create-react-app, it's very opinionated in order work out of the box.
+Easily create custom VS Code editors, using React for the UI.
+
+Like create-react-app, this is a project generator that is very opinionated in order work out of the box.
 
 Checkout the [Tldraw VS Code editor](https://marketplace.visualstudio.com/items?itemName=tldraw-org.tldraw-vscode), that this module was spun out from.
 
