@@ -1,6 +1,6 @@
 {
   "name": "create-vscode-editor",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A custom editor for VS Code",
   "author": "@seflless",
   "repository": {

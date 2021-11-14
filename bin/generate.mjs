@@ -28,6 +28,7 @@ const copyList = [
     ".vscode",
     "docs",
     "editor",
+    "examples",
     "extension",
     "scripts",
     ".npmignore",
