@@ -1,6 +1,6 @@
 {
   "name": "create-vscode-editor",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "A custom editor for VS Code",
   "author": "@seflless",
   "repository": {
@@ -10,7 +10,6 @@
   "bugs": {
     "url": "https://github.com/seflless/create-vscode-editor/issues"
   },
-  
   "homepage": "https://github.com/seflless/create-vscode-editor",
   "license": "MIT",
   "keywords": [],

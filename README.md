@@ -39,18 +39,8 @@ Example editors built with this project:
   1. Coming soon: automated publishing to the Marketplace. For now you can use the workflow where you upload the .vsix installer file
  
 ### Todos
- - Register create-vscode-editor. Running it would be
-  - `yarn create vscode-editor my-editor`
- - Make it follow the `yarn create` / create-react-app approach for easily quickly creating a new project
-  - https://classic.yarnpkg.com/en/docs/cli/create
-  - https://classic.yarnpkg.com/blog/2017/05/12/introducing-yarn/
  - Switch out Tldraw for a much simpler editor example. Make sure it's somewhat compelling and matches the vision of the project.
- - Make `yarn start` work. Currently you need to have two windows running
-   - auto open VS Code to project root
- - Remove need to have a VS Code window to debug/run the extension
- - Get installer building working 
  - Make sure setup instructions are accurate
- - Add npm publish script
 
 ### Future Work
  - Add tests
@@ -97,7 +87,7 @@ In the `vscode/extension` window, open the terminal and run:
 - Install dependencies (`yarn`)
 - Start the VS Code debugger (Menu > Run > Start Debugging)
 
-Open a `.tldr` file or create a new `.tldr` file from the command palette.
+Open a `.editor` file or create a new `.editor` file from the command palette.
 
 ## Publishing
 

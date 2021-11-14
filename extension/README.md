@@ -12,11 +12,11 @@ You can install TLDraw from the Visual Studio Code Marketplace or by searching w
 
 ## Features
 
-1. View, edit and save TLDraw files (`.tldr`)
+1. View, edit and save TLDraw files (`.editor`)
 
 ## Usage
 
-- To view an existing TLDraw file, open a file with the `.tldr` extension in VS Code.
+- To view an existing TLDraw file, open a file with the `.editor` extension in VS Code.
 - To create a new TLDraw file, use the provided command: "TLDraw: New TLDraw File".
 
 ## Release Notes

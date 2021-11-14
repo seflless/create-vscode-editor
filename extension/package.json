@@ -2,7 +2,7 @@
 	"name": "vscode-editor",
 	"displayName": "VS Code Editor",
 	"description": "A Custom Editor Extension for VS Code.",
-	"version": "0.1.3",
+	"version": "0.2.0",
 	"license": "MIT","repository": {
 		"type": "git",
 		"url": "https://github.com/seflless/create-vscode-editor"
@@ -16,8 +16,7 @@
 		"drawing",
 		"sketch",
 		"design",
-		"documentation",
-		"tldraw"
+		"documentation"
 	],
 	"icon": "icon.png",
 	"galleryBanner": {
@@ -28,8 +27,8 @@
 		"Visualization"
 	],
 	"activationEvents": [
-		"onCustomEditor:tldraw.tldr",
-		"onCommand:tldraw.tldr.new"
+		"onCustomEditor:custom.editor",
+		"onCommand:custom.editor.new"
 	],
 	"browser": "./dist/web/extension.js",
 	"main": "./dist/web/extension.js",
@@ -40,20 +39,20 @@
 	"contributes": {
 		"customEditors": [
 			{
-				"viewType": "tldraw.tldr",
-				"displayName": "TLDraw",
+				"viewType": "custom.editor",
+				"displayName": "Custom Editor",
 				"selector": [
 					{
-						"filenamePattern": "*.tldr"
+						"filenamePattern": "*.editor"
 					}
 				]
 			}
 		],
 		"commands": [
 			{
-				"command": "tldraw.tldr.new",
-				"title": "New TLDraw File",
-				"category": "TLDraw"
+				"command": "custom.editor.new",
+				"title": "Create new .editor file",
+				"category": "Custom Editor"
 			}
 		]
 	},

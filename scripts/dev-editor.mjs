@@ -17,7 +17,7 @@ async function main() {
         incremental: true,
         target: 'es6',
         define: {
-          'process.env.NODE_ENV': '"production"',
+          'process.env.NODE_ENV': '"development"',
         },
         watch: {
           onRebuild(err) {
