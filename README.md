@@ -24,17 +24,26 @@ Example editors built with this project:
 
  1. `yarn create vscode-editor my-editor`
  1. `cd my-editor`
- 1. `yarn start`
- 1. This will automatically open your editor project in VS Code
- 1. Now iterate on your custom editor by
-   1. Changing the code in editor/src
-   1. Use `Command+R` to reload the extension after you make changes to the editor code (HMR coming soon)
-   1. Rinse and repeat
- 1. To share your extension:
+ 1. `yarn start` 
+ 1. VS Code will auto open  
+ 1. Run the extension by **Pressing F5** or selecting **Run -> Start Debugging**
+ 1. Open an .editor file (see *examples/*) from the newly launch VS Code window. You should see the placeholder drawing editor:
+    <img style="width:50%" src="docs/editor.gif"/>
+
+### Customizing Editor
+
+ 1. Do the **Install and Run** from above
+ 1. Iterate on your custom editor by
+     1. Changing the code in editor/src
+     1. Use `Command+R` to reload the extension after you make changes to the editor code (HMR coming soon)
+     1. Rinse and repeat
+
+### Share Your Extension
+ 
   1. Create an extension installer, you can share directly to people
-    1. `yarn package`
-    1. The installer will be created in the `out` folder
-    1. People can then use the installer by going to the extension window and choosing `Install from VSIX...`
+      1. `yarn package`
+      1. The installer will be created in the `out` folder
+      1. People can then use the installer by going to the extension window and choosing `Install from VSIX...`
        - <img src="docs/how-use-extension-installer.png"/>
   1. Coming soon: automated publishing to the Marketplace. For now you can use the workflow where you upload the .vsix installer file
  
