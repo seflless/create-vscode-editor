@@ -10,9 +10,9 @@ This is an opionated VS Code extension generator with the following features out
    - [github.dev](https://github.dev)
    - [vscode.dev](https://vscode.dev)
    - [Github Codespaces](https://github.com/features/codespaces)
- - Fast HMR using Vite (Coming soon)
- - VS Code (F5) launching integrating
- - Instructions and scripts for automatically publishing to the VS Code Marketplace
+ - VS Code run/debug integration 
+ - Automated publishing to the VS Code Marketplace
+ - HMR support for the editor coming soon
 
 Checkout the [Tldraw VS Code editor extension](https://marketplace.visualstudio.com/items?itemName=tldraw-org.tldraw-vscode), that others and I built. This code is extracted from the [Tldraw repo](https://github.com/tldraw/tldraw/tree/main/vscode).
 
