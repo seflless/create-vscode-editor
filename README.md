@@ -1,9 +1,7 @@
 ## Create VS Code Editors
 Easily create custom VS Code editors, using React for the UI.
 
-<img style="width: 25%; margin-right: 10px" src="docs/editor.gif"/>
-<img style="width: 25%; margin-right: 10px" src="docs/tldraw.gif"/>
-<img style="width: 25%;" src="docs/trello.gif"/>
+<img style="width: 200px; height: 120px; padding: 10px" src="docs/editor.gif"/><img style="width: 200px; height: 120px; padding-right: 10px" src="docs/tldraw.gif"/><img style="width: 200px; height: 120px; " src="docs/trello.gif"/>
 
 **WARNING: This project is not ready for production use. Proceed with caution**
 
