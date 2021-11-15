@@ -4,4 +4,6 @@ export enum UI_EVENT {
 
 export enum EXTENSION_EVENT {
   FILE_UPDATED = 'FILE_UPDATED',
+  FILE_UNDO = 'FILE_UNDO',
+  FILE_REDO = 'FILE_REDO',
 }

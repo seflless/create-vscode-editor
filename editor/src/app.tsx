@@ -23,25 +23,32 @@ export default function App(): JSX.Element {
 
     const ctx = canvas.getContext('2d');
 
-    ctx.fillStyle = "black";
-    ctx.fillRect(0,0,canvas.width, canvas.height);
+    
 
     ctx.strokeStyle = "white";
     ctx.lineWidth = 10;
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
 
-    alert('hi!');
-
     // Draw initial document strokes
-    currentFile.strokes.forEach( stroke => {
-      ctx.beginPath();
-      ctx.moveTo( stroke[0].x, stroke[0].y );
-      for(let i = 1; i<stroke.length-1; i++){
-        ctx.lineTo(stroke[i].x, stroke[i].y)
-      }
-      ctx.stroke();
-    })
+    syncVisualsToState();
+
+    // The is typically incrementally drawing, not redrawing all strokes
+    // every time there is a change. This function is used to initially 
+    // sync the canvas pixels to the underlying file. But it is also used
+    // when a whole sale state change occurrs like an undo/redo
+    function syncVisualsToState(){
+      ctx.fillStyle = "black";
+      ctx.fillRect(0,0,canvas.width, canvas.height);
+      currentFile.strokes.forEach( stroke => {
+        ctx.beginPath();
+        ctx.moveTo( stroke[0].x, stroke[0].y );
+        for(let i = 1; i<stroke.length-1; i++){
+          ctx.lineTo(stroke[i].x, stroke[i].y)
+        }
+        ctx.stroke();
+      })
+    }
 
     let lastPoint = null;
     let stroke = null;
@@ -83,6 +90,23 @@ export default function App(): JSX.Element {
       lastPoint = null;
       stroke = null;
     })
+
+    const handleExtensionMessage = (message) => {
+      console.log(message.data);
+      switch(message.data.eventType){
+        case "FILE_UNDO": 
+          currentFile = message.data.text === "" ? defaultDocument: JSON.parse(message.data.text);
+          syncVisualsToState();
+          break;
+        case "FILE_REDO": 
+          currentFile = message.data.text === "" ? defaultDocument: JSON.parse(message.data.text);
+          syncVisualsToState();
+          break;
+      }
+      console.log("RECEIVED MESSAGE");
+      
+    }
+    window.addEventListener('message', handleExtensionMessage)
 
     // Note: We aren't cleaning up the event registrations as we don't
     // have HMR support so there won't be any triggering of this effect

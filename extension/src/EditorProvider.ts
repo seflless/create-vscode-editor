@@ -131,22 +131,47 @@ export class EditorProvider implements vscode.CustomTextEditorProvider {
       })
     }
 
-    // I'm going to leave this code in as a reminder of this event, but disable it for now
+    // A FILE_UPDATED event is sent to the editor process indicating that a change
+    // happened to the underlying editor file. We send the latest text content
+    // so that the editor can decide to either sync to it or ignore it
     //
-    // TODO: Revisit this function and think about how we want to respond to changes
-    // triggered by something other than the tldraw/tldraw component logic. An example
-    // being if the file changed on disk, say from git pull that pulls down a change
-    // to a .editor file you have open in a tab.
+    // A case where this might happen is if you did a git pull and there was a change
+    // to an editor file you have open
 
-    const changeDocumentSubscription = vscode.workspace.onDidSaveTextDocument(() => {
-      webviewPanel.webview.postMessage({
-        type: EXTENSION_EVENT.FILE_UPDATED,
-        text: document.getText(),
-      })
+    
+    // const changeCustomDocumentSubscription = vscode.workspace.onDidChangeCustomDocument(() => {
+    //   console.log("EXTENSION MODEL CHANGED");
+    // })
+
+    const changeTextDocumentSubscription = vscode.workspace.onDidChangeTextDocument(function(e) {
+      console.log("CHANGE TEXT DOCUMENT");
+      console.log(`REASON: ${e.reason}`);
+      if(e.document === document ){
+        if( e.reason === 1 ){
+          webviewPanel.webview.postMessage({
+            eventType: EXTENSION_EVENT.FILE_UNDO,
+            text: document.getText()
+          })  
+        } else if( e.reason === 2 ){
+          webviewPanel.webview.postMessage({
+            eventType: EXTENSION_EVENT.FILE_REDO,
+            text: document.getText()
+          })
+        }
+      }
+    });
+    const changeDocumentSubscription = vscode.workspace.onDidSaveTextDocument((e) => {
+      if(e.document === document ){
+        webviewPanel.webview.postMessage({
+          eventType: EXTENSION_EVENT.FILE_UPDATED,
+          text: document.getText(),
+        })
+      }
     })
 
     // Make sure we get rid of the listener when our editor is closed.
     webviewPanel.onDidDispose(() => {
+      changeTextDocumentSubscription.dispose()
       changeDocumentSubscription.dispose()
     })
 
@@ -159,7 +184,6 @@ export class EditorProvider implements vscode.CustomTextEditorProvider {
           // Synchronize the TextDocument with the editor components document state
 
           const nextFile = JSON.parse(e.text);
-
           this.synchronizeTextDocument(document, nextFile)
           break
         }
@@ -198,8 +222,6 @@ export class EditorProvider implements vscode.CustomTextEditorProvider {
       JSON.stringify(nextFile, null, 2)
     )
 
-    debugger;
-    console.log("HELLO");
     return vscode.workspace.applyEdit(edit)
   }
 }
