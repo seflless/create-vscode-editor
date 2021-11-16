@@ -4,6 +4,7 @@ import { defaultDocument } from './utils/defaultDocument'
 import { UI_EVENT } from './types'
 import './styles.css'
 import { EditorFile } from 'utils/editorfile'
+import clone from 'rfdc/default'
 
 // Will be placed in global scope by extension
 declare let currentFile: EditorFile
@@ -15,7 +16,7 @@ export default function App(): JSX.Element {
   React.useEffect(()=>{
     // If no initial document content was set, initialize it to the default file content
     // The extension will set the initial currentFile to null if so
-    currentFile = currentFile || defaultDocument
+    currentFile = currentFile || clone(defaultDocument);
 
     const canvas = rCanvas.current;
     canvas.width = currentFile.width;
@@ -92,19 +93,14 @@ export default function App(): JSX.Element {
     })
 
     const handleExtensionMessage = (message) => {
-      console.log(message.data);
+      
       switch(message.data.eventType){
         case "FILE_UNDO": 
-          currentFile = message.data.text === "" ? defaultDocument: JSON.parse(message.data.text);
-          syncVisualsToState();
-          break;
         case "FILE_REDO": 
-          currentFile = message.data.text === "" ? defaultDocument: JSON.parse(message.data.text);
+          currentFile = message.data.text === "" ? clone(defaultDocument): JSON.parse(message.data.text);
           syncVisualsToState();
           break;
       }
-      console.log("RECEIVED MESSAGE");
-      
     }
     window.addEventListener('message', handleExtensionMessage)
 

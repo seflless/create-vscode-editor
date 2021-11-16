@@ -131,21 +131,12 @@ export class EditorProvider implements vscode.CustomTextEditorProvider {
       })
     }
 
-    // A FILE_UPDATED event is sent to the editor process indicating that a change
-    // happened to the underlying editor file. We send the latest text content
-    // so that the editor can decide to either sync to it or ignore it
-    //
-    // A case where this might happen is if you did a git pull and there was a change
-    // to an editor file you have open
-
     
-    // const changeCustomDocumentSubscription = vscode.workspace.onDidChangeCustomDocument(() => {
-    //   console.log("EXTENSION MODEL CHANGED");
-    // })
 
+
+    // We use the underlying text document model and leverage it's undo/redo to get it for free
+    // in our own editors
     const changeTextDocumentSubscription = vscode.workspace.onDidChangeTextDocument(function(e) {
-      console.log("CHANGE TEXT DOCUMENT");
-      console.log(`REASON: ${e.reason}`);
       if(e.document === document ){
         if( e.reason === 1 ){
           webviewPanel.webview.postMessage({
@@ -160,6 +151,13 @@ export class EditorProvider implements vscode.CustomTextEditorProvider {
         }
       }
     });
+
+    // A FILE_UPDATED event is sent to the editor process indicating that a change
+    // happened to the underlying editor file. We send the latest text content
+    // so that the editor can decide to either sync to it or ignore it
+    //
+    // A case where this might happen is if you did a git pull and there was a change
+    // to an editor file you have open
     const changeDocumentSubscription = vscode.workspace.onDidSaveTextDocument((e) => {
       if(e.document === document ){
         webviewPanel.webview.postMessage({
