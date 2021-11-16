@@ -10,11 +10,21 @@ body {
 }
 
 .editor {
+  cursor: crosshair;
   position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
   bottom: 0px;
-  width: 100%;
-  height: 100%;
+  width: 512px;
+  height: 512px;
+}
+
+#clear-all{
+  cursor: pointer;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 10px;
+  bottom: 10px;
 }
