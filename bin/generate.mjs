@@ -30,7 +30,11 @@ const copyList = [
     "examples",
     "extension",
     "scripts",
-    ".npmignore",
+    // I'm not sure why, but some people (well Idan Gazit so far) are having an issue where .npmignore doesn't exist
+    // Rather than look into why there might be a difference in maybe yarn version behavior around if .npmignore
+    // gets included or not on publish, I'm just going to have a different named file that gets turned into an
+    // .npmignore on generation locally
+    [".NPMIGNORE-TEMPLATE", ".npmignore"],
     ".gitignore",
     "package.json",
     "yarn.lock",
@@ -42,9 +46,11 @@ console.log("Generating VS Code editor project...")
 // Use a regular for loop instead of forEach so we can logically 
 // block on async functions
 for( let i = 0; i<copyList.length; i++){
-    copyFileOrFolder(copyList[i]);    
-
-    //console.log(`   ${fileOrDirectoryPath}`)
+    if(Array.isArray(copyList[i])){
+        copyFileOrFolder(copyList[i][0], copyList[i][1]);
+    } else {
+        copyFileOrFolder(copyList[i]);    
+    }
 }
 
 await copyFileOrFolder( "README-TEMPLATE.md", "README.md" );
