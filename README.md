@@ -50,6 +50,11 @@ Example editors built with this project:
   1. Coming soon: automated publishing to the Marketplace. For now you can use the workflow where you upload the .vsix installer file
  
 ### Todos
+ - Get better watching/hot-reloading experience
+  - Switch to vite for editor, iframe it, and mock the vscode.postMessage API
+    - Make sure we are now properly cleaning up our effects, now that we're not doing a hard reload on change 
+  - Make sure extension code at least auto rebuilds (then Command+R will be required for extension changes which should be less frequent)
+  - Make sure `yarn start` does all the right thing.
  - Switch out Tldraw for a much simpler editor example. Make sure it's somewhat compelling and matches the vision of the project.
  - Make sure setup instructions are accurate
 

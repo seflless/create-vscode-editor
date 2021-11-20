@@ -5,9 +5,19 @@
     <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <style>
+      html, body{ 
+        margin: 0px; 
+        width: 100%; 
+        height: 100%;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/app.tsx"></script>
+    <script>
+        currentFile = null;
+    </script>
+    <script type="module" src="/src/index.tsx"></script>
   </body>
 </html>

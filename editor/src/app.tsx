@@ -7,7 +7,7 @@ import { EditorFile } from 'utils/editorfile'
 import clone from 'rfdc/default'
 
 // Will be placed in global scope by extension
-declare let currentFile: EditorFile
+declare let currentFile: EditorFile;
 
 export default function App(): JSX.Element {
   const rTLDrawState = React.useRef<any>()

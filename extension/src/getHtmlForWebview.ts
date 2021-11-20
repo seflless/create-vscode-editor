@@ -43,21 +43,40 @@ function getDevModeHTML(
   webview: vscode.Webview,
   documentContent: string
 ): string {
-  const host = 'http://localhost:5420'
   return `
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="width: 100%; height: 100%;">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="${host}/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Editor</title>
+
+    <style>
+      html, body{ 
+        margin: 0px; 
+        width: 100%; 
+        height: 100%;
+      }
+      iframe{
+        display: block;
+        width: 100%; 
+        height: 100%;
+        border: none;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script>currentFile = ${documentContent};</script>
-    <script src="${host}/index.js"></script>
+  <script>
+  
+      const vscode = acquireVsCodeApi();
+      
+      window.addEventListener('message', (message) => {
+        console.log('window.message');
+        vscode.postMessage(message.data);
+      })
+  </script>
+    <!-- We pass in the initial document content via a query parameter -->
+    <iframe src="http://localhost:3000/?currentFile=${encodeURIComponent(documentContent)}"></iframe>
   </body>
 </html>`
 }
