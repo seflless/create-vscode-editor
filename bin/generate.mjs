@@ -14,6 +14,7 @@ if( process.argv.length < 3 ) {
 }
 
 const appFolderPath = process.argv[2];
+const absoluteFolderPath = path.resolve(appFolderPath);
 
 // Make sure there isn't already a directory with the same filepath
 if( fs.existsSync(appFolderPath) ){
@@ -41,7 +42,16 @@ const copyList = [
     "node_modules"
 ]
 
-console.log("Generating VS Code editor project...")
+console.log(`
+Generating VS Code editor in ${absoluteFolderPath} 
+
+Done. Now run:
+
+  cd ${appFolderPath}
+  yarn start
+  # VS Code will automatically open your project folder
+  # Press F5 or use 'Run -> Start Debugging' to start/debug the placeholder extension 
+`)
 
 // Use a regular for loop instead of forEach so we can logically 
 // block on async functions

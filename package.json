@@ -16,7 +16,7 @@
   "bin": "./bin/generate.mjs",
   "scripts": {
     "start": "concurrently npm:start:*",
-    "start:editor": "node scripts/dev-editor.mjs -w",
+    "start:editor": "cd editor; vite",
     "start:extension": "code . && node scripts/dev-extension.mjs -w",
     "build": "yarn build:editor && yarn build:extension",
     "build:editor": "node scripts/build-editor.mjs",
@@ -35,7 +35,8 @@
     "concurrently": "^6.4.0",
     "create-serve": "1.0.1",
     "esbuild": "^0.13.8",
-    "esbuild-serve": "^1.0.1",
+    "vite": "^2.6.4",
+    "@vitejs/plugin-react": "^1.0.0",
     "react": ">=16.8",
     "react-dom": "^16.8 || ^17.0",
     "typescript": "4.2.3",
