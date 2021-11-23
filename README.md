@@ -24,6 +24,7 @@ Example editors built with this project:
 
 ### Install and Run
 
+ 1. VS Code is required [Download here](https://code.visualstudio.com/docs/setup/mac)
  1. `yarn create vscode-editor my-editor`
  1. `cd my-editor`
  1. `yarn start` 
