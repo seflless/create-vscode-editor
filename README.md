@@ -31,6 +31,7 @@ Example editors built with this project:
  1. VS Code will auto open  
  1. Run the extension by **Pressing F5** or selecting **Run -> Start Debugging**
  1. Open an .editor file (see *examples/*) from the newly launch VS Code window. You should see the placeholder drawing editor:
+ 2. 
       <img style="width:50%" src="docs/editor.gif"/>
 
 ### Customizing Editor
